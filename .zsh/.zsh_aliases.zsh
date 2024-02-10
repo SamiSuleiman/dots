@@ -8,6 +8,9 @@ alias h="history -10" # last 10 history commands
 alias hc="history -c" # clear history
 alias ls="ls --color -lh"
 
+# aaaand no more ls???
+alias lll='nnn -deH'
+
 # more aliases
 alias code='codium --profile=void-city'
 alias vim='nvim'
