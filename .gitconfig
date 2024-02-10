@@ -1,0 +1,57 @@
+[user]
+	name = sami
+	email = sulsami68@gmail.com
+
+[alias]
+recent = "!f() { count=${1-10}; git for-each-ref --count=$count --sort=-committerdate refs/heads --format='%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)' --color=always|column -ts'|'; }; f"
+st = "status -sb"
+ll = "log --oneline"
+cm = "commit -m"
+co = "checkout"
+undo = "reset --soft HEAD~1"
+last = "log -1 HEAD --stat"
+ac = "!git add -A && git commit"
+br = "branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate"
+dc = "diff --cached"
+aa = "add ."
+std = "diff --stat"
+boobs = "!git add . && git commit --amend --no-edit --no-verify && git push -f"
+
+# Seach commits by commit message.
+sm = "!f() { \
+	git log --date=short --decorate --pretty=custom --grep=\"$1\"; \
+}; f"
+
+# Remove last commits (by default it removes the last commit).
+rlc = "!f() { \
+	number_of_commits=\"${1:-1}\"; \
+	git reset --hard \"HEAD~$number_of_commits\"; \
+}; f"
+
+
+[color]
+  ui = true
+
+[fetch]
+	prune = true
+
+[core]
+	editor = codium --wait
+	excludesFile = ~/.gitignore_global
+
+[diff]
+    tool = codium
+	
+[difftool "codium"]
+    cmd = codium --wait --diff $LOCAL $REMOTE
+
+[help]
+    autoCorrect = immediate # If a command is mistyped, make Git automatically run the command it thinks the user wanted to type.
+
+[pretty]
+    custom = "%C(magenta)%h%C(red)%d %C(yellow)%ar %C(green)%s %C(yellow)(%an)"
+    #                     │        │            │            │             └─ author name
+    #                     │        │            │            └─ message
+    #                     │        │            └─ date (relative)
+    #                     │        └─ decorations (branch, heads or tags)
+    #                     └─ hash (abbreviated)
