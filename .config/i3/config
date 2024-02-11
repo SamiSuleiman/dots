@@ -164,6 +164,10 @@ bindsym $mod+r mode "resize"
 # configure i3lock
 bindsym $mod+Shift+z exec i3lock -i ~/wallpapers/solarized/tanaka.jpg
 
+# brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
+
 # set wallpaper
 exec_always feh --bg-fill ~/wallpapers/solarized/tanaka.jpg
 
