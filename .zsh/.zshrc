@@ -5,7 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-if [ -z "${XDG_CACHE_HOME:-$HOME/.config/nnn/pluging}"]; then
+if [[ -z "${XDG_CACHE_HOME:-$HOME}/.config/nnn/pluging" ]]; then
    echo "Downloading nnn plugins"
    sh -c "$(curl -Ls https://raw.githubusercontent.com/jarun/nnn/master/plugins/getplugs)"
 else
