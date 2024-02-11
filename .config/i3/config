@@ -172,3 +172,5 @@ exec_always feh --bg-fill ~/wallpapers/solarized/tanaka.jpg
 # bar {
 #         status_command i3status
 # }
+
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
