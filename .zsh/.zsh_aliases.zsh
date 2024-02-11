@@ -17,4 +17,4 @@ alias vim='nvim'
 alias myip="curl http://ipecho.net/plain; echo"
 
 # situational, should probably find a way to do this like a normal human aka not a fucking retard
-alias nvim='nvim.appimage'
+# alias nvim='nvim.appimage'
