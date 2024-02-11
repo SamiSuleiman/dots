@@ -3,3 +3,4 @@ test.sh
 .luarc.json
 .zcompdump
 .zsh_history
+.uuid
