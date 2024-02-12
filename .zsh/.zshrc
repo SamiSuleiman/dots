@@ -140,3 +140,4 @@ NC='\033[0m' # No Color
 # }
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+typeset -g ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=4'
