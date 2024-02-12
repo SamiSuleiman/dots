@@ -29,15 +29,30 @@ alias ta='tmux attach-session -d'
 # ---------
 
 alias lll='nnn -deH'
-alias hhh='export HISTTIMEFORMAT="%F %T "; history | fzf | cut -d" " -f2- | bash'
 alias ccc='cd "$(dirname "$(find . -type f | fzf)")"'
-alias vif='nvim $(fzf)'
+alias vif='nvim $(fzf --hidden)'
 alias pif='kill $(ps -ef | fzf | awk '\''{print $2}'\'')'
 alias gbf='git checkout $(git branch | fzf)'
-alias cdf='cd $(find * -type d | fzf)'
 
-# more aliases
-alias code='codium --profile=tanaka'
+# Define a function to open an editor with optional profile flag
+open_editor() {
+    # Check if codium command exists
+    if command -v codium &>/dev/null; then
+        codium "$@" --profile=tanaka
+    # Check if code command exists
+    elif command -v code &>/dev/null; then
+        code "$@" --profile=tanaka
+    # Check if nvim command exists
+    elif command -v nvim &>/dev/null; then
+        nvim "$@"
+    # If none of the above commands exist, use vim as fallback
+    else
+        vim "$@"
+    fi
+}
+# Create an alias for the function
+alias editor=open_editor
+
 alias vim='nvim'
 alias myip="curl http://ipecho.net/plain; echo"
 
