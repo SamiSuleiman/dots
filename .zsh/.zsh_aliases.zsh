@@ -12,6 +12,22 @@ alias ls="eza --icons --group-directories-first"
 alias cat='bat'
 alias grep='grep --color=always'
 
+# ---------
+
+# tmux
+## Create a new tmux session
+alias tn='tmux new-session -s'
+## Start or attach to a tmux session
+alias t='tmux new-session -A -s'
+## List tmux sessions
+alias tls='tmux ls'
+# Kill a tmux session
+alias tk='tmux kill-session -t'
+# Attach to the last used session
+alias ta='tmux attach-session -d'
+
+# ---------
+
 alias lll='nnn -deH'
 alias hhh='export HISTTIMEFORMAT="%F %T "; history | fzf | cut -d" " -f2- | bash'
 alias ccc='cd "$(dirname "$(find . -type f | fzf)")"'
