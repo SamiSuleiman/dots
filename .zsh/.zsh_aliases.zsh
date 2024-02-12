@@ -8,7 +8,7 @@ alias mv="mv -iv"
 alias rm="rm -vI"
 alias bc="bc -ql"
 alias mkd="mkdir -pv"
-alias ls="exa --icons --group-directories-first"
+alias ls="eza --icons --group-directories-first"
 alias cat='bat'
 alias grep='grep --color=always'
 
