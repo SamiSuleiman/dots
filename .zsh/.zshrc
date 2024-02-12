@@ -141,3 +141,20 @@ NC='\033[0m' # No Color
 
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 typeset -g ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=4'
+
+
+# newsboat stuff
+newsboat -i ~/.config/newsboat/urls.opml
+setup_cron_job() {
+    local cron_cmd="0 * * * * $HOME/.config/newsboat/reload_feeds.sh> /dev/null 2>&1 < /dev/null &"
+
+    # Check if the cron job already exists
+    if ! crontab -l | grep -qF "$cron_cmd"; then
+        # Add the cron job
+        (crontab -l ; echo "$cron_cmd") | crontab -
+        echo "Cron job added successfully."
+    else
+        echo "Cron job already exists."
+    fi
+}
+setup_cron_job

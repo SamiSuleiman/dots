@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+<head>
+<title>Feed Subscriptions</title>
+</head>
+<body>
+  <outline title="twitter" text="twitter">
+      <outline text="tj" title="tj" type="rss" 
+            xmlUrl="https://nitter.holo-mix.com/teej_dv/rss" htmlUrl="https://nitter.holo-mix.com/teej_dv"/>
+      <outline text="younes" title="younes" type="rss" 
+            xmlUrl="https://nitter.no-logs.com/yjaaidi/rss" htmlUrl="http://nitter.no-logs.com/yjaaidi"/>
+      <outline text="trash dev" title="trash dev" type="rss" 
+            xmlUrl="https://nitter.jakefrosty.com/trashh_dev/rss" htmlUrl="http://nitter.jakefrosty.com/trashh_dev"/>
+      <outline text="decoded frontend" title="decoded frontend" type="rss" 
+            xmlUrl="https://n.opnxng.com/DecodedFrontend/rss" htmlUrl="http://n.opnxng.com/DecodedFrontend"/>
+      <outline text="brandontroberts" title="brandontroberts" type="rss" 
+            xmlUrl="https://n.opnxng.com/brandontroberts/rss" htmlUrl="http://n.opnxng.com/brandontroberts"/>
+      <outline text="primeagen" title="primeagen" type="rss" 
+            xmlUrl="https://nitter.moomoo.me/ThePrimeagen/rss" htmlUrl="http://nitter.moomoo.me/ThePrimeagen"/>
+      <outline text="nodejs" title="nodejs" type="rss" 
+            xmlUrl="https://nitter.adminforge.de/nodejs/rss" htmlUrl="http://nitter.adminforge.de/nodejs"/>
+      <outline text="github" title="github" type="rss" 
+            xmlUrl="https://nitter.oksocial.net/github/rss" htmlUrl="https://nitter.oksocial.net/github"/>
+      <outline text="ionic" title="ionic" type="rss" 
+            xmlUrl="https://nitter.kylrth.com/Ionicframework/rss" htmlUrl="http://nitter.kylrth.com/Ionicframework"/>
+      <outline text="josh morony" title="josh morony" type="rss" 
+            xmlUrl="https://nitter.no-logs.com/joshuamorony/rss" htmlUrl="http://nitter.no-logs.com/joshuamorony"/>
+      <outline text="RSS feed" title="RSS feed" type="rss" 
+            xmlUrl="https://nitter.fdn.fr/angular/rss" htmlUrl="http://nitter.fdn.fr/angular"/>
+      <outline text="angular" title="angular" type="rss" 
+            xmlUrl="https://nitter.kylrth.com/angular/rss" htmlUrl="http://nitter.kylrth.com/angular"/>
+      <outline text="ts" title="ts" type="rss" 
+            xmlUrl="https://nitter.mint.lgbt/typescript/rss" htmlUrl="https://nitter.mint.lgbt/typescript"/>
+      <outline text="nestjs" title="nestjs" type="rss" 
+            xmlUrl="https://nitter.no-logs.com/nestframework/rss" htmlUrl="http://nitter.no-logs.com/nestframework"/>
+      <outline text="Enea Jahollari" title="Enea Jahollari" type="rss" 
+            xmlUrl="https://nitter.private.coffee/Enea_Jahollari/rss" htmlUrl="https://nitter.private.coffee/Enea_Jahollari"/>
+      <outline text="wendigoon" title="wendigoon" type="rss" 
+            xmlUrl="https://nitter.adminforge.de/Wendigoon8/rss" htmlUrl="http://nitter.adminforge.de/Wendigoon8"/>
+      <outline text="zealotonpc" title="zealotonpc" type="rss" 
+            xmlUrl="https://nitter.oksocial.net/zealotonpc/rss" htmlUrl="https://nitter.oksocial.net/zealotonpc"/>
+      <outline text="moist" title="moist" type="rss" 
+            xmlUrl="https://n.opnxng.com/MoistCr1TiKaL/rss" htmlUrl="http://n.opnxng.com/MoistCr1TiKaL"/>
+      <outline text="whang" title="whang" type="rss" 
+            xmlUrl="https://nitter.no-logs.com/JustinWhang/rss" htmlUrl="http://nitter.no-logs.com/JustinWhang"/>
+      <outline text="papa meat" title="papa meat" type="rss" 
+            xmlUrl="https://nitter.no-logs.com/meatcanyon/rss" htmlUrl="http://nitter.no-logs.com/meatcanyon"/>
+  </outline>
+  <outline title="dev blogs" text="dev blogs">
+      <outline text="open source musings" title="open source musings" type="rss" 
+            xmlUrl="https://opensourcemusings.com/feed.xml" htmlUrl="https://opensourcemusings.com/"/>
+      <outline text="angular" title="angular" type="rss" 
+            xmlUrl="https://blog.angular.io/feed" htmlUrl="https://blog.angular.io?source=rss----447683c3d9a3---4"/>
+  </outline>
+  <outline title="yt" text="yt">
+      <outline text="wendigoon" title="wendigoon" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UC3cpN6gcJQqcCM6mxRUo_dA" htmlUrl="https://yewtu.be/channel/UC3cpN6gcJQqcCM6mxRUo_dA"/>
+      <outline text="wendigang" title="wendigang" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCuX9VrqRC3-EUq1eZ0NBbQg" htmlUrl="https://yewtu.be/channel/UCuX9VrqRC3-EUq1eZ0NBbQg"/>
+      <outline text="whang" title="whang" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UC3jdnIP2u5hCJpVZ-TuDrCg" htmlUrl="https://yewtu.be/channel/UC3jdnIP2u5hCJpVZ-TuDrCg"/>
+      <outline text="typecraft" title="typecraft" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCo71RUe6DX4w-Vd47rFLXPg" htmlUrl="https://yewtu.be/channel/UCo71RUe6DX4w-Vd47rFLXPg"/>
+      <outline text="tsoding daily" title="tsoding daily" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCrqM0Ym_NbK1fqeQG2VIohg" htmlUrl="https://yewtu.be/channel/UCrqM0Ym_NbK1fqeQG2VIohg"/>
+      <outline text="trash taste after dark" title="trash taste after dark" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCKaN3mt53ATqRjzalb2ALFQ" htmlUrl="https://yewtu.be/channel/UCKaN3mt53ATqRjzalb2ALFQ"/>
+      <outline text="trash taste" title="trash taste" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCcmxOGYGF51T1XsqQLewGtQ" htmlUrl="https://yewtu.be/channel/UCcmxOGYGF51T1XsqQLewGtQ"/>
+      <outline text="trash" title="trash" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCLf_pHZV6W0k8pvrcC95Hlw" htmlUrl="https://yewtu.be/channel/UCLf_pHZV6W0k8pvrcC95Hlw"/>
+      <outline text="tj" title="tj" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCd3dNckv1Za2coSaHGHl5aA" htmlUrl="https://yewtu.be/channel/UCd3dNckv1Za2coSaHGHl5aA"/>
+      <outline text="primeagen" title="primeagen" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UC8ENHE5xdFSwx71u3fDH5Xw" htmlUrl="https://yewtu.be/channel/UC8ENHE5xdFSwx71u3fDH5Xw"/>
+      <outline text="prime time" title="prime time" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCUyeluBRhGPCW4rPe_UvBZQ" htmlUrl="https://yewtu.be/channel/UCUyeluBRhGPCW4rPe_UvBZQ"/>
+      <outline text="official channel" title="official channel" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCcHYe-Qw7qUN5gFWMdj9nNw" htmlUrl="https://yewtu.be/channel/UCcHYe-Qw7qUN5gFWMdj9nNw"/>
+      <outline text="linux cast" title="linux cast" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCylGUf9BvQooEFjgdNudoQg" htmlUrl="https://yewtu.be/channel/UCylGUf9BvQooEFjgdNudoQg"/>
+      <outline text="takuya matsuyama" title="takuya matsuyama" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCBZA3z_u8LPiVuIo7YUdDcg" htmlUrl="https://yewtu.be/channel/UCBZA3z_u8LPiVuIo7YUdDcg"/>
+      <outline text="sog" title="sog" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCtMVHI3AJD4Qk4hcbZnI9ZQ" htmlUrl="https://yewtu.be/channel/UCtMVHI3AJD4Qk4hcbZnI9ZQ"/>
+      <outline text="sedra" title="sedra" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCxALnpadbAGR0tsO0vrHQlw" htmlUrl="https://yewtu.be/channel/UCxALnpadbAGR0tsO0vrHQlw"/>
+      <outline text="rusty zone" title="rusty zone" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UC-h4Q0_5zTX66AxJucRmxRQ" htmlUrl="https://yewtu.be/channel/UC-h4Q0_5zTX66AxJucRmxRQ"/>
+      <outline text="penguinz0" title="penguinz0" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCq6VFHwMzcMXbuKyG7SQYIg" htmlUrl="https://yewtu.be/channel/UCq6VFHwMzcMXbuKyG7SQYIg"/>
+      <outline text="papa meat" title="papa meat" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCYF1kiTFCcYPqGTqXKt3JJg" htmlUrl="https://yewtu.be/channel/UCYF1kiTFCcYPqGTqXKt3JJg"/>
+      <outline text="nick chap" title="nick chap" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCrkPsvLGln62OMZRO6K-llg" htmlUrl="https://yewtu.be/channel/UCrkPsvLGln62OMZRO6K-llg"/>
+      <outline text="navek" title="navek" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UC3XrWeEDHIHomiDZ1gSV38g" htmlUrl="https://yewtu.be/channel/UC3XrWeEDHIHomiDZ1gSV38g"/>
+      <outline text="mosterlessons academy" title="mosterlessons academy" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCssWuTdNCWN4RSF3wHzzjMw" htmlUrl="https://yewtu.be/channel/UCssWuTdNCWN4RSF3wHzzjMw"/>
+      <outline text="kevin powell" title="kevin powell" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCJZv4d5rbIKd4QHMPkcABCw" htmlUrl="https://yewtu.be/channel/UCJZv4d5rbIKd4QHMPkcABCw"/>
+      <outline text="joshua morony" title="joshua morony" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCbVZdLngJH6KOJvpAOO3qTw" htmlUrl="https://yewtu.be/channel/UCbVZdLngJH6KOJvpAOO3qTw"/>
+      <outline text="eric murphy" title="eric murphy" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UC5KDiSAFxrDWhmysBcNqtMA" htmlUrl="https://yewtu.be/channel/UC5KDiSAFxrDWhmysBcNqtMA"/>
+      <outline text="devaslife" title="devaslife" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UC7yZ6keOGsvERMp2HaEbbXQ" htmlUrl="https://yewtu.be/channel/UC7yZ6keOGsvERMp2HaEbbXQ"/>
+      <outline text="creepcast" title="creepcast" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UC8Gwis8sr3O-IVA7BGDxh9g" htmlUrl="https://yewtu.be/channel/UC8Gwis8sr3O-IVA7BGDxh9g"/>
+      <outline text="aba n preach" title="aba n preach" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCaiVt4r6YLPzJVgr7pOmD6w" htmlUrl="https://yewtu.be/channel/UCaiVt4r6YLPzJVgr7pOmD6w"/>
+      <outline text="andrew burgess" title="andrew burgess" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCH7Ulw-HEr62_SUzCC9K8oQ" htmlUrl="https://yewtu.be/channel/UCH7Ulw-HEr62_SUzCC9K8oQ"/>
+      <outline text="asmongold" title="asmongold" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCQeRaTukNYft1_6AZPACnog" htmlUrl="https://yewtu.be/channel/UCQeRaTukNYft1_6AZPACnog"/>
+      <outline text="beyond fireship" title="beyond fireship" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UC2Xd-TjJByJyK2w1zNwY0zQ" htmlUrl="https://yewtu.be/channel/UC2Xd-TjJByJyK2w1zNwY0zQ"/>
+      <outline text="fireship" title="fireship" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCsBjURrPoezykLs9EqgamOA" htmlUrl="https://yewtu.be/channel/UCsBjURrPoezykLs9EqgamOA"/>
+      <outline text="brandon herrera" title="brandon herrera" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCTrSsPMmZavLbc3Ex7VhjDg" htmlUrl="https://yewtu.be/channel/UCTrSsPMmZavLbc3Ex7VhjDg"/>
+      <outline text="brodie robertson" title="brodie robertson" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCld68syR8Wi-GY_n4CaoJGA" htmlUrl="https://yewtu.be/channel/UCld68syR8Wi-GY_n4CaoJGA"/>
+      <outline text="cdawgva vods" title="cdawgva vods" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCzlaOr5xuLERVaB7QUW2eLg" htmlUrl="https://yewtu.be/channel/UCzlaOr5xuLERVaB7QUW2eLg"/>
+      <outline text="chris titus tech" title="chris titus tech" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCg6gPGh8HU2U01vaFCAsvmQ" htmlUrl="https://yewtu.be/channel/UCg6gPGh8HU2U01vaFCAsvmQ"/>
+      <outline text="connor dawg" title="connor dawg" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCoil_VoKvJY4kdlBOZv974w" htmlUrl="https://yewtu.be/channel/UCoil_VoKvJY4kdlBOZv974w"/>
+      <outline text="decoded fe" title="decoded fe" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCSj1Igu3ejxqcQISNEmx8VQ" htmlUrl="https://yewtu.be/channel/UCSj1Igu3ejxqcQISNEmx8VQ"/>
+      <outline text="code aesthetic" title="code aesthetic" type="rss" 
+            xmlUrl="https://yewtu.be/feed/channel/UCaSCt8s_4nfkRglWCvNSDrg" htmlUrl="https://yewtu.be/channel/UCaSCt8s_4nfkRglWCvNSDrg"/>
+  </outline>
+  <outline title=".p" text=".p">
+      <outline text="ph" title="ph" type="rss" 
+            xmlUrl="https://www.pornhub.com/rss" htmlUrl="https://www.pornhub.com"/>
+  </outline>
+</body>
+</opml>

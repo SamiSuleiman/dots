@@ -1,4 +1,3 @@
-# ls aliases
 alias ll='ls -alF'
 alias c="clear"
 alias h="history -10" # last 10 history commands
@@ -12,9 +11,9 @@ alias ls="eza --icons --group-directories-first"
 alias cat='bat'
 alias grep='grep --color=always'
 
-# ---------
 
-# tmux
+# TMUX
+#
 ## Create a new tmux session
 alias tn='tmux new-session -s'
 ## Start or attach to a tmux session
@@ -26,22 +25,24 @@ alias tk='tmux kill-session -t'
 # Attach to the last used session
 alias ta='tmux attach-session -d'
 
-# ---------
-
+# NERD
 alias lll='nnn -deH'
 alias ccc='cd "$(dirname "$(find . -type f | fzf)")"'
 alias vif='nvim $(fzf --hidden)'
 alias pif='kill $(ps -ef | fzf | awk '\''{print $2}'\'')'
 alias gbf='git checkout $(git branch | fzf)'
 
+# APPS
+alias nb='newsboat'
+
 # Define a function to open an editor with optional profile flag
 open_editor() {
     # Check if codium command exists
     if command -v codium &>/dev/null; then
-        codium "$@" --profile=tanaka
+        codium --profile=tanaka "$@"
     # Check if code command exists
     elif command -v code &>/dev/null; then
-        code "$@" --profile=tanaka
+        code --profile=tanaka "$@"
     # Check if nvim command exists
     elif command -v nvim &>/dev/null; then
         nvim "$@"
@@ -50,6 +51,7 @@ open_editor() {
         vim "$@"
     fi
 }
+
 # Create an alias for the function
 alias editor=open_editor
 
