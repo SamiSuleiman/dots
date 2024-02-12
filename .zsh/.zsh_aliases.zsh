@@ -24,6 +24,8 @@ alias tls='tmux ls'
 alias tk='tmux kill-session -t'
 # Attach to the last used session
 alias ta='tmux attach-session -d'
+# Rename a tmux session
+alias tr='function _tmux_rename_session() { tmux rename-session -t $1 $2 }; _tmux_rename_session'
 
 # NERD
 alias lll='nnn -deH'
