@@ -29,7 +29,6 @@ normal=$(tput sgr0)
 HISTFILE=~/.zsh/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
-setopt appendhistory
 
 # Basic auto/tab complete:
 autoload -U +X bashcompinit && bashcompinit
@@ -73,6 +72,22 @@ setopt AUTO_CD
 setopt AUTO_PUSHD
 setopt PUSHD_IGNORE_DUPS
 setopt PUSHD_SILENT
+
+unsetopt menu_complete
+unsetopt flowcontrol
+setopt prompt_subst
+setopt always_to_end
+setopt append_history
+setopt auto_menu
+setopt complete_in_word
+setopt extended_history
+setopt hist_expire_dups_first
+setopt hist_ignore_dups
+setopt hist_ignore_space
+setopt hist_verify
+setopt inc_append_history
+setopt share_history
+setopt no_list_ambiguous
 
 unsetopt LIST_BEEP
 unsetopt HIST_BEEP
