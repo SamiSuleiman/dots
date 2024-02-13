@@ -37,7 +37,9 @@ vim.keymap.set("v", "<leader>ml", "di[]()<esc>hhhpllli", { desc = "Auto link" })
 vim.keymap.set("v", "<leader>mc", "di``<esc>hp", { desc = "Auto backtick" })
 
 -- LazyGit
-vim.keymap.set('n', "<leader>gg", vim.cmd.LazyGit, { desc = 'Open LazyGit' })
+-- vim.keymap.set('n', "<leader>gg", vim.cmd.LazyGit, { desc = 'Open LazyGit' })
+vim.keymap.set('n', "<leader>gg", vim.cmd.Neogit, { desc = 'Open Neogit' })
+
 
 -- Diagnostics
 vim.keymap.set('n', '<space>ed', vim.diagnostic.open_float, { desc = "Show Floating Diagnostics Window" })
