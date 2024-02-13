@@ -40,6 +40,8 @@ vim.keymap.set("v", "<leader>mc", "di``<esc>hp", { desc = "Auto backtick" })
 -- vim.keymap.set('n', "<leader>gg", vim.cmd.LazyGit, { desc = 'Open LazyGit' })
 vim.keymap.set('n', "<leader>gg", vim.cmd.Neogit, { desc = 'Open Neogit' })
 
+vim.keymap.set('n', "<leader>ee", vim.cmd.Neotree, { desc = 'Open Neotree' })
+
 
 -- Diagnostics
 vim.keymap.set('n', '<space>ed', vim.diagnostic.open_float, { desc = "Show Floating Diagnostics Window" })

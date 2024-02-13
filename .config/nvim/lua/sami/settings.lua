@@ -31,6 +31,9 @@ vim.opt.showmatch = true
 vim.opt.synmaxcol = 300 -- stop syntax highlighting for performance
 vim.opt.laststatus = 2  -- always show statusline
 
+-- vim.opt.cursorline = true
+-- vim.cmd('highlight CursorLine ctermbg=darkblue guibg=darkblue')
+
 -- Sidebar
 vim.opt.numberwidth = 1
 vim.opt.showcmd = true
