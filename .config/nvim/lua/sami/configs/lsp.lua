@@ -153,3 +153,12 @@ vim.cmd([[
         autocmd BufWritePost * lua vim.cmd('Prettier')
     augroup END
 ]])
+
+local nvim_lsp = require('lspconfig')
+nvim_lsp.angularls.setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    cmd = { 'angularls', '--stdio' },
+    filetypes = { 'typescript', 'html', 'typescriptreact', 'typescript.tsx' },
+    root_dir = nvim_lsp.util.root_pattern('angular.json', 'nx.json', '.git'),
+}
