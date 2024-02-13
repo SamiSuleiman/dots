@@ -35,12 +35,29 @@ local themes = {
     solarized = {
         {
             "Tsuzat/NeoSolarized.nvim",
-            lazy = false, -- make sure we load this during startup if it is your main colorscheme
+            lazy = false,    -- make sure we load this during startup if it is your main colorscheme
             priority = 1000, -- make sure to load this before all the other start plugins
             config = function()
                 vim.cmd [[ colorscheme NeoSolarized ]]
             end
         }
+    },
+    rose = {
+        {
+            'rose-pine/neovim',
+            name = "rose-pine",
+            priority = 1000,
+            lazy = false,
+            config = function()
+                require('rose-pine').setup {
+                    styles = {
+                        italic = false
+                    }
+                }
+                vim.cmd("colorscheme rose-pine")
+            end
+        },
+
     }
 }
 
