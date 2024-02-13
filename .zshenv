@@ -3,6 +3,7 @@ export PATH=$PATH:$HOME/.dotnet:$HOME/.dotnet/tools:$HOME/.local/bin:/home/$(who
 export ZDOTDIR=$HOME/.zsh
 export NNN_PLUG='f:finder;o:fzopen;p:mocq;d:diffs;t:nmount;v:imgview'
 export PATH="$PATH:/opt/nvim/"
+export PATH=/opt/homebrew/bin:$PATH
 # export PATH=$PATH:/usr/local/lib/node_modules
 # export PATH=/usr/local/share/npm/bin:$PATH
 
