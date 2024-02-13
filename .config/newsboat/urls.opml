@@ -46,9 +46,19 @@
       <outline text="papa meat" title="papa meat" type="rss" 
             xmlUrl="https://nitter.no-logs.com/meatcanyon/rss" htmlUrl="http://nitter.no-logs.com/meatcanyon"/>
   </outline>
-  <outline title="dev blogs" text="dev blogs">
-      <outline text="open source musings" title="open source musings" type="rss" 
-            xmlUrl="https://opensourcemusings.com/feed.xml" htmlUrl="https://opensourcemusings.com/"/>
+  <outline title="blogs" text="blogs">
+      <outline text="drewdevault" title="drewdevault" type="rss" 
+            xmlUrl="https://drewdevault.com/blog/index.xml" htmlUrl="https://drewdevault.com"/>
+      <outline text="cozynet" title="cozynet" type="rss" 
+            xmlUrl="https://www.cozynet.org/feed/feed.xml" htmlUrl="https://www.cozynet.org/"/>
+      <outline text="bikobatanari" title="bikobatanari" type="rss" 
+            xmlUrl="https://bikobatanari.art/feed.xml" htmlUrl="https://bikobatanari.art/"/>
+      <outline text="cheapskates" title="cheapskates" type="rss" 
+            xmlUrl="https://cheapskatesguide.org/cheapskates-guide-rss-feed.xml" htmlUrl="https://cheapskatesguide.org"/>
+      <outline text="bt" title="bt" type="rss" 
+            xmlUrl="https://btxx.org/index.rss" htmlUrl="http://btxx.org//"/>
+      <outline text="eric murphy" title="eric murphy" type="rss" 
+            xmlUrl="https://ericmurphy.xyz/index.xml" htmlUrl="https://ericmurphy.xyz/"/>
       <outline text="angular" title="angular" type="rss" 
             xmlUrl="https://blog.angular.io/feed" htmlUrl="https://blog.angular.io?source=rss----447683c3d9a3---4"/>
   </outline>
@@ -132,9 +142,11 @@
       <outline text="code aesthetic" title="code aesthetic" type="rss" 
             xmlUrl="https://yewtu.be/feed/channel/UCaSCt8s_4nfkRglWCvNSDrg" htmlUrl="https://yewtu.be/channel/UCaSCt8s_4nfkRglWCvNSDrg"/>
   </outline>
-  <outline title=".p" text=".p">
-      <outline text="ph" title="ph" type="rss" 
-            xmlUrl="https://www.pornhub.com/rss" htmlUrl="https://www.pornhub.com"/>
+  <outline title="forums" text="forums">
+      <outline text="incels" title="incels" type="rss" 
+            xmlUrl="https://incels.is/forums/-/index.rss" htmlUrl="https://incels.is/"/>
+      <outline text="my survival" title="my survival" type="rss" 
+            xmlUrl="https://mysurvivalforum.com/forums/-/index.rss" htmlUrl="https://mysurvivalforum.com/"/>
   </outline>
 </body>
 </opml>
