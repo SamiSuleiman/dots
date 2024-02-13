@@ -4,6 +4,7 @@ return {
     require('sami.configs.lsp'),
     require('sami.configs.nvim-cmp'),
     require('sami.configs.mason'),
+    require('sami.configs.statusline'),
     -- require('sami.configs.noice'),
     require('sami.configs.oil'),
     -- require('sami.configs.nx')
