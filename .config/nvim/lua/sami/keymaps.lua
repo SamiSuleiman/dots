@@ -77,10 +77,8 @@ vim.keymap.set("n", "<leader>hj", function()
   ui.nav_prev()
 end, { desc = 'Prev Harpoon' })
 
--- Map <Leader>y to copy to system clipboard in visual mode
+-- copy to clipboard
 vim.api.nvim_set_keymap('v', '<Leader>y', '"+y', { noremap = true })
-
--- Map <Leader>y to copy current line to system clipboard in normal mode
 vim.api.nvim_set_keymap('n', '<Leader>y', '"+yy', { noremap = true })
 -- nx
 -- vim.keymap.set("n", "<leader>ng", require("nx.generators").generators, { desc = "[N]x [G]enerators" })
