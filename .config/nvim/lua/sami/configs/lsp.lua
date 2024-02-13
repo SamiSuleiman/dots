@@ -117,19 +117,6 @@ local function organize_imports()
     vim.lsp.buf.execute_command(params)
 end
 
-
-local project_library_path = "/path/to/project/lib"
-local cmd = { "ngserver", "--stdio", "--tsProbeLocations", project_library_path, "--ngProbeLocations",
-    project_library_path }
-
-require('lspconfig').angularls.setup {
-    root_dir = require('lspconfig/util').root_pattern("angular.json", "nx.json", "project.json", ".git"),
-    cmd = cmd,
-    on_new_config = function(new_config, new_root_dir)
-        new_config.cmd = cmd
-    end,
-}
-
 mason_lspconfig.setup_handlers {
     function(server_name)
         require('lspconfig')[server_name].setup {
