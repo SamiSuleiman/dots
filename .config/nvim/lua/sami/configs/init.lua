@@ -8,4 +8,5 @@ return {
     -- require('sami.configs.noice'),
     require('sami.configs.oil'),
     -- require('sami.configs.nx')
+    require('sami.configs.bufferline'),
 }
