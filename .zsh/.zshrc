@@ -144,7 +144,7 @@ typeset -g ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=4'
 
 
 # newsboat stuff
-newsboat -i ~/.config/newsboat/urls.opml
+# newsboat -i ~/.config/newsboat/urls.opml
 setup_cron_job() {
     local cron_cmd="0 * * * * $HOME/.config/newsboat/reload_feeds.sh> /dev/null 2>&1 < /dev/null &"
 
