@@ -10,5 +10,6 @@ return {
     -- require('sami.configs.nx')
     require('sami.configs.bufferline'),
     require('sami.configs.colorscheme'),
-    require('sami.configs.indent')
+    require('sami.configs.indent'),
+    require('sami.configs.spectre')
 }
