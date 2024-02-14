@@ -50,7 +50,7 @@ vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
 
 vim.opt.updatetime = 50
-vim.opt.colorcolumn = "120"
+-- vim.opt.colorcolumn = "120"
 
 local float = { focusable = true, style = "minimal", border = "rounded" }
 
