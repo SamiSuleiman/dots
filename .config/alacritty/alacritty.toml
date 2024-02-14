@@ -49,6 +49,30 @@ action = "SpawnNewInstance"
 key = "Return"
 mods = "Super|Shift"
 
+[schemes.Everforest.bright]
+black=   "#475258"
+red=     "#e67e80"
+green=   "#a7c080"
+yellow=  "#dbbc7f"
+blue=    "#7fbbb3"
+magenta= "#d699b6"
+cyan=    "#83c092"
+white=   "#d3c6aa"
+
+[schemes.Everforest.normal]
+black = "#414b50"
+red = "#e67e80"
+green = "#a7c080"
+yellow = "#dbbc7f"
+blue = "#7fbbb3"
+magenta = "#d699b6"
+cyan =  "#83c092"
+white = "#d3c6aa"
+
+[schemes.Everforest.primary]
+background = "#272e33"
+foreground = "#d3c6aa"
+
 [schemes.RosePine.bright]
 black = "#6e6a86"
 blue = "#9ccfd8"
