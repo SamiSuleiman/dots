@@ -82,4 +82,4 @@ local themes = {
     }
 }
 
-return themes.forest
+return themes.solarized
