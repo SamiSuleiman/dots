@@ -59,14 +59,27 @@ local themes = {
         },
 
     },
+    solarized2 = {
+        {
+            'maxmx03/solarized.nvim',
+            lazy = false,
+            priority = 1000,
+            config = function()
+                vim.o.background = 'dark' -- or 'light'
+                vim.cmd.colorscheme 'solarized'
+            end,
+        },
+    },
     forest = {
         'sainnhe/everforest',
         config = function()
-            vim.cmd [[ let g:everforest_background = 'hard' ]]
-            vim.cmd [[ let g:everforest_current_word = 'underline' ]]
+            vim.cmd "let g:everforest_background = 'hard'"
+            vim.cmd "let g:everforest_current_word = 'italic'"
+            vim.cmd "let g:everforest_enable_italic = 1"
+            vim.cmd "let g:everforest_disable_italic_comment = 0"
             vim.cmd [[ colorscheme everforest ]]
         end
     }
 }
 
-return themes.solarized
+return themes.forest
