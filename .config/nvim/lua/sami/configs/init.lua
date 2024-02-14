@@ -9,4 +9,6 @@ return {
     require('sami.configs.oil'),
     -- require('sami.configs.nx')
     require('sami.configs.bufferline'),
+    require('sami.configs.colorscheme'),
+    require('sami.configs.indent')
 }
