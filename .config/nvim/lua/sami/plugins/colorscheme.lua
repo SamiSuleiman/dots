@@ -58,6 +58,14 @@ local themes = {
             end
         },
 
+    },
+    forest = {
+        'sainnhe/everforest',
+        config = function()
+            vim.cmd [[ let g:everforest_background = 'hard' ]]
+            vim.cmd [[ let g:everforest_current_word = 'underline' ]]
+            vim.cmd [[ colorscheme everforest ]]
+        end
     }
 }
 
