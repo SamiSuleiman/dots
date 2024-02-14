@@ -1,4 +1,4 @@
-include ./solarized-dark
+include ./theme
 
 macro V set browser "firefox %u" ; open-in-browser
 

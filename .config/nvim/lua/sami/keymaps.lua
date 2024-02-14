@@ -79,6 +79,10 @@ vim.keymap.set("n", "<leader>hj", function()
   ui.nav_prev()
 end, { desc = 'Prev Harpoon' })
 
+-- Commentary
+vim.api.nvim_set_keymap('n', '<leader>cc', ':Commentary<CR>', { noremap = true })
+vim.api.nvim_set_keymap('v', '<leader>cc', ':Commentary<CR>', { noremap = true })
+
 -- copy to clipboard
 vim.api.nvim_set_keymap('v', '<Leader>y', '"+y', { noremap = true })
 vim.api.nvim_set_keymap('n', '<Leader>y', '"+yy', { noremap = true })
