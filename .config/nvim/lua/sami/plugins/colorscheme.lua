@@ -79,4 +79,4 @@ local themes = {
     }
 }
 
-return themes.solarized
+return themes.rose
