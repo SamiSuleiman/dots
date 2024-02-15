@@ -37,7 +37,7 @@ require('lazy').setup({
     require('sami.plugins.gitsigns'),
     require('sami.plugins.neotree'),
     require('sami.plugins.colorscheme'),
-    -- require('sami.plugins.noice'),
+    require('sami.plugins.noice'),
     require('sami.plugins.package-info'),
     -- require('sami.plugins.nx')
     require('sami.plugins.markdown_prev'),
