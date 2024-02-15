@@ -90,8 +90,8 @@ vim.api.nvim_set_keymap('n', '<Leader>y', '"+yy', { noremap = true })
 -- vim.keymap.set("n", "<leader>ng", require("nx.generators").generators, { desc = "[N]x [G]enerators" })
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 
-vim.api.nvim_set_var("user_emmet_mode", "n")
-vim.api.nvim_set_var("user_emmet_leader_key", ",")
+vim.g.user_emmet_mode = [[n]]
+vim.g.user_emmet_leader_key = [[,]]
 
 -- buffer stuff
 vim.api.nvim_set_keymap('n', '<C-b>h', ':bnext<CR>', { noremap = true })
