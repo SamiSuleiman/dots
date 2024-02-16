@@ -60,8 +60,6 @@ alias editor=open_editor
 alias vim='nvim'
 alias myip="curl http://ipecho.net/plain; echo"
 
-alias ytldbatch='ytldbatch_func'
-
 ytldbatch_func() {
     local audio_only=false
 
@@ -85,6 +83,8 @@ ytldbatch_func() {
         fi
     fi
 }
+
+alias ytldbatch='ytldbatch_func $@'
 
 # situational, should probably find a way to do this like a normal human aka not a fucking retard
 # alias nvim='nvim.appimage'
