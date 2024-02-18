@@ -51,6 +51,7 @@ tooltip {
   border-radius: 8px;
 }
 
+#language,
 #custom-power_profile,
 #window,
 #clock,
@@ -103,8 +104,7 @@ tooltip {
 
 #workspaces {
   background: @base;
-  border-radius: 8px;
-  margin-left: 10px;
+  border-radius: 8px; 
   padding-right: 0px;
   padding-left: 5px;
 }
@@ -136,7 +136,7 @@ window#waybar.empty #window {
 }
 
 #clock {
-  color: @love;
+  color: @iris;
   background-color: transparent;
   border-color: @pine;
   border-radius: 8px;
@@ -147,6 +147,13 @@ window#waybar.empty #window {
   color: @love;
   border-radius: 8px 0px 0px 8px;
   border-right: 0px;
+}
+
+#language {
+  color: @love;
+  border-radius: 8px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 #pulseaudio {
