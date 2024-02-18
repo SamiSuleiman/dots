@@ -28,7 +28,7 @@
 
   "hyprland/window": {
     "format": "{}",
-    "max-length": 40
+    "max-length": 60 
   },
 
   "hyprland/workspaces": {
@@ -56,7 +56,7 @@
   },
 
   "clock": {
-    "format": "{: %R  %d/%m}",
+    "format": "{:󰃰 %R  %d/%m}",
     "tooltip-format": "<small>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     // "format": "{: %I:%M %p   %a, %b %e}",
     // "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
@@ -135,7 +135,7 @@
 
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
-    "format-wifi": "  {essid}",
+    "format-wifi": "󰤨 {essid}",
     "format-ethernet": "{ipaddr}/{cidr} ",
     "tooltip-format": "{signalStrength}% - {ifname} via {gwaddr}",
     "format-linked": "{ifname} (No IP) ",
@@ -145,7 +145,7 @@
   },
 
   "bluetooth": {
-    "format": "{status}",
+    "format": " {status}",
     "format-disabled": "", // an empty format will hide the module
     "format-connected": " {num_connections}",
     "tooltip-format": "{device_alias}",

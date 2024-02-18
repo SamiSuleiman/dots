@@ -7,7 +7,6 @@
   font-weight: bold;
   font-size: 14px;
   min-height: 0;
-  opacity: 0.94
 }
 
 window#waybar {
@@ -68,8 +67,8 @@ tooltip {
   opacity: 0.9;
   padding: 0px 10px;
   margin: 3px 0px;
-  margin-top: 15px;
-  border: 2px solid @pine;
+  margin-top: 6px;
+  border: 2px solid @base;
 }
 
 #memory {
@@ -136,11 +135,13 @@ window#waybar.empty #window {
 }
 
 #clock {
-  color: @iris;
+  color: @text;
   background-color: transparent;
-  border-color: @pine;
+  border-color: @base;
   border-radius: 8px;
   margin-left: 20px;
+  background: @base;
+  border: 2px solid @base;
 }
 
 #network {
