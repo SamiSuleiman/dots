@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
 swaylock\
+  -F\
+  -e\
   --image ~/wallpapers/crumb/crumb-audiotree-farout-7.jpg\
   --show-keyboard-layout\
-  --indicator-caps-lock\
   --font "Hack Nerd Font"\
   --font-size 14\
   --indicator-thickness 6\
