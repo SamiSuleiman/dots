@@ -108,7 +108,7 @@ source  ${ZDOTDIR:-$HOME}/plugins/zsh-history-substring-search/zsh-history-subst
 if [[ $(uname) == "Darwin" ]]; then
     source ${ZDOTDIR:-$HOME}/os/.mac-binds.zsh
 
-elif command -v apt > /dev/null; then
+elif command -v pacman > /dev/null; then
     source ${ZDOTDIR:-$HOME}/os/.linux-binds.zsh
 
 else
@@ -157,4 +157,4 @@ setup_cron_job() {
         echo "Cron job already exists."
     fi
 }
-setup_cron_job
+# setup_cron_job
