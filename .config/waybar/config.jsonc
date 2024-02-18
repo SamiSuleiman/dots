@@ -132,7 +132,7 @@
     "format-linked": "{ifname} (No IP) ",
     "format-disconnected": "NONE ⚠",
     "format-alt": "{ifname}:{essid} {ipaddr}/{cidr}",
-    "on-click-right": "~/.config/rofi/bin/network"
+    "on-click-right": "networkmanager_dmenu"
   },
 
   "bluetooth": {
