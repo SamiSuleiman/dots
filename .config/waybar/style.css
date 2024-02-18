@@ -7,6 +7,7 @@
   font-weight: bold;
   font-size: 14px;
   min-height: 0;
+  opacity: 0.94
 }
 
 window#waybar {
