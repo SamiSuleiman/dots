@@ -158,6 +158,10 @@ window#waybar.empty #window {
   margin-left: 10px;
 }
 
+#custom-pacman {
+  margin-left: 0;
+}
+
 #pulseaudio {
   color: @iris;
   border-radius: 8px 0px 0px 8px;
