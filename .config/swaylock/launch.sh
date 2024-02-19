@@ -5,7 +5,7 @@ swaylock\
   -e\
   --image ~/wallpapers/crumb/crumb-audiotree-farout-7.jpg\
   --show-keyboard-layout\
-  --font "Hack Nerd Font"\
+  --font "JetBrains Mono Nerd Font"\
   --font-size 14\
   --indicator-thickness 6\
   --inside-color 19172499\
