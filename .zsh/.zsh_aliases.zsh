@@ -37,6 +37,9 @@ alias gbf='git checkout $(git branch | fzf)'
 # APPS
 alias nb='newsboat'
 
+# ytdl
+alias ytdl='yt-dlp'
+
 # Define a function to open an editor with optional profile flag
 open_editor() {
     # Check if codium command exists
@@ -59,32 +62,6 @@ alias editor=open_editor
 
 alias vim='nvim'
 alias myip="curl http://ipecho.net/plain; echo"
-
-ytldbatch_func() {
-    local audio_only=false
-
-    # Check if the first argument is --audio-only
-    if [ "$1" = "--audio-only" ]; then
-        audio_only=true
-        shift
-    fi
-
-    if [ -f "$1" ]; then
-        if [ "$audio_only" = true ]; then
-            youtube-dl --batch-file "$1" --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" --extractor 'generic' -f 'bestaudio/best' --output "~/Downloads/%(playlist_title)s/%(title)s.%(ext)s" -i --ignore-errors
-        else
-            youtube-dl --batch-file "$1" --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" --extractor 'generic' -f 'bestvideo[height<=1080]+bestaudio/best[height<=1080]' --output "~/Downloads/%(playlist_title)s/%(title)s.%(ext)s" -i --ignore-errors
-        fi
-    else
-        if [ "$audio_only" = true ]; then
-            youtube-dl "$@" --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" --extractor 'generic' -f 'bestaudio/best' --output "~/Downloads/%(playlist_title)s/%(title)s.%(ext)s" -i --ignore-errors
-        else
-            youtube-dl "$@" --user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36" --extractor 'generic' -f 'bestvideo[height<=1080]+bestaudio/best[height<=1080]' --output "~/Downloads/%(playlist_title)s/%(title)s.%(ext)s" -i --ignore-errors
-        fi
-    fi
-}
-
-alias ytldbatch='ytldbatch_func $@'
 
 # situational, should probably find a way to do this like a normal human aka not a fucking retard
 # alias nvim='nvim.appimage'

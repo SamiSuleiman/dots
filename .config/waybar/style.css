@@ -62,6 +62,7 @@ tooltip {
 #workspaces,
 #tray,
 #memory,
+#custom-pacman,
 #backlight {
   background: @base;
   opacity: 0.9;
@@ -150,7 +151,7 @@ window#waybar.empty #window {
   border-right: 0px;
 }
 
-#language {
+#language, #custom-pacman {
   color: @love;
   border-radius: 8px;
   margin-right: 10px;

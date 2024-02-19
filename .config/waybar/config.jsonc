@@ -14,9 +14,19 @@
     "bluetooth",
     "memory",
     "battery",
+    "custom/pacman",
     "pulseaudio",
     "backlight",
   ],
+
+  "custom/pacman": {
+  "interval": 3600,
+  "return-type": "json",
+  "exec": "pacman-updates",
+  "exec-if": "exit 0",
+  "on-click": "kitty -e 'yay'; pkill -SIGRTMIN+8 waybar",
+  "signal": 8
+},
 
   "hyprland/language": {
     "format": "{}",
