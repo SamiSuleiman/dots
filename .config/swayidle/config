@@ -1,3 +1,4 @@
-timeout 1800 '~/.config/swaylock/launch.sh'
-timeout 1805 'hyprctl dispatch dpms off' resume 'hyprctl dispatch dpms on'
-before-sleep '~/.config/swaylock/launch.sh'
+swayidle -w \
+	timeout 300 'lockscreen' \
+	timeout 600 'systemctl suspend' \
+	before-sleep 'lockscreen'
