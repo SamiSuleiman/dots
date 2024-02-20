@@ -36,14 +36,14 @@ rlc = "!f() { \
 	prune = true
 
 [core]
-	editor = codium --wait
+	editor = nvim
 	excludesFile = ~/.gitignore_global
 
 [diff]
-    tool = codium
+    tool = nvim
 	
-[difftool "codium"]
-    cmd = codium --wait --diff $LOCAL $REMOTE
+[difftool "nvim"]
+    cmd = nvim $LOCAL $REMOTE
 
 [help]
     autoCorrect = immediate # If a command is mistyped, make Git automatically run the command it thinks the user wanted to type.
