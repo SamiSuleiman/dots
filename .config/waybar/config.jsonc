@@ -3,7 +3,7 @@
   "height": 30,
   "spacing": 5,
   // Choose the order of the modules
-  "modules-left": ["hyprland/workspaces","hyprland/language"],
+  "modules-left": ["hyprland/workspaces", "hyprland/language"],
   "modules-center": ["hyprland/window"],
   "modules-right": [
     "custom/pacman",
@@ -79,6 +79,7 @@
     "format-muted": "󰖁",
     "format-icons": {
       "default": ["", "", "󰕾"],
+      "headphone": [""],
     },
     "tooltip-format": "{volume}% volume",
     "on-click": "pamixer -t",
