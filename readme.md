@@ -1,13 +1,18 @@
 # dots :3
+
 my hyprland dotfiles on arch linux ^^
+
 > still needs a lot of work but still a good start.
 
 ## Screenshots
+
 ![1](./.github/1.png)
 ![2](./.github/2.png)
 ![3](./.github/3.png)
+![4](./.github/4.png)
 
 ## info
+
 - **os**: arch linux
 - **compositor**: hyprland
 - **terminal**: kitty
