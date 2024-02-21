@@ -30,7 +30,7 @@
 # ReleaseDate --> Song Release date
 #
 # Following is an example of the format
-SONG_DIR = "/home/user/Music$Artist->Album->Title"
+SONG_DIR = "/home/sami/Music$Artist->Album"
 #
 #*****************************************#
 # The QUALITY is the quality of the song in kbps
@@ -53,7 +53,7 @@ SONG_DIR = "/home/user/Music$Artist->Album->Title"
 #
 # Please check the github page of ytmdl for more information.
 #
-METADATA_PROVIDERS = "spotify"
+#METADATA_PROVIDERS = "spotify"
 #
 #*****************************************#
 # The DEFAULT_FORMAT denotes what to use as default for downloading.
