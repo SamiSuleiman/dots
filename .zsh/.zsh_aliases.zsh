@@ -9,7 +9,7 @@ alias bc="bc -ql"
 alias mkd="mkdir -pv"
 alias tp="trash-put"
 alias tpr="trash-restore"
-alias lf="lfcd"
+# alias lf="lfcd"
 alias ls="eza --icons --group-directories-first"
 alias cat='bat'
 alias grep='grep --color=always'
