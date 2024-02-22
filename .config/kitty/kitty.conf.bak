@@ -1,7 +1,0 @@
-include rose-pine.conf
-
-# Font
-font_family Hack Nerd Font
-italic_font auto
-bold_italic_font auto
-font_size 10 
