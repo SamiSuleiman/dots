@@ -8,13 +8,13 @@ set icons true
 
 # Custom Functions
 cmd mkdir ${{
-  printf "Directory Name: "
+  printf "directory name: "
   read ans
   mkdir $ans
 }}
 
 cmd mkfile ${{
-  printf "File Name: "
+  printf "file name: "
   read ans
   $EDITOR $ans
 }}
@@ -76,6 +76,11 @@ map md mkdir
 map bg setwallpaper
 map C clear
 
+map n $nvim "$f"
+
 # Movement
 map gd cd ~/downloads
+map gd cd ~/dotfiles
+#fully disable ipc
+# ipc = off
 

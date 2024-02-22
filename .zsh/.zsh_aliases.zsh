@@ -7,6 +7,9 @@ alias mv="mv -iv"
 alias rm="rm -vI"
 alias bc="bc -ql"
 alias mkd="mkdir -pv"
+alias tp="trash-put"
+alias tpr="trash-restore"
+alias lf="lfcd"
 alias ls="eza --icons --group-directories-first"
 alias cat='bat'
 alias grep='grep --color=always'
@@ -61,6 +64,7 @@ open_editor() {
 alias editor=open_editor
 
 alias vim='nvim'
+alias v='nvim'
 alias myip="curl http://ipecho.net/plain; echo"
 
 # situational, should probably find a way to do this like a normal human aka not a fucking retard
