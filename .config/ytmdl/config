@@ -30,7 +30,7 @@
 # ReleaseDate --> Song Release date
 #
 # Following is an example of the format
-SONG_DIR = "/home/sami/Music$Artist->Album"
+SONG_DIR = "/home/sami/music$Artist->Album"
 #
 #*****************************************#
 # The QUALITY is the quality of the song in kbps

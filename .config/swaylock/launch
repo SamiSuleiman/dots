@@ -3,7 +3,7 @@
 swaylock\
   -F\
   -e\
-  --image ~/wallpapers/rosepine/1142005.png\
+  --image ~/wallpapers/rosepine/kanistra-studio-20-workplace1.png\
   --show-keyboard-layout\
   --font "JetBrains Mono Nerd Font"\
   --font-size 14\
