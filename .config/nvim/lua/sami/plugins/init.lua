@@ -41,7 +41,6 @@ require('lazy').setup({
     require('sami.plugins.package-info'),
     -- require('sami.plugins.nx')
     require('sami.plugins.markdown_prev'),
-    require('sami.plugins.mkdnflow'),
     require('sami.plugins.prettier')
   },
   -- {
