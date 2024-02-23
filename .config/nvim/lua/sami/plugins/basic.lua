@@ -187,4 +187,5 @@ return {
 
     'nvim-pack/nvim-spectre',
     -- { 'akinsho/toggleterm.nvim', version = "*", config = true }
+    'chrisbra/colorizer'
 }
