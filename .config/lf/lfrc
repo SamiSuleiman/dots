@@ -79,8 +79,11 @@ map C clear
 map n $nvim "$f"
 
 # Movement
+map gh cd ~/
 map gd cd ~/downloads
-map gd cd ~/dotfiles
+map g. cd ~/dotfiles
+map gm cd ~/music
+map gv cd ~/videos
 #fully disable ipc
 # ipc = off
 
