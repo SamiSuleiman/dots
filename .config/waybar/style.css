@@ -87,6 +87,18 @@ button {
   margin: 5px 0;
 }
 
+#custom-music,
+#custom-firefox,
+#custom-signal,
+#custom-kitty {
+  color: @iris;
+  padding: 0 3px;
+}
+
+#custom-kitty {
+  margin-left: 10px;
+}
+
 #window,
 #workspaces {
   margin: 0 4px;
@@ -98,11 +110,11 @@ button {
 }
 
 #clock {
-  color: @rose;
+  color: @text;
 }
 
 #language {
-  color: @iris;
+  color: @text;
 }
 
 #custom-pacman {

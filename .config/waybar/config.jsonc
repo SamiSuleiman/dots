@@ -3,7 +3,14 @@
   "height": 30,
   "spacing": 5,
   // Choose the order of the modules
-  "modules-left": ["hyprland/workspaces", "hyprland/language"],
+  "modules-left": [
+    "hyprland/workspaces",
+    "hyprland/language"
+    // "custom/kitty",
+    // "custom/firefox",
+    // "custom/signal",
+    // "custom/music",
+  ],
   "modules-center": ["hyprland/window"],
   "modules-right": [
     "custom/pacman",
@@ -90,6 +97,22 @@
   "custom/power": {
     "format": "󰐥",
     "on-click": "wlogout",
+  },
+  "custom/firefox": {
+    "format": " ",
+    "on-click": "firefox",
+  },
+  "custom/kitty": {
+    "format": " ",
+    "on-click": "kitty",
+  },
+  "custom/signal": {
+    "format": " ",
+    "on-click": "signal-desktop",
+  },
+  "custom/music": {
+    "format": " ",
+    "on-click": "tauon",
   },
 }
 
