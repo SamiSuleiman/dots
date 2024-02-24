@@ -185,7 +185,7 @@ return {
     'mattn/emmet-vim',
     -- { 'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons' },
 
-    'nvim-pack/nvim-spectre',
+    -- 'nvim-pack/nvim-spectre',
     -- { 'akinsho/toggleterm.nvim', version = "*", config = true }
     'chrisbra/colorizer',
     -- add this to your lua/plugins.lua, lua/plugins/init.lua,  or the file you keep your other plugins:

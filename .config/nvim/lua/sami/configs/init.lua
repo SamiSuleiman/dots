@@ -11,7 +11,7 @@ return {
     -- require('sami.configs.bufferline'),
     require('sami.configs.colorscheme'),
     require('sami.configs.indent'),
-    require('sami.configs.spectre'),
+    -- require('sami.configs.spectre'),
     -- require('sami.configs.toggleterm'),
     require('sami.configs.comment')
 }

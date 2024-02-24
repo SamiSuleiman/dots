@@ -12,6 +12,7 @@ window#waybar {
   color: @text;
   transition-property: background-color;
   transition-duration: 0.5s;
+  border-radius: 0px 0px 20px 20px;
 }
 
 window#waybar.hidden {
@@ -34,8 +35,6 @@ button {
   border: none;
   border-radius: 0;
 }
-
-/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 
 #workspaces button:hover {
   color: @pine;
@@ -167,6 +166,3 @@ button {
 #scratchpad.empty {
   background-color: transparent;
 }
-
-/* vim: ft=sass
-*/
