@@ -79,6 +79,8 @@ vim.filetype.add({
   },
 })
 
+vim.opt.spelllang = 'en_us'
+vim.opt.spell = true
 vim.treesitter.language.register("markdown", "mdx")
 vim.treesitter.language.register("vue", "analog")
 vim.treesitter.language.register("json", ".all-contributorsrc")
