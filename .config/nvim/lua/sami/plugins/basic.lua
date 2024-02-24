@@ -166,7 +166,7 @@ return {
     },
     -- { "elgiano/nvim-treesitter-angular", branch = "topic/jsx-fix" },
     'github/copilot.vim',
-    'tpope/vim-commentary',
+    -- 'tpope/vim-commentary',
     'windwp/nvim-ts-autotag',
     'stevearc/oil.nvim',
 
@@ -187,5 +187,13 @@ return {
 
     'nvim-pack/nvim-spectre',
     -- { 'akinsho/toggleterm.nvim', version = "*", config = true }
-    'chrisbra/colorizer'
+    'chrisbra/colorizer',
+    -- add this to your lua/plugins.lua, lua/plugins/init.lua,  or the file you keep your other plugins:
+    {
+        'numToStr/Comment.nvim',
+        opts = {
+            -- add any options here
+        },
+        lazy = false,
+    }
 }
