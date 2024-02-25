@@ -1,30 +1,22 @@
 -- [[ Configure Telescope ]]
 -- See `:help telescope` and `:help telescope.setup()`
 require('telescope').setup {
-    defaults = {
+      defaults = {
+        layout_strategy = "vertical",
+        layout_config = {
+          height = vim.o.lines, -- maximally available lines
+          width = vim.o.columns, -- maximally available columns
+          prompt_position = "bottom",
+          preview_height = 0.6, -- 60% of available lines
+        },
         mappings = {
             i = {
                 ['<C-u>'] = false,
                 ['<C-d>'] = false,
             },
         },
-    },
-    pickers = {
-        find_files = {
-            theme = "ivy",
-        },
-        live_grep = {
-            theme = "ivy",
-        },
-        buffers = {
-            theme = "ivy",
-        },
-        help_tags = {
-            theme = "ivy",
-        }
-    },
+  },
 }
-
 
 -- Enable telescope fzf native, if installed
 pcall(require('telescope').load_extension, 'fzf')
@@ -64,3 +56,4 @@ local function live_grep_git_root()
 end
 
 vim.api.nvim_create_user_command('LiveGrepGitRoot', live_grep_git_root, {})
+require("telescope").load_extension('harpoon')
