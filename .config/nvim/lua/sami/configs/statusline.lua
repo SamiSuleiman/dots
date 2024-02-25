@@ -1,5 +1,5 @@
 local function lsp_comp()
-    local msg = 'No Active Lsp'
+    local msg = '-'
     local buf_ft = vim.api.nvim_buf_get_option(0, 'filetype')
     local clients = vim.lsp.get_active_clients()
     if next(clients) == nil then
@@ -47,7 +47,7 @@ require('lualine').setup {
         },
         lualine_b = { 'branch', 'diff', 'diagnostics' },
         lualine_c = { 'filename' },
-        lualine_x = { { 'lsp', fmt = lsp_comp, icon = ' lsp:' --[[ , color = { fg = '#E6B8B7', bg = '#191724' } ]] }, 'encoding', 'fileformat', 'filetype' },
+        lualine_x = { 'encoding', 'fileformat', 'filetype' },
         lualine_y = { 'progress' },
         lualine_z = { 'location', 'searchcount' }
     },
@@ -62,13 +62,14 @@ require('lualine').setup {
     tabline = {},
     winbar = {
         lualine_a = {
-            { 'recording', fmt = is_recording, icon = ' recording:', color = { fg = '#E06A8C', bg = '#191724' }, padding = { left = 1, right = 1 } }
+            { 'lsp', fmt = lsp_comp, icon = '', color = { fg = '#E6B8B7', bg = '#191724' } },
         },
         lualine_b = {},
         lualine_c = {},
         lualine_x = {},
         lualine_y = {},
         lualine_z = {
+            { 'recording', fmt = is_recording, icon = '', color = { fg = '#E06A8C', bg = '#191724' }, padding = { left = 1, right = 1 } }
         }
     },
     inactive_winbar = {},
