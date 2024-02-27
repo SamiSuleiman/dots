@@ -16,7 +16,6 @@ return {
         'tpope/vim-sleuth',
         'mattn/emmet-vim',
         'chrisbra/colorizer',
-        'VonHeikemen/lsp-zero.nvim',
         requires = {
             { "neovim/nvim-lspconfig" },
             { "williamboman/mason-lspconfig.nvim" },

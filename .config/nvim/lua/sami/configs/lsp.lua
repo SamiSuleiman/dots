@@ -169,7 +169,6 @@ vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(
     }
 )
 
--- Define an autocmd to call 'Prettier' command on save
 vim.cmd([[
     augroup prettier
         autocmd!
