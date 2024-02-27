@@ -97,6 +97,8 @@ vim.g.user_emmet_leader_key = [[,]]
 vim.api.nvim_set_keymap('n', '<C-b>h', ':bnext<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-b>l', ':bprev<CR>', { noremap = true })
 
+vim.api.nvim_set_keymap('n', '<C-s>', ':Neoformat<CR> :w<CR>', { noremap = true })
+
 -- Spectre (search and replace)
 -- vim.keymap.set('n', '<leader>S', '<cmd>lua require("spectre").toggle()<CR>', {
 --   desc = "Toggle Spectre"

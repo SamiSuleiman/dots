@@ -164,14 +164,6 @@ vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(
     }
 )
 
--- todo: replace this with the vim.api one
-vim.cmd([[
-    augroup prettier
-        autocmd!
-        autocmd BufWritePost * lua vim.cmd('Prettier')
-    augroup END
-]])
-
 -- todo: add this to the `setup_handlers` function as an override
 local nvim_lsp = require('lspconfig')
 nvim_lsp.angularls.setup {

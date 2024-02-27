@@ -1,5 +1,6 @@
 return {
     {
+        'sbdchd/neoformat',
         'mfussenegger/nvim-lint',
         'github/copilot.vim',
         'windwp/nvim-ts-autotag',
