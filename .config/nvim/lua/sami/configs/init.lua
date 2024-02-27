@@ -13,6 +13,6 @@ return {
     require('sami.configs.indent'),
     -- require('sami.configs.spectre'),
     -- require('sami.configs.toggleterm'),
-    require('sami.configs.null-ls'),
-    require('sami.configs.comment')
+    require('sami.configs.comment'),
+    require('sami.configs.nvim-lint')
 }

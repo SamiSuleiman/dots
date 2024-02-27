@@ -1,5 +1,6 @@
 return {
     {
+        'mfussenegger/nvim-lint',
         'github/copilot.vim',
         'windwp/nvim-ts-autotag',
         'stevearc/oil.nvim',
@@ -72,13 +73,6 @@ return {
         opts = {} -- this is equalent to setup({}) function
     },
     { 'folke/which-key.nvim', opts = {} },
-    {
-        "jose-elias-alvarez/null-ls.nvim",
-        requires = {
-            "MunifTanjim/eslint.nvim",
-            "MunifTanjim/prettier.nvim",
-        },
-    },
     {
         'nvim-telescope/telescope.nvim',
         branch = '0.1.x',
