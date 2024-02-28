@@ -55,32 +55,63 @@
 [experimental]
     per_monitor_dpi = false
 
+
+# solarized
 [urgency_low]
-    background = "#181825"
-    foreground = "#CDD6F4"
-    highlight = "#CDD6F4"
-    frame_color = "#181825"
+    background = "#002B36"
+    foreground = "#829395"
+    highlight = "#829395"
+    frame_color = "#002B36"
     timeout = 5
 
 [urgency_normal]
-    background = "#181825"
-    foreground = "#CDD6F4"
-    highlight = "#CDD6F4"
-    frame_color = "#181825"
+    background = "#002B36"
+    foreground = "#829395"
+    highlight = "#829395"
+    frame_color = "#002B36"
     timeout = 5
 
 [urgency_critical]
-    background = "#181825"
-    foreground = "#CDD6F4"
-    frame_color = "#f38ba8"
+    background = "#002B36"
+    foreground = "#829395"
+    frame_color = "#DA0000"
     timeout = 1000
 
 [volume]
     appname = "Volume"
-    highlight = "#cba6f7"
+    highlight = "#859900"
 
 [backlight]
     appname = "Backlight"
-    highlight = "#eba0ac"
+    highlight = "#CB4B16"
+
+# rose pine
+# [urgency_low]
+#     background = "#181825"
+#     foreground = "#CDD6F4"
+#     highlight = "#CDD6F4"
+#     frame_color = "#181825"
+#     timeout = 5
+#
+# [urgency_normal]
+#     background = "#181825"
+#     foreground = "#CDD6F4"
+#     highlight = "#CDD6F4"
+#     frame_color = "#181825"
+#     timeout = 5
+#
+# [urgency_critical]
+#     background = "#181825"
+#     foreground = "#CDD6F4"
+#     frame_color = "#f38ba8"
+#     timeout = 1000
+#
+# [volume]
+#     appname = "Volume"
+#     highlight = "#cba6f7"
+#
+# [backlight]
+#     appname = "Backlight"
+#     highlight = "#eba0ac"
 
 # vim: ft=cfg
