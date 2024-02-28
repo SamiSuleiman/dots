@@ -1,0 +1,118 @@
+light-mode
+
+# Backgrounds
+
+230,230,230 player background (top panel)
+242,242,242 playlist panel
+230,230,230 side panel
+242,242,242 bottom panel
+230,230,230 gallery background
+
+# Playlist
+
+31,31,31 track line
+31,31,31 track time
+51,51,51 track index
+25,25,25 track artist
+106,106,106 album line
+
+29,29,29 track playing
+29,29,29 time playing
+29,29,29 index playing
+29,29,29 artist playing
+29,29,29 album playing
+
+60,60,60 track missing
+
+70,70,70 fav line
+31,31,31 folder line
+23,23,23 folder title
+
+77,77,77,40 playing highlight
+31,31,31,15 select highlight
+23,23,23 gallery highlight
+
+255,255,255 column bar background
+
+# Bottom Panel
+
+101,101,101 bottom title
+
+49,49,49,50 buttons off
+81,81,81 buttons over
+101,101,101 buttons active
+
+101,101,101 playing time
+
+101,101,101 seek bar
+101,101,101 volume bar
+25,25,25,40 seek bg
+25,25,25,40 volume bg
+49,49,49 scroll bar
+
+31,31,31,60 mode off
+51,51,51 mode over
+25,25,25 mode on
+
+# Top Panel
+
+239,239,239 tab active text
+23,23,23 tab text
+239,239,239 tab background
+222,222,222 tab over
+31,31,31 tab active background
+31,31,31 music vis
+
+# Side Panel
+
+31,31,31 title info
+31,31,31 extra info
+31,31,31 art border
+
+# Mini Mode
+
+239,239,239 mini bg
+23,23,23 mini border
+23,23,23 mini text 1
+23,23,23 mini text 2
+
+# Menu
+
+230,230,230 menu background
+242,242,242 menu highlight
+31,31,31 menu text
+31,31,31,50 menu disable text
+242,242,242 menu border
+23,23,23,60 menu icons
+
+# Miscellaneous
+
+222,222,222 playlist box background
+222,222,222 artist bio background
+31,31,31 artist bio text
+
+# Dialog Box
+
+222,222,222 box background
+31,31,31 box border
+31,31,31 box title text
+31,31,31 box text label
+31,31,31 box text normal
+31,31,31 box sub text
+31,31,31 box input text
+31,31,31 box text border
+31,31,31 box button text normal
+242,242,242 box button text highlight
+242,242,242 box button background normal
+25,25,25 box button background highlight
+49,49,49 box button border
+
+# Window
+
+242,242,242 window frame
+242,242,242 window buttons background
+31,23,23 window buttons on
+31,31,31 window buttons icon off
+239,239,239 window buttons icon over
+242,242,242 window button x on
+25,25,25 window button x off

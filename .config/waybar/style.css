@@ -4,7 +4,7 @@
   font-family: JetBrains Mono Nerd Font;
 
   font-weight: bolder;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 window#waybar {
@@ -79,7 +79,7 @@ button {
 #mode,
 #idle_inhibitor,
 #scratchpad,
-#mpd {
+#mpd, #backlight {
   padding: 0 9px;
   color: @text;
   border-radius: 15px;
@@ -120,7 +120,7 @@ button {
   color: @gold;
 }
 
-#pulseaudio {
+#pulseaudio, #backlight {
   color: @iris;
 }
 
@@ -149,6 +149,7 @@ button {
 #custom-power {
   color: @love;
   margin-right: 5px;
+  font-size: 18px;
 }
 
 #keyboard-state>label {

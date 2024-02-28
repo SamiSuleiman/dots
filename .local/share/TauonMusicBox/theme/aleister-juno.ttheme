@@ -1,0 +1,100 @@
+#-Backgrounds----
+
+30,40,44		player background (top panel)
+30,40,44	        playlist panel
+30,40,44		side panel
+34,46,50         gallery background
+34,46,50		bottom panel
+30,40,44         queue panel
+
+#-Frame----------
+
+30,40,44         sep line
+30,40,44         bb line
+34,46,50         tb line
+
+#-Playlist-------
+
+131,148,150		track line
+131,148,150		track time
+88,110,117 		track index
+147,161,161		track artist
+131,148,150		album line
+
+88,110,117		track playing
+88,110,117		index playing
+88,110,117		artist playing
+88,110,117		album playing
+88,110,117		time playing
+
+90,90,90		track missing
+
+34,46,50 		fav line
+34,46,50	        folder line
+101,123,131		folder title
+
+65,78,83,50		playing highlight
+65,78,83,100		select highlight
+65,78,83		gallery highlight
+
+34,46,50                 column bar background
+
+#-Menu-------------
+30,40,44         menu background
+34,46,50         menu highlight
+101,123,131     menu text
+135,170,182     menu disable text
+101,123,131     menu icons
+34,46,50         menu border
+
+#-Bottom panel------
+
+52,63,66                buttons off
+50,97,109		buttons over
+101,123,131             buttons active
+
+88,110,117		playing time
+
+101,123,131             seek bar 
+101,123,131             volume bar
+52,63,66                seek bg
+30,40,44                 volume bg
+101,123,117             scroll bar
+
+52,63,66                mode off
+50,97,109		mode over
+101,123,131             mode on
+
+101,123,131             bottom title
+
+#-Top panel---------
+
+131,148,150		tab active line
+101,123,131		tab line
+42,57,62		tab background
+50,97,109               tab over
+34,46,50 		tab active background
+
+238,232,213,1600		music vis
+
+#-Side panel--------
+
+101,123,132		title info
+131,148,150		extra info
+34,46,50	        	art border
+
+#-Mini Mode---------
+
+30,40,44        mini bg
+34,46,50        mini border
+
+#-Dialog box--------
+
+30,40,44         box background
+30,40,44         box button background normal
+34,46,50         box button background highlight
+34,46,50         box text border
+34,46,50         box border
+
+#-Artist-Info-------
+30,40,44         artist bio background
