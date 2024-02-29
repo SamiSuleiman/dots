@@ -1,10 +1,5 @@
 return {
     {
-        'sbdchd/neoformat',
-        'mfussenegger/nvim-lint',
-        'github/copilot.vim',
-        'windwp/nvim-ts-autotag',
-        'stevearc/oil.nvim',
         'onsails/lspkind.nvim',
         'windwp/nvim-ts-autotag',
         'nvim-lua/plenary.nvim',
@@ -18,10 +13,60 @@ return {
         'tpope/vim-sleuth',
         'mattn/emmet-vim',
         'chrisbra/colorizer',
+        'sbdchd/neoformat',
+        'mfussenegger/nvim-lint',
+        'github/copilot.vim',
+        'windwp/nvim-ts-autotag',
+        {
+            "Tsuzat/NeoSolarized.nvim",
+            lazy = false,
+            priority = 1000,
+
+        },
+        {
+            'stevearc/oil.nvim',
+            opts = {
+                default_file_explorer = true,
+                columns = { "icon" },
+                experimental_watch_for_changes = true,
+                delete_to_trash = true,
+                keymaps_help = {
+                    border = "rounded",
+                },
+                use_default_keymaps = true,
+                view_options = {
+                    show_hidden = true,
+                    is_hidden_file = function(name, bufnr)
+                        return vim.startswith(name, ".")
+                    end,
+                    is_always_hidden = function(name, bufnr)
+                        return false
+                    end,
+                },
+                keymaps = {
+                    ["g?"] = "actions.show_help",
+                    ["<CR>"] = "actions.select",
+                    ["<C-s>"] = "actions.select_vsplit",
+                    ["<C-h>"] = "actions.select_split",
+                    ["<C-t>"] = "actions.select_tab",
+                    ["<C-p>"] = "actions.preview",
+                    ["<C-c>"] = "actions.close",
+                    ["<C-l>"] = "actions.refresh",
+                    ["-"] = "actions.parent",
+                    ["_"] = "actions.open_cwd",
+                    ["`"] = "actions.cd",
+                    ["~"] = "actions.tcd",
+                    ["gs"] = "actions.change_sort",
+                    ["gx"] = "actions.open_external",
+                    ["g."] = "actions.toggle_hidden",
+                    ["g\\"] = "actions.toggle_trash",
+                },
+            }
+        },
         requires = {
             { "neovim/nvim-lspconfig" },
-            { "williamboman/mason-lspconfig.nvim" },
-            { "j-hui/fidget.nvim",                tag = "legacy" },
+            { "williamboman/mason-lspconfig.nvim", opts = {} },
+            { "j-hui/fidget.nvim",                 tag = "legacy" },
             { "folke/neodev.nvim" },
             { "hrsh7th/nvim-cmp" },
             { "hrsh7th/cmp-buffer" },

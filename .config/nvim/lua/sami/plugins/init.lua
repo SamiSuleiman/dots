@@ -35,28 +35,19 @@ require('lazy').setup({
     require('sami.plugins.autoformat'),
     require('sami.plugins.debug'),
     require('sami.plugins.gitsigns'),
-    -- require('sami.plugins.neotree'),
-    require('sami.plugins.colorscheme'),
     require('sami.plugins.noice'),
     require('sami.plugins.package-info'),
-    -- require('sami.plugins.nx')
     require('sami.plugins.markdown_prev'),
+    -- require('sami.plugins.neotree'),
   },
-  -- {
-  --   "Equilibris/nx.nvim",
-
-  --   dependencies = {
-  --     "nvim-telescope/telescope.nvim",
-  --   },
-
-  --   opts         = {
-  --     -- See below for config options
-  --     nx_cmd_root = "npx nx",
-  --   },
-
-  --   -- Plugin will load when you use these keys
-  --   keys         = {
-  --     { "<leader>nx", "<cmd>Telescope nx actions<CR>", desc = "nx actions" }
-  --   },
-  -- },
 }, {})
+
+require('sami.plugins.telescope')
+require('sami.plugins.indent')
+require('sami.plugins.lsp')
+require('sami.plugins.nvim-cmp')
+require('sami.plugins.treesitter')
+require('sami.plugins.nvim-lint')
+require('sami.plugins.statusline')
+
+vim.cmd [[ colorscheme NeoSolarized ]]
