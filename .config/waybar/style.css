@@ -2,9 +2,9 @@
 
 * {
   font-family: CaskaydiaCove Nerd Font;
-
   font-weight: bolder;
   font-size: 15px;
+  border-radius: 10px;
 }
 
 window#waybar {
@@ -12,7 +12,7 @@ window#waybar {
   color: @text;
   transition-property: background-color;
   transition-duration: 0.5s;
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 0px 0px 10px 10px;
 }
 
 window#waybar.hidden {
@@ -46,6 +46,7 @@ button {
   padding: 0 5px;
   margin: 4px 0 4px 6px;
   transition: color 200ms ease-in-out;
+  border-radius: 10px;
 }
 
 #workspaces button.selected {
@@ -79,11 +80,14 @@ button {
 #mode,
 #idle_inhibitor,
 #scratchpad,
-#mpd, #backlight {
+#mpd,
+#backlight,
+#mpris{
   padding: 0 9px;
   color: @text;
-  border-radius: 15px;
+  /* border-radius: 15px; */
   margin: 5px 0;
+  background-color: @overlay;
 }
 
 #custom-music,

@@ -1,7 +1,8 @@
 {
   "layer": "top",
+  "position": "top",
   "height": 30,
-  "spacing": 5,
+  "spacing": 6,
   // Choose the order of the modules
   "modules-left": [
     "hyprland/workspaces",
@@ -11,10 +12,9 @@
     // "custom/signal",
     // "custom/music",
   ],
-  // "modules-center": ["hyprland/window"],
+  "modules-center": ["mpris"],
   "modules-right": [
     "custom/pacman",
-    "backlight",
     "pulseaudio",
     "network",
     "bluetooth",
@@ -23,7 +23,18 @@
     "clock",
     "custom/power",
   ],
-
+"mpris": {
+    "max-length": 40,
+    "format": "{player_icon} {title} | {artist} - {length}",
+    "format-paused": "{status_icon} <i>{title} | {artist} - {length}</i>",
+    "player-icons": {
+        "default": "▶"
+    },
+    "status-icons": {
+        "paused": "󰏤"
+    },
+    "ignored-players": ["firefox", "chromium", "brave"]
+},
   "backlight": {
     "device": "intel_backlight",
     "format": "{percent}% {icon}",
@@ -32,7 +43,7 @@
 
   "memory": {
     "interval": 30,
-    "format": "󰍛 {}%",
+    "format": "󰍛     {}%",
     "max-length": 10,
     "tooltip": true,
     "tooltip-format": "Memory - {used:0.1f}GB used - {}%",
@@ -44,7 +55,7 @@
   "bluetooth": {
     "format": "",
     "format-disabled": "", // an empty format will hide the module
-    "format-connected": " {num_connections}",
+    "format-connected": "   {num_connections}",
     "tooltip-format": "{device_alias}",
     "tooltip-format-connected": " {device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias} - {device_battery_percentage}% 󱈑",
@@ -76,14 +87,19 @@
       "good": 76,
       "warning": 20,
     },
-    "format": "{icon} {capacity}%",
-    "format-good": "󰁹",
-    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
-    "format-charging": "󰂄",
+    "format": "{icon}            {capacity}%",
+     "format-charging": " {capacity}%",
+    		"format-icons": [
+			"",
+			"",
+			"",
+			"",
+			""
+		],
     "tooltip-format": "{capacity}% capacity",
   },
   "network": {
-    "format-wifi": "  {essid}",
+    "format-wifi": "   {essid}",
     "format-disconnected": "󰤭",
     "format-ethernet":"",
     "tooltip-format": "Connected to {essid}",
@@ -91,7 +107,7 @@
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
-    "format": "{icon} {volume}%",
+    "format": "{icon}        {volume}%",
     "format-muted": "󰖁",
     "format-icons": {
       "default": ["", "", "󰕾"],
