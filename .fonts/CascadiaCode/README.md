@@ -6,13 +6,40 @@ For more information see:
 * https://github.com/ryanoasis/nerd-fonts/
 * https://github.com/ryanoasis/nerd-fonts/releases/latest/
 
-# JetBrains Mono
+# Cascadia Code
 
-JetBrains Mono: a typeface made for developers
+**Cascadia Code** is a fun, new monospaced font that includes programming ligatures.
 
-For more information have a look at the upstream website: https://github.com/JetBrains/JetBrainsMono
+For more information have a look at the upstream website: https://github.com/microsoft/cascadia-code
 
-Version: 2.304
+## Preprocessed Source Font
+
+This source font has been preprocessed - it is not taken directly from upstream.
+Cascadia Code is mainly a variable font (VF) and the static versions (that Nerd Fonts
+are based on) are prepared in a different way: They have been hinted with `ttfautohint`.
+That hints differ considerably from the hints in the VF. That changes the rendering for
+smaller sizes (usual sizes in terminals) considerably.
+
+To get the 'original' (i.e. VF) feel of the font we redo the hints in the static versions:
+Open the font with Microsoft's VisualTrueType (VTT) and apply Light Latin Autohint.
+The issue is known upstream and will probably be fixed. But until it is fixed we need
+to do this manual process on all source updates.
+
+Version: 2111.01
+
+## Why `CaskaydiaCove` and not `Cascadia Code`?
+
+What's in a name? The reason for the name change is to comply with the SIL Open Font License (OFL), in particular the [Reserved Font Name mechanism][SIL-RFN]
+
+Some fonts have parts of their name "reserved" per the [Reserved Font Name mechanism][SIL-RFN]:
+> No Modified Version of the Font Software may use the Reserved Font
+> Name(s) unless explicit written permission is granted by the corresponding
+> Copyright Holder. This restriction only applies to the primary font name as
+> presented to the users.
+
+- The main goals seem to be to: `Avoid collisions`, `Protect authors`, `Minimize support`, and `Encourage derivatives`
+
+See the [Reserved Font Name section][SIL-RFN] for additional information
 
 ## Which font?
 
