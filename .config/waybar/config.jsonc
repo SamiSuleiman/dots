@@ -59,7 +59,7 @@
     "tooltip-format": "{device_alias}",
     "tooltip-format-connected": " {device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias} - {device_battery_percentage}% 󱈑",
-    "on-click": "kitty bluetuith",
+    "on-click": "rofi-bluetooth &",
   },
   "hyprland/workspaces": {
     "disable-scroll": true,
