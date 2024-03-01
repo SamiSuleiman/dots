@@ -43,11 +43,11 @@ require('lazy').setup({
 }, {})
 
 require('sami.plugins.telescope')
-require('sami.plugins.indent')
 require('sami.plugins.lsp')
 require('sami.plugins.nvim-cmp')
 require('sami.plugins.treesitter')
 require('sami.plugins.nvim-lint')
 require('sami.plugins.statusline')
 
-vim.cmd [[ colorscheme NeoSolarized ]]
+vim.cmd("colorscheme rose-pine")
+-- vim.cmd [[ colorscheme NeoSolarized ]]
