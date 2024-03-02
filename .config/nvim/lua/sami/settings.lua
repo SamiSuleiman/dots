@@ -17,6 +17,7 @@ for name, icon in pairs(symbols) do
   vim.fn.sign_define(hl, { text = icon, numhl = hl, texthl = hl })
 end
 
+vim.opt.guicursor = ""
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.tabstop = 2
