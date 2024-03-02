@@ -67,5 +67,10 @@ alias vim='nvim'
 alias v='nvim'
 alias myip="curl http://ipecho.net/plain; echo"
 
+# quick edit
+# notes alias to open env var $NOTES_DIR in nvim
+
+alias notes='nvim $NOTES_DIR'
+
 # situational, should probably find a way to do this like a normal human aka not a fucking retard
 # alias nvim='nvim.appimage'

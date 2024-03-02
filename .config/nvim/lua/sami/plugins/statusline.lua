@@ -24,7 +24,7 @@ require('lualine').setup {
         options = { fmt = string.lower },
         icons_enabled = true,
         -- theme = 'auto',
-        theme = 'NeoSolarized',
+        theme = 'auto',
         section_separators = { left = '', right = '' },
         component_separators = { left = '', right = '' },
         -- section_separators = { left = '', right = '' },

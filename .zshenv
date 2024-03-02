@@ -4,15 +4,12 @@ export ZDOTDIR=$HOME/.zsh
 export NNN_PLUG='f:finder;o:fzopen;p:mocq;d:diffs;t:nmount;v:imgview'
 export PATH="$PATH:/opt/nvim/"
 export PATH=/opt/homebrew/bin:$PATH
-# export PATH=$PATH:/usr/local/lib/node_modules
-# export PATH=/usr/local/share/npm/bin:$PATH
+export NOTES_DIR="$HOME/the/antenna/"
 
 source $ZDOTDIR/.zshrc
 . "$HOME/.cargo/env"
 source $NVM_DIR/nvm.sh
 
-
-# lf icons
 export LF_ICONS="\
 tw=:\
 st=:\
