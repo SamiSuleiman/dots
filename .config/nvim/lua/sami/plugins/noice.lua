@@ -11,9 +11,9 @@ return {
   },
   opts = {
     cmdline = {
-      enabled = true,   -- enables the Noice cmdline UI
-      view = "cmdline", -- view for rendering the cmdline. Change to `cmdline` to get a classic cmdline at the bottom
-      opts = {},        -- global options for the cmdline. See section on views
+      enabled = true, -- enables the Noice cmdline UI
+      -- view = "cmdline", -- view for rendering the cmdline. Change to `cmdline` to get a classic cmdline at the bottom
+      opts = {},      -- global options for the cmdline. See section on views
       ---@type table<string, CmdlineFormat>
       format = {
         -- cmdline = { pattern = "^:", icon = "", lang = "vim" },
@@ -29,7 +29,7 @@ return {
     messages = {
       -- NOTE: If you enable messages, then the cmdline is enabled automatically.
       -- This is a current Neovim limitation.
-      enabled = false,             -- enables the Noice messages UI
+      enabled = true,              -- enables the Noice messages UI
       view = "notify",             -- default view for messages
       view_error = "notify",       -- view for errors
       view_warn = "notify",        -- view for warnings
@@ -37,7 +37,7 @@ return {
       view_search = "virtualtext", -- view for search count messages. Set to `false` to disable
     },
     notify = {
-      enabled = false,
+      enabled = true,
       view = "notify",
     },
     lsp = {
@@ -59,5 +59,27 @@ return {
     --     inc_rename = false,
     --     lsp_doc_border = false,
     -- },
+    views = {
+      cmdline_popup = {
+        border = {
+          style = "none",
+          padding = { 1, 1 },
+        },
+        filter_options = {},
+        win_options = {
+          winhighlight = "NormalFloat:NormalFloat,FloatBorder:FloatBorder",
+        },
+      },
+    },
+    routes = {
+      {
+        filter = {
+          event = "msg_show",
+          kind = "",
+          find = "written",
+        },
+        opts = { skip = true },
+      },
+    },
   }
 }

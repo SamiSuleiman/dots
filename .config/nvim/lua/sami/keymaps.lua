@@ -1,53 +1,53 @@
 local function telescope_live_grep_open_files()
   require('telescope.builtin').live_grep {
     grep_open_files = true,
-    prompt_title = 'Live Grep in Open Files',
+    prompt_title = 'live grep in open files',
   }
 end
 
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
-vim.keymap.set('n', '<leader>s/', telescope_live_grep_open_files, { desc = '[S]earch [/] in Open Files' })
-vim.keymap.set('n', '<leader>ss', require('telescope.builtin').builtin, { desc = '[S]earch [S]elect Telescope' })
-vim.keymap.set('n', '<leader>gf', require('telescope.builtin').git_files, { desc = 'Search [G]it [F]iles' })
-vim.keymap.set('n', '<leader>sf', require('telescope.builtin').find_files, { desc = '[S]earch [F]iles' })
-vim.keymap.set('n', '<leader>sh', require('telescope.builtin').help_tags, { desc = '[S]earch [H]elp' })
-vim.keymap.set('n', '<leader>sc', require('telescope.builtin').grep_string, { desc = '[S]earch current [W]ord' })
-vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc = '[S]earch by [G]rep' })
+vim.keymap.set('n', '<leader>s/', telescope_live_grep_open_files, { desc = '[s]earch [/] in open files' })
+vim.keymap.set('n', '<leader>ss', require('telescope.builtin').builtin, { desc = '[s]earch [s]elect telescope' })
+vim.keymap.set('n', '<leader>gf', require('telescope.builtin').git_files, { desc = 'search [g]it [f]iles' })
+vim.keymap.set('n', '<leader>sf', require('telescope.builtin').find_files, { desc = '[s]earch [f]iles' })
+vim.keymap.set('n', '<leader>sh', require('telescope.builtin').help_tags, { desc = '[s]earch [h]elp' })
+vim.keymap.set('n', '<leader>sc', require('telescope.builtin').grep_string, { desc = '[s]earch current [w]ord' })
+vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc = '[s]earch by [g]rep' })
 vim.keymap.set('n', '<leader>sm', ':Telescope harpoon marks<cr>')
-vim.keymap.set('n', '<leader>sG', ':LiveGrepGitRoot<cr>', { desc = '[S]earch by [G]rep on Git Root' })
-vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
-vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = '[S]earch [R]esume' })
+vim.keymap.set('n', '<leader>sG', ':LiveGrepGitRoot<cr>', { desc = '[s]earch by [g]rep on git root' })
+vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[s]earch [d]iagnostics' })
+vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = '[s]earch [r]esume' })
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 -- See `:help telescope.builtin`
-vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] Find recently opened files' })
-vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers, { desc = '[ ] Find existing buffers' })
+vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] find recently opened files' })
+vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers, { desc = '[ ] find existing buffers' })
 vim.keymap.set('n', '<leader>/', function()
   -- You can pass additional configuration to telescope to change theme, layout, etc.
   require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
     winblend = 10,
     previewer = false,
   })
-end, { desc = '[/] Fuzzily search in current buffer' })
+end, { desc = '[/] fuzzily search in current buffer' })
 
 -- markdown
-vim.keymap.set("v", "<leader>mb", "di****<esc>hhp", { desc = "Auto bold" })
-vim.keymap.set("v", "<leader>mi", "di**<esc>hp", { desc = "Auto italic" })
-vim.keymap.set("v", "<leader>ml", "di[]()<esc>hhhpllli", { desc = "Auto link" })
-vim.keymap.set("v", "<leader>mc", "di``<esc>hp", { desc = "Auto backtick" })
+vim.keymap.set("v", "<leader>mb", "di****<esc>hhp", { desc = "auto bold" })
+vim.keymap.set("v", "<leader>mi", "di**<esc>hp", { desc = "auto italic" })
+vim.keymap.set("v", "<leader>ml", "di[]()<esc>hhhpllli", { desc = "auto link" })
+vim.keymap.set("v", "<leader>mc", "di``<esc>hp", { desc = "auto backtick" })
 
 -- LazyGit
 -- vim.keymap.set('n', "<leader>gg", vim.cmd.LazyGit, { desc = 'Open LazyGit' })
-vim.keymap.set('n', "<leader>gg", vim.cmd.Neogit, { desc = 'Open Neogit' })
+vim.keymap.set('n', "<leader>gg", vim.cmd.Neogit, { desc = 'open neogit' })
 
 -- vim.keymap.set('n', "<leader>ee", vim.cmd.Neotree, { desc = 'Open Neotree' })
 
 -- Diagnostics
-vim.keymap.set('n', '<space>ed', vim.diagnostic.open_float, { desc = "Show Floating Diagnostics Window" })
-vim.keymap.set('n', '<space>ep', vim.diagnostic.goto_prev, { desc = "Previous Diagnostic" })
-vim.keymap.set('n', '<space>en', vim.diagnostic.goto_next, { desc = "Next Diagnostic" })
-vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, { desc = "Set Diagnostics Window Location" })
+vim.keymap.set('n', '<space>ed', vim.diagnostic.open_float, { desc = "show floating diagnostics window" })
+vim.keymap.set('n', '<space>ep', vim.diagnostic.goto_prev, { desc = "previous diagnostic" })
+vim.keymap.set('n', '<space>en', vim.diagnostic.goto_next, { desc = "next diagnostic" })
+vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, { desc = "set diagnostics window location" })
 
 -- Resizing
 vim.api.nvim_set_keymap('n', '<C-Up>', ':lua vim.api.nvim_win_set_height(0, vim.api.nvim_win_get_height(0) + 1)<CR>',
@@ -62,16 +62,16 @@ vim.api.nvim_set_keymap('n', '<C-Right>', ':lua vim.api.nvim_win_set_width(0, vi
   { noremap = true, silent = true })
 
 -- Splitting
-vim.api.nvim_set_keymap('n', '<leader>kv', ':vsplit<cr>', { desc = 'Split Current Window Vertically' })
-vim.api.nvim_set_keymap('n', '<leader>kh', ':split<cr>', { desc = 'Split Current Window Horizontally' })
+vim.api.nvim_set_keymap('n', '<leader>kv', ':vsplit<cr>', { desc = 'split current window vertically' })
+vim.api.nvim_set_keymap('n', '<leader>kh', ':split<cr>', { desc = 'split current window horizontally' })
 
 -- Harpoon
 local mark = require("harpoon.mark")
 local ui = require("harpoon.ui")
 
-vim.keymap.set("n", "<leader>hp", mark.clear_all, { desc = 'Harpoon purge' })
-vim.keymap.set("n", "<leader>hh", ui.toggle_quick_menu, { desc = 'Harpoon' })
-vim.keymap.set("n", "<leader>ht", mark.toggle_file, { desc = 'Toggle Harpoon Curr File' })
+vim.keymap.set("n", "<leader>hp", mark.clear_all, { desc = 'harpoon purge' })
+vim.keymap.set("n", "<leader>hh", ui.toggle_quick_menu, { desc = 'harpoon' })
+vim.keymap.set("n", "<leader>ht", mark.toggle_file, { desc = 'toggle harpoon curr file' })
 vim.keymap.set("n", "<leader>hk", function()
   ui.nav_next()
 end, { desc = 'Next Harpoon' })
@@ -83,12 +83,17 @@ end, { desc = 'Prev Harpoon' })
 -- vim.api.nvim_set_keymap('n', '<leader>cc', ':Commentary<CR>', { noremap = true })
 -- vim.api.nvim_set_keymap('v', '<leader>cc', ':Commentary<CR>', { noremap = true })
 
+vim.keymap.set('n', '<leader>nd', function()
+    require('notify').dismiss({ silent = true, pending = true })
+  end,
+  { desc = 'dismiss notifications' })
+
 -- copy to clipboard
 vim.api.nvim_set_keymap('v', '<Leader>y', '"+y', { noremap = true })
 vim.api.nvim_set_keymap('n', '<Leader>y', '"+yy', { noremap = true })
 -- nx
 -- vim.keymap.set("n", "<leader>ng", require("nx.generators").generators, { desc = "[N]x [G]enerators" })
-vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "open parent directory" })
 
 vim.g.user_emmet_mode = [[n]]
 vim.g.user_emmet_leader_key = [[,]]
