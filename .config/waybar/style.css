@@ -82,7 +82,7 @@ button {
 #scratchpad,
 #mpd,
 #backlight,
-#mpris{
+#mpris {
   padding: 0 9px;
   color: @text;
   /* border-radius: 15px; */
@@ -108,7 +108,7 @@ button {
 }
 
 /* If workspaces is the leftmost module, loveuce left margin */
-.modules-left>widget:first-child>#workspaces {
+.modules-left > widget:first-child > #workspaces {
   margin-left: 2px;
 }
 
@@ -124,7 +124,8 @@ button {
   color: @gold;
 }
 
-#pulseaudio, #backlight {
+#pulseaudio,
+#backlight {
   color: @iris;
 }
 
@@ -156,11 +157,11 @@ button {
   font-size: 18px;
 }
 
-#keyboard-state>label {
+#keyboard-state > label {
   padding: 0 5px;
 }
 
-#keyboard-state>label.locked {
+#keyboard-state > label.locked {
   background: rgba(0, 0, 0, 0.2);
 }
 

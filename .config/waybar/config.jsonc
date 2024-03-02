@@ -4,17 +4,11 @@
   "height": 30,
   "spacing": 6,
   // Choose the order of the modules
-  "modules-left": [
-    "hyprland/workspaces",
-    "hyprland/language"
-    // "custom/kitty",
-    // "custom/firefox",
-    // "custom/signal",
-    // "custom/music",
-  ],
+  "modules-left": ["hyprland/workspaces", "hyprland/language"],
   "modules-center": ["mpris"],
   "modules-right": [
     "custom/pacman",
+    "backlight",
     "pulseaudio",
     "network",
     "bluetooth",
@@ -23,23 +17,23 @@
     "clock",
     "custom/power",
   ],
-"mpris": {
+  "mpris": {
     "max-length": 40,
     "format": "{player_icon} {title} | {artist} - {length}",
     "format-paused": "{status_icon} <i>{title} | {artist} - {length}</i>",
     "player-icons": {
-        "default": "▶"
+      "default": "▶",
     },
     "status-icons": {
-        "paused": "󰏤"
+      "paused": "󰏤",
     },
-    "ignored-players": ["firefox", "chromium", "brave"]
-},
+    "ignored-players": ["firefox", "chromium", "brave"],
+  },
   "backlight": {
     "device": "intel_backlight",
-    "format": "{percent}% {icon}",
-    "format-icons": ["", ""]
-},
+    "format": "{icon}        {percent}%",
+    "format-icons": ["", ""],
+  },
 
   "memory": {
     "interval": 30,
@@ -61,11 +55,25 @@
     "tooltip-format-enumerate-connected": "{device_alias} - {device_battery_percentage}% 󱈑",
     "on-click": "rofi-bluetooth &",
   },
+
   "hyprland/workspaces": {
+    // "format": "{icon}  {windows}",
+    // "format-icons": {
+    //   "9": "󰎞      ",
+    // },
+    // "format-window-separator": "          ",
+    // "window-rewrite-default": "",
+    // "window-rewrite": {
+    //   "title<.*youtube.*>": "",
+    //   "class<firefox>": "",
+    //   "kitty": "",
+    //   "tauonmb": "",
+    // },
     "disable-scroll": true,
     "all-outputs": true,
     "on-click": "activate",
   },
+
   "tray": {
     // "icon-size": 21,
     "spacing": 10,
@@ -88,20 +96,14 @@
       "warning": 20,
     },
     "format": "{icon}            {capacity}%",
-     "format-charging": " {capacity}%",
-    		"format-icons": [
-			"",
-			"",
-			"",
-			"",
-			""
-		],
+    "format-charging": " {capacity}%",
+    "format-icons": ["", "", "", "", ""],
     "tooltip-format": "{capacity}% capacity",
   },
   "network": {
     "format-wifi": "   {essid}",
     "format-disconnected": "󰤭",
-    "format-ethernet":"",
+    "format-ethernet": "",
     "tooltip-format": "Connected to {essid}",
     "on-click": "networkmanager_dmenu",
   },
@@ -140,5 +142,6 @@
     "on-click": "tauon",
   },
 }
+
 
 // vim: ft=jsonc
