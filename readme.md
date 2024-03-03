@@ -2,8 +2,7 @@
 
 my hyprland dotfiles on arch linux ^^
 
-![1](./.github/1.png)
-![2](./.github/2.png)
+![home](./.github/home.png)
 
 ## info
 

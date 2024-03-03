@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 30,
+  "height": 40,
   "spacing": 6,
   // Choose the order of the modules
   "modules-left": ["hyprland/workspaces", "hyprland/language"],
