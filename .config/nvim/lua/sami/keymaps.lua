@@ -107,6 +107,7 @@ vim.api.nvim_set_keymap('n', '<C-s>', ':Neoformat<CR> :w<CR>', { noremap = true 
 vim.api.nvim_set_keymap('n', '<C-u>', '<C-u>zz', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-d>', '<C-d>zz', { noremap = true })
 
+vim.api.nvim_set_keymap('n', 'Z', ':ZenMode<CR>', { noremap = true })
 -- Spectre (search and replace)
 -- vim.keymap.set('n', '<leader>S', '<cmd>lua require("spectre").toggle()<CR>', {
 --   desc = "Toggle Spectre"

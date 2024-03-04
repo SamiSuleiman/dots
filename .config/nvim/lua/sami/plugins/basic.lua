@@ -18,6 +18,10 @@ return {
         'github/copilot.vim',
         'windwp/nvim-ts-autotag',
         {
+            "folke/zen-mode.nvim",
+            opts = {}
+        },
+        {
             "Tsuzat/NeoSolarized.nvim",
             lazy = false,
             priority = 1000,
