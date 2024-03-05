@@ -3,7 +3,6 @@ return {
         'onsails/lspkind.nvim',
         'windwp/nvim-ts-autotag',
         'nvim-lua/plenary.nvim',
-        'ThePrimeagen/harpoon',
         'mbbill/undotree',
         'nvim-lualine/lualine.nvim',
         'kdheepak/lazygit.nvim',
@@ -20,6 +19,15 @@ return {
         {
             "folke/zen-mode.nvim",
             opts = {}
+        },
+        {
+            'ThePrimeagen/harpoon',
+            opts = {
+                menu = {
+                    height = vim.o.lines,  -- maximally available lines
+                    width = vim.o.columns, -- maximally available columns
+                }
+            }
         },
         {
             "Tsuzat/NeoSolarized.nvim",
