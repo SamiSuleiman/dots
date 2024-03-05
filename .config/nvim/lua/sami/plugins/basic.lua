@@ -22,6 +22,14 @@ return {
             opts = {}
         },
         {
+            'nvimdev/dashboard-nvim',
+            event = 'VimEnter',
+            config = function()
+                require('dashboard').setup {}
+            end,
+            dependencies = { { 'nvim-tree/nvim-web-devicons' } }
+        },
+        {
             "folke/todo-comments.nvim",
             dependencies = { "nvim-lua/plenary.nvim" },
             opts = {
