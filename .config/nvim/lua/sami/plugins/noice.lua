@@ -9,6 +9,7 @@ return {
     --   If not available, we use `mini` as the fallback
     "rcarriga/nvim-notify",
   },
+  enabled = false,
   opts = {
     cmdline = {
       enabled = true, -- enables the Noice cmdline UI

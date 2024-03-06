@@ -15,6 +15,14 @@ local on_attach = function(_, bufnr)
         vim.keymap.set('n', keys, func, { buffer = bufnr, desc = desc })
     end
 
+    local imap = function(keys, func, desc)
+        if desc then
+            desc = 'LSP: ' .. desc
+        end
+
+        vim.keymap.set('i', keys, func, { buffer = bufnr, desc = desc })
+    end
+
     nmap('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
     nmap('<leader>ca', function()
         vim.lsp.buf.code_action { context = { only = { 'quickfix', 'refactor', 'source' } } }
@@ -29,7 +37,7 @@ local on_attach = function(_, bufnr)
 
     -- See `:help K` for why this keymap
     nmap('K', vim.lsp.buf.hover, 'Hover Documentation')
-    nmap('<C-k>', vim.lsp.buf.signature_help, 'Signature Documentation')
+    imap('<C-k>', vim.lsp.buf.signature_help, 'Signature Documentation')
 
     -- Lesser used LSP functionality
     nmap('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
@@ -81,24 +89,24 @@ local servers = {
     tsserver = {
         javascript = {
             inlayHints = {
-                includeInlayEnumMemberValueHints = true,
-                includeInlayFunctionLikeReturnTypeHints = true,
-                includeInlayFunctionParameterTypeHints = true,
-                includeInlayParameterNameHints = "all", -- 'none' | 'literals' | 'all';
-                includeInlayParameterNameHintsWhenArgumentMatchesName = true,
-                includeInlayPropertyDeclarationTypeHints = true,
-                includeInlayVariableTypeHints = true,
+                -- includeInlayEnumMemberValueHints = true,
+                -- includeInlayFunctionLikeReturnTypeHints = true,
+                -- includeInlayFunctionParameterTypeHints = true,
+                -- includeInlayParameterNameHints = "all", -- 'none' | 'literals' | 'all';
+                -- includeInlayParameterNameHintsWhenArgumentMatchesName = true,
+                -- includeInlayPropertyDeclarationTypeHints = true,
+                -- includeInlayVariableTypeHints = true,
             },
         },
         typescript = {
             inlayHints = {
-                includeInlayEnumMemberValueHints = true,
-                includeInlayFunctionLikeReturnTypeHints = true,
-                includeInlayFunctionParameterTypeHints = true,
-                includeInlayParameterNameHints = "all", -- 'none' | 'literals' | 'all';
-                includeInlayParameterNameHintsWhenArgumentMatchesName = true,
-                includeInlayPropertyDeclarationTypeHints = true,
-                includeInlayVariableTypeHints = true,
+                -- includeInlayEnumMemberValueHints = true,
+                -- includeInlayFunctionLikeReturnTypeHints = true,
+                -- includeInlayFunctionParameterTypeHints = true,
+                -- includeInlayParameterNameHints = "all", -- 'none' | 'literals' | 'all';
+                -- includeInlayParameterNameHintsWhenArgumentMatchesName = true,
+                -- includeInlayPropertyDeclarationTypeHints = true,
+                -- includeInlayVariableTypeHints = true,
             },
         },
     },
