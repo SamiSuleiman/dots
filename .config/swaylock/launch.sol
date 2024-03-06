@@ -5,7 +5,7 @@ swaylock\
   -e\
   --image ~/wallpapers/solarized/by_home_arrival_2560-4252892318.jpg\
   --show-keyboard-layout\
-  --font "CaskaydiaCove Nerd Font"\
+  --font "JetBrainsMono Nerd Font"\
   --font-size 14\
   --indicator-thickness 6\
   --inside-color 002B36\
