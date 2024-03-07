@@ -9,9 +9,12 @@ my hyprland dotfiles on arch linux ^^
 - **os**: arch linux
 - **compositor**: hyprland
 - **terminal**: kitty
-- **font**: CaskaydiaCove Nerd Font
+- **font**: Maple Mono NF + Cantarell
 - **editor**: neovim
+- **browser**: firefox + betterfox
 - **app launcher**: rofi
 - **notifications**: dunst
 - **status bar**: waybar
 - **lockscreen**: waylock
+
+> drew a lot of inspiration (and copied a lot) from [eric murphy](https://github.com/ericmurphyxyz)

@@ -1,7 +1,7 @@
 @import "./rose-pine.css";
 
 * {
-  font-family: JetBrainsMono Nerd Font;
+  font-family: Cantarell;
   font-weight: bolder;
   font-size: 15px;
   /* border-radius: 10px; */
@@ -160,6 +160,7 @@ button {
   color: @love;
   margin-right: 5px;
   font-size: 18px;
+  background: @base;
 }
 
 #keyboard-state > label {

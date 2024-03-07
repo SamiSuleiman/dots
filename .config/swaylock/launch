@@ -5,7 +5,7 @@ swaylock\
   -e\
   --image ~/wallpapers/rosepine/home.png\
   --show-keyboard-layout\
-  --font "JetBrainsMono Nerd Font"\
+  --font "Cantarell"\
   --font-size 14\
   --indicator-thickness 6\
   --inside-color 19172499\

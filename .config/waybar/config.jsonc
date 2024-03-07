@@ -31,13 +31,13 @@
   },
   "backlight": {
     "device": "intel_backlight",
-    "format": "{icon}        {percent}%",
+    "format": "{icon}     {percent}%",
     "format-icons": ["", ""],
   },
 
   "memory": {
     "interval": 30,
-    "format": "󰍛     {}%",
+    "format": "     {}%",
     "max-length": 10,
     "tooltip": true,
     "tooltip-format": "Memory - {used:0.1f}GB used - {}%",
@@ -49,7 +49,7 @@
   "bluetooth": {
     "format": "",
     "format-disabled": "", // an empty format will hide the module
-    "format-connected": "   {num_connections}",
+    "format-connected": "  {num_connections}",
     "tooltip-format": "{device_alias}",
     "tooltip-format-connected": " {device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias} - {device_battery_percentage}% 󱈑",
@@ -95,13 +95,13 @@
       "good": 76,
       "warning": 20,
     },
-    "format": "{icon}            {capacity}%",
-    "format-charging": " {capacity}%",
+    "format": "{icon}      {capacity}%",
+    "format-charging": "    {capacity}%",
     "format-icons": ["", "", "", "", ""],
     "tooltip-format": "{capacity}% capacity",
   },
   "network": {
-    "format-wifi": "   {essid}",
+    "format-wifi": "    {essid}",
     "format-disconnected": "󰤭",
     "format-ethernet": "",
     "tooltip-format": "Connected to {essid}",
@@ -109,7 +109,7 @@
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
-    "format": "{icon}        {volume}%",
+    "format": "{icon}     {volume}%",
     "format-muted": "󰖁",
     "format-icons": {
       "default": ["", "", "󰕾"],
