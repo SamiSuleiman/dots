@@ -38,17 +38,25 @@ return {
                 -- keywords recognized as todo comments
                 keywords = {
                     fix = {
-                        icon = " ", -- icon used for the sign, and in search results
-                        color = "error", -- can be a hex color, or a named color (see below)
+                        -- icon = " ", -- icon used for the sign, and in search results
+                        icon = "",                                  -- icon used for the sign, and in search results
+                        color = "error",                            -- can be a hex color, or a named color (see below)
                         alt = { "fixme", "bug", "fixit", "issue" }, -- a set of other keywords that all map to this FIX keywords
                         -- signs = false, -- configure signs for some keywords individually
                     },
-                    todo = { icon = " ", color = "info" },
-                    hack = { icon = " ", color = "warning" },
-                    warn = { icon = " ", color = "warning", alt = { "warning", "xxx" } },
-                    perf = { icon = " ", alt = { "optim", "performance", "optimize" } },
-                    note = { icon = " ", color = "hint", alt = { "info" } },
-                    test = { icon = "⏲ ", color = "test", alt = { "testing", "passed", "failed" } },
+                    -- todo = { icon = " ", color = "info" },
+                    -- hack = { icon = " ", color = "warning" },
+                    -- warn = { icon = " ", color = "warning", alt = { "warning", "xxx" } },
+                    -- perf = { icon = " ", alt = { "optim", "performance", "optimize" } },
+                    -- note = { icon = " ", color = "hint", alt = { "info" } },
+                    -- test = { icon = "⏲ ", color = "test", alt = { "testing", "passed", "failed" } },
+                    todo = { icon = "", color = "info" },
+                    hack = { icon = "", color = "warning" },
+                    warn = { icon = "", color = "warning", alt = { "warning", "xxx" } },
+                    perf = { icon = "", alt = { "optim", "performance", "optimize" } },
+                    note = { icon = "", color = "hint", alt = { "info" } },
+                    test = { icon = "", color = "test", alt = { "testing", "passed", "failed" } },
+
                 },
                 gui_style = {
                     fg = "NONE",       -- The gui style to use for the fg highlight group.
@@ -142,7 +150,7 @@ return {
             opts = {
                 variant = "auto",      -- auto, main, moon, or dawn
                 dark_variant = "main", -- main, moon, or dawn
-                dim_inactive_windows = false,
+                dim_inactive_windows = true,
                 extend_background_behind_borders = true,
 
                 enable = {

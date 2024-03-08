@@ -99,8 +99,11 @@ vim.g.user_emmet_mode = [[n]]
 vim.g.user_emmet_leader_key = [[,]]
 
 -- buffer stuff
-vim.api.nvim_set_keymap('n', '<C-b>h', ':bnext<CR>', { noremap = true })
-vim.api.nvim_set_keymap('n', '<C-b>l', ':bprev<CR>', { noremap = true })
+-- vim.api.nvim_set_keymap('n', '<C-b>h', ':bnext<CR>', { noremap = true })
+-- vim.api.nvim_set_keymap('n', '<C-b>l', ':bprev<CR>', { noremap = true })
+vim.api.nvim_set_keymap("n", "<Tab>", ":bnext <cr>", { noremap = true })       -- Tab goes to next buffer
+vim.api.nvim_set_keymap("n", "<S-Tab>", ":bprevious <cr>", { noremap = true }) -- Shift+Tab goes to previous buffer
+vim.api.nvim_set_keymap("n", "<leader>q", ":bd <cr>", { noremap = true })
 
 vim.api.nvim_set_keymap('n', '<C-s>', ':Neoformat<CR> :w<CR>', { noremap = true })
 
