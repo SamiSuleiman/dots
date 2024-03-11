@@ -1,4 +1,3 @@
--- todo: go to <https://github.com/MunifTanjim/prettier.nvim?tab=readme-ov-file> to see how to make it work without null-ls
 return {
   {
     "MunifTanjim/prettier.nvim",
