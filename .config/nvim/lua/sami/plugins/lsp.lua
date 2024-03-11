@@ -179,5 +179,5 @@ nvim_lsp.angularls.setup {
     capabilities = capabilities,
     cmd = { 'angularls', '--stdio' },
     filetypes = { 'typescript', 'html', 'typescriptreact', 'typescript.tsx' },
-    root_dir = nvim_lsp.util.root_pattern('angular.json', 'nx.json', '.git'),
+    root_dir = nvim_lsp.util.root_pattern('angular.json', 'nx.json'),
 }
