@@ -1,0 +1,18 @@
+@define-color base            #11111b;
+@define-color surface         #181825;
+@define-color overlay         #1e1e2e;
+
+@define-color muted           #45475a;
+@define-color subtle          #313244;
+@define-color text            #cdd6f4;
+
+@define-color love            #f38ba8;
+@define-color gold            #f9e2af;
+@define-color rose            #fab387;
+@define-color pine            #94e2d5;
+@define-color foam            #89dceb;
+@define-color iris            #b4befe;
+
+@define-color highlightLow    #11111b;
+@define-color highlightMed    #181825;
+@define-color highlightHigh   #1e1e2e;

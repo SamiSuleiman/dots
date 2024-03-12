@@ -55,6 +55,22 @@
 [experimental]
     per_monitor_dpi = false
 
+[global]
+frame_color = "#89B4FA"
+separator_color= frame
+
+[urgency_low]
+background = "#1E1E2E"
+foreground = "#CDD6F4"
+
+[urgency_normal]
+background = "#1E1E2E"
+foreground = "#CDD6F4"
+
+[urgency_critical]
+background = "#1E1E2E"
+foreground = "#CDD6F4"
+frame_color = "#FAB387"
 
 # solarized
 # [urgency_low]
@@ -86,32 +102,32 @@
 #     highlight = "#CB4B16"
 
 # rose pine
-[urgency_low]
-    background = "#181825"
-    foreground = "#CDD6F4"
-    highlight = "#CDD6F4"
-    frame_color = "#181825"
-    timeout = 5
-
-[urgency_normal]
-    background = "#181825"
-    foreground = "#CDD6F4"
-    highlight = "#CDD6F4"
-    frame_color = "#181825"
-    timeout = 5
-
-[urgency_critical]
-    background = "#181825"
-    foreground = "#CDD6F4"
-    frame_color = "#f38ba8"
-    timeout = 1000
-
-[volume]
-    appname = "Volume"
-    highlight = "#cba6f7"
-
-[backlight]
-    appname = "Backlight"
-    highlight = "#eba0ac"
+# [urgency_low]
+#     background = "#181825"
+#     foreground = "#CDD6F4"
+#     highlight = "#CDD6F4"
+#     frame_color = "#181825"
+#     timeout = 5
+#
+# [urgency_normal]
+#     background = "#181825"
+#     foreground = "#CDD6F4"
+#     highlight = "#CDD6F4"
+#     frame_color = "#181825"
+#     timeout = 5
+#
+# [urgency_critical]
+#     background = "#181825"
+#     foreground = "#CDD6F4"
+#     frame_color = "#f38ba8"
+#     timeout = 1000
+#
+# [volume]
+#     appname = "Volume"
+#     highlight = "#cba6f7"
+#
+# [backlight]
+#     appname = "Backlight"
+#     highlight = "#eba0ac"
 
 # vim: ft=cfg
