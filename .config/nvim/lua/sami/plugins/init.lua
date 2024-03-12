@@ -34,5 +34,6 @@ require('sami.plugins.treesitter')
 require('sami.plugins.nvim-lint')
 require('sami.plugins.statusline')
 
-vim.cmd("colorscheme rose-pine")
+vim.cmd("colorscheme catppuccin")
+--vim.cmd("colorscheme rose-pine")
 -- vim.cmd [[ colorscheme NeoSolarized ]]
