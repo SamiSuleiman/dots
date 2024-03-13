@@ -18,6 +18,12 @@ return {
         'github/copilot.vim',
         'windwp/nvim-ts-autotag',
         {
+            'akinsho/bufferline.nvim',
+            version = "*",
+            dependencies = 'nvim-tree/nvim-web-devicons',
+            opts = {}
+        },
+        {
             "folke/zen-mode.nvim",
             opts = {}
         },
