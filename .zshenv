@@ -5,6 +5,7 @@ export NNN_PLUG='f:finder;o:fzopen;p:mocq;d:diffs;t:nmount;v:imgview'
 export PATH="$PATH:/opt/nvim/"
 export PATH=/opt/homebrew/bin:$PATH
 export NOTES_DIR="$HOME/the/antenna/"
+export DOTNET_ROOT=/usr/local/share/dotnet
 
 source $ZDOTDIR/.zshrc
 . "$HOME/.cargo/env"

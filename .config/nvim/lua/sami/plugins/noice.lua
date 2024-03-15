@@ -9,9 +9,10 @@ return {
     --   If not available, we use `mini` as the fallback
     "rcarriga/nvim-notify",
   },
-  enabled = false,
+  enabled = true,
   opts = {
     cmdline = {
+      view = "cmdline",
       enabled = true, -- enables the Noice cmdline UI
       -- view = "cmdline", -- view for rendering the cmdline. Change to `cmdline` to get a classic cmdline at the bottom
       opts = {},      -- global options for the cmdline. See section on views
@@ -60,18 +61,18 @@ return {
     --     inc_rename = false,
     --     lsp_doc_border = false,
     -- },
-    views = {
-      cmdline_popup = {
-        border = {
-          style = "none",
-          padding = { 1, 1 },
-        },
-        filter_options = {},
-        win_options = {
-          winhighlight = "NormalFloat:NormalFloat,FloatBorder:FloatBorder",
-        },
-      },
-    },
+    -- views = {
+    -- cmdline_popup = {
+    -- border = {
+    --   style = "none",
+    --   padding = { 1, 1 },
+    -- },
+    -- filter_options = {},
+    -- win_options = {
+    --   winhighlight = "NormalFloat:NormalFloat,FloatBorder:FloatBorder",
+    -- },
+    -- },
+    -- },
     routes = {
       {
         filter = {

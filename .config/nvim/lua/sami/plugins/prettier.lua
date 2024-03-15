@@ -15,6 +15,7 @@ return {
       "yaml",
       "lua",
       "analog",
+      "svelte"
     },
   },
   {
