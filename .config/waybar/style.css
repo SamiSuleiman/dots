@@ -135,7 +135,7 @@ button {
 }
 
 #pulseaudio.muted {
-  color: @highlightHigh;
+  color: @iris;
 }
 
 #network,
