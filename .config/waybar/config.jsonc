@@ -1,10 +1,10 @@
 {
   "layer": "top",
   "position": "bottom",
-  "height": 40,
+  "height": 30,
   "spacing": 6,
   // Choose the order of the modules
-  "modules-left": ["hyprland/workspaces", "hyprland/language"],
+  "modules-left": ["hyprland/workspaces", "hyprland/language", "clock"],
   "modules-center": ["mpris"],
   "modules-right": [
     "custom/pacman",
@@ -13,10 +13,17 @@
     "network",
     "bluetooth",
     "battery",
+    "disk",
     "memory",
-    "clock",
     "custom/power",
   ],
+
+  "disk": {
+    "interval": 30,
+    "format": "     medina is {percentage_used}% full",
+    "path": "/home/sami/medina/",
+  },
+
   "mpris": {
     "max-length": 40,
     "format": "{player_icon} {title} | {artist} - {length}",

@@ -4,6 +4,7 @@ my hyprland dotfiles on arch linux ^^
 
 ![1](./.github/1.png)
 ![2](./.github/2.png)
+![3](./.github/3.png)
 
 ## info
 

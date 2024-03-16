@@ -148,7 +148,8 @@ button {
 }
 
 #battery,
-#memory {
+#memory,
+#disk {
   color: @foam;
 }
 
