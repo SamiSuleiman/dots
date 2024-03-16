@@ -66,13 +66,18 @@ button {
   color: @love;
 }
 
+#custom-music,
+#custom-firefox,
+#custom-signal,
+#custom-kitty,
+#custom-apps,
+#custom-files,
 #language,
 #memory,
 #bluetooth,
 #clock,
 #battery,
 #cpu,
-#memory,
 #disk,
 #temperature,
 #backlight,
@@ -95,16 +100,10 @@ button {
   background-color: @overlay;
 }
 
-#custom-music,
-#custom-firefox,
-#custom-signal,
-#custom-kitty {
-  color: @iris;
-  padding: 0 3px;
-}
-
-#custom-kitty {
-  margin-left: 10px;
+#custom-apps {
+  background-color: @overlay;
+  padding: 0px 25px 0px 25px;
+  color: @love;
 }
 
 #window,

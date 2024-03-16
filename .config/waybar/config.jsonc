@@ -3,8 +3,12 @@
   "position": "bottom",
   "height": 30,
   "spacing": 6,
-  // Choose the order of the modules
-  "modules-left": ["hyprland/workspaces", "hyprland/language", "clock"],
+  "modules-left": [
+    "hyprland/workspaces",
+    "hyprland/language",
+    "clock",
+    "custom/apps",
+  ],
   "modules-center": ["mpris"],
   "modules-right": [
     "custom/pacman",
@@ -148,7 +152,12 @@
     "format": " ",
     "on-click": "tauon",
   },
+  "custom/apps": {
+    "format": "󰨀",
+    "on-click": "rofi -show drun",
+  },
+  "custom/files": {
+    "format": "󰈔",
+    "on-click": "thunar",
+  },
 }
-
-
-// vim: ft=jsonc
