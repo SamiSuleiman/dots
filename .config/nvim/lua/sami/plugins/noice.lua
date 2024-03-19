@@ -9,7 +9,7 @@ return {
     --   If not available, we use `mini` as the fallback
     "rcarriga/nvim-notify",
   },
-  enabled = true,
+  enabled = false,
   opts = {
     cmdline = {
       view = "cmdline",
