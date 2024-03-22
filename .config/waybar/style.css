@@ -39,7 +39,8 @@ button {
 }
 
 #workspaces button:hover {
-  color: @pine;
+  /* color: @pine; */
+  color: @iris;
   box-shadow: inherit;
   text-shadow: inherit;
 }
@@ -53,11 +54,13 @@ button {
 }
 
 #workspaces button.selected {
-  color: @pine;
+  /* color: @pine; */
+  color: @iris;
 }
 
 #workspaces button.active {
-  color: @pine;
+  /* color: @pine; */
+  color: @iris;
   background-color: @overlay;
   padding: 0px 25px 0px 25px;
 }
@@ -112,7 +115,7 @@ button {
 }
 
 /* If workspaces is the leftmost module, loveuce left margin */
-.modules-left > widget:first-child > #workspaces {
+.modules-left>widget:first-child>#workspaces {
   margin-left: 2px;
 }
 
@@ -139,7 +142,8 @@ button {
 
 #network,
 #bluetooth {
-  color: @pine;
+  /* color: @pine; */
+  color: @iris;
 }
 
 #network.disconnected {
@@ -149,7 +153,8 @@ button {
 #battery,
 #memory,
 #disk {
-  color: @foam;
+  /* color: @foam; */
+  color: @iris;
 }
 
 #battery.warning:not(.charging) {
@@ -163,11 +168,11 @@ button {
   background: @base;
 }
 
-#keyboard-state > label {
+#keyboard-state>label {
   padding: 0 5px;
 }
 
-#keyboard-state > label.locked {
+#keyboard-state>label.locked {
   background: rgba(0, 0, 0, 0.2);
 }
 
