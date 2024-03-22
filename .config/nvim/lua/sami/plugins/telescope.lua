@@ -2,12 +2,19 @@
 -- See `:help telescope` and `:help telescope.setup()`
 require('telescope').setup {
   defaults = {
-    layout_strategy = "vertical",
+    border = true,
+    borderchars = { '─', '│', '─', '│', '┌', '┐', '┘', '└' },
+    layout_strategy = "horizontal",
     layout_config = {
-      height = vim.o.lines,      -- maximally available lines
-      width = vim.o.columns,     -- maximally available columns
+      height = vim.o.lines,  -- maximally available lines
+      width = vim.o.columns, -- maximally available columns
       prompt_position = "bottom",
-      preview_height = 0.6,      -- 60% of available lines
+      -- preview_height = 0.6,  -- 60% of available lines
+      horizontal = {
+        preview_width = 0.6, -- 60% of available columns
+        preview_cutoff = 120,
+        prompt_position = "bottom",
+      },
     },
     mappings = {
       i = {
