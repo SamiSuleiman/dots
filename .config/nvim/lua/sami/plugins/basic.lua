@@ -15,8 +15,15 @@ return {
         'chrisbra/colorizer',
         'sbdchd/neoformat',
         'mfussenegger/nvim-lint',
-        'github/copilot.vim',
         'windwp/nvim-ts-autotag',
+        {
+            "tpope/vim-dadbod",
+            enabled = true,
+        },
+        {
+            'github/copilot.vim',
+            enabled = true
+        },
         {
             'akinsho/bufferline.nvim',
             enabled = false,
