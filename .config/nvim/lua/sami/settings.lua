@@ -106,3 +106,6 @@ vim.g.copilot_assume_mapped = true
 -- default split from bottom-right
 vim.opt.splitbelow = true
 vim.opt.splitright = true
+
+-- this is for using `Exec` for seeing shell file output in a new split window
+vim.cmd("command Exec set splitright | vnew | set filetype=sh | read !sh #")
