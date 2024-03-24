@@ -3,7 +3,7 @@
 swaylock\
   -F\
   -e\
-  --image ~/.config/hypr/wall.png\
+  --image ~/.config/hypr/wall.jpg\
   --show-keyboard-layout\
   --font "Cantarell"\
   --font-size 14\
