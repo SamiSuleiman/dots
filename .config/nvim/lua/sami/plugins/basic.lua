@@ -198,9 +198,9 @@ return {
                 },
                 color_overrides = {
                     mocha = {
-                        base = "#000000",
-                        mantle = "#000000",
-                        crust = "#000000",
+                        base = "#0f0f0f",
+                        mantle = "#0f0f0f",
+                        crust = "#0f0f0f",
                     },
                 },
                 custom_highlights = {},
