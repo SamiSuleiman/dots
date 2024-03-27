@@ -1,7 +1,7 @@
 @import "./cat.css";
 
 * {
-  font-family: Cantarell;
+  font-family: JetBrainsMono Nerd Font;
   font-weight: bolder;
   font-size: 15px;
   /* border-radius: 10px; */

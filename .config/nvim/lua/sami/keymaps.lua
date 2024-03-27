@@ -105,7 +105,7 @@ vim.api.nvim_set_keymap("n", "<Tab>", ":bnext <cr>", { noremap = true })       -
 vim.api.nvim_set_keymap("n", "<S-Tab>", ":bprevious <cr>", { noremap = true }) -- Shift+Tab goes to previous buffer
 vim.api.nvim_set_keymap("n", "<leader>q", ":bd <cr>", { noremap = true })
 
-vim.api.nvim_set_keymap('n', '<C-s>', ':Neoformat<CR> :w<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<C-s>', ':Neoformat<CR><CR>', { noremap = true })
 
 vim.api.nvim_set_keymap('n', '<C-u>', '<C-u>zz', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-d>', '<C-d>zz', { noremap = true })

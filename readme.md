@@ -5,13 +5,14 @@ my hyprland dotfiles on arch linux ^^
 ![1](./.github/1.png)
 ![2](./.github/2.png)
 ![3](./.github/3.png)
+![4](./.github/4.png)
 
 ## info
 
 - **os**: arch linux
 - **compositor**: hyprland
 - **terminal**: kitty
-- **font**: Maple Mono NF + Cantarell
+- **font**: jetbrains mono (nerd font)
 - **editor**: neovim
 - **browser**: firefox + betterfox
 - **app launcher**: rofi
