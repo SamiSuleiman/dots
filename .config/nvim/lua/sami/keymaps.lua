@@ -39,7 +39,7 @@ vim.keymap.set("v", "<leader>mc", "di``<esc>hp", { desc = "auto backtick" })
 
 -- LazyGit
 -- vim.keymap.set('n', "<leader>gg", vim.cmd.LazyGit, { desc = 'Open LazyGit' })
-vim.keymap.set('n', "<leader>gg", vim.cmd.Neogit, { desc = 'open neogit' })
+-- vim.keymap.set('n', "<leader>gg", vim.cmd.Neogit, { desc = 'open neogit' })
 
 -- vim.keymap.set('n', "<leader>ee", vim.cmd.Neotree, { desc = 'Open Neotree' })
 
