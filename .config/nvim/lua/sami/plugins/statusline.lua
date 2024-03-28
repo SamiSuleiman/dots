@@ -63,14 +63,14 @@ require('lualine').setup {
     tabline = {},
     winbar = {
         lualine_a = {
-            { 'lsp', fmt = lsp_comp, icon = '', color = { fg = '#BAC2DE', bg = '#0f0f0f' } },
+            { 'lsp', fmt = lsp_comp, icon = '', color = { fg = '#BAC2DE', bg = '#1E1E2E' } },
         },
         lualine_b = {},
         lualine_c = {},
         lualine_x = {},
         lualine_y = {},
         lualine_z = {
-            { 'recording', fmt = is_recording, icon = '', color = { fg = '#BAC2DE', bg = '#0f0f0f' }, padding = { left = 1, right = 1 } }
+            { 'recording', fmt = is_recording, icon = '', color = { fg = '#BAC2DE', bg = '#1E1E2E' }, padding = { left = 1, right = 1 } }
         }
     },
     inactive_winbar = {},

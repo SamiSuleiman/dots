@@ -9,7 +9,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   pattern = '*',
 })
 
-local symbols = { Error = "", Info = "", Hint = "", Warn = "" }
+local symbols = { Error = "■", Info = "●", Hint = "○", Warn = "▲" }
 
 for name, icon in pairs(symbols) do
   local hl = "DiagnosticSign" .. name
@@ -62,6 +62,7 @@ vim.opt.cmdheight = 0
 vim.opt.showbreak = "↪"
 vim.opt.list = true
 vim.opt.listchars = { tab = "» ", trail = "·", extends = "❯", precedes = "❮", nbsp = "␣", eol = "↲" }
+-- vim.opt.listchars = { tab = "» ", trail = "·", extends = "❯", precedes = "❮", nbsp = "␣", eol = "↯" }
 
 -- Search
 vim.o.incsearch = true  -- starts searching as soon as typing, without enter needed

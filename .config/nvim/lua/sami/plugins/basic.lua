@@ -4,22 +4,54 @@ return {
         'onsails/lspkind.nvim',
         'windwp/nvim-ts-autotag',
         'nvim-lua/plenary.nvim',
-        'mbbill/undotree',
+        -- 'mbbill/undotree',
         'nvim-lualine/lualine.nvim',
-        'kdheepak/lazygit.nvim',
+        -- 'kdheepak/lazygit.nvim',
         'tpope/vim-surround',
         'tpope/vim-fugitive',
         'tpope/vim-rhubarb',
         'tpope/vim-sleuth',
-        'mattn/emmet-vim',
         'chrisbra/colorizer',
         'sbdchd/neoformat',
         'mfussenegger/nvim-lint',
         'windwp/nvim-ts-autotag',
         { 'nvim-tree/nvim-web-devicons' },
         {
+            "microsoft/vscode-js-debug",
+            build = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out"
+        },
+        {
+            "mxsdev/nvim-dap-vscode-js",
+            requires = { "mfussenegger/nvim-dap" },
+            opts = {
+                -- node_path = "node", -- Path of node executable. Defaults to $NODE_PATH, and then "node"
+                debugger_path = "/home/sami/.local/share/nvim/lazy/vscode-js-debug",                         -- Path to vscode-js-debug installation.
+                -- debugger_cmd = { "js-debug-adapter" }, -- Command to use to launch the debug server. Takes precedence over `node_path` and `debugger_path`.
+                adapters = { 'pwa-node', 'pwa-chrome', 'pwa-msedge', 'node-terminal', 'pwa-extensionHost' }, -- which adapters to register in nvim-dap
+                -- log_file_path = "(stdpath cache)/dap_vscode_js.log" -- Path for file logging
+                -- log_file_level = false -- Logging level for output to file. Set to false to disable file logging.
+                -- log_console_level = vim.log.levels.ERROR -- Logging level for output to console. Set to false to disable console output.
+            }
+        },
+        {
+            "kndndrj/nvim-dbee",
+            enabled = false,
+            dependencies = {
+                "MunifTanjim/nui.nvim",
+            },
+            build = function()
+                -- Install tries to automatically detect the install method.
+                -- if it fails, try calling it with one of these parameters:
+                --    "curl", "wget", "bitsadmin", "go"
+                require("dbee").install()
+            end,
+            config = function()
+                require("dbee").setup( --[[optional config]])
+            end,
+        },
+        {
             "tpope/vim-dadbod",
-            enabled = true,
+            enabled = false,
         },
         {
             'github/copilot.vim',
@@ -34,6 +66,7 @@ return {
         },
         {
             "folke/zen-mode.nvim",
+            enabled = false,
             opts = {}
         },
         {
@@ -134,33 +167,6 @@ return {
             }
         },
         {
-            "Tsuzat/NeoSolarized.nvim",
-            lazy = false,
-            priority = 1000,
-            enabled = false,
-            opts = {
-                style = "dark",         -- "dark" or "light"
-                transparent = true,     -- true/false; Enable this to disable setting the background color
-                terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
-                enable_italics = true,  -- Italics for different hightlight groups (eg. Statement, Condition, Comment, Include, etc.)
-                styles = {
-                    -- Style to be applied to different syntax groups
-                    comments = { italic = true },
-                    keywords = { italic = true },
-                    functions = { bold = false },
-                    variables = {},
-                    string = { italic = true },
-                    underline = true, -- true/false; for global underline
-                    undercurl = true, -- true/false; for global undercurl
-                },
-                -- Add specific hightlight groups
-                on_highlights = function(highlights, colors)
-                    -- highlights.Include.fg = colors.red -- Using `red` foreground for Includes
-                end,
-            }
-
-        },
-        {
             "catppuccin/nvim",
             name = "catppuccin",
             priority = 1000,
@@ -197,11 +203,11 @@ return {
                     -- miscs = {}, -- Uncomment to turn off hard-coded styles
                 },
                 color_overrides = {
-                    mocha = {
-                        base = "#0f0f0f",
-                        mantle = "#0f0f0f",
-                        crust = "#0f0f0f",
-                    },
+                    -- mocha = {
+                    --     base = "#0f0f0f",
+                    --     mantle = "#0f0f0f",
+                    --     crust = "#0f0f0f",
+                    -- },
                 },
                 custom_highlights = {},
                 integrations = {
@@ -216,77 +222,6 @@ return {
                     },
                     -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
                 },
-            }
-        },
-        {
-            "rose-pine/neovim",
-            enable = false,
-            name = "rose-pine",
-            opts = {
-                variant = "auto",      -- auto, main, moon, or dawn
-                dark_variant = "main", -- main, moon, or dawn
-                dim_inactive_windows = true,
-                extend_background_behind_borders = true,
-
-                enable = {
-                    terminal = true,
-                    legacy_highlights = true, -- Improve compatibility for previous versions of Neovim
-                    migrations = true,        -- Handle deprecated options automatically
-                },
-
-                styles = {
-                    bold = true,
-                    italic = true,
-                    transparency = false,
-                },
-
-                groups = {
-                    border = "muted",
-                    link = "iris",
-                    panel = "surface",
-
-                    error = "love",
-                    hint = "iris",
-                    info = "foam",
-                    note = "pine",
-                    todo = "rose",
-                    warn = "gold",
-
-                    git_add = "foam",
-                    git_change = "rose",
-                    git_delete = "love",
-                    git_dirty = "rose",
-                    git_ignore = "muted",
-                    git_merge = "iris",
-                    git_rename = "pine",
-                    git_stage = "iris",
-                    git_text = "rose",
-                    git_untracked = "subtle",
-
-                    h1 = "iris",
-                    h2 = "foam",
-                    h3 = "rose",
-                    h4 = "gold",
-                    h5 = "pine",
-                    h6 = "foam",
-                },
-
-                highlight_groups = {
-                    -- Comment = { fg = "foam" },
-                    -- VertSplit = { fg = "muted", bg = "muted" },
-                },
-
-                before_highlight = function(group, highlight, palette)
-                    -- Disable all undercurls
-                    -- if highlight.undercurl then
-                    --     highlight.undercurl = false
-                    -- end
-                    --
-                    -- Change palette colour
-                    -- if highlight.fg == palette.pine then
-                    --     highlight.fg = palette.foam
-                    -- end
-                end,
             }
         },
         {
@@ -395,8 +330,6 @@ return {
             -- requirements installed.
             {
                 'nvim-telescope/telescope-fzf-native.nvim',
-                -- NOTE: If you are having trouble with this installation,
-                --       refer to the README for telescope-fzf-native for more instructions.
                 build = 'make',
                 cond = function()
                     return vim.fn.executable 'make' == 1
