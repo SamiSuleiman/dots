@@ -62,8 +62,8 @@ vim.api.nvim_set_keymap('n', '<C-Right>', ':lua vim.api.nvim_win_set_width(0, vi
   { noremap = true, silent = true })
 
 -- Splitting
-vim.api.nvim_set_keymap('n', '<leader>kv', ':vsplit<cr>', { desc = 'split current window vertically' })
-vim.api.nvim_set_keymap('n', '<leader>kh', ':split<cr>', { desc = 'split current window horizontally' })
+vim.api.nvim_set_keymap('n', '<c-w>%', ':vsplit<cr>', { desc = 'split current window vertically' })
+vim.api.nvim_set_keymap('n', '<c-w>"', ':split<cr>', { desc = 'split current window horizontally' })
 
 -- Harpoon
 local mark = require("harpoon.mark")
@@ -111,6 +111,17 @@ vim.api.nvim_set_keymap('n', '<C-u>', '<C-u>zz', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-d>', '<C-d>zz', { noremap = true })
 
 vim.api.nvim_set_keymap('n', 'Z', ':ZenMode<CR>', { noremap = true })
+
+vim.keymap.set('n', '<c-k>', ':wincmd k<CR>', { noremap = true })
+vim.keymap.set('n', '<c-j>', ':wincmd j<CR>', { noremap = true })
+vim.keymap.set('n', '<c-h>', ':wincmd h<CR>', { noremap = true })
+vim.keymap.set('n', '<c-l>', ':wincmd l<CR>', { noremap = true })
+vim.keymap.set('n', '<c-h>', ':TmuxNavigateLeft<cr>')
+vim.keymap.set('n', '<c-j>', ':TmuxNavigateDown<cr>')
+vim.keymap.set('n', '<c-k>', ':TmuxNavigateUp<cr>')
+vim.keymap.set('n', '<c-l>', ':TmuxNavigateRight<cr>')
+
+
 -- Spectre (search and replace)
 -- vim.keymap.set('n', '<leader>S', '<cmd>lua require("spectre").toggle()<CR>', {
 --   desc = "Toggle Spectre"

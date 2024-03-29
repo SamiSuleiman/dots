@@ -152,3 +152,11 @@ setup_cron_job() {
     fi
 }
 # setup_cron_job
+
+# pnpm
+export PNPM_HOME="/home/sami/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

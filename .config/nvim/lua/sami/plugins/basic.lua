@@ -15,7 +15,8 @@ return {
         'sbdchd/neoformat',
         'mfussenegger/nvim-lint',
         'windwp/nvim-ts-autotag',
-        { 'nvim-tree/nvim-web-devicons' },
+        'christoomey/vim-tmux-navigator',
+        'nvim-tree/nvim-web-devicons',
         {
             "microsoft/vscode-js-debug",
             build = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out"
@@ -234,7 +235,7 @@ return {
                 keymaps_help = {
                     border = "rounded",
                 },
-                use_default_keymaps = true,
+                use_default_keymaps = false,
                 view_options = {
                     show_hidden = true,
                     is_hidden_file = function(name, bufnr)
@@ -247,8 +248,6 @@ return {
                 keymaps = {
                     ["g?"] = "actions.show_help",
                     ["<CR>"] = "actions.select",
-                    ["<C-s>"] = "actions.select_vsplit",
-                    ["<C-h>"] = "actions.select_split",
                     ["<C-t>"] = "actions.select_tab",
                     ["<C-p>"] = "actions.preview",
                     ["<C-c>"] = "actions.close",
