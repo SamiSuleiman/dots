@@ -36,4 +36,5 @@ require('sami.plugins.statusline')
 
 -- vim.cmd("colorscheme catppuccin")
 vim.cmd("colorscheme rose-pine")
+vim.cmd('highlight Normal guibg=#0E0A00')
 -- vim.cmd [[ colorscheme NeoSolarized ]]
