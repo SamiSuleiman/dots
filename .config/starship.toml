@@ -1,0 +1,27 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+[line_break]
+disabled = true
+
+[cmd_duration]
+min_time = 500
+format = 'underwent [$duration](bold yellow)'
+
+[nodejs]
+symbol = '⬢ '
+
+[lua]
+symbol = ' '
+
+[git_branch]
+symbol = ' '
+truncation_length = 4
+truncation_symbol = ''
+ignore_branches = ['master', 'main']
+
+[directory]
+truncation_length = 1
+truncation_symbol = '…/'
+home_symbol = '󱎃'
+read_only = '  '

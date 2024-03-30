@@ -4,8 +4,7 @@
 }
 
 window {
-  color: #cdd6f4; /* text */
-  background-color: rgba(30, 30, 46, 0.9);
+  background-color: rgba(25, 23, 36, 0.3);
 }
 
 button {
@@ -18,18 +17,14 @@ button {
   background-size: 9%;
   border: none;
   margin: 3px;
-  background-color: rgba(30, 30, 46, 0);
+  background-color: rgba(25, 23, 36, 0.6);
 }
 
+button:focus,
 button:active,
 button:hover {
-  background-color: rgba(49, 50, 68, 0.1);
+  background-color: rgba(38, 35, 58, 1);
   outline-style: none;
-}
-
-button:focus {
-  background-color: #232634;
-  color: #c6d0f5;
 }
 
 #lock {

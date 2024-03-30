@@ -1,17 +1,18 @@
 @import "default"
-* {
-	bg: #1e1e2e;
-	cur: #1f1d2e;
-	fgd: #cdd6f4;
-	cmt: #585b70;
-	cya: #89dceb;
-	grn: #a6e3a1;
-	ora: #eba0ac;
-	pur: #b4befe;
-	red: #f38ba8;
-	yel: #f9e2af;
 
-	font: "JetBrainsMono Nerd Font 10";
+* {
+	bg: #191724;
+	cur: #1f1d2e;
+	fgd: #e0def4;
+	cmt: #6e6a86;
+	cya: #9ccfd8;
+	grn: #31748f;
+	ora: #ebbcba;
+	pur: #c4a7e7;
+	red: #eb6f92;
+	yel: #f6c177;
+
+	font: "Cantarell 10";
 
 	foreground: @fgd;
 	background: @bg;
