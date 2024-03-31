@@ -129,7 +129,6 @@ vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(
     }
 )
 
--- todo: add this to the `setup_handlers` function as an override
 local nvim_lsp = require('lspconfig')
 nvim_lsp.angularls.setup {
     on_attach = on_attach,
@@ -137,4 +136,20 @@ nvim_lsp.angularls.setup {
     cmd = { 'angularls', '--stdio' },
     filetypes = { 'typescript', 'html', 'typescriptreact', 'typescript.tsx' },
     root_dir = nvim_lsp.util.root_pattern('angular.json', 'nx.json'),
+}
+
+nvim_lsp.svelte.setup {
+    on_attach = function(client)
+        on_attach()
+        vim.api.nvim_create_autocmd("BufWritePost", {
+            pattern = { "*.ts", "*.js" },
+            callback = function(ctx)
+                client.notify("$/onDidChangeTsOrJsFile", { uri = ctx.match })
+            end
+        })
+    end,
+    capabilities = capabilities,
+    cmd = { 'svelteserver', '--stdio' },
+    filetypes = { 'svelte' },
+    root_dir = nvim_lsp.util.root_pattern('svelte.config.js', 'svelte.config.cjs'),
 }
