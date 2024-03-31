@@ -18,7 +18,8 @@ vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc
 vim.keymap.set('n', '<leader>sm', ':Telescope harpoon marks<cr>')
 vim.keymap.set('n', '<leader>sG', ':LiveGrepGitRoot<cr>', { desc = '[s]earch by [g]rep on git root' })
 vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[s]earch [d]iagnostics' })
-vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = '[s]earch [r]esume' })
+vim.keymap.set('n', '<leader>sa', require('telescope.builtin').resume, { desc = '[s]earch [a]mend' })
+vim.keymap.set('n', '<leader>sr', require('telescope.builtin').registers, { desc = '[s]earch [r]egisters' })
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
 -- See `:help telescope.builtin`
 vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] find recently opened files' })
