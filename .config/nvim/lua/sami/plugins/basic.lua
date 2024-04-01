@@ -236,8 +236,8 @@ return {
             'ThePrimeagen/harpoon',
             opts = {
                 menu = {
-                    height = vim.o.lines,  -- maximally available lines
-                    width = vim.o.columns, -- maximally available columns
+                    height = vim.o.lines - 20,   -- maximally available lines
+                    width = vim.o.columns - 120, -- maximally available columns
                 }
             }
         },
