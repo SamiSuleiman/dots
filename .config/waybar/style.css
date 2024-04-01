@@ -40,7 +40,7 @@ button {
 
 #workspaces button:hover {
   /* color: @pine; */
-  color: @iris;
+  color: @text;
   box-shadow: inherit;
   text-shadow: inherit;
 }
@@ -55,13 +55,13 @@ button {
 
 #workspaces button.selected {
   /* color: @pine; */
-  color: @iris;
+  color: @text;
 }
 
 #workspaces button.active {
   /* color: @pine; */
-  color: @iris;
-  background-color: @overlay;
+  color: @pine;
+  border-bottom: 1px solid @highlightLow;
   padding: 0px 25px 0px 25px;
 }
 
@@ -100,12 +100,14 @@ button {
   color: @text;
   /* border-radius: 15px; */
   margin: 5px 0;
-  background-color: @overlay;
+  border-bottom: 1px solid @highlightLow;
+  /* background-color: @surface; */
 }
 
 #custom-apps {
-  background-color: @overlay;
+  /* background-color: @overlay; */
   padding: 0px 25px 0px 25px;
+  border-bottom: 1px solid @highlightLow;
   color: @love;
 }
 
@@ -133,11 +135,11 @@ button {
 
 #pulseaudio,
 #backlight {
-  color: @iris;
+  color: @rose;
 }
 
 #pulseaudio.muted {
-  color: @iris;
+  color: @text;
 }
 
 #network,
@@ -154,7 +156,7 @@ button {
 #memory,
 #disk {
   /* color: @foam; */
-  color: @iris;
+  color: @pine;
 }
 
 #battery.warning:not(.charging) {
