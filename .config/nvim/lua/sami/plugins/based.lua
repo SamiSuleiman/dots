@@ -1,86 +1,9 @@
 return {
     {
-        'echasnovski/mini.move',
-        version = '*'
-    },
-    {
-        "rose-pine/neovim",
-        name = "rose-pine",
-        opts = {
-            {
-                variant = "auto",      -- auto, main, moon, or dawn
-                dark_variant = "main", -- main, moon, or dawn
-                dim_inactive_windows = false,
-                extend_background_behind_borders = true,
-
-                enable = {
-                    terminal = true,
-                    legacy_highlights = true, -- Improve compatibility for previous versions of Neovim
-                    migrations = true,        -- Handle deprecated options automatically
-                },
-
-                styles = {
-                    bold = true,
-                    italic = true,
-                    transparency = false,
-                },
-
-                groups = {
-                    border = "muted",
-                    link = "iris",
-                    panel = "surface",
-
-                    error = "love",
-                    hint = "iris",
-                    info = "foam",
-                    note = "pine",
-                    todo = "rose",
-                    warn = "gold",
-
-                    git_add = "foam",
-                    git_change = "rose",
-                    git_delete = "love",
-                    git_dirty = "rose",
-                    git_ignore = "muted",
-                    git_merge = "iris",
-                    git_rename = "pine",
-                    git_stage = "iris",
-                    git_text = "rose",
-                    git_untracked = "subtle",
-
-                    h1 = "iris",
-                    h2 = "foam",
-                    h3 = "rose",
-                    h4 = "gold",
-                    h5 = "pine",
-                    h6 = "foam",
-                },
-
-                highlight_groups = {
-                    -- Comment = { fg = "foam" },
-                    -- VertSplit = { fg = "muted", bg = "muted" },
-                },
-
-                before_highlight = function(group, highlight, palette)
-                    -- Disable all undercurls
-                    -- if highlight.undercurl then
-                    --     highlight.undercurl = false
-                    -- end
-                    --
-                    -- Change palette colour
-                    -- if highlight.fg == palette.pine then
-                    --     highlight.fg = palette.foam
-                    -- end
-                end,
-            }
-        }
-    },
-    {
         'tpope/vim-repeat',
         'onsails/lspkind.nvim',
         'windwp/nvim-ts-autotag',
         'nvim-lua/plenary.nvim',
-        -- 'mbbill/undotree',
         'tpope/vim-surround',
         'tpope/vim-fugitive',
         'tpope/vim-rhubarb',
@@ -91,6 +14,25 @@ return {
         'christoomey/vim-tmux-navigator',
         'nvim-tree/nvim-web-devicons',
         {
+            'echasnovski/mini.move',
+            version = '*',
+            opts = {
+                mappings = {
+                    -- Move visual selection in Visual mode. Defaults are Alt (Meta) + hjkl.
+                    left = '<A-h>',
+                    right = '<A-l>',
+                    down = '<A-j>',
+                    up = '<A-k>',
+
+                    -- Aove current line in Normal mode
+                    line_left = '<A-h>',
+                    line_right = '<A-l>',
+                    line_down = '<A-j>',
+                    line_up = '<A-k>',
+                },
+            }
+        },
+        {
             "microsoft/vscode-js-debug",
             build = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out"
         },
@@ -98,13 +40,8 @@ return {
             "mxsdev/nvim-dap-vscode-js",
             requires = { "mfussenegger/nvim-dap" },
             opts = {
-                -- node_path = "node", -- Path of node executable. Defaults to $NODE_PATH, and then "node"
-                debugger_path = "/home/sami/.local/share/nvim/lazy/vscode-js-debug",                         -- Path to vscode-js-debug installation.
-                -- debugger_cmd = { "js-debug-adapter" }, -- Command to use to launch the debug server. Takes precedence over `node_path` and `debugger_path`.
-                adapters = { 'pwa-node', 'pwa-chrome', 'pwa-msedge', 'node-terminal', 'pwa-extensionHost' }, -- which adapters to register in nvim-dap
-                -- log_file_path = "(stdpath cache)/dap_vscode_js.log" -- Path for file logging
-                -- log_file_level = false -- Logging level for output to file. Set to false to disable file logging.
-                -- log_console_level = vim.log.levels.ERROR -- Logging level for output to console. Set to false to disable console output.
+                debugger_path = "/home/sami/.local/share/nvim/lazy/vscode-js-debug",
+                adapters = { 'pwa-node', 'pwa-chrome', 'pwa-msedge', 'node-terminal', 'pwa-extensionHost' },
             }
         },
         {
@@ -718,4 +655,28 @@ return {
             extensions = { 'oil', 'mason' }
         }
     },
+    {
+        "rose-pine/neovim",
+        name = "rose-pine",
+        opts = {
+            {
+                variant = "auto",      -- auto, main, moon, or dawn
+                dark_variant = "main", -- main, moon, or dawn
+                dim_inactive_windows = false,
+                extend_background_behind_borders = true,
+
+                enable = {
+                    terminal = true,
+                    legacy_highlights = true, -- Improve compatibility for previous versions of Neovim
+                    migrations = true,        -- Handle deprecated options automatically
+                },
+
+                styles = {
+                    bold = true,
+                    italic = true,
+                    transparency = true,
+                },
+            }
+        }
+    }
 }
