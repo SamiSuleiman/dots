@@ -21,22 +21,14 @@ vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { de
 vim.keymap.set('n', '<leader>sa', require('telescope.builtin').resume, { desc = '[s]earch [a]mend' })
 vim.keymap.set('n', '<leader>sr', require('telescope.builtin').registers, { desc = '[s]earch [r]egisters' })
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
--- See `:help telescope.builtin`
 vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] find recently opened files' })
 vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers, { desc = '[ ] find existing buffers' })
 vim.keymap.set('n', '<leader>/', function()
-  -- You can pass additional configuration to telescope to change theme, layout, etc.
   require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
     winblend = 10,
     previewer = false,
   })
 end, { desc = '[/] fuzzily search in current buffer' })
-
--- markdown
-vim.keymap.set("v", "<leader>mb", "di****<esc>hhp", { desc = "auto bold" })
-vim.keymap.set("v", "<leader>mi", "di**<esc>hp", { desc = "auto italic" })
-vim.keymap.set("v", "<leader>ml", "di[]()<esc>hhhpllli", { desc = "auto link" })
-vim.keymap.set("v", "<leader>mc", "di``<esc>hp", { desc = "auto backtick" })
 
 -- LazyGit
 -- vim.keymap.set('n', "<leader>gg", vim.cmd.LazyGit, { desc = 'Open LazyGit' })
@@ -66,7 +58,6 @@ vim.api.nvim_set_keymap('n', '<C-Right>', ':lua vim.api.nvim_win_set_width(0, vi
 vim.api.nvim_set_keymap('n', '<c-w>%', ':vsplit<cr>', { desc = 'split current window vertically' })
 vim.api.nvim_set_keymap('n', '<c-w>"', ':split<cr>', { desc = 'split current window horizontally' })
 
--- Harpoon
 local mark = require("harpoon.mark")
 local ui = require("harpoon.ui")
 
@@ -89,30 +80,18 @@ vim.keymap.set('n', '<leader>nd', function()
   end,
   { desc = 'dismiss notifications' })
 
--- copy to clipboard
 vim.api.nvim_set_keymap('v', '<Leader>y', '"+y', { noremap = true })
 vim.api.nvim_set_keymap('n', '<Leader>y', '"+yy', { noremap = true })
--- nx
--- vim.keymap.set("n", "<leader>ng", require("nx.generators").generators, { desc = "[N]x [G]enerators" })
 vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "open parent directory" })
-
 vim.g.user_emmet_mode = [[n]]
 vim.g.user_emmet_leader_key = [[,]]
-
--- buffer stuff
--- vim.api.nvim_set_keymap('n', '<C-b>h', ':bnext<CR>', { noremap = true })
--- vim.api.nvim_set_keymap('n', '<C-b>l', ':bprev<CR>', { noremap = true })
 vim.api.nvim_set_keymap("n", "<Tab>", ":bnext <cr>", { noremap = true })       -- Tab goes to next buffer
 vim.api.nvim_set_keymap("n", "<S-Tab>", ":bprevious <cr>", { noremap = true }) -- Shift+Tab goes to previous buffer
 vim.api.nvim_set_keymap("n", "<leader>q", ":bd <cr>", { noremap = true })
-
 vim.api.nvim_set_keymap('n', '<C-s>', ':Neoformat<CR><CR>', { noremap = true })
-
 vim.api.nvim_set_keymap('n', '<C-u>', '<C-u>zz', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-d>', '<C-d>zz', { noremap = true })
-
 vim.api.nvim_set_keymap('n', 'Z', ':ZenMode<CR>', { noremap = true })
-
 vim.keymap.set('n', '<c-k>', ':wincmd k<CR>', { noremap = true })
 vim.keymap.set('n', '<c-j>', ':wincmd j<CR>', { noremap = true })
 vim.keymap.set('n', '<c-h>', ':wincmd h<CR>', { noremap = true })
@@ -121,18 +100,4 @@ vim.keymap.set('n', '<c-h>', ':TmuxNavigateLeft<cr>')
 vim.keymap.set('n', '<c-j>', ':TmuxNavigateDown<cr>')
 vim.keymap.set('n', '<c-k>', ':TmuxNavigateUp<cr>')
 vim.keymap.set('n', '<c-l>', ':TmuxNavigateRight<cr>')
-
-
--- Spectre (search and replace)
--- vim.keymap.set('n', '<leader>S', '<cmd>lua require("spectre").toggle()<CR>', {
---   desc = "Toggle Spectre"
--- })
--- vim.keymap.set('n', '<leader>sw', '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', {
---   desc = "Search current word"
--- })
--- vim.keymap.set('v', '<leader>sw', '<esc><cmd>lua require("spectre").open_visual()<CR>', {
---   desc = "Search current word"
--- })
--- vim.keymap.set('n', '<leader>sp', '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', {
---   desc = "Search in current file"
--- })
+vim.keymap.set("n", "<Esc>", ":nohl<CR>:echo<CR>")

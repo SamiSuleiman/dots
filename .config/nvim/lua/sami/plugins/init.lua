@@ -15,22 +15,13 @@ vim.opt.rtp:prepend(lazypath)
 
 require('lazy').setup({
   {
-    require('sami.plugins.mason'),
-    require('sami.plugins.basic'),
-    require('sami.plugins.autoformat'),
-    require('sami.plugins.debug'),
-    require('sami.plugins.gitsigns'),
-    require('sami.plugins.noice'),
-    require('sami.plugins.markdown_prev'),
+    require('sami.plugins.based'),
   },
 }, {})
 
 require('sami.plugins.telescope')
 require('sami.plugins.lsp')
-require('sami.plugins.nvim-cmp')
 require('sami.plugins.treesitter')
-require('sami.plugins.nvim-lint')
-require('sami.plugins.statusline')
 
 vim.cmd("colorscheme rose-pine")
 vim.cmd('highlight Normal guibg=#0E0A00')

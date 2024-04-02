@@ -20,11 +20,8 @@ vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.linebreak = true
 vim.opt.breakindent = true
-
--- vim.opt.textwidth = 120
--- vim.opt.wrapmargin =
 vim.opt.colorcolumn = "120"
--- vim.opt.cursorline = true
+vim.opt.cursorline = false
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 2
