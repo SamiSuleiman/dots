@@ -8,6 +8,13 @@ fish_add_path $HOME/.cargo/bin
 fish_add_path $GOPATH/bin
 fish_add_path $HOME/.local/bin
 
+alias c="clear"
+alias v="nvim"
+alias tn="tmux new-session -s"
+alias t="tmux new-session -A -s"
+alias tls="tmux ls"
+alias tk="tmux kill-session -t"
+alias ta="tmux attach-session -d"
 
 set -gx EDITOR nvim
 set -gx LSCOLORS ExGxBxDxCxEgEdxbxgxcxd
