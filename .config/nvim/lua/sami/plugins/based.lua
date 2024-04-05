@@ -81,8 +81,7 @@ return {
             'ThePrimeagen/harpoon',
             opts = {
                 menu = {
-                    height = vim.o.lines - 20,
-                    width = vim.o.columns - 120,
+                    width = vim.api.nvim_win_get_width(0) - 4,
                 }
             }
         },
