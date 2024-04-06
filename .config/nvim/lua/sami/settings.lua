@@ -20,8 +20,7 @@ vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.linebreak = true
 vim.opt.breakindent = true
-vim.opt.colorcolumn = "120"
-vim.opt.cursorline = false
+-- vim.opt.colorcolumn = "120"
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 2
@@ -46,52 +45,21 @@ vim.opt.showmatch = true
 vim.opt.synmaxcol = 300 -- stop syntax highlighting for performance
 vim.opt.laststatus = 2  -- always show statusline
 vim.opt.foldenable = false
-
 vim.opt.cursorline = true
--- vim.cmd('highlight CursorLine ctermbg=darkblue guibg=darkblue')
-
--- Sidebar
 vim.opt.numberwidth = 1
 vim.opt.showcmd = true
 vim.opt.cmdheight = 0
-
-
 vim.opt.showbreak = "↪"
 vim.opt.list = false
 vim.opt.listchars = { tab = "» ", trail = "·", extends = "❯", precedes = "❮", nbsp = "␣", eol = "↲" }
-
--- Search
 vim.o.incsearch = true  -- starts searching as soon as typing, without enter needed
 vim.o.ignorecase = true -- ignore letter case when searching
 vim.o.smartcase = true  -- case insentive unless capitals used in searcher
-
 vim.opt.termguicolors = true
-
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
-
 vim.opt.updatetime = 50
-
-local float = { focusable = true, style = "minimal", border = "single" }
-
-vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, float)
-vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, float)
-
 vim.api.nvim_set_hl(0, "FloatBorder", { fg = "#92C2CB" })
-
-vim.filetype.add({
-  extension = {
-    mdx = "mdx",
-    analog = "analog",
-  },
-})
-
-vim.filetype.add({
-  extension = {
-    [".all-contributorsrc"] = ".all-contributorsrc",
-  },
-})
-
 vim.opt.spelllang = 'en_us'
 vim.opt.spell = true
 vim.treesitter.language.register("markdown", "mdx")
@@ -99,10 +67,23 @@ vim.treesitter.language.register("vue", "analog")
 vim.treesitter.language.register("json", ".all-contributorsrc")
 vim.o.clipboard = true
 vim.g.copilot_assume_mapped = true
-
--- default split from bottom-right
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 
--- this is for using `Exec` for seeing shell file output in a new split window
+local float = { focusable = true, style = "minimal", border = "single" }
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, float)
+vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, float)
+
+vim.filetype.add({
+  extension = {
+    mdx = "mdx",
+    analog = "analog",
+  },
+})
+vim.filetype.add({
+  extension = {
+    [".all-contributorsrc"] = ".all-contributorsrc",
+  },
+})
+
 vim.cmd("command Exec set splitright | vnew | set filetype=sh | read !sh #")

@@ -14,6 +14,12 @@ return {
         'christoomey/vim-tmux-navigator',
         'nvim-tree/nvim-web-devicons',
         {
+            'akinsho/bufferline.nvim',
+            enabled = true,
+            version = "*",
+            opts = {}
+        },
+        {
             'echasnovski/mini.move',
             version = '*',
             opts = {
