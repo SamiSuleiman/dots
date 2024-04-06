@@ -18,7 +18,6 @@
   "launch": {},
   "[json]": {},
   "workbench.statusBar.visible": true,
-  "breadcrumbs.enabled": false,
   "update.showReleaseNotes": false,
   "zenMode.hideLineNumbers": false,
   "editor.lineNumbers": "relative",
@@ -96,5 +95,29 @@
   "window.menuBarVisibility": "hidden",
   "terminal.integrated.sendKeybindingsToShell": true,
   "explorer.confirmDelete": false,
-  "workbench.sideBar.location": "right" //
+  "workbench.sideBar.location": "right",
+  "search.defaultViewMode": "tree",
+  "search.mode": "newEditor",
+  "search.searchEditor.reusePriorSearchConfiguration": true,
+  "search.seedOnFocus": true,
+  "search.seedWithNearestWord": true,
+  "search.showLineNumbers": true,
+  "search.smartCase": true,
+  "search.experimental.quickAccess.preserveInput": true,
+  "window.commandCenter": false,
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.hideOnStartup": "always",
+  "workbench.startupEditor": "none",
+  "terminal.external.linuxExec": "kitty",
+  "workbench.panel.opensMaximized": "always",
+  "svelte.enable-ts-plugin": true,
+  "editor.bracketPairColorization.enabled": false,
+  "editor.guides.bracketPairs": "active",
+  "prettier.bracketSameLine": true,
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  }
 }

@@ -26,11 +26,11 @@
   // FILE TREE
   {
     "command": "workbench.action.toggleSidebarVisibility",
-    "key": "ctrl+e"
+    "key": "ctrl+shift+e"
   },
   {
     "command": "workbench.files.action.focusFilesExplorer",
-    "key": "ctrl+e",
+    "key": "ctrl+shift+e",
     "when": "editorTextFocus"
   },
   {
@@ -43,16 +43,16 @@
     "key": "r",
     "when": "filesExplorerFocus && !inputFocus"
   },
-  {
-    "key": "shift+n",
-    "command": "explorer.newFolder",
-    "when": "explorerViewletFocus"
-  },
-  {
-    "key": "shift+n",
-    "command": "workbench.action.newWindow",
-    "when": "!explorerViewletFocus"
-  },
+  // {
+  //   "key": "shift+n",
+  //   "command": "explorer.newFolder",
+  //   "when": "explorerViewletFocus"
+  // },
+  // {
+  //   "key": "shift+n",
+  //   "command": "workbench.action.newWindow",
+  //   "when": "!explorerViewletFocus"
+  // },
   {
     "command": "deleteFile",
     "key": "d",
@@ -153,5 +153,43 @@
     "key": "shift+escape",
     "command": "-hideSuggestWidget",
     "when": "suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+alt+f",
+    "command": "workbench.action.experimental.quickTextSearch"
+  },
+  {
+    "key": "alt+enter",
+    "command": "editor.action.accessibleViewAcceptInlineCompletion",
+    "when": "accessibleViewIsShown && accessibleViewCurrentProviderId == 'inlineCompletions'"
+  },
+  {
+    "key": "ctrl+/",
+    "command": "-editor.action.accessibleViewAcceptInlineCompletion",
+    "when": "accessibleViewIsShown && accessibleViewCurrentProviderId == 'inlineCompletions'"
+  },
+  {
+    "key": "alt+enter",
+    "command": "editor.action.inlineEdit.accept",
+    "when": "cursorAtInlineEdit && inlineEditVisible && !editorReadonly"
+  },
+  {
+    "key": "tab",
+    "command": "-editor.action.inlineEdit.accept",
+    "when": "cursorAtInlineEdit && inlineEditVisible && !editorReadonly"
+  },
+  {
+    "key": "alt+enter",
+    "command": "editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+  },
+  {
+    "key": "tab",
+    "command": "-editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
+  },
+  {
+    "key": "shift+k",
+    "command": "editor.action.showDefinitionPreviewHover"
   }
 ]
