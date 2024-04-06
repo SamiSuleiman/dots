@@ -7,6 +7,7 @@ fish_add_path /opt/homebrew/bin
 fish_add_path $HOME/.cargo/bin
 fish_add_path $GOPATH/bin
 fish_add_path $HOME/.local/bin
+fish_add_path $HOME/.local/share/pnpm
 
 alias c="clear"
 alias v="nvim"

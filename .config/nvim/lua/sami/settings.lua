@@ -47,7 +47,7 @@ vim.opt.synmaxcol = 300 -- stop syntax highlighting for performance
 vim.opt.laststatus = 2  -- always show statusline
 vim.opt.foldenable = false
 
--- vim.opt.cursorline = true
+vim.opt.cursorline = true
 -- vim.cmd('highlight CursorLine ctermbg=darkblue guibg=darkblue')
 
 -- Sidebar
@@ -57,9 +57,8 @@ vim.opt.cmdheight = 0
 
 
 vim.opt.showbreak = "↪"
-vim.opt.list = true
+vim.opt.list = false
 vim.opt.listchars = { tab = "» ", trail = "·", extends = "❯", precedes = "❮", nbsp = "␣", eol = "↲" }
--- vim.opt.listchars = { tab = "» ", trail = "·", extends = "❯", precedes = "❮", nbsp = "␣", eol = "↯" }
 
 -- Search
 vim.o.incsearch = true  -- starts searching as soon as typing, without enter needed

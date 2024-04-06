@@ -645,6 +645,7 @@ return {
                             return recording ~= '' and recording or nil
                         end,
                         icon = '',
+                        -- color = { fg = '#BAC2DE', bg = '#191724' },
                         color = { fg = '#BAC2DE', bg = '#191724' },
                         padding = { left = 1, right = 1 }
                     }
