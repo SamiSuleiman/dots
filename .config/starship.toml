@@ -26,5 +26,5 @@ ignore_branches = ['master', 'main']
 [directory]
 truncation_length = 1
 truncation_symbol = '…/'
-home_symbol = '󱎃'
+# home_symbol = '󱎃'
 read_only = '  '
