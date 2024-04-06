@@ -16,6 +16,9 @@ alias tls="tmux ls"
 alias tk="tmux kill-session -t"
 alias ta="tmux attach-session -d"
 
+alias bookmarks="nb search \"bookmark.md\" --all --list"
+alias todos="nb search \"todo.md\" --all --list"
+
 set -gx EDITOR nvim
 set -gx LSCOLORS ExGxBxDxCxEgEdxbxgxcxd
 set -gx GOPATH $XDG_DATA_HOME/go
