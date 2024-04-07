@@ -17,6 +17,8 @@ alias tls="tmux ls"
 alias tk="tmux kill-session -t"
 alias ta="tmux attach-session -d"
 
+alias ytdl="yt-dlp"
+
 alias bookmarks="nb search \"bookmark.md\" --all --list"
 alias todos="nb search \"todo.md\" --all --list"
 

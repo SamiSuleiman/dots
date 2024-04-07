@@ -590,7 +590,22 @@ return {
         },
         lualine_b = { 'branch', 'diff', 'diagnostics' },
         lualine_c = { 'filename' },
-        lualine_x = { 'encoding', 'fileformat', 'filetype' },
+        lualine_x = {
+          {
+            'recording',
+            fmt = function()
+              local recording = vim.fn.reg_recording()
+              return recording ~= '' and recording or nil
+            end,
+            icon = '',
+            -- color = { fg = '#BAC2DE', bg = '#191724' },
+            color = { fg = '#BAC2DE', bg = '#191724' },
+            padding = { left = 1, right = 1 },
+          },
+          'encoding',
+          'fileformat',
+          'filetype',
+        },
         lualine_y = { 'progress' },
         lualine_z = { 'location', 'searchcount' },
       },
@@ -603,21 +618,7 @@ return {
         lualine_z = {},
       },
       tabline = {},
-      winbar = {
-        lualine_z = {
-          {
-            'recording',
-            fmt = function()
-              local recording = vim.fn.reg_recording()
-              return recording ~= '' and recording or nil
-            end,
-            icon = '',
-            -- color = { fg = '#BAC2DE', bg = '#191724' },
-            color = { fg = '#BAC2DE', bg = '#191724' },
-            padding = { left = 1, right = 1 },
-          },
-        },
-      },
+      winbar = {},
       inactive_winbar = {},
       extensions = { 'oil', 'mason' },
     },
