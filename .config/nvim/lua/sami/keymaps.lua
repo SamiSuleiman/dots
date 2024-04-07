@@ -22,7 +22,7 @@ vim.keymap.set('n', '<leader>sG', ':LiveGrepGitRoot<cr>', { desc = 'search by gr
 vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = 'search diagnostics' })
 vim.keymap.set('n', '<leader>sa', require('telescope.builtin').resume, { desc = 'search amend' })
 vim.keymap.set('n', '<leader>sr', require('telescope.builtin').registers, { desc = 'search registers' })
-vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
+vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle)
 vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] find recently opened files' })
 vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers, { desc = '[ ] find existing buffers' })
 vim.keymap.set('n', '<leader>/', function()
@@ -39,37 +39,41 @@ end, { desc = '[/] fuzzily search in current buffer' })
 -- vim.keymap.set('n', "<leader>ee", vim.cmd.Neotree, { desc = 'Open Neotree' })
 
 -- Diagnostics
-vim.keymap.set('n', '<space>ed', vim.diagnostic.open_float, { desc = "show floating diagnostics window" })
-vim.keymap.set('n', '<space>ep', vim.diagnostic.goto_prev, { desc = "previous diagnostic" })
-vim.keymap.set('n', '<space>en', vim.diagnostic.goto_next, { desc = "next diagnostic" })
-vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, { desc = "set diagnostics window location" })
+vim.keymap.set('n', '<space>ed', vim.diagnostic.open_float, { desc = 'show floating diagnostics window' })
+vim.keymap.set('n', '<space>ep', vim.diagnostic.goto_prev, { desc = 'previous diagnostic' })
+vim.keymap.set('n', '<space>en', vim.diagnostic.goto_next, { desc = 'next diagnostic' })
+vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, { desc = 'set diagnostics window location' })
 
 -- Resizing
-vim.api.nvim_set_keymap('n', '<C-Up>', ':lua vim.api.nvim_win_set_height(0, vim.api.nvim_win_get_height(0) + 1)<CR>',
-  { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-Down>',
+vim.api.nvim_set_keymap('n', '<C-Up>', ':lua vim.api.nvim_win_set_height(0, vim.api.nvim_win_get_height(0) + 1)<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap(
+  'n',
+  '<C-Down>',
   ':lua vim.api.nvim_win_set_height(0, math.max(vim.api.nvim_win_get_height(0) - 1, 1))<CR>',
-  { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-Left>',
+  { noremap = true, silent = true }
+)
+vim.api.nvim_set_keymap(
+  'n',
+  '<C-Left>',
   ':lua vim.api.nvim_win_set_width(0, math.max(vim.api.nvim_win_get_width(0) - 1, 1))<CR>',
-  { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-Right>', ':lua vim.api.nvim_win_set_width(0, vim.api.nvim_win_get_width(0) + 1)<CR>',
-  { noremap = true, silent = true })
+  { noremap = true, silent = true }
+)
+vim.api.nvim_set_keymap('n', '<C-Right>', ':lua vim.api.nvim_win_set_width(0, vim.api.nvim_win_get_width(0) + 1)<CR>', { noremap = true, silent = true })
 
 -- Splitting
 vim.api.nvim_set_keymap('n', '<c-w>%', ':vsplit<cr>', { desc = 'split current window vertically' })
 vim.api.nvim_set_keymap('n', '<c-w>"', ':split<cr>', { desc = 'split current window horizontally' })
 
-local mark = require("harpoon.mark")
-local ui = require("harpoon.ui")
+local mark = require 'harpoon.mark'
+local ui = require 'harpoon.ui'
 
-vim.keymap.set("n", "<leader>hp", mark.clear_all, { desc = 'harpoon purge' })
-vim.keymap.set("n", "<leader>hh", ui.toggle_quick_menu, { desc = 'harpoon' })
-vim.keymap.set("n", "<leader>ht", mark.toggle_file, { desc = 'toggle harpoon curr file' })
-vim.keymap.set("n", "<leader>hk", function()
+vim.keymap.set('n', '<leader>hp', mark.clear_all, { desc = 'harpoon purge' })
+vim.keymap.set('n', '<leader>hh', ui.toggle_quick_menu, { desc = 'harpoon' })
+vim.keymap.set('n', '<leader>ht', mark.toggle_file, { desc = 'toggle harpoon curr file' })
+vim.keymap.set('n', '<leader>hk', function()
   ui.nav_next()
 end, { desc = 'Next Harpoon' })
-vim.keymap.set("n", "<leader>hj", function()
+vim.keymap.set('n', '<leader>hj', function()
   ui.nav_prev()
 end, { desc = 'Prev Harpoon' })
 
@@ -78,18 +82,17 @@ end, { desc = 'Prev Harpoon' })
 -- vim.api.nvim_set_keymap('v', '<leader>cc', ':Commentary<CR>', { noremap = true })
 
 vim.keymap.set('n', '<leader>nd', function()
-    require('notify').dismiss({ silent = true, pending = true })
-  end,
-  { desc = 'dismiss notifications' })
+  require('notify').dismiss { silent = true, pending = true }
+end, { desc = 'dismiss notifications' })
 
 vim.api.nvim_set_keymap('v', '<Leader>y', '"+y', { noremap = true })
 vim.api.nvim_set_keymap('n', '<Leader>y', '"+yy', { noremap = true })
-vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "open parent directory" })
+vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'open parent directory' })
 vim.g.user_emmet_mode = [[n]]
 vim.g.user_emmet_leader_key = [[,]]
-vim.api.nvim_set_keymap("n", "<Tab>", ":bnext <cr>", { noremap = true })       -- Tab goes to next buffer
-vim.api.nvim_set_keymap("n", "<S-Tab>", ":bprevious <cr>", { noremap = true }) -- Shift+Tab goes to previous buffer
-vim.api.nvim_set_keymap("n", "<leader>q", ":bd <cr>", { noremap = true })
+vim.api.nvim_set_keymap('n', '<Tab>', ':bnext <cr>', { noremap = true }) -- Tab goes to next buffer
+vim.api.nvim_set_keymap('n', '<S-Tab>', ':bprevious <cr>', { noremap = true }) -- Shift+Tab goes to previous buffer
+vim.api.nvim_set_keymap('n', '<leader>q', ':bd <cr>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-u>', '<C-u>zz', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-d>', '<C-d>zz', { noremap = true })
 vim.keymap.set('n', '<c-k>', ':wincmd k<CR>', { noremap = true })
@@ -100,4 +103,5 @@ vim.keymap.set('n', '<c-h>', ':TmuxNavigateLeft<cr>')
 vim.keymap.set('n', '<c-j>', ':TmuxNavigateDown<cr>')
 vim.keymap.set('n', '<c-k>', ':TmuxNavigateUp<cr>')
 vim.keymap.set('n', '<c-l>', ':TmuxNavigateRight<cr>')
-vim.keymap.set("n", "<Esc>", ":nohl<CR>:echo<CR>")
+vim.keymap.set('n', '<Esc>', ':nohl<CR>:echo<CR>')
+vim.keymap.set('n', 'Z', ':ZenMode<CR>', { noremap = true })

@@ -13,6 +13,10 @@ return {
     'christoomey/vim-tmux-navigator',
     'nvim-tree/nvim-web-devicons',
     {
+      'folke/zen-mode.nvim',
+      opts = {},
+    },
+    {
       'nvimtools/none-ls.nvim',
       opts = {},
       config = function()
