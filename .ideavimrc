@@ -8,3 +8,10 @@ set smartcase
 set number
 set relativenumber
 set backspace=indent,eol,start
+
+Plug 'tpope/vim-surround'
+Plug 'machakann/vim-highlightedyank'
+
+ let g:highlightedyank_highlight_duration = "1000"
+
+ set which-key
