@@ -13,6 +13,10 @@ return {
     'christoomey/vim-tmux-navigator',
     'nvim-tree/nvim-web-devicons',
     {
+      'samisul/fuse',
+      opts = {},
+    },
+    {
       'folke/zen-mode.nvim',
       opts = {},
     },
@@ -38,6 +42,22 @@ return {
       enabled = true,
       version = '*',
       opts = {},
+      config = function()
+        require('bufferline').setup {
+          options = {
+            custom_areas = {
+              right = function()
+                local info = require('fuse').fuse()
+                local result = {}
+                if info ~= 0 then
+                  table.insert(result, { text = '  ' .. info, bg = '#191724' })
+                end
+                return result
+              end,
+            },
+          },
+        }
+      end,
     },
     {
       'echasnovski/mini.move',
@@ -585,7 +605,7 @@ return {
         with_git_branch = true,
         with_git_status = true,
         with_diagnostic_status = true,
-        with_session_status = true,
+        with_session_status = false,
         with_attached_clients = true,
         with_macro_status = true,
         with_search_count = true,
