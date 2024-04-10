@@ -9,13 +9,13 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   pattern = '*',
 })
 
-local symbols = { Error = "■", Info = "●", Hint = "○", Warn = "▲" }
+local symbols = { Error = '■', Info = '●', Hint = '○', Warn = '▲' }
 
 for name, icon in pairs(symbols) do
-  local hl = "DiagnosticSign" .. name
+  local hl = 'DiagnosticSign' .. name
   vim.fn.sign_define(hl, { text = icon, numhl = hl, texthl = hl })
 end
-vim.opt.guicursor = ""
+vim.opt.guicursor = ''
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.linebreak = true
@@ -29,61 +29,61 @@ vim.opt.smartindent = true
 vim.opt.wrap = true
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.opt.undodir = os.getenv 'HOME' .. '/.vim/undodir'
 vim.opt.undofile = true
 vim.opt.ruler = true
-vim.opt.foldmethod = "manual"
+vim.opt.foldmethod = 'manual'
 vim.opt.foldnestmax = 3
 vim.opt.autoread = true
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
 vim.opt.confirm = true
-vim.opt.shell = "/bin/zsh"
+vim.opt.shell = '/bin/zsh'
 vim.opt.wildmenu = true
 vim.opt.timeoutlen = 250
 vim.opt.showmatch = true
 vim.opt.synmaxcol = 300 -- stop syntax highlighting for performance
-vim.opt.laststatus = 2  -- always show statusline
+vim.opt.laststatus = 2 -- always show statusline
 vim.opt.foldenable = false
-vim.opt.cursorline = true
+vim.opt.cursorline = false
 vim.opt.numberwidth = 1
 vim.opt.showcmd = true
 vim.opt.cmdheight = 0
-vim.opt.showbreak = "↪"
+vim.opt.showbreak = '↪'
 vim.opt.list = false
-vim.opt.listchars = { tab = "» ", trail = "·", extends = "❯", precedes = "❮", nbsp = "␣", eol = "↲" }
-vim.o.incsearch = true  -- starts searching as soon as typing, without enter needed
+vim.opt.listchars = { tab = '» ', trail = '·', extends = '❯', precedes = '❮', nbsp = '␣', eol = '↲' }
+vim.o.incsearch = true -- starts searching as soon as typing, without enter needed
 vim.o.ignorecase = true -- ignore letter case when searching
-vim.o.smartcase = true  -- case insentive unless capitals used in searcher
+vim.o.smartcase = true -- case insentive unless capitals used in searcher
 vim.opt.termguicolors = true
 vim.opt.scrolloff = 8
-vim.opt.signcolumn = "yes"
+vim.opt.signcolumn = 'yes'
 vim.opt.updatetime = 50
-vim.api.nvim_set_hl(0, "FloatBorder", { fg = "#92C2CB" })
+vim.api.nvim_set_hl(0, 'FloatBorder', { fg = '#92C2CB' })
 vim.opt.spelllang = 'en_us'
 vim.opt.spell = true
-vim.treesitter.language.register("markdown", "mdx")
-vim.treesitter.language.register("vue", "analog")
-vim.treesitter.language.register("json", ".all-contributorsrc")
+vim.treesitter.language.register('markdown', 'mdx')
+vim.treesitter.language.register('vue', 'analog')
+vim.treesitter.language.register('json', '.all-contributorsrc')
 vim.o.clipboard = true
 vim.g.copilot_assume_mapped = true
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 
-local float = { focusable = true, style = "minimal", border = "single" }
-vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, float)
-vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, float)
+local float = { focusable = true, style = 'minimal', border = 'single' }
+vim.lsp.handlers['textDocument/hover'] = vim.lsp.with(vim.lsp.handlers.hover, float)
+vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.with(vim.lsp.handlers.signature_help, float)
 
-vim.filetype.add({
+vim.filetype.add {
   extension = {
-    mdx = "mdx",
-    analog = "analog",
+    mdx = 'mdx',
+    analog = 'analog',
   },
-})
-vim.filetype.add({
+}
+vim.filetype.add {
   extension = {
-    [".all-contributorsrc"] = ".all-contributorsrc",
+    ['.all-contributorsrc'] = '.all-contributorsrc',
   },
-})
+}
 
-vim.cmd("command Exec set splitright | vnew | set filetype=sh | read !sh #")
+vim.cmd 'command Exec set splitright | vnew | set filetype=sh | read !sh #'
