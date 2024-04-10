@@ -24,7 +24,7 @@
 
   "disk": {
     "interval": 30,
-    "format": "         medina is {percentage_used}% full",
+    "format": "    medina is {percentage_used}% full",
     "path": "/home/sami/medina/",
   },
 
@@ -42,13 +42,13 @@
   },
   "backlight": {
     "device": "intel_backlight",
-    "format": "{icon}       {percent}%",
+    "format": "{icon}     {percent}%",
     "format-icons": [""],
   },
 
   "memory": {
     "interval": 30,
-    "format": "       {}%",
+    "format": "    {}%",
     "max-length": 10,
     "tooltip": true,
     "tooltip-format": "Memory - {used:0.1f}GB used - {}%",
@@ -106,7 +106,7 @@
       "good": 76,
       "warning": 20,
     },
-    "format": "{icon}            {capacity}%",
+    "format": "{icon}     {capacity}%",
     "format-charging": " {capacity}%",
     "format-icons": ["", "", "", "", ""],
     "tooltip-format": "{capacity}% capacity",
@@ -120,7 +120,7 @@
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
-    "format": "{icon}         {volume}%",
+    "format": "{icon}    {volume}%",
     "format-muted": "󰖁",
     "format-icons": {
       "default": ["", "", "󰕾"],

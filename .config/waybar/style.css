@@ -1,7 +1,7 @@
 @import "./rose-pine.css";
 
 * {
-  font-family: JetBrainsMono Nerd Font;
+  font-family: Cantarell;
   font-weight: bolder;
   font-size: 15px;
   /* border-radius: 10px; */
@@ -26,7 +26,7 @@ window#waybar.termite {
 }
 
 window#waybar.chromium {
-  background-color: #0E0A00;
+  background-color: #0e0a00;
   border: none;
 }
 
@@ -117,7 +117,7 @@ button {
 }
 
 /* If workspaces is the leftmost module, loveuce left margin */
-.modules-left>widget:first-child>#workspaces {
+.modules-left > widget:first-child > #workspaces {
   margin-left: 2px;
 }
 
@@ -170,11 +170,11 @@ button {
   background: @base;
 }
 
-#keyboard-state>label {
+#keyboard-state > label {
   padding: 0 5px;
 }
 
-#keyboard-state>label.locked {
+#keyboard-state > label.locked {
   background: rgba(0, 0, 0, 0.2);
 }
 

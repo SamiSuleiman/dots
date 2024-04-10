@@ -12,7 +12,7 @@
 	red: #eb6f92;
 	yel: #f6c177;
 
-	font: "JetBrainsMono Nerd Font 10";
+	font: "Cantarell 10";
 
 	foreground: @fgd;
 	background: @bg;

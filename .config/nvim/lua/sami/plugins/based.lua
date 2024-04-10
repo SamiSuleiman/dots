@@ -49,7 +49,7 @@ return {
               right = function()
                 local info = require('fuse').fuse()
                 local result = {}
-                if info ~= 0 then
+                if info ~= nil then
                   table.insert(result, { text = '  ' .. info, bg = '#191724' })
                 end
                 return result
