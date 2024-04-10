@@ -17,6 +17,12 @@ alias tls="tmux ls"
 alias tk="tmux kill-session -t"
 alias ta="tmux attach-session -d"
 
+alias ls="exa"
+alias ll="exa -l"
+alias la="exa -la"
+alias lt="exa -T"
+alias l="exa -l"
+
 alias ytdl="yt-dlp"
 
 alias bookmarks="nb search \"bookmark.md\" --all --list"
