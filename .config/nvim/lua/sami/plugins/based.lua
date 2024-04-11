@@ -615,72 +615,34 @@ return {
     end,
   },
   {
-    'nvim-lualine/lualine.nvim',
-    enabled = false,
+    'ellisonleao/gruvbox.nvim',
+    priority = 1000,
+    config = true,
     opts = {
-
-      options = {
-        options = { fmt = string.lower },
-        icons_enabled = true,
-        -- theme = 'auto',
-        theme = 'auto',
-        section_separators = { left = '', right = '' },
-        component_separators = { left = '', right = '' },
-        disabled_filetypes = {
-          statusline = {},
-          winbar = {},
+      {
+        terminal_colors = true, -- add neovim terminal colors
+        undercurl = true,
+        underline = true,
+        bold = true,
+        italic = {
+          strings = true,
+          emphasis = true,
+          comments = true,
+          operators = false,
+          folds = true,
         },
-        ignore_focus = {},
-        always_divide_middle = true,
-        globalstatus = false,
-        refresh = {
-          statusline = 1000,
-          tabline = 1000,
-          winbar = 1000,
-        },
+        strikethrough = true,
+        invert_selection = false,
+        invert_signs = false,
+        invert_tabline = false,
+        invert_intend_guides = false,
+        inverse = true, -- invert background for search, diffs, statuslines and errors
+        contrast = '', -- can be "hard", "soft" or empty string
+        palette_overrides = {},
+        overrides = {},
+        dim_inactive = false,
+        transparent_mode = false,
       },
-      sections = {
-        lualine_a = {
-          {
-            'mode',
-            fmt = function(str)
-              return str:lower()
-            end,
-          },
-        },
-        lualine_b = { 'branch', 'diff', 'diagnostics' },
-        lualine_c = { 'filename' },
-        lualine_x = {
-          {
-            'recording',
-            fmt = function()
-              local recording = vim.fn.reg_recording()
-              return recording ~= '' and recording or nil
-            end,
-            icon = '',
-            -- color = { fg = '#BAC2DE', bg = '#191724' },
-            color = { fg = '#BAC2DE', bg = '#191724' },
-            padding = { left = 1, right = 1 },
-          },
-          'encoding',
-          'fileformat',
-          'filetype',
-        },
-        lualine_y = { 'progress' },
-        lualine_z = { 'location', 'searchcount' },
-      },
-      inactive_sections = {
-        lualine_a = {},
-        lualine_b = {},
-        lualine_c = { 'filename' },
-        lualine_x = { 'location' },
-        lualine_y = {},
-        lualine_z = {},
-      },
-      tabline = {},
-      winbar = {},
-      inactive_winbar = {},
-      extensions = { 'oil', 'mason' },
     },
   },
   {
