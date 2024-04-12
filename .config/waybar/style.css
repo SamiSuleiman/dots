@@ -98,14 +98,11 @@ button {
 #mpris {
   padding: 0 9px;
   color: @text;
-  /* border-radius: 15px; */
   margin: 5px 0;
   border-bottom: 1px solid @highlightLow;
-  /* background-color: @surface; */
 }
 
 #custom-apps {
-  /* background-color: @overlay; */
   padding: 0px 25px 0px 25px;
   border-bottom: 1px solid @highlightLow;
   color: @love;
