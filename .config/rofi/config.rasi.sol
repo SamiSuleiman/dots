@@ -12,7 +12,7 @@
 	pur: #D33682;
 	cmt: #6C71C4;
 
-	font: "Cantarell 10";
+	font: "JetBrainsMono Nerd Font 10";
 
 	foreground: @fgd;
 	background: @bg;

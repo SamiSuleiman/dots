@@ -11,7 +11,7 @@
 	red: #f38ba8;
 	yel: #f9e2af;
 
-	font: "Cantarell 10";
+	font: "JetBrainsMono Nerd Font 10";
 
 	foreground: @fgd;
 	background: @bg;

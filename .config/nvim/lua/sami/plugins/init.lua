@@ -12,16 +12,15 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-
 require('lazy').setup({
   {
-    require('sami.plugins.based'),
+    require 'sami.plugins.based',
   },
 }, {})
 
-require('sami.plugins.telescope')
-require('sami.plugins.lsp')
-require('sami.plugins.treesitter')
+require 'sami.plugins.telescope'
+require 'sami.plugins.lsp'
+require 'sami.plugins.treesitter'
 
-vim.cmd("colorscheme rose-pine")
+vim.cmd 'colorscheme gruvbox'
 -- vim.cmd('highlight Normal guibg=#0E0A00')

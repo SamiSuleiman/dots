@@ -4,16 +4,14 @@ require('telescope').setup {
   defaults = {
     border = true,
     borderchars = { '─', '│', '─', '│', '┌', '┐', '┘', '└' },
-    layout_strategy = "horizontal",
+    layout_strategy = 'horizontal',
     layout_config = {
-      -- height = vim.o.lines,  -- maximally available lines
-      -- width = vim.o.columns, -- maximally available columns
-      prompt_position = "bottom",
-      -- preview_height = 0.6,  -- 60% of available lines
+      height = vim.api.nvim_win_get_height(0) - 2,
+      width = vim.api.nvim_win_get_width(0) - 2,
+      prompt_position = 'bottom',
+      preview_width = 0.6,
       horizontal = {
-        -- preview_width = 0.6, -- 60% of available columns
-        -- preview_cutoff = 120,
-        prompt_position = "bottom",
+        prompt_position = 'bottom',
       },
     },
     mappings = {
@@ -63,4 +61,4 @@ local function live_grep_git_root()
 end
 
 vim.api.nvim_create_user_command('LiveGrepGitRoot', live_grep_git_root, {})
-require("telescope").load_extension('harpoon')
+require('telescope').load_extension 'harpoon'

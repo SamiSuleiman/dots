@@ -39,7 +39,7 @@ return {
     },
     {
       'akinsho/bufferline.nvim',
-      enabled = true,
+      enabled = false,
       version = '*',
       opts = {},
       config = function()
@@ -588,7 +588,101 @@ return {
     end,
   },
   {
+    'mfussenegger/nvim-lint',
+    config = function()
+      require('lint').linters_by_ft = {
+        markdown = {},
+        typescript = { 'eslint_d' },
+      }
+      local eslint = require('lint').linters.eslint_d
+
+      eslint.args = {
+        '--no-warn-ignored',
+        '--format',
+        'json',
+        '--stdin',
+        '--stdin-filename',
+        function()
+          return vim.api.nvim_buf_get_name(0)
+        end,
+      }
+
+      vim.api.nvim_create_autocmd({ 'BufWritePost' }, {
+        callback = function()
+          require('lint').try_lint()
+        end,
+      })
+    end,
+    {
+      'nvim-lualine/lualine.nvim',
+      enabled = true,
+      opts = {
+
+        options = {
+          options = { fmt = string.lower },
+          icons_enabled = true,
+          -- theme = 'auto',
+          theme = 'auto',
+          section_separators = { left = '', right = '' },
+          component_separators = { left = '', right = '' },
+          disabled_filetypes = {
+            statusline = {},
+            winbar = {},
+          },
+          ignore_focus = {},
+          always_divide_middle = true,
+          globalstatus = false,
+          refresh = {
+            statusline = 1000,
+            tabline = 1000,
+            winbar = 1000,
+          },
+        },
+        sections = {
+          lualine_a = {
+            {
+              'mode',
+              fmt = function(str)
+                return str:lower()
+              end,
+            },
+          },
+          lualine_b = { 'branch', 'diff', 'diagnostics' },
+          lualine_c = { 'filename' },
+          lualine_x = {
+            {
+              'recording',
+              fmt = function()
+                local recording = vim.fn.reg_recording()
+                return recording ~= '' and recording or nil
+              end,
+              icon = '@',
+            },
+            'encoding',
+            'fileformat',
+            'filetype',
+          },
+          lualine_y = { 'progress' },
+          lualine_z = { 'location', 'searchcount' },
+        },
+        inactive_sections = {
+          lualine_a = {},
+          lualine_b = {},
+          lualine_c = { 'filename' },
+          lualine_x = { 'location' },
+          lualine_y = {},
+          lualine_z = {},
+        },
+        tabline = {},
+        winbar = {},
+        inactive_winbar = {},
+        extensions = { 'oil', 'mason' },
+      },
+    },
+  },
+  {
     'bluz71/nvim-linefly',
+    enabled = false,
     config = function()
       vim.g.linefly_options = {
         separator_symbol = '⎪',
