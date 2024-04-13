@@ -1,5 +1,5 @@
-@define-color base    #282828;
-
+/* @define-color base    #282828; */
+@define-color base    #1D2021;
 @define-color text #f9f5d7;
 
 @define-color love #cc241d;
@@ -8,5 +8,5 @@
 @define-color pine #458588;
 @define-color iris #d3869b;
 
-@define-color highlightLow #32302f;
+@define-color highlightLow #504945;
 @define-color highlightHigh #928374;

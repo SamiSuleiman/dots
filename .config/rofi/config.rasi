@@ -15,7 +15,7 @@
 
 	foreground: @fgd;
 	background: @bg;
-	active-background: @pur;
+	active-background: @grn;
 	urgent-background: @red;
 
 	selected-background: @active-background;
