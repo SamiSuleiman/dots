@@ -9,7 +9,7 @@
 
   "terminal.integrated.fontFamily": "'Hack Nerd Font'",
 
-  "workbench.colorTheme": "Rosé Pine",
+  "workbench.colorTheme": "Gruvbox Dark Hard",
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
