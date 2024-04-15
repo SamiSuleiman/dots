@@ -20,6 +20,13 @@ return {
       opts = {},
     },
     {
+      'glacambre/firenvim',
+      lazy = not vim.g.started_by_firenvim,
+      build = function()
+        vim.fn['firenvim#install'](0)
+      end,
+    },
+    {
       'nvimtools/none-ls.nvim',
       opts = {},
       config = function()
@@ -88,10 +95,6 @@ return {
         debugger_path = '/home/sami/.local/share/nvim/lazy/vscode-js-debug',
         adapters = { 'pwa-node', 'pwa-chrome', 'pwa-msedge', 'node-terminal', 'pwa-extensionHost' },
       },
-    },
-    {
-      'tpope/vim-dadbod',
-      enabled = false,
     },
     {
       'github/copilot.vim',
