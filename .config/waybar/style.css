@@ -60,9 +60,8 @@ button {
 
 #workspaces button.active {
   /* color: @pine; */
-  color: @pine;
-  border-bottom: 1px solid @highlightLow;
-  padding: 0px 25px 0px 25px;
+  border-bottom: 3px solid @pine;
+  /* padding: 0px 25px 0px 25px; */
 }
 
 #workspaces button.urgent {
@@ -99,12 +98,12 @@ button {
   padding: 0 9px;
   color: @text;
   margin: 5px 0;
-  border-bottom: 1px solid @highlightLow;
+  border-bottom: 3px solid @highlightLow;
 }
 
 #custom-apps {
   padding: 0px 25px 0px 25px;
-  border-bottom: 1px solid @highlightLow;
+  border-bottom: 3px solid @highlightLow;
   color: @love;
 }
 
@@ -136,7 +135,7 @@ button {
 }
 
 #pulseaudio.muted {
-  color: @text;
+  color: @highlightHigh;
 }
 
 #network,
