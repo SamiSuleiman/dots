@@ -1,0 +1,16 @@
+{
+  "regexFindMode": true,
+  "smoothScroll": false,
+  "searchUrl": "https://duckduckgo.com/?t=ffab&q=",
+  "settingsVersion": "2.1.2",
+  "exclusionRules": [
+    {
+      "passKeys": "",
+      "pattern": "https?://mail.google.com/*"
+    },
+    {
+      "passKeys": "",
+      "pattern": "https://my.vultr.com/subs/vps/novnc/*"
+    }
+  ]
+}
