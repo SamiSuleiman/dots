@@ -12,6 +12,12 @@ return {
     'christoomey/vim-tmux-navigator',
     'nvim-tree/nvim-web-devicons',
     {
+      'letieu/btw.nvim',
+      config = function()
+        require('btw').setup()
+      end,
+    },
+    {
       'm4xshen/autoclose.nvim',
       opts = {},
     },
