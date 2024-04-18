@@ -22,6 +22,5 @@ require 'sami.plugins.telescope'
 require 'sami.plugins.lsp'
 require 'sami.plugins.treesitter'
 
-vim.cmd 'colorscheme gruvbox'
-vim.cmd 'highlight clear SignColumn'
+vim.cmd 'colorscheme melange'
 -- vim.cmd('highlight Normal guibg=#0E0A00')

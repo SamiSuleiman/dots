@@ -1,13 +1,14 @@
 {
   "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "block",
-  "editor.fontFamily": "'Cascadia Code'",
+  "editor.fontFamily": "'JetBrains Mono'",
+  "editor.lineHeight": 1.8,
   "editor.formatOnSave": true,
   "editor.suggest.insertMode": "replace",
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
 
-  "terminal.integrated.fontFamily": "'Cascadia Code'",
+  "terminal.integrated.fontFamily": "'JetBrains Mono'",
 
   "workbench.colorTheme": "Gruvbox Dark Hard",
   "extensions.experimental.affinity": {

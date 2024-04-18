@@ -722,10 +722,10 @@ return {
       },
     },
   },
+  { 'savq/melange-nvim' },
   {
     'ellisonleao/gruvbox.nvim',
     priority = 1000,
-    config = true,
     opts = {
       terminal_colors = true, -- add neovim terminal colors
       undercurl = true,
@@ -757,6 +757,9 @@ return {
       dim_inactive = false,
       transparent_mode = true,
     },
+    config = function()
+      vim.cmd 'highlight clear SignColumn'
+    end,
   },
   {
     'rose-pine/neovim',
