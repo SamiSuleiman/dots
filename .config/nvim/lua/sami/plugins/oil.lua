@@ -1,5 +1,9 @@
 return {
   'stevearc/oil.nvim',
+  dependencies = {
+    'yamatsum/nvim-nonicons',
+    dependencies = { 'kyazdani42/nvim-web-devicons' },
+  },
   opts = {
     default_file_explorer = true,
     columns = { 'icon' },
