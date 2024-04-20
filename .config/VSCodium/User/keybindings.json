@@ -191,5 +191,13 @@
   {
     "key": "shift+k",
     "command": "editor.action.showDefinitionPreviewHover"
+  },
+  {
+    "key": "ctrl+alt+t",
+    "command": "angular.goToTemplateForComponent"
+  },
+  {
+    "key": "ctrl+alt+c",
+    "command": "angular.goToComponentWithTemplateFile"
   }
 ]

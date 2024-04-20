@@ -7,6 +7,11 @@
   "editor.suggest.insertMode": "replace",
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
+  "workbench.colorCustomizations": {
+    "[Gruvbox Dark Hard]": {
+      "editor.lineHighlightBackground": "#1D2021"
+    }
+  },
 
   "terminal.integrated.fontFamily": "'JetBrains Mono'",
 
@@ -24,8 +29,10 @@
   "editor.lineNumbers": "relative",
   "vim.leader": "<Space>",
   "vim.hlsearch": true,
+  "vim.cursorStylePerMode.insert": "line",
   "vim.highlightedyank.enable": true,
   "vim.normalModeKeyBindingsNonRecursive": [
+    { "before": ["escape"], "commands": [":nohl"] },
     // NAVIGATION
     // switch b/w buffers
     {
@@ -121,5 +128,11 @@
   },
   "editor.quickSuggestions": {
     "strings": "on"
-  }
+  },
+  "window.enableMenuBarMnemonics": false,
+  "window.customMenuBarAltFocus": false,
+  "window.titleBarStyle": "custom",
+  "window.density.editorTabHeight": "compact",
+  "workbench.editor.pinnedTabSizing": "compact",
+  "explorer.compactFolders": false
 }
