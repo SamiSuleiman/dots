@@ -26,7 +26,7 @@ return {
       overrides = {
         SignColumn = { bg = '#282828' },
         ['@punctuation.bracket'] = { fg = '#E4D4AD' },
-        ['@punctuation.special'] = { fg = '#E4D4AD' },
+        ['@punctuation.special'] = { fg = '#E5D4AD' },
         ['@punctuation'] = { fg = '#E4D4AD' },
         ['@symbol'] = { fg = '#E4D4AD' },
         ['@operator'] = { fg = '#E4D4AD' },
@@ -34,9 +34,6 @@ return {
       dim_inactive = false,
       transparent_mode = true,
     },
-    config = function()
-      vim.cmd 'highlight clear SignColumn'
-    end,
   },
   {
     'rose-pine/neovim',
