@@ -60,7 +60,7 @@ button {
 
 #workspaces button.active {
   /* color: @pine; */
-  border-bottom: 3px solid @pine;
+  border: 1px solid @orange;
   /* padding: 0px 25px 0px 25px; */
 }
 
@@ -96,14 +96,14 @@ button {
 #backlight,
 #mpris {
   padding: 0 9px;
-  color: @text;
+  color: @rose;
   margin: 5px 0;
-  border-bottom: 3px solid @highlightLow;
+  border: 1px solid @highlightLow;
 }
 
 #custom-apps {
   padding: 0px 25px 0px 25px;
-  border-bottom: 3px solid @highlightLow;
+  /* border-bottom: 3px solid @highlightLow; */
   color: @love;
 }
 
@@ -117,42 +117,16 @@ button {
   margin-left: 2px;
 }
 
-#clock {
-  color: @text;
-}
-
-#language {
-  color: @text;
-}
-
 #custom-pacman {
   color: @gold;
-}
-
-#pulseaudio,
-#backlight {
-  color: @rose;
 }
 
 #pulseaudio.muted {
   color: @highlightHigh;
 }
 
-#network,
-#bluetooth {
-  /* color: @pine; */
-  color: @iris;
-}
-
 #network.disconnected {
   color: @highlightHigh;
-}
-
-#battery,
-#memory,
-#disk {
-  /* color: @foam; */
-  color: @pine;
 }
 
 #battery.warning:not(.charging) {

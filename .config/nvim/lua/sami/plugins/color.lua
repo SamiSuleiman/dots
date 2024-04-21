@@ -1,4 +1,46 @@
 return {
+  { 'ramojus/mellifluous.nvim', opts = {} },
+  { 'sainnhe/gruvbox-material' },
+  {
+    'xero/miasma.nvim',
+    lazy = false,
+    priority = 1000,
+  },
+  { 'bluz71/vim-moonfly-colors', name = 'moonfly', lazy = false, priority = 1000 },
+  { 'Mofiqul/dracula.nvim' },
+  {
+    'rebelot/kanagawa.nvim',
+    opts = {
+      colors = {
+        theme = {
+          all = {
+            ui = {
+              bg_gutter = 'none',
+            },
+          },
+        },
+      },
+    },
+  },
+  {
+    'sainnhe/everforest',
+    config = function()
+      vim.api.nvim_set_var('everforest_background', 'hard')
+    end,
+  },
+  {
+    'sainnhe/sonokai',
+    config = function()
+      vim.api.nvim_set_var('sonokai_style', 'espresso')
+      vim.api.nvim_set_var('sonokai_better_performance', 1)
+    end,
+  },
+  {
+    'folke/tokyonight.nvim',
+    lazy = false,
+    priority = 1000,
+    opts = {},
+  },
   { 'savq/melange-nvim' },
   {
     'ellisonleao/gruvbox.nvim',

@@ -15,7 +15,7 @@
 
 	foreground: @fgd;
 	background: @bg;
-	active-background: @grn;
+	active-background: @ora;
 	urgent-background: @red;
 
 	selected-background: @active-background;
@@ -27,11 +27,11 @@
 
 #window {
 	background-color: @background;
-	border:           3;
+	border:           0px;
 	border-radius:    0;
-	border-color:     @cur;
-	padding:          5;
-  width:            calc( 30% min 600);
+	border-color:     @ora;
+	padding:          8px;
+  width:            calc( 40% min 800);
 }
 
 configuration {
@@ -71,7 +71,7 @@ configuration {
 #element {
 	border:  0;
   border-radius: 0;
-	padding: 6 ;
+	padding: 4;
 }
 
 #element.normal.normal {
@@ -139,7 +139,7 @@ configuration {
 #inputbar {
 	spacing:    0;
 	text-color: @foreground;
-	padding:    1px ;
+	padding:    4px ;
 }
 
 #case-indicator {
@@ -154,7 +154,7 @@ configuration {
 
 #prompt {
 	spacing:    0;
-	text-color: @grn;
+	text-color: @ora;
 }
 
 #inputbar {

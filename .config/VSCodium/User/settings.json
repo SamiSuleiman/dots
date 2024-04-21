@@ -2,14 +2,20 @@
   "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "block",
   "editor.fontFamily": "'JetBrains Mono'",
-  "editor.lineHeight": 1.8,
+  // "editor.lineHeight": 1.8,
+  "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "editor.suggest.insertMode": "replace",
   "editor.linkedEditing": true,
   "editor.minimap.enabled": false,
+  "editor.renderLineHighlight": "gutter",
+  "workbench.editor.showIcons": false,
+  "workbench.editor.tabSizing": "shrink",
+  "breadcrumbs.enabled": true,
+  "explorer.decorations.colors": false,
   "workbench.colorCustomizations": {
     "[Gruvbox Dark Hard]": {
-      "editor.lineHighlightBackground": "#1D2021"
+      // "editor.lineHighlightBackground": "#1D2021"
     }
   },
 
@@ -17,11 +23,14 @@
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "workbench.activityBar.location": "top",
+  "workbench.activityBar.location": "hidden",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "launch": {},
-  "[json]": {},
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "workbench.statusBar.visible": true,
+  "editor.occurrencesHighlight": "off",
   "update.showReleaseNotes": false,
   "zenMode.hideLineNumbers": false,
   "editor.lineNumbers": "relative",
@@ -133,5 +142,8 @@
   "window.density.editorTabHeight": "compact",
   "workbench.editor.pinnedTabSizing": "compact",
   "explorer.compactFolders": false,
-  "workbench.colorTheme": "Gruvbox Dark Hard"
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
