@@ -14,8 +14,6 @@
   },
 
   "terminal.integrated.fontFamily": "'JetBrains Mono'",
-
-  "workbench.colorTheme": "Gruvbox Dark Hard",
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
@@ -134,5 +132,6 @@
   "window.titleBarStyle": "custom",
   "window.density.editorTabHeight": "compact",
   "workbench.editor.pinnedTabSizing": "compact",
-  "explorer.compactFolders": false
+  "explorer.compactFolders": false,
+  "workbench.colorTheme": "Gruvbox Dark Hard"
 }
