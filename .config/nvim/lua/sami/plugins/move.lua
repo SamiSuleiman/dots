@@ -1,5 +1,6 @@
 return {
   'echasnovski/mini.move',
+  enable = false,
   version = '*',
   opts = {
     mappings = {
