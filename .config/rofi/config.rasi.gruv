@@ -1,9 +1,9 @@
 @import "default"
 
 * {
-	bg: #000000;
+	bg: #282828;
 	cur: #292929;
-	fgd: #A89984;
+	fgd: #f9f5d7;
 
 	cya: #83a598;
 	grn: #98971a;
@@ -15,21 +15,21 @@
 
 	foreground: @fgd;
 	background: @bg;
-	active-background: @fgd;
+	active-background: @ora;
 	urgent-background: @red;
 
 	selected-background: @active-background;
 	selected-urgent-background: @urgent-background;
 	selected-active-background: @active-background;
 	separatorcolor: @active-background;
-	bordercolor: @fgd;
+	bordercolor: @ora;
 }
 
 #window {
 	background-color: @background;
 	border:           0px;
 	border-radius:    0;
-	border-color:     @fgd;
+	border-color:     @ora;
 	padding:          8px;
   width:            calc( 40% min 800);
 }
@@ -154,7 +154,7 @@ configuration {
 
 #prompt {
 	spacing:    0;
-	text-color: @fgd;
+	text-color: @ora;
 }
 
 #inputbar {

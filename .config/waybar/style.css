@@ -9,7 +9,7 @@
 }
 
 window#waybar {
-  background-color: @base;
+  background-color: #000000;
   color: @text;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -60,7 +60,7 @@ button {
 
 #workspaces button.active {
   /* color: @pine; */
-  border: 1px solid @orange;
+  border-bottom: 1px solid @rose;
   /* padding: 0px 25px 0px 25px; */
 }
 
@@ -98,7 +98,7 @@ button {
   padding: 0 9px;
   color: @rose;
   margin: 5px 0;
-  border: 1px solid @highlightLow;
+  border-bottom: 1px solid @highlightLow;
 }
 
 #custom-apps {
@@ -137,7 +137,7 @@ button {
   color: @love;
   margin-right: 5px;
   font-size: 18px;
-  background: @base;
+  background: #000000;
 }
 
 #keyboard-state > label {
