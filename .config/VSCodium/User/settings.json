@@ -2,11 +2,14 @@
   "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "block",
   "editor.fontFamily": "'JetBrains Mono'",
-  // "editor.lineHeight": 1.8,
+  //"editor.fontSize": 16,
+  "editor.lineHeight": 2,
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "editor.suggest.insertMode": "replace",
   "editor.linkedEditing": true,
+  "debug.console.fontFamily": "JetBrains Mono",
+  //"debug.console.fontSize": 16,
   "editor.minimap.enabled": false,
   "editor.renderLineHighlight": "gutter",
   "workbench.editor.showIcons": false,
@@ -20,6 +23,7 @@
   },
 
   "terminal.integrated.fontFamily": "'JetBrains Mono'",
+  //"terminal.integrated.fontSize": 16,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
@@ -142,8 +146,11 @@
   "window.density.editorTabHeight": "compact",
   "workbench.editor.pinnedTabSizing": "compact",
   "explorer.compactFolders": false,
-  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.colorTheme": "Serendipity Midnight Minimal",
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "debug.inlineValues": "on",
+  "debug.toolBarLocation": "docked"
 }
