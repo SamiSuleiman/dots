@@ -1,6 +1,7 @@
 local mark = require 'harpoon.mark'
 local ui = require 'harpoon.ui'
 
+vim.keymap.set('n', '<leader>sm', ':Telescope harpoon marks<cr>')
 vim.keymap.set('n', '<leader>hp', mark.clear_all, { desc = 'harpoon purge' })
 vim.keymap.set('n', '<leader>hh', ui.toggle_quick_menu, { desc = 'harpoon' })
 vim.keymap.set('n', '<leader>ht', mark.toggle_file, { desc = 'toggle harpoon curr file' })

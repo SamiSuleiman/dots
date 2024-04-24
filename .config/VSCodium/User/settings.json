@@ -3,7 +3,7 @@
   "editor.cursorStyle": "block",
   "editor.fontFamily": "'JetBrains Mono'",
   //"editor.fontSize": 16,
-  "editor.lineHeight": 2,
+  //"editor.lineHeight": 2,
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "editor.suggest.insertMode": "replace",

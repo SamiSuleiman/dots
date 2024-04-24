@@ -43,10 +43,11 @@ require('lazy').setup({
     require 'sami.plugins.move',
     require 'sami.plugins.oil',
     require 'sami.plugins.md',
+    require 'sami.plugins.nx',
   },
 }, {})
 
-vim.cmd 'colorscheme moonfly'
--- vim.cmd 'highlight clear SignColumn'
+vim.cmd 'colorscheme no-clown-fiesta'
+vim.cmd 'highlight clear SignColumn'
 
--- vim.cmd('highlight Normal guibg=#0E0A00')
+vim.cmd 'highlight Normal guibg=#000000'

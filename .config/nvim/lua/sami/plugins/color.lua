@@ -1,4 +1,5 @@
 return {
+  { 'aktersnurra/no-clown-fiesta.nvim' },
   { 'ramojus/mellifluous.nvim', opts = {} },
   { 'sainnhe/gruvbox-material' },
   {
