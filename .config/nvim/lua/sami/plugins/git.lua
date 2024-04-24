@@ -16,13 +16,13 @@ return {
     'lewis6991/gitsigns.nvim',
     opts = {
       current_line_blame = false,
-      -- signs = {
-      -- add = { text = '+' },
-      -- change = { text = '~' },
-      -- delete = { text = '_' },
-      -- topdelete = { text = '‾' },
-      -- changedelete = { text = '~' },
-      -- },
+      signs = {
+        add = { text = '+' },
+        change = { text = '~' },
+        delete = { text = '_' },
+        topdelete = { text = '‾' },
+        changedelete = { text = '~' },
+      },
       on_attach = function(bufnr)
         local gs = package.loaded.gitsigns
 
