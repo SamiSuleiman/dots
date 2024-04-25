@@ -2,7 +2,7 @@ return {
   'tpope/vim-fugitive',
   {
     'NeogitOrg/neogit',
-    enabled = false,
+    enabled = true,
     dependencies = {
       'nvim-lua/plenary.nvim',
       'sindrets/diffview.nvim',
