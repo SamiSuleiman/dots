@@ -1,4 +1,46 @@
 return {
+  {
+    'jesseleite/nvim-noirbuddy',
+    enabled = false,
+    dependencies = {
+      { 'tjdevries/colorbuddy.nvim' },
+    },
+    lazy = false,
+    priority = 1000,
+    opts = {},
+    config = function()
+      vim.cmd 'colorscheme noirbuddy'
+      require('noirbuddy').setup {
+        preset = 'crt-amber',
+        colors = {
+          background = '#000000',
+        },
+      }
+    end,
+  },
+  'comfysage/gruvboxed',
+  'comfysage/twilight-moon',
+  {
+    'comfysage/evergarden',
+    opts = {
+      transparent_background = true,
+      contrast_dark = 'medium', -- 'hard'|'medium'|'soft'
+      overrides = {}, -- add custom overrides
+    },
+  },
+  'Biscuit-Colorscheme/nvim',
+  {
+    'olivercederborg/poimandres.nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require('poimandres').setup {}
+    end,
+
+    init = function()
+      vim.cmd 'colorscheme poimandres'
+    end,
+  },
   { 'aktersnurra/no-clown-fiesta.nvim' },
   { 'ramojus/mellifluous.nvim', opts = {} },
   { 'sainnhe/gruvbox-material' },
