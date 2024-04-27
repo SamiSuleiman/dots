@@ -30,30 +30,30 @@ return {
           {
             'mode',
             fmt = function(str)
-              return str:lower()
+              return str:lower() .. ' |'
             end,
           },
         },
         lualine_b = { 'branch', 'diff', 'diagnostics' },
         lualine_c = {
           'filename',
-          {
-            'lsps',
-            fmt = function()
-              local running_lsps = vim.lsp.get_active_clients()
-              if vim.tbl_isempty(running_lsps) then
-                return ''
-              end
-
-              return table.concat(
-                vim.tbl_map(function(client)
-                  return client.name
-                end, running_lsps),
-                ', '
-              )
-            end,
-            icon = '|',
-          },
+          -- {
+          --   'lsps',
+          --   fmt = function()
+          --     local running_lsps = vim.lsp.get_active_clients()
+          --     if vim.tbl_isempty(running_lsps) then
+          --       return ''
+          --     end
+          --
+          --     return table.concat(
+          --       vim.tbl_map(function(client)
+          --         return client.name
+          --       end, running_lsps),
+          --       ', '
+          --     )
+          --   end,
+          --   icon = '|',
+          -- },
         },
         lualine_x = {
           {
