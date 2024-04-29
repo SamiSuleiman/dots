@@ -30,7 +30,7 @@ return {
           {
             'mode',
             fmt = function(str)
-              return str:lower() .. ' |'
+              return str:lower()
             end,
           },
         },
