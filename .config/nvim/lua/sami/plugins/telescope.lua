@@ -15,7 +15,7 @@ return {
     require('telescope').setup {
       defaults = {
         prompt_prefix = ' ',
-        selection_caret = ' ',
+        selection_caret = '󰝤 ',
         border = true,
         borderchars = { '─', '│', '─', '│', '┌', '┐', '┘', '└' },
         layout_strategy = 'horizontal',
