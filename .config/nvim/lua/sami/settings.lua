@@ -52,7 +52,7 @@ vim.opt.numberwidth = 1
 vim.opt.showcmd = true
 vim.opt.cmdheight = 0
 vim.opt.showbreak = '↪'
-vim.opt.list = false
+vim.opt.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', extends = '❯', precedes = '❮', nbsp = '␣', eol = '↲' }
 vim.o.incsearch = true -- starts searching as soon as typing, without enter needed
 vim.o.ignorecase = true -- ignore letter case when searching
