@@ -47,7 +47,7 @@ require('lazy').setup({
   },
 }, {})
 
-vim.cmd 'colorscheme NeoSolarized'
--- vim.cmd 'highlight clear SignColumn'
+vim.cmd 'colorscheme melange'
+vim.cmd 'highlight clear SignColumn'
 
--- vim.cmd 'highlight Normal guibg=#000000'
+vim.cmd 'highlight Normal guibg=#000000'
