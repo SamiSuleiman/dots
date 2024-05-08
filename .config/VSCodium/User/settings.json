@@ -1,15 +1,15 @@
 {
   "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "block",
-  "editor.fontFamily": "'JetBrains Mono'",
-  //"editor.fontSize": 16,
-  //"editor.lineHeight": 2,
-  "editor.fontLigatures": true,
+  "editor.fontFamily": "'Share Tech Mono'",
+  // "editor.fontSize": 18,
+  // "editor.lineHeight": 2,
+  "editor.fontLigatures": false,
   "editor.formatOnSave": true,
   "editor.suggest.insertMode": "replace",
   "editor.linkedEditing": true,
-  "debug.console.fontFamily": "JetBrains Mono",
-  //"debug.console.fontSize": 16,
+  "debug.console.fontFamily": "Share Tech Mono",
+  "debug.console.fontSize": 16,
   "editor.minimap.enabled": false,
   "editor.renderLineHighlight": "gutter",
   "workbench.editor.showIcons": false,
@@ -18,11 +18,13 @@
   "explorer.decorations.colors": false,
   "workbench.colorCustomizations": {
     "[Gruvbox Dark Hard]": {
+      "editor.background": "#000000",
+      "terminal.background": "#000000"
       // "editor.lineHighlightBackground": "#1D2021"
     }
   },
 
-  "terminal.integrated.fontFamily": "'JetBrains Mono'",
+  "terminal.integrated.fontFamily": "'Share Tech Mono'",
   //"terminal.integrated.fontSize": 16,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
@@ -146,7 +148,7 @@
   "window.density.editorTabHeight": "compact",
   "workbench.editor.pinnedTabSizing": "compact",
   "explorer.compactFolders": false,
-  "workbench.colorTheme": "Serendipity Midnight Minimal",
+  "workbench.colorTheme": "Gruvbox Dark Hard",
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
