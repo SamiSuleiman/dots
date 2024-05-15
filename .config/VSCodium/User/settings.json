@@ -1,14 +1,14 @@
 {
   "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "block",
-  "editor.fontFamily": "'Share Tech Mono'",
+  "editor.fontFamily": "'JetBrains Mono'",
   // "editor.fontSize": 18,
   // "editor.lineHeight": 2,
   "editor.fontLigatures": false,
   "editor.formatOnSave": true,
   "editor.suggest.insertMode": "replace",
   "editor.linkedEditing": true,
-  "debug.console.fontFamily": "Share Tech Mono",
+  "debug.console.fontFamily": "JetBrains Mono",
   "debug.console.fontSize": 16,
   "editor.minimap.enabled": false,
   "editor.renderLineHighlight": "gutter",
@@ -24,7 +24,7 @@
     }
   },
 
-  "terminal.integrated.fontFamily": "'Share Tech Mono'",
+  "terminal.integrated.fontFamily": "'JetBrains Mono'",
   //"terminal.integrated.fontSize": 16,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
