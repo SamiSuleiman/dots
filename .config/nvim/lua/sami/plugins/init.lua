@@ -50,4 +50,4 @@ require('lazy').setup({
 vim.cmd 'colorscheme melange'
 vim.cmd 'highlight clear SignColumn'
 
--- vim.cmd 'highlight Normal guibg=#000000'
+vim.cmd 'highlight Normal guibg=#000000'
