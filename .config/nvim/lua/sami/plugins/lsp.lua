@@ -197,7 +197,7 @@ return {
         underline = true,
         virtual_text = {
           spacing = 5,
-          severity_limit = 'Warning',
+          min = 'Warning',
         },
         update_in_insert = true,
       })

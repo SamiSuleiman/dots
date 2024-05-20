@@ -51,10 +51,21 @@ return {
     end,
   },
   { 'aktersnurra/no-clown-fiesta.nvim' },
-  { 'ramojus/mellifluous.nvim', opts = {
-    dim_inactive = true,
-    color_set = 'alduin',
-  } },
+  {
+    'ramojus/mellifluous.nvim',
+    opts = {
+      dim_inactive = true,
+      -- color_set = 'alduin',
+      transparent_background = {
+        enabled = true,
+        floating_windows = true,
+        telescope = true,
+        file_tree = true,
+        cursor_line = true,
+        status_line = true,
+      },
+    },
+  },
   { 'sainnhe/gruvbox-material' },
   {
     'xero/miasma.nvim',

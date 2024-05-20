@@ -47,7 +47,12 @@ require('lazy').setup({
   },
 }, {})
 
-vim.cmd 'colorscheme melange'
+vim.cmd 'colorscheme mellifluous'
 vim.cmd 'highlight clear SignColumn'
 
+vim.cmd 'highlight NormalFloat ctermfg=LightGrey'
 vim.cmd 'highlight Normal guibg=#000000'
+
+vim.api.nvim_set_hl(0, 'FloatBorder', { bg = '#000000', fg = '#5E81AC' })
+vim.api.nvim_set_hl(0, 'NormalFloat', { bg = '#000000' })
+vim.api.nvim_set_hl(0, 'NormalNC', { bg = '#000000' })

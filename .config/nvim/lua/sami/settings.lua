@@ -15,7 +15,7 @@ for name, icon in pairs(symbols) do
   local hl = 'DiagnosticSign' .. name
   vim.fn.sign_define(hl, { text = icon, numhl = hl, texthl = hl })
 end
-vim.opt.guicursor = ''
+-- vim.opt.guicursor = ''
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.linebreak = true
@@ -46,7 +46,7 @@ vim.opt.showmatch = true
 vim.opt.synmaxcol = 300 -- stop syntax highlighting for performance
 vim.opt.laststatus = 2 -- always show statusline
 vim.opt.foldenable = false
-vim.opt.cursorline = true
+vim.opt.cursorline = false
 vim.opt.cursorcolumn = false
 vim.opt.numberwidth = 1
 vim.opt.showcmd = true
@@ -67,7 +67,6 @@ vim.opt.spell = true
 vim.treesitter.language.register('markdown', 'mdx')
 vim.treesitter.language.register('vue', 'analog')
 vim.treesitter.language.register('json', '.all-contributorsrc')
-vim.o.clipboard = true
 vim.g.copilot_assume_mapped = true
 vim.opt.splitbelow = true
 vim.opt.splitright = true

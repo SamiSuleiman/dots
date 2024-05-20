@@ -43,26 +43,7 @@ alias nb='newsboat'
 # ytdl
 alias ytdl='yt-dlp'
 
-# Define a function to open an editor with optional profile flag
-open_editor() {
-    # Check if codium command exists
-    if command -v codium &>/dev/null; then
-        codium --profile=tanaka "$@"
-    # Check if code command exists
-    elif command -v code &>/dev/null; then
-        code --profile=tanaka "$@"
-    # Check if nvim command exists
-    elif command -v nvim &>/dev/null; then
-        nvim "$@"
-    # If none of the above commands exist, use vim as fallback
-    else
-        vim "$@"
-    fi
-}
-
-# Create an alias for the function
-alias editor=open_editor
-
+alias nvim='TERM=xterm-kitty nvim'
 alias vim='nvim'
 alias v='nvim'
 alias myip="curl http://ipecho.net/plain; echo"
