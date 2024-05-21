@@ -1,4 +1,5 @@
 return {
+  { 'echasnovski/mini.statusline', version = '*', enabled = false, opts = {} },
   { 'bluz71/nvim-linefly', enabled = false },
   {
     'nvim-lualine/lualine.nvim',
@@ -34,9 +35,21 @@ return {
             end,
           },
         },
-        lualine_b = { 'branch', 'diff', 'diagnostics' },
+        lualine_b = {
+          {
+            'branch' --[[ , color = { bg = 'black', fg = '#ebdbb2', gui = 'bold' } ]],
+          },
+          {
+            'diff' --[[ , color = { bg = 'black', fg = '#ebdbb2', gui = 'bold' } ]],
+          },
+          {
+            'diagnostics' --[[ , color = { bg = 'black', fg = '#ebdbb2', gui = 'bold' } ]],
+          },
+        },
         lualine_c = {
-          'filename',
+          {
+            'filename' --[[ , color = { bg = 'black', fg = '#ebdbb2', gui = 'bold' } ]],
+          },
           -- {
           --   'lsps',
           --   fmt = function()
@@ -63,19 +76,45 @@ return {
               return recording ~= '' and recording or nil
             end,
             icon = '@',
+            color = { bg = 'black', fg = '#ebdbb2', gui = 'bold' },
           },
-          'encoding',
-          'fileformat',
-          'filetype',
+          {
+            'encoding' --[[ , color = { bg = 'black', fg = '#ebdbb2', gui = 'bold' } ]],
+          },
+          {
+            'fileformat' --[[ , color = { bg = 'black', fg = '#ebdbb2', gui = 'bold' } ]],
+          },
+          {
+            'filetype' --[[ , color = { bg = 'black', fg = '#ebdbb2', gui = 'bold' } ]],
+          },
         },
-        lualine_y = { 'progress' },
-        lualine_z = { 'location', 'searchcount' },
+        lualine_y = {
+          {
+            'progress' --[[ , color = { bg = 'black', fg = '#ebdbb2', gui = 'bold' } ]],
+          },
+        },
+        lualine_z = {
+          {
+            'location' --[[ , color = { bg = 'black', fg = '#ebdbb2', gui = 'bold' } ]],
+          },
+          {
+            'searchcount' --[[ , color = { bg = 'black', fg = '#ebdbb2', gui = 'bold' } ]],
+          },
+        },
       },
       inactive_sections = {
         lualine_a = {},
         lualine_b = {},
-        lualine_c = { 'filename' },
-        lualine_x = { 'location' },
+        lualine_c = {
+          {
+            'filename' --[[ , color = { bg = 'black', fg = '#ebdbb2', gui = 'bold' } ]],
+          },
+        },
+        lualine_x = {
+          {
+            'location' --[[ , color = { bg = 'black', fg = '#ebdbb2', gui = 'bold' } ]],
+          },
+        },
         lualine_y = {},
         lualine_z = {},
       },

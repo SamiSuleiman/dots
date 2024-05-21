@@ -9,7 +9,7 @@
 }
 
 window#waybar {
-  background-color: #000000;
+  background-color: @base;
   color: @text;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -137,7 +137,7 @@ button {
   color: @love;
   margin-right: 5px;
   font-size: 18px;
-  background: #000000;
+  background: @base;
 }
 
 #keyboard-state > label {

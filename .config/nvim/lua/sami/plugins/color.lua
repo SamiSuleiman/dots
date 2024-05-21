@@ -1,8 +1,13 @@
 return {
   {
-    'mcchrish/zenbones.nvim',
-    dependencies = 'rktjmp/lush.nvim',
+    'AlexvZyl/nordic.nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      -- require('nordic').load()
+    end,
   },
+  'nordtheme/vim',
   {
     'Tsuzat/NeoSolarized.nvim',
     lazy = false, -- make sure we load this during startup if it is your main colorscheme

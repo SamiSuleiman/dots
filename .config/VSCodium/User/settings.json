@@ -16,8 +16,8 @@
   "breadcrumbs.enabled": true,
   "explorer.decorations.colors": false,
   "workbench.colorCustomizations": {
-    "editor.background": "#000000",
-    "terminal.background": "#000000"
+    // "editor.background": "#000000",
+    // "terminal.background": "#000000"
     // "editor.lineHighlightBackground": "#1D2021"
   },
 
@@ -145,7 +145,7 @@
   "window.density.editorTabHeight": "compact",
   "workbench.editor.pinnedTabSizing": "compact",
   "explorer.compactFolders": false,
-  "workbench.colorTheme": "Serendipity Midnight Minimal",
+  "workbench.colorTheme": "Gruvbox Dark Hard",
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },

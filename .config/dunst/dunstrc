@@ -104,24 +104,21 @@
 
 # gruv
 [urgency_low]
-    # background = "#282828"
-    background = "#000000"
+    background = "#282828"
     foreground = "#E2D6B7"
     highlight = "#E2D6B7"
     frame_color = "#282828"
     timeout = 5
 
 [urgency_normal]
-    # background = "#282828"
-    background = "#000000"
+    background = "#282828"
     foreground = "#E2D6B7"
     highlight = "#E2D6B7"
     frame_color = "#282828"
     timeout = 5
 
 [urgency_critical]
-    # background = "#282828"
-    background = "#000000"
+    background = "#282828"
     foreground = "#E2D6B7"
     frame_color = "#fb4934"
     timeout = 1000
