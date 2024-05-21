@@ -1,8 +1,7 @@
 {
-  "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "block",
   "editor.fontFamily": "'JetBrains Mono'",
-  // "editor.fontSize": 18,
+  "editor.fontSize": 16,
   // "editor.lineHeight": 2,
   "editor.fontLigatures": false,
   "editor.formatOnSave": true,
@@ -17,15 +16,13 @@
   "breadcrumbs.enabled": true,
   "explorer.decorations.colors": false,
   "workbench.colorCustomizations": {
-    "[Gruvbox Dark Hard]": {
-      "editor.background": "#000000",
-      "terminal.background": "#000000"
-      // "editor.lineHighlightBackground": "#1D2021"
-    }
+    "editor.background": "#000000",
+    "terminal.background": "#000000"
+    // "editor.lineHighlightBackground": "#1D2021"
   },
 
   "terminal.integrated.fontFamily": "'JetBrains Mono'",
-  //"terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontSize": 16,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
@@ -148,11 +145,12 @@
   "window.density.editorTabHeight": "compact",
   "workbench.editor.pinnedTabSizing": "compact",
   "explorer.compactFolders": false,
-  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.colorTheme": "Serendipity Midnight Minimal",
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "go.toolsManagement.autoUpdate": true,
   "debug.inlineValues": "on",
-  "debug.toolBarLocation": "docked"
+  "debug.toolBarLocation": "docked",
+  "terminal.integrated.cursorBlinking": true
 }

@@ -47,7 +47,7 @@ require('lazy').setup({
   },
 }, {})
 
-vim.cmd 'colorscheme mellifluous'
+-- vim.cmd 'colorscheme mellifluous'
 vim.cmd 'highlight clear SignColumn'
 
 vim.cmd 'highlight NormalFloat ctermfg=LightGrey'
