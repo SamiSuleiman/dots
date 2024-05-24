@@ -47,8 +47,8 @@ require('lazy').setup({
   },
 }, {})
 
-vim.cmd 'colorscheme miasma'
-vim.cmd 'highlight clear SignColumn'
+-- vim.cmd 'colorscheme miasma'
+-- vim.cmd 'highlight clear SignColumn'
 
 vim.cmd 'highlight NormalFloat ctermfg=LightGrey'
 vim.cmd 'highlight Normal guibg=#1D2021'

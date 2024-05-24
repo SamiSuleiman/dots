@@ -7,7 +7,6 @@ return {
       -- require('nordic').load()
     end,
   },
-  'nordtheme/vim',
   {
     'Tsuzat/NeoSolarized.nvim',
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
@@ -15,7 +14,7 @@ return {
   },
   {
     'jesseleite/nvim-noirbuddy',
-    enabled = false,
+    enabled = true,
     dependencies = {
       { 'tjdevries/colorbuddy.nvim' },
     },
@@ -25,9 +24,9 @@ return {
     config = function()
       vim.cmd 'colorscheme noirbuddy'
       require('noirbuddy').setup {
-        preset = 'crt-amber',
+        preset = 'crt-amber', -- or 'slate', 'minimal', 'miami-nights', 'kiwi', 'crt-green'
         colors = {
-          background = '#000000',
+          background = '#1D2021',
         },
       }
     end,
