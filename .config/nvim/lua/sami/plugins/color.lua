@@ -1,4 +1,5 @@
 return {
+  { 'catppuccin/nvim', name = 'catppuccin', priority = 1000 },
   {
     'AlexvZyl/nordic.nvim',
     lazy = false,
@@ -24,7 +25,7 @@ return {
     config = function()
       vim.cmd 'colorscheme noirbuddy'
       require('noirbuddy').setup {
-        preset = 'crt-amber', -- or 'slate', 'minimal', 'miami-nights', 'kiwi', 'crt-green'
+        preset = 'slate', -- or 'slate', 'minimal', 'miami-nights', 'kiwi', 'crt-green'
         colors = {
           background = '#1D2021',
         },

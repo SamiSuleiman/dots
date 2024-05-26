@@ -122,7 +122,6 @@
   "search.seedWithNearestWord": true,
   "search.showLineNumbers": true,
   "search.smartCase": true,
-  "search.experimental.quickAccess.preserveInput": true,
   "window.commandCenter": false,
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.hideOnStartup": "always",
@@ -145,12 +144,16 @@
   "window.density.editorTabHeight": "compact",
   "workbench.editor.pinnedTabSizing": "compact",
   "explorer.compactFolders": false,
-  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.colorTheme": "Rosé Pine",
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "go.toolsManagement.autoUpdate": true,
   "debug.inlineValues": "on",
   "debug.toolBarLocation": "docked",
-  "terminal.integrated.cursorBlinking": true
+  "terminal.integrated.cursorBlinking": false,
+  "search.quickAccess.preserveInput": true,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "editor.cursorBlinking": "solid"
 }
+

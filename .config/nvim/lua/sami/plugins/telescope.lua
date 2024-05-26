@@ -74,11 +74,11 @@ return {
       end
     end
 
-    vim.api.nvim_set_hl(0, 'TelescopeNormal', { bg = '#1D2021' })
-    vim.api.nvim_set_hl(0, 'TelescopeBorder', { bg = '#1D2021' })
-    vim.api.nvim_set_hl(0, 'TelescopePromptNormal', { bg = '#1D2021' })
-    vim.api.nvim_set_hl(0, 'TelescopePrompt', { bg = '#1D2021' })
-    vim.api.nvim_set_hl(0, 'TelescopePromptTitle', { bg = '#1D2021', fg = '#5E81AC' })
+    -- vim.api.nvim_set_hl(0, 'TelescopeNormal', { bg = '#1d2021' })
+    -- vim.api.nvim_set_hl(0, 'TelescopeBorder', { bg = '#1d2021' })
+    -- vim.api.nvim_set_hl(0, 'TelescopePromptNormal', { bg = '#1d2021' })
+    -- vim.api.nvim_set_hl(0, 'TelescopePrompt', { bg = '#1d2021' })
+    -- vim.api.nvim_set_hl(0, 'TelescopePromptTitle', { bg = '#1d2021', fg = '#5E81AC' })
 
     vim.api.nvim_create_user_command('LiveGrepGitRoot', live_grep_git_root, {})
     require('telescope').load_extension 'harpoon'

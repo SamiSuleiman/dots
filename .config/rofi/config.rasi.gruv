@@ -1,22 +1,21 @@
 @import "default"
 
 * {
-	bg: #191724;
-	cur: #1f1d2e;
-	fgd: #e0def4;
-	cmt: #6e6a86;
-	cya: #9ccfd8;
-	grn: #31748f;
-	ora: #ebbcba;
-	pur: #c4a7e7;
-	red: #eb6f92;
-	yel: #f6c177;
+	bg: #282828;
+	cur: #292929;
+	fgd: #f9f5d7;
+
+	cya: #83a598;
+	grn: #98971a;
+	ora: #d65d0e;
+	pur: #b16286;
+	red: #cc241d;
 
 	font: "JetBrainsMono Nerd Font 10";
 
 	foreground: @fgd;
 	background: @bg;
-	active-background: @pur;
+	active-background: @ora;
 	urgent-background: @red;
 
 	selected-background: @active-background;
@@ -28,11 +27,11 @@
 
 #window {
 	background-color: @background;
-	border:           3;
+	border:           0px;
 	border-radius:    0;
-	border-color:     @cur;
-	padding:          5;
-  width:            calc( 30% min 600);
+	border-color:     @ora;
+	padding:          8px;
+  width:            calc( 40% min 800);
 }
 
 configuration {
@@ -72,7 +71,7 @@ configuration {
 #element {
 	border:  0;
   border-radius: 0;
-	padding: 6 ;
+	padding: 10;
 }
 
 #element.normal.normal {
@@ -140,7 +139,7 @@ configuration {
 #inputbar {
 	spacing:    0;
 	text-color: @foreground;
-	padding:    1px ;
+	padding:    20px ;
 }
 
 #case-indicator {
@@ -155,7 +154,7 @@ configuration {
 
 #prompt {
 	spacing:    0;
-	text-color: @grn;
+	text-color: @ora;
 }
 
 #inputbar {
