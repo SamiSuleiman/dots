@@ -46,15 +46,3 @@ require('lazy').setup({
     require 'sami.plugins.nx',
   },
 }, {})
-
--- vim.cmd 'colorscheme rose-pine'
--- vim.cmd 'highlight clear SignColumn'
-
--- vim.cmd 'highlight NormalFloat ctermfg=LightGrey'
--- vim.cmd 'highlight Normal guibg=#1d2021'
--- vim.cmd 'highlight @Comment guibg=#1d2021'
--- vim.cmd 'highlight @string guibg=#1d2021'
-
--- vim.api.nvim_set_hl(0, 'FloatBorder', { bg = '#1d2021', fg = '#5E81AC' })
--- vim.api.nvim_set_hl(0, 'NormalFloat', { bg = '#1d2021' })
--- vim.api.nvim_set_hl(0, 'NormalNC', { bg = '#1d2021' })

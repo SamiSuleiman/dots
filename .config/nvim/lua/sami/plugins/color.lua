@@ -15,7 +15,7 @@ return {
   },
   {
     'jesseleite/nvim-noirbuddy',
-    enabled = true,
+    enabled = false,
     dependencies = {
       { 'tjdevries/colorbuddy.nvim' },
     },
@@ -171,5 +171,16 @@ return {
         },
       },
     },
+    config = function()
+      vim.cmd 'colorscheme rose-pine'
+
+      vim.api.nvim_set_hl(0, '@variable', { bg = 'NONE' })
+      vim.api.nvim_set_hl(0, '@property', { bg = 'NONE' })
+      vim.api.nvim_set_hl(0, '@parameter', { bg = 'NONE' })
+      vim.api.nvim_set_hl(0, '@variable.parameter', { bg = 'NONE' })
+      vim.api.nvim_set_hl(0, 'Comment', { bg = 'NONE', fg = '#6c6c6c' })
+      vim.api.nvim_set_hl(0, 'CopilotSuggestion', { bg = 'NONE' })
+      -- vim.cmd 'highlight clear SignColumn'
+    end,
   },
 }
