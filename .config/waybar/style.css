@@ -96,14 +96,14 @@ button {
 #backlight,
 #mpris {
   padding: 0 9px;
-  color: @rose;
+  color: @subtle;
   margin: 5px 0;
-  border-bottom: 1px solid @highlightLow;
+  border-bottom: 1px solid @highlightHigh;
 }
 
 #custom-apps {
   padding: 0px 25px 0px 25px;
-  /* border-bottom: 3px solid @highlightLow; */
+  /* border-bottom: 3px solid @highlightHigh; */
   color: @love;
 }
 
