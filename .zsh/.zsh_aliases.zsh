@@ -37,8 +37,6 @@ alias vif='nvim $(fzf --hidden)'
 alias pif='kill $(ps -ef | fzf | awk '\''{print $2}'\'')'
 alias gbf='git checkout $(git branch | fzf)'
 
-# APPS
-alias nb='newsboat'
 
 # ytdl
 alias ytdl='yt-dlp'
