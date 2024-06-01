@@ -11,7 +11,7 @@
 	pur: #b16286;
 	red: #cc241d;
 
-	font: "JetBrainsMono Nerd Font 10";
+	font: "CascadiaCode 10";
 
 	foreground: @fgd;
 	background: @bg;
