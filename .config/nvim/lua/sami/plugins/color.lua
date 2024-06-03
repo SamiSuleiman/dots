@@ -1,60 +1,6 @@
 return {
   { 'catppuccin/nvim', name = 'catppuccin', priority = 1000 },
-  {
-    'AlexvZyl/nordic.nvim',
-    lazy = false,
-    priority = 1000,
-    config = function()
-      -- require('nordic').load()
-    end,
-  },
-  {
-    'Tsuzat/NeoSolarized.nvim',
-    lazy = false, -- make sure we load this during startup if it is your main colorscheme
-    priority = 1000, -- make sure to load this before all the other start plugins
-  },
-  {
-    'jesseleite/nvim-noirbuddy',
-    enabled = false,
-    dependencies = {
-      { 'tjdevries/colorbuddy.nvim' },
-    },
-    lazy = false,
-    priority = 1000,
-    opts = {},
-    config = function()
-      vim.cmd 'colorscheme noirbuddy'
-      require('noirbuddy').setup {
-        preset = 'slate', -- or 'slate', 'minimal', 'miami-nights', 'kiwi', 'crt-green'
-        colors = {
-          background = '#1D2021',
-        },
-      }
-    end,
-  },
   'comfysage/gruvboxed',
-  'comfysage/twilight-moon',
-  {
-    'comfysage/evergarden',
-    opts = {
-      transparent_background = true,
-      contrast_dark = 'medium', -- 'hard'|'medium'|'soft'
-      overrides = {}, -- add custom overrides
-    },
-  },
-  'Biscuit-Colorscheme/nvim',
-  {
-    'olivercederborg/poimandres.nvim',
-    lazy = false,
-    priority = 1000,
-    config = function()
-      require('poimandres').setup {}
-    end,
-
-    init = function()
-      vim.cmd 'colorscheme poimandres'
-    end,
-  },
   { 'aktersnurra/no-clown-fiesta.nvim' },
   {
     'ramojus/mellifluous.nvim',
@@ -71,14 +17,6 @@ return {
       },
     },
   },
-  { 'sainnhe/gruvbox-material' },
-  {
-    'xero/miasma.nvim',
-    lazy = false,
-    priority = 1000,
-  },
-  { 'bluz71/vim-moonfly-colors', name = 'moonfly', lazy = false, priority = 1000 },
-  { 'Mofiqul/dracula.nvim' },
   {
     'rebelot/kanagawa.nvim',
     opts = {
@@ -92,19 +30,6 @@ return {
         },
       },
     },
-  },
-  {
-    'sainnhe/everforest',
-    config = function()
-      vim.api.nvim_set_var('everforest_background', 'hard')
-    end,
-  },
-  {
-    'sainnhe/sonokai',
-    config = function()
-      vim.api.nvim_set_var('sonokai_style', 'espresso')
-      vim.api.nvim_set_var('sonokai_better_performance', 1)
-    end,
   },
   {
     'folke/tokyonight.nvim',
@@ -149,7 +74,19 @@ return {
     },
   },
   {
+    'projekt0n/github-nvim-theme',
+    enabled = false,
+    lazy = false, -- make sure we load this during startup if it is your main colorscheme
+    priority = 1000, -- make sure to load this before all the other start plugins
+    config = function()
+      require('github-theme').setup {}
+
+      vim.cmd 'colorscheme github_dark_default'
+    end,
+  },
+  {
     'rose-pine/neovim',
+    enabled = true,
     name = 'rose-pine',
     opts = {},
     config = function()
