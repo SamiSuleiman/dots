@@ -10,7 +10,7 @@
 
 window#waybar {
   background-color: @base;
-  color: @text;
+  color: @subtle;
   transition-property: background-color;
   transition-duration: 0.5s;
   /* border-radius: 0px 0px 10px 10px; */
@@ -40,13 +40,14 @@ button {
 
 #workspaces button:hover {
   /* color: @pine; */
-  color: @text;
+  color: @subtle;
   box-shadow: inherit;
   text-shadow: inherit;
 }
 
 #workspaces button {
   padding: 0 5px;
+  color: @subtle;
   margin: 4px 0 4px 6px;
   transition: color 200ms ease-in-out;
   /* border-radius: 10px; */
@@ -55,12 +56,12 @@ button {
 
 #workspaces button.selected {
   /* color: @pine; */
-  color: @text;
+  color: @subtle;
 }
 
 #workspaces button.active {
-  /* color: @pine; */
-  border-bottom: 1px solid @rose;
+  color: @pine;
+  /* border-bottom: 1px solid @rose; */
   /* padding: 0px 25px 0px 25px; */
 }
 
@@ -97,8 +98,8 @@ button {
 #mpris {
   padding: 0 9px;
   color: @subtle;
-  margin: 5px 0;
-  border-bottom: 1px solid @highlightHigh;
+  /* margin: 5px 0; */
+  /* border-bottom: 1px solid @highlightHigh; */
 }
 
 #custom-apps {

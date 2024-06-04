@@ -6,8 +6,8 @@
   "modules-left": [
     "hyprland/workspaces",
     "hyprland/language",
-    "clock",
-    "custom/apps",
+    "clock"
+    // "custom/apps",
   ],
   "modules-center": ["mpris"],
   "modules-right": [

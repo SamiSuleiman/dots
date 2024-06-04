@@ -144,7 +144,7 @@
   "window.density.editorTabHeight": "compact",
   "workbench.editor.pinnedTabSizing": "compact",
   "explorer.compactFolders": false,
-  "workbench.colorTheme": "Rosé Pine",
+  "workbench.colorTheme": "Rosé Pine Moon",
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
