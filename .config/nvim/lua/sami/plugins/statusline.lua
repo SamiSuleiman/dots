@@ -10,7 +10,7 @@ return {
         options = { fmt = string.lower },
         icons_enabled = true,
         -- theme = 'auto',
-        theme = 'rose-pine-alt',
+        -- theme = 'rose-pine-alt',
         section_separators = { left = '', right = '' },
         component_separators = { left = '', right = '' },
         disabled_filetypes = {
@@ -76,7 +76,7 @@ return {
               return recording ~= '' and recording or nil
             end,
             icon = '@',
-            color = { bg = 'black', fg = '#ebdbb2', gui = 'bold' },
+            -- color = { bg = 'black', fg = '#ebdbb2', gui = 'bold' },
           },
           {
             'encoding' --[[ , color = { bg = 'black', fg = '#ebdbb2', gui = 'bold' } ]],
