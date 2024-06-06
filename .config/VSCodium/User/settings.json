@@ -1,13 +1,13 @@
 {
   "editor.cursorStyle": "block",
-  "editor.fontFamily": "'CascadiaCode'",
+  "editor.fontFamily": "'Cascadia Code'",
   "editor.fontSize": 16,
-  // "editor.lineHeight": 2,
-  "editor.fontLigatures": false,
+  "editor.lineHeight": 2,
+  "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "editor.suggest.insertMode": "replace",
   "editor.linkedEditing": true,
-  "debug.console.fontFamily": "CascadiaCode",
+  "debug.console.fontFamily": "Cascadia Code",
   "debug.console.fontSize": 16,
   "editor.minimap.enabled": false,
   "editor.renderLineHighlight": "gutter",
@@ -21,12 +21,13 @@
     // "editor.lineHighlightBackground": "#1D2021"
   },
 
-  "terminal.integrated.fontFamily": "'CascadiaCode'",
+  "terminal.integrated.fontFamily": "'Cascadia Code NF'",
   "terminal.integrated.fontSize": 16,
+  "terminal.integrated.lineHeight": 1.5,
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "workbench.activityBar.location": "hidden",
+  "workbench.activityBar.location": "bottom",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "launch": {},
   "[json]": {
@@ -141,7 +142,7 @@
   "window.enableMenuBarMnemonics": false,
   "window.customMenuBarAltFocus": false,
   "window.titleBarStyle": "custom",
-  "window.density.editorTabHeight": "compact",
+  "window.density.editorTabHeight": "default",
   "workbench.editor.pinnedTabSizing": "compact",
   "explorer.compactFolders": false,
   "workbench.colorTheme": "Rosé Pine Moon",
