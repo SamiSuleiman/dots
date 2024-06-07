@@ -1,19 +1,19 @@
-@import "./rose-pine.css";
+@import "./gruv.css";
 
 * {
-  font-family: JetBrainsMono Nerd Font;
+  font-family:
+    Cascadia Code,
+    JetBrainsMono Nerd Font;
   font-weight: bold;
   font-size: 14px;
-  /* border-radius: 10px; */
   border-radius: 0px;
 }
 
 window#waybar {
   background-color: @base;
-  color: @subtle;
+  color: @highlightHigh;
   transition-property: background-color;
   transition-duration: 0.5s;
-  /* border-radius: 0px 0px 10px 10px; */
   border-radius: 0px;
 }
 
@@ -31,38 +31,31 @@ window#waybar.chromium {
 }
 
 button {
-  /* Use box-shadow instead of border so the text isn't offset */
   box-shadow: inset 0 -3px transparent;
-  /* Avoid rounded borders under each button name */
   border: none;
   border-radius: 0;
 }
 
 #workspaces button:hover {
-  /* color: @pine; */
-  color: @subtle;
+  color: @text;
   box-shadow: inherit;
   text-shadow: inherit;
 }
 
 #workspaces button {
   padding: 0 5px;
-  color: @subtle;
+  color: @highlightHigh;
   margin: 4px 0 4px 6px;
-  transition: color 200ms ease-in-out;
-  /* border-radius: 10px; */
+  /* transition: color 200ms ease-in-out; */
   border-radius: 0px;
 }
 
 #workspaces button.selected {
-  /* color: @pine; */
-  color: @subtle;
+  color: @highlightHigh;
 }
 
 #workspaces button.active {
-  color: @pine;
-  /* border-bottom: 1px solid @rose; */
-  /* padding: 0px 25px 0px 25px; */
+  color: @text;
 }
 
 #workspaces button.urgent {
@@ -97,14 +90,11 @@ button {
 #backlight,
 #mpris {
   padding: 0 9px;
-  color: @subtle;
-  /* margin: 5px 0; */
-  /* border-bottom: 1px solid @highlightHigh; */
+  color: @highlightHigh;
 }
 
 #custom-apps {
   padding: 0px 25px 0px 25px;
-  /* border-bottom: 3px solid @highlightHigh; */
   color: @love;
 }
 
@@ -113,7 +103,6 @@ button {
   margin: 0 4px;
 }
 
-/* If workspaces is the leftmost module, loveuce left margin */
 .modules-left > widget:first-child > #workspaces {
   margin-left: 2px;
 }

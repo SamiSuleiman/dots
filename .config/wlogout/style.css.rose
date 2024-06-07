@@ -4,26 +4,26 @@
 }
 
 window {
-  background-color: #282828;
+  background-color: rgba(25, 23, 36, 0.3);
 }
 
 button {
   /* border-radius: 6px; */
   border-radius: 0px;
-  color: #ebdbb2;
+  color: rgba(224, 222, 244, 1);
   background-color: #1e1e1e;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 9%;
   border: none;
   margin: 3px;
-  background-color: rgba(40, 40, 40, 0.3);
+  background-color: rgba(25, 23, 36, 0.6);
 }
 
 button:focus,
 button:active,
 button:hover {
-  background-color: #3c3836;
+  background-color: rgba(38, 35, 58, 1);
   outline-style: none;
 }
 

@@ -39,41 +39,6 @@ return {
   },
   { 'savq/melange-nvim' },
   {
-    'ellisonleao/gruvbox.nvim',
-    priority = 1000,
-    opts = {
-      terminal_colors = true, -- add neovim terminal colors
-      undercurl = true,
-      underline = true,
-      bold = false,
-      italic = {
-        strings = true,
-        emphasis = true,
-        comments = true,
-        operators = false,
-        folds = true,
-      },
-      strikethrough = true,
-      invert_selection = false,
-      invert_signs = false,
-      invert_tabline = false,
-      invert_intend_guides = false,
-      inverse = true, -- invert background for search, diffs, statuslines and errors
-      contrast = 'hard', -- can be "hard", "soft" or empty string
-      palette_overrides = {},
-      overrides = {
-        SignColumn = { bg = '#282828' },
-        ['@punctuation.bracket'] = { fg = '#E4D4AD' },
-        ['@punctuation.special'] = { fg = '#E5D4AD' },
-        ['@punctuation'] = { fg = '#E4D4AD' },
-        ['@symbol'] = { fg = '#E4D4AD' },
-        ['@operator'] = { fg = '#E4D4AD' },
-      },
-      dim_inactive = false,
-      transparent_mode = true,
-    },
-  },
-  {
     'projekt0n/github-nvim-theme',
     enabled = false,
     lazy = false, -- make sure we load this during startup if it is your main colorscheme
@@ -86,7 +51,7 @@ return {
   },
   {
     'rose-pine/neovim',
-    enabled = true,
+    enabled = false,
     name = 'rose-pine',
     opts = {},
     config = function()
@@ -117,6 +82,55 @@ return {
       vim.api.nvim_set_hl(0, 'Comment', { bg = 'NONE', fg = '#6c6c6c' })
       vim.api.nvim_set_hl(0, 'CopilotSuggestion', { bg = 'NONE' })
       -- vim.cmd 'highlight clear SignColumn'
+    end,
+  },
+  {
+    'ellisonleao/gruvbox.nvim',
+    priority = 1000,
+    config = function()
+      require('gruvbox').setup {
+        terminal_colors = true, -- add neovim terminal colors
+        undercurl = true,
+        underline = true,
+        bold = false,
+        italic = {
+          strings = true,
+          emphasis = true,
+          comments = true,
+          operators = false,
+          folds = true,
+        },
+        strikethrough = true,
+        invert_selection = false,
+        invert_signs = false,
+        invert_tabline = false,
+        invert_intend_guides = false,
+        inverse = true, -- invert background for search, diffs, statuslines and errors
+        contrast = 'hard', -- can be "hard", "soft" or empty string
+        palette_overrides = {
+          -- bright_green = '#990000',
+        },
+        overrides = {
+          SignColumn = { bg = '#282828' },
+          ['@punctuation.bracket'] = { fg = '#E4D4AD' },
+          ['@punctuation.special'] = { fg = '#E5D4AD' },
+          ['@punctuation'] = { fg = '#E4D4AD' },
+          ['@symbol'] = { fg = '#E4D4AD' },
+          ['@operator'] = { fg = '#E4D4AD' },
+        },
+        dim_inactive = false,
+        transparent_mode = true,
+      }
+      vim.cmd 'colorscheme gruvbox'
+
+      vim.api.nvim_set_hl(0, '@variable', { bg = 'NONE' })
+      vim.api.nvim_set_hl(0, '@property', { bg = 'NONE' })
+      vim.api.nvim_set_hl(0, '@parameter', { bg = 'NONE' })
+      vim.api.nvim_set_hl(0, '@variable.parameter', { bg = 'NONE' })
+      vim.api.nvim_set_hl(0, 'Comment', { bg = 'NONE', fg = '#6c6c6c' })
+      vim.api.nvim_set_hl(0, 'CopilotSuggestion', { bg = 'NONE' })
+      vim.api.nvim_set_hl(0, 'String', { bg = 'NONE' })
+      vim.cmd 'highlight clear SignColumn'
     end,
   },
 }
