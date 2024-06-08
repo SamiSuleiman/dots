@@ -68,5 +68,8 @@ zle_bracketed_paste=()
 RED='\033[0;31m'
 NC='\033[0m' # No Color
 
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
+if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
+  eval "$(oh-my-posh init zsh)"
+fi
 eval "$(zoxide init zsh)"

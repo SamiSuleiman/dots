@@ -92,12 +92,12 @@ return {
         terminal_colors = true, -- add neovim terminal colors
         undercurl = true,
         underline = true,
-        bold = false,
+        bold = true,
         italic = {
           strings = true,
           emphasis = true,
           comments = true,
-          operators = false,
+          operators = true,
           folds = true,
         },
         strikethrough = true,
@@ -111,26 +111,26 @@ return {
           -- bright_green = '#990000',
         },
         overrides = {
-          SignColumn = { bg = '#282828' },
+          -- SignColumn = { bg = '#282828' },
           ['@punctuation.bracket'] = { fg = '#E4D4AD' },
           ['@punctuation.special'] = { fg = '#E5D4AD' },
           ['@punctuation'] = { fg = '#E4D4AD' },
           ['@symbol'] = { fg = '#E4D4AD' },
-          ['@operator'] = { fg = '#E4D4AD' },
+          ['@operator'] = { fg = '#E5D4AD' },
         },
         dim_inactive = false,
         transparent_mode = true,
       }
       vim.cmd 'colorscheme gruvbox'
 
-      vim.api.nvim_set_hl(0, '@variable', { bg = 'NONE' })
-      vim.api.nvim_set_hl(0, '@property', { bg = 'NONE' })
-      vim.api.nvim_set_hl(0, '@parameter', { bg = 'NONE' })
-      vim.api.nvim_set_hl(0, '@variable.parameter', { bg = 'NONE' })
-      vim.api.nvim_set_hl(0, 'Comment', { bg = 'NONE', fg = '#6c6c6c' })
-      vim.api.nvim_set_hl(0, 'CopilotSuggestion', { bg = 'NONE' })
-      vim.api.nvim_set_hl(0, 'String', { bg = 'NONE' })
-      vim.cmd 'highlight clear SignColumn'
+      -- vim.api.nvim_set_hl(0, '@variable', { bg = 'NONE' })
+      -- vim.api.nvim_set_hl(0, '@property', { bg = 'NONE' })
+      -- vim.api.nvim_set_hl(0, '@parameter', { bg = 'NONE' })
+      -- vim.api.nvim_set_hl(0, '@variable.parameter', { bg = 'NONE' })
+      -- vim.api.nvim_set_hl(0, 'Comment', { bg = 'NONE', fg = '#6c6c6c' })
+      -- vim.api.nvim_set_hl(0, 'CopilotSuggestion', { bg = 'NONE' })
+      -- vim.api.nvim_set_hl(0, 'String', { bg = 'NONE' })
+      -- vim.cmd 'highlight clear SignColumn'
     end,
   },
 }
