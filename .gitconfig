@@ -55,3 +55,5 @@ rlc = "!f() { \
     #                     │        │            └─ date (relative)
     #                     │        └─ decorations (branch, heads or tags)
     #                     └─ hash (abbreviated)
+[rerere]
+	enabled = true
