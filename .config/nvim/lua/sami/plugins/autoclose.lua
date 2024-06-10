@@ -1,5 +1,5 @@
 return {
   'm4xshen/autoclose.nvim',
-  enabled = true,
+  enabled = false,
   opts = {},
 }
