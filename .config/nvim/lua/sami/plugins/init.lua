@@ -15,10 +15,6 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   {
     require 'sami.plugins.noice',
-    require 'sami.plugins.btw',
-    require 'sami.plugins.autoclose',
-    require 'sami.plugins.zen',
-    require 'sami.plugins.firenvim',
     require 'sami.plugins.harpoon',
     require 'sami.plugins.copilot',
     require 'sami.plugins.autopairs',
