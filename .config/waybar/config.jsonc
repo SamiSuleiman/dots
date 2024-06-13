@@ -24,7 +24,7 @@
 
   "disk": {
     "interval": 30,
-    "format": "        medina is {percentage_used}% full",
+    "format": "        medina is {percentage_used}% full والحمد لله",
     "path": "/home/sami/medina/",
   },
 
