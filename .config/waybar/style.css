@@ -2,10 +2,10 @@
 
 * {
   font-family:
-    Cascadia Code,
+    Cantarell,
     JetBrainsMono Nerd Font;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 12px;
   border-radius: 0px;
 }
 
@@ -45,7 +45,7 @@ button {
 #workspaces button {
   padding: 0 5px;
   color: @highlightHigh;
-  margin: 4px 0 4px 6px;
+  /* margin: 4px 0 4px 6px; */
   /* transition: color 200ms ease-in-out; */
   border-radius: 0px;
 }
@@ -56,6 +56,7 @@ button {
 
 #workspaces button.active {
   color: @text;
+  border-left: 2px solid @orange;
 }
 
 #workspaces button.urgent {
@@ -89,8 +90,19 @@ button {
 #mpd,
 #backlight,
 #mpris {
-  padding: 0 9px;
+  padding: 5px 4px;
   color: @highlightHigh;
+}
+
+#disk {
+  border-left: 2px solid @pine;
+}
+
+#backlight,
+#bluetooth,
+#memory,
+#pulseaudio {
+  border-left: 2px solid @iris;
 }
 
 #custom-apps {
@@ -115,12 +127,20 @@ button {
   color: @highlightHigh;
 }
 
+#network {
+  border-left: 2px solid @pine;
+}
+
 #network.disconnected {
   color: @highlightHigh;
 }
 
 #battery.warning:not(.charging) {
   color: @love;
+}
+
+#battery {
+  border-left: 2px solid @pine;
 }
 
 #custom-power {

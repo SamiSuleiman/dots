@@ -1,30 +1,31 @@
 {
   "layer": "top",
-  "position": "bottom",
-  "height": 30,
+  "position": "left",
+  // "height": 30,
   "spacing": 4,
   "modules-left": [
-    "hyprland/workspaces",
-    "hyprland/language",
-    "clock"
-    // "custom/apps",
+    "battery",
+    "network",
+    "disk",
+    "memory",
+    "bluetooth",
+    "backlight",
+    "pulseaudio",
   ],
   "modules-center": ["mpris"],
   "modules-right": [
     "custom/pacman",
-    "backlight",
-    "pulseaudio",
-    "network",
-    "bluetooth",
-    "battery",
-    "disk",
-    "memory",
-    "custom/power",
+    "hyprland/language",
+    "clock",
+    "hyprland/workspaces",
+    "custom/power"
+    // "custom/apps",
   ],
 
   "disk": {
     "interval": 30,
-    "format": "        medina is {percentage_used}% full والحمد لله",
+    "format": "\n{percentage_used}",
+    "tooltip-format": "        medina is {percentage_used}% full والحمد لله",
     "path": "/home/sami/medina/",
   },
 
@@ -42,14 +43,13 @@
   },
   "backlight": {
     "device": "intel_backlight",
-    "format": "{icon}     {percent}%",
+    "format": "{icon}\n {percent}",
     "format-icons": [""],
   },
 
   "memory": {
     "interval": 30,
-    "format": "        {}%",
-    "max-length": 10,
+    "format": "   \n{}",
     "tooltip": true,
     "tooltip-format": "Memory - {used:0.1f}GB used - {}%",
     "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'",
@@ -60,7 +60,7 @@
   "bluetooth": {
     "format": "",
     "format-disabled": "", // an empty format will hide the module
-    "format-connected": "  {num_connections}",
+    "format-connected": "\n{num_connections}",
     "tooltip-format": "{device_alias}",
     "tooltip-format-connected": " {device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias} - {device_battery_percentage}% 󱈑",
@@ -99,20 +99,20 @@
   },
   "clock": {
     "tooltip-format": "{:%A, %B %d, %Y}",
-    "format": "{:%H:%M %A}",
+    "format": "{:%H:%M}",
   },
   "battery": {
     "states": {
       "good": 76,
       "warning": 20,
     },
-    "format": "{icon}           {capacity}%",
+    "format": "{icon}\n{capacity}",
     "format-charging": " {capacity}%",
     "format-icons": ["", "", "", "", ""],
     "tooltip-format": "{capacity}% capacity",
   },
   "network": {
-    "format-wifi": "    {essid}",
+    "format-wifi": "  \n{signalStrength}",
     "format-disconnected": "󰤭",
     "format-ethernet": "",
     "tooltip-format": "Connected to {essid}",
@@ -120,7 +120,7 @@
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
-    "format": "{icon}    {volume}%",
+    "format": "  {icon}\n{volume}",
     "format-muted": "󰖁",
     "format-icons": {
       "default": ["", "", "󰕾"],
