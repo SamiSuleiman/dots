@@ -106,8 +106,15 @@ button {
 }
 
 #custom-apps {
-  padding: 0px 25px 0px 25px;
-  color: @love;
+  padding: 10px 5px 10px 4px;
+  color: @highlightHigh;
+  border-left: 2px solid @highlightHigh;
+}
+
+#custom-apps:hover {
+  color: @orange;
+  transition: color 200ms ease-in-out;
+  border-left: 2px solid @orange;
 }
 
 #window,
@@ -144,10 +151,18 @@ button {
 }
 
 #custom-power {
-  color: @love;
+  /* color: @love; */
+  margin-top: 5px;
   margin-right: 5px;
   font-size: 18px;
   background: @base;
+  border-left: 2px solid @highlightHigh;
+}
+
+#custom-power:hover {
+  color: @love;
+  transition: color 200ms ease-in-out;
+  border-left: 2px solid @love;
 }
 
 #keyboard-state > label {

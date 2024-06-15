@@ -4,6 +4,7 @@
   // "height": 30,
   "spacing": 4,
   "modules-left": [
+    "custom/apps",
     "battery",
     "network",
     "disk",
@@ -18,14 +19,13 @@
     "hyprland/language",
     "clock",
     "hyprland/workspaces",
-    "custom/power"
-    // "custom/apps",
+    "custom/power",
   ],
 
   "disk": {
     "interval": 30,
-    "format": "\n{percentage_used}",
-    "tooltip-format": "        medina is {percentage_used}% full والحمد لله",
+    "format": "  󱊞\n{percentage_used}",
+    "tooltip-format": "        medina (~/medina) is {percentage_used}% full والحمد لله",
     "path": "/home/sami/medina/",
   },
 
@@ -135,6 +135,7 @@
   "custom/power": {
     "format": "󰐥",
     "on-click": "wlogout",
+    "tooltip":false
   },
   "custom/firefox": {
     "format": " ",
@@ -153,7 +154,8 @@
     "on-click": "tauon",
   },
   "custom/apps": {
-    "format": "󰨀",
+    // "format": "󰕮",
+    "format": "󰣇",
     "on-click": "rofi -show drun",
   },
   "custom/files": {
