@@ -11,7 +11,7 @@
 	pur: #b16286;
 	red: #cc241d;
 
-	font: "CascadiaCode 10";
+	font: "Cantarell 10";
 
 	foreground: @fgd;
 	background: @bg;

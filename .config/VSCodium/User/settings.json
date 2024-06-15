@@ -1,13 +1,13 @@
 {
   "editor.cursorStyle": "block",
-  "editor.fontFamily": "'Cascadia Code'",
+  "editor.fontFamily": "'JetBrains Mono'",
   "editor.fontSize": 16,
   "editor.lineHeight": 2,
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "editor.suggest.insertMode": "replace",
   "editor.linkedEditing": true,
-  "debug.console.fontFamily": "Cascadia Code",
+  "debug.console.fontFamily": "JetBrains Mono",
   "debug.console.fontSize": 16,
   "editor.minimap.enabled": false,
   "editor.renderLineHighlight": "gutter",
@@ -21,7 +21,7 @@
     // "editor.lineHighlightBackground": "#1D2021"
   },
 
-  "terminal.integrated.fontFamily": "'Cascadia Code NF'",
+  "terminal.integrated.fontFamily": "'JetBrains Mono'",
   "terminal.integrated.fontSize": 16,
   "terminal.integrated.lineHeight": 1.5,
   "extensions.experimental.affinity": {
