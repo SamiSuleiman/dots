@@ -2,6 +2,7 @@
   "layer": "top",
   "position": "left",
   // "height": 30,
+  "width":45,
   "spacing": 4,
   "modules-left": [
     "custom/apps",
