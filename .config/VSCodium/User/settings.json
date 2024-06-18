@@ -1,6 +1,6 @@
 {
   "editor.cursorStyle": "block",
-  "editor.fontFamily": "'Source Code Pro'",
+  "editor.fontFamily": "'Source Code Pro', 'CascadiaCode'",
   "editor.fontSize": 14,
   "editor.lineHeight": 1.6,
   "editor.fontLigatures": true,
