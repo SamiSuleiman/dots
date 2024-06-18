@@ -11,7 +11,7 @@
 	pur: #b16286;
 	red: #cc241d;
 
-	font: "Cantarell 10";
+	font: "Noto Sans 10";
 
 	foreground: @fgd;
 	background: @bg;
