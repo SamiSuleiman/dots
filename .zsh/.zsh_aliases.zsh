@@ -53,3 +53,6 @@ alias notes='nvim $NOTES_DIR'
 
 # situational, should probably find a way to do this like a normal human aka not a fucking retard
 # alias nvim='nvim.appimage'
+#
+
+alias code='codium'
