@@ -41,5 +41,6 @@ require('lazy').setup({
     require 'sami.plugins.oil',
     require 'sami.plugins.md',
     require 'sami.plugins.nx',
+    require 'sami.plugins.todo',
   },
 }, {})
