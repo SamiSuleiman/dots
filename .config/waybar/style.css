@@ -2,10 +2,9 @@
 
 * {
   font-family:
-    Noto Sans,
     JetBrainsMono Nerd Font;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 14px;
   border-radius: 0px;
 }
 
@@ -45,7 +44,7 @@ button {
 #workspaces button {
   padding: 0 5px;
   color: @highlightHigh;
-  /* margin: 4px 0 4px 6px; */
+  margin: 4px 0 4px 6px;
   /* transition: color 200ms ease-in-out; */
   border-radius: 0px;
 }
@@ -56,7 +55,6 @@ button {
 
 #workspaces button.active {
   color: @text;
-  border-left: 2px solid @orange;
 }
 
 #workspaces button.urgent {
@@ -90,31 +88,13 @@ button {
 #mpd,
 #backlight,
 #mpris {
-  padding: 5px 4px;
+  padding: 0 9px;
   color: @highlightHigh;
-}
-
-#disk {
-  border-left: 2px solid @pine;
-}
-
-#backlight,
-#bluetooth,
-#memory,
-#pulseaudio {
-  border-left: 2px solid @iris;
 }
 
 #custom-apps {
-  padding: 10px 5px 10px 4px;
-  color: @highlightHigh;
-  border-left: 2px solid @highlightHigh;
-}
-
-#custom-apps:hover {
-  color: @orange;
-  transition: color 200ms ease-in-out;
-  border-left: 2px solid @orange;
+  padding: 0px 25px 0px 25px;
+  color: @love;
 }
 
 #window,
@@ -134,10 +114,6 @@ button {
   color: @highlightHigh;
 }
 
-#network {
-  border-left: 2px solid @pine;
-}
-
 #network.disconnected {
   color: @highlightHigh;
 }
@@ -146,23 +122,11 @@ button {
   color: @love;
 }
 
-#battery {
-  border-left: 2px solid @pine;
-}
-
 #custom-power {
-  /* color: @love; */
-  margin-top: 5px;
+  color: @love;
   margin-right: 5px;
   font-size: 18px;
   background: @base;
-  border-left: 2px solid @highlightHigh;
-}
-
-#custom-power:hover {
-  color: @love;
-  transition: color 200ms ease-in-out;
-  border-left: 2px solid @love;
 }
 
 #keyboard-state > label {
