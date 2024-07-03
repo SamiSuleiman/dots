@@ -2,9 +2,11 @@
 
 * {
   font-family:
+    Noto Sans,
+    Noto Kufi Arabic,
     JetBrainsMono Nerd Font;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 13px;
   border-radius: 0px;
 }
 
