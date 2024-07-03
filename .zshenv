@@ -6,6 +6,7 @@ export PATH="$PATH:/opt/nvim/"
 export PATH=/opt/homebrew/bin:$PATH
 export NOTES_DIR="$HOME/the/antenna/"
 export DOTNET_ROOT=/usr/local/share/dotnet
+export BAT_THEME="gruvbox-dark"
 
 source $ZDOTDIR/.zshrc
 . "$HOME/.cargo/env"
