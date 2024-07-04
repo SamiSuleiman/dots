@@ -30,7 +30,12 @@ alias todos="nb search \"todo.md\" --all --list"
 
 set -gx EDITOR nvim
 set -gx LSCOLORS ExGxBxDxCxEgEdxbxgxcxd
+
+set -g fish_key_bindings fish_vi_key_bindings
+bind -M insert \cc kill-whole-line repaint
+
 set -gx GOPATH $XDG_DATA_HOME/go
+
 set -gx LF_ICONS "\
 tw=:\
 st=:\
@@ -194,5 +199,5 @@ ex=:\
 *.nix=:\
 "
 
-starship init fish | source
+oh-my-posh init fish --config ~/.config/ohmyposh/base.toml | source
 zoxide init fish | source

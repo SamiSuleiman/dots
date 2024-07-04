@@ -155,5 +155,6 @@
   "terminal.integrated.cursorBlinking": false,
   "search.quickAccess.preserveInput": true,
   "github.copilot.editor.enableAutoCompletions": true,
-  "editor.cursorBlinking": "solid"
+  "editor.cursorBlinking": "solid",
+  "terminal.integrated.defaultProfile.osx": "tmux"
 }
