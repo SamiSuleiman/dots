@@ -207,3 +207,10 @@ ex=:\
 
 oh-my-posh init fish --config ~/.config/ohmyposh/base.toml | source
 zoxide init fish | source
+
+# pnpm
+set -gx PNPM_HOME "/home/sami/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
