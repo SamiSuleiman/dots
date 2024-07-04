@@ -6,8 +6,10 @@
     Noto Kufi Arabic,
     JetBrainsMono Nerd Font;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 12px;
   border-radius: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 window#waybar {
@@ -46,7 +48,7 @@ button {
 #workspaces button {
   padding: 0 5px;
   color: @highlightHigh;
-  margin: 4px 0 4px 6px;
+  /* margin: 4px 0 4px 6px; */
   /* transition: color 200ms ease-in-out; */
   border-radius: 0px;
 }
@@ -99,11 +101,6 @@ button {
   color: @love;
 }
 
-#window,
-#workspaces {
-  margin: 0 4px;
-}
-
 .modules-left > widget:first-child > #workspaces {
   margin-left: 2px;
 }
@@ -127,12 +124,7 @@ button {
 #custom-power {
   color: @love;
   margin-right: 5px;
-  font-size: 18px;
   background: @base;
-}
-
-#keyboard-state > label {
-  padding: 0 5px;
 }
 
 #keyboard-state > label.locked {
