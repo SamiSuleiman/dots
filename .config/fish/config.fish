@@ -210,6 +210,11 @@ ex=:\
 oh-my-posh init fish --config ~/.config/ohmyposh/base.toml | source
 zoxide init fish | source
 
+# auto-start zellij
+# if status is-interactive
+#     eval (zellij setup --generate-auto-start fish | string collect)
+# end
+
 # pnpm
 set -gx PNPM_HOME "/home/sami/.local/share/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
