@@ -50,11 +50,7 @@ source  ${ZDOTDIR:-$HOME}/plugins/zsh-syntax-highlighting/zsh-syntax-highlightin
 source  ${ZDOTDIR:-$HOME}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source  ${ZDOTDIR:-$HOME}/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
-if [[ $(uname) == "Darwin" ]]; then
-    source ${ZDOTDIR:-$HOME}/os/.mac-binds.zsh
-
-elif command -v pacman > /dev/null; then
-    source ${ZDOTDIR:-$HOME}/os/.linux-binds.zsh
+source ${ZDOTDIR:-$HOME}/.binds.zsh
 
 else
     echo 'Unknown OS!'

@@ -23,6 +23,8 @@ alias la="exa -la"
 alias lt="exa -T"
 alias l="exa -l"
 
+alias fv=" command nvim (fzf --preview 'bat --style=numbers --color=always --line-range :500 {}' --preview-window=right:70%:wrap --bind 'ctrl-o:execute(nvim {})+abort')"
+
 alias ytdl="yt-dlp"
 
 alias bookmarks="nb search \"bookmark.md\" --all --list"
