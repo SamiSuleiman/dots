@@ -27,6 +27,30 @@ alias fv=" command nvim (fzf --preview 'bat --style=numbers --color=always --lin
 
 alias ytdl="yt-dlp"
 
+alias fhist="eval (history | fzf)"
+alias fopen="open (fd | fzf)"
+alias ftldr="tldr (tldr --list | fzf)"
+function fgitadd
+    set files (git ls-files --modified --others --exclude-standard | fzf -m)
+    and git add $files
+end
+function fgitswitch
+    set branch (git branch --all | fzf)
+    and git switch (echo $branch | sed 's:remotes/[^/]*/::')
+end
+function fcd
+    set dir (find . -type d -not -path '*/node_modules/*' | fzf)
+    and z $dir
+end
+function fdockerlogs
+    set container (docker ps --format "{{.ID}}: {{.Names}}" | fzf | awk -F: '{print $1}')
+    and docker logs -f $container
+end
+function fdockersh
+    set container (docker ps --format "{{.ID}}: {{.Names}}" | fzf | awk -F: '{print $1}')
+    and docker exec -it $container sh
+end
+
 alias bookmarks="nb search \"bookmark.md\" --all --list"
 alias todos="nb search \"todo.md\" --all --list"
 
@@ -210,7 +234,6 @@ ex=:\
 oh-my-posh init fish --config ~/.config/ohmyposh/base.toml | source
 zoxide init fish | source
 
-# auto-start zellij
 # if status is-interactive
 #     eval (zellij setup --generate-auto-start fish | string collect)
 # end
@@ -221,3 +244,4 @@ if not string match -q -- $PNPM_HOME $PATH
   set -gx PATH "$PNPM_HOME" $PATH
 end
 # pnpm end
+
