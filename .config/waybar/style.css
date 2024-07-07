@@ -92,6 +92,7 @@ button {
 #scratchpad,
 #mpd,
 #backlight,
+#tray,
 #mpris {
   padding: 0 6px;
   color: @highlightHigh;
