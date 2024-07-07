@@ -24,8 +24,12 @@
 
   "disk": {
     "interval": 30,
-    "format": "        medina is {percentage_used}% full والحمد لله",
+    "format": "        {percentage_used}%",
     "path": "/home/sami/medina/",
+  },
+
+  "hyprland/language": {
+    "format": "{short} {variant}",
   },
 
   "mpris": {
@@ -38,7 +42,7 @@
     "status-icons": {
       "paused": "󰏤",
     },
-    "ignored-players": ["firefox", "chromium", "brave"],
+    // "ignored-players": ["firefox", "chromium", "brave"],
   },
   "backlight": {
     "device": "intel_backlight",
@@ -99,7 +103,7 @@
   },
   "clock": {
     "tooltip-format": "{:%A, %B %d, %Y}",
-    "format": "{:%H:%M %A}",
+    "format": "{:%H:%M}",
   },
   "battery": {
     "states": {

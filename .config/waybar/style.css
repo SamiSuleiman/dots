@@ -58,7 +58,8 @@ button {
 }
 
 #workspaces button.active {
-  color: @text;
+  color: @base;
+  background-color: @orange;
 }
 
 #workspaces button.urgent {
@@ -92,7 +93,7 @@ button {
 #mpd,
 #backlight,
 #mpris {
-  padding: 0 9px;
+  padding: 0 6px;
   color: @highlightHigh;
 }
 
