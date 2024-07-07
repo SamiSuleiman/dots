@@ -4,7 +4,7 @@
 }
 
 window {
-  background-color: #282828;
+  background-color: #000000;
 }
 
 button {
@@ -23,7 +23,7 @@ button {
 button:focus,
 button:active,
 button:hover {
-  background-color: #3c3836;
+  background-color: #17191a;
   outline-style: none;
 }
 

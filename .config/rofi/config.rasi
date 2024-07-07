@@ -30,23 +30,23 @@
 	border:           0px;
 	border-radius:    0;
 	border-color:     @ora;
-	padding:          8px;
-  width:            calc( 40% min 800);
+	padding:          2px;
+	width:            calc( 40% min 400);
 }
 
 configuration {
-  scroll-method:			    0;
-  show-icons:				      true;
-  icon-theme:				      "Arc-X-D";
-  display-drun:			      " ";
-  drun-display-format:		"{name}";
-  disable-history:			  false;
-  sidebar-mode:			      false;
+	scroll-method:			    0;
+	show-icons:			      true;
+	icon-theme:				      "Arc-X-D";
+	display-drun:			      " ";
+	drun-display-format:		"{name}";
+	disable-history:			  false;
+	sidebar-mode:			      false;
 }
 
 #mainbox {
 	border:  0;
-	padding: 2;
+	padding: 0;
 }
 
 #message {
@@ -70,7 +70,7 @@ configuration {
 
 #element {
 	border:  0;
-  border-radius: 0;
+	border-radius: 0;
 	padding: 4;
 }
 
