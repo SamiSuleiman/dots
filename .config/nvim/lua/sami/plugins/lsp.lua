@@ -140,7 +140,7 @@ return {
         cssls = {},
         svelte = {},
         clangd = {},
-        gopls = {},
+        -- gopls = {},
         tsserver = {},
         html = { filetypes = { 'html', 'twig', 'hbs' } },
         lua_ls = {
@@ -206,7 +206,8 @@ return {
       nvim_lsp.angularls.setup {
         on_attach = on_attach,
         capabilities = capabilities,
-        cmd = { 'angularls', '--stdio' },
+        -- cmd = { 'angularls', '--stdio' },
+        cmd = { 'ngserver', '--stdio', '--tsProbeLocations', '', '--ngProbeLocations', '' },
         filetypes = { 'typescript', 'html', 'typescriptreact', 'typescript.tsx' },
         root_dir = nvim_lsp.util.root_pattern('angular.json', 'nx.json'),
       }

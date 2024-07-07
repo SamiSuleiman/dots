@@ -9,6 +9,8 @@ fish_add_path $GOPATH/bin
 fish_add_path $HOME/.local/bin
 fish_add_path $HOME/.local/share/pnpm
 
+alias y="yazi"
+
 alias c="clear"
 alias v="nvim"
 alias tn="tmux new-session -s"
