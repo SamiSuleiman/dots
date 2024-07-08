@@ -4,9 +4,9 @@
   // "height": 30,
   // "spacing": 4,
   "modules-left": [
-    "hyprland/workspaces",
-    "hyprland/language",
     "clock",
+    "hyprland/language",
+    "hyprland/workspaces",
     "tray"
     // "custom/apps",
   ],
