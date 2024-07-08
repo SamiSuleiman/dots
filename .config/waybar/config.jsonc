@@ -5,6 +5,7 @@
   // "spacing": 4,
   "modules-left": [
     "clock",
+    "custom/weather",
     "hyprland/language",
     "hyprland/workspaces",
     "tray"
@@ -22,6 +23,14 @@
     "memory",
     "custom/power",
   ],
+
+  "custom/weather": {
+    "format": "{}°",
+    "tooltip": true,
+    "interval": 3600,
+    "exec": "wttrbar",
+    "return-type": "json"
+  },
 
   "disk": {
     "interval": 30,
