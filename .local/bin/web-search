@@ -19,6 +19,7 @@ URLS=(
   ["cimaleek"]="https://m.cimaleek.to/?s="
   ["egydead"]="https://egydead.space/?s="
   ["reddit"]="https://www.reddit.com/search/?q="
+  ["aur"]="https://aur.archlinux.org/packages?K="
 )
 
 gen_list() {
