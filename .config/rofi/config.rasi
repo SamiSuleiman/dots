@@ -167,3 +167,12 @@ configuration {
 	margin:     0px 0.3em 0.3em 0em;
 	text-color: @grn;
 }
+
+configuration {
+	modes: "drun,run,window,filebrowser";
+
+	filebrowser {
+		directory: "/home/sami";
+		directories-first: true;
+	}
+}
