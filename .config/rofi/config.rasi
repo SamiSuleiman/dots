@@ -29,8 +29,9 @@
 	background-color: @background;
 	border:           0px;
 	border-radius:    0;
-	padding:          2px;
+	padding:          0px;
 	width:            calc( 40% min 400);
+	height:						60%;
 }
 
 configuration {
@@ -53,7 +54,7 @@ configuration {
 #message {
 	border:       1px dash 0px 0px ;
 	border-color: @separatorcolor;
-	padding:      1px ;
+	padding:      9px ;
 	border-color:     @bg;
 }
 
@@ -67,13 +68,13 @@ configuration {
 	border-color: @bordercolor;
 	spacing:      2px ;
 	scrollbar:    false;
-	padding:      2px 0px 0px ;
+	padding:      0px 0px 0px ;
 }
 
 #element {
 	border:  0;
 	border-radius: 0;
-	padding: 4;
+	padding: 2;
 }
 
 #element.normal.normal {
@@ -141,7 +142,7 @@ configuration {
 #inputbar {
 	spacing:    0;
 	text-color: @foreground;
-	padding:    10px ;
+	padding:    4px ;
 }
 
 #case-indicator {
@@ -172,6 +173,10 @@ configuration {
 
 configuration {
 	modes: "drun,run,window,filebrowser";
+
+	location: 7;
+	yoffset: 0;
+	xoffset: 0;
 
 	filebrowser {
 		directory: "/home/sami";
