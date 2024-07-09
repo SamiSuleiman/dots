@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+
+declare -A URLS
+
+URLS=(
+  ["duckduckgo"]="https://www.duckduckgo.com/?q="
+  ["archwiki"]="https://wiki.archlinux.org/index.php?search=q="
+  ["github"]="https://github.com/search?q="
+  ["stackoverflow"]="http://stackoverflow.com/search?q="
+  ["imdb"]="http://www.imdb.com/find?ref_=nv_sr_fn&q="
+  ["rottentomatoes"]="https://www.rottentomatoes.com/search/?search="
+  ["youtube"]="https://www.youtube.com/results?search_query="
+  ["youtubemusic"]="https://music.youtube.com/search?q="
+  ["wikipedia"]="https://en.wikipedia.org/w/index.php?search="
+  ["google"]="https://www.google.com/search?q="
+  ["googleimages"]="https://www.google.com/search?tbm=isch&q="
+  ["googlemaps"]="https://www.google.com/maps/search/"
+  ["googletranslate"]="https://translate.google.com/?sl=auto&tl=en&text="
+  ["cimaleek"]="https://m.cimaleek.to/?s="
+  ["egydead"]="https://egydead.space/?s="
+  ["reddit"]="https://www.reddit.com/search/?q="
+)
+
+gen_list() {
+    for i in "${!URLS[@]}"
+    do
+      echo "$i"
+    done
+}
+
+main() {
+  platform=$( (gen_list) | rofi -dmenu -matching fuzzy -no-custom -location 0 -p "󰖟 " )
+
+  if [[ -n "$platform" ]]; then
+    query=$( (echo ) | rofi  -dmenu -matching fuzzy -location 0 -p "󰜏 " )
+
+    if [[ -n "$query" ]]; then
+      url=${URLS[$platform]}$query
+      xdg-open "$url"
+    else
+      exit
+    fi
+
+  else
+    exit
+  fi
+}
+
+main
+
+exit 0
