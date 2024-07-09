@@ -22,14 +22,13 @@
 	selected-urgent-background: @urgent-background;
 	selected-active-background: @active-background;
 	separatorcolor: @active-background;
-	bordercolor: @ora;
+	bordercolor: @bg;
 }
 
 #window {
 	background-color: @background;
 	border:           0px;
 	border-radius:    0;
-	border-color:     @ora;
 	padding:          2px;
 	width:            calc( 40% min 400);
 }
@@ -40,6 +39,8 @@ configuration {
 	icon-theme:				      "Arc-X-D";
 	display-drun:			      " ";
 	drun-display-format:		"{name}";
+	filefrowser-display-format:	"{name}";
+	display-filebrowser:		" ";
 	disable-history:			  false;
 	sidebar-mode:			      false;
 }
@@ -53,6 +54,7 @@ configuration {
 	border:       1px dash 0px 0px ;
 	border-color: @separatorcolor;
 	padding:      1px ;
+	border-color:     @bg;
 }
 
 #textbox {
@@ -174,5 +176,6 @@ configuration {
 	filebrowser {
 		directory: "/home/sami";
 		directories-first: true;
+		show-hidden: true;
 	}
 }
