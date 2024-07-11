@@ -74,7 +74,7 @@ configuration {
 #element {
 	border:  0;
 	border-radius: 0;
-	padding: 2;
+	padding: 5;
 }
 
 #element.normal.normal {
@@ -142,7 +142,7 @@ configuration {
 #inputbar {
 	spacing:    0;
 	text-color: @foreground;
-	padding:    4px ;
+	padding:    10px ;
 }
 
 #case-indicator {
