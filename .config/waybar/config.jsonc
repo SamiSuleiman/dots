@@ -126,7 +126,7 @@
     "tooltip-format": "{capacity}% capacity",
   },
   "network": {
-    "format-wifi": "      {essid}",
+    "format-wifi": "    {essid}",
     "format-disconnected": "󰤭",
     "format-ethernet": "",
     "tooltip-format": "Connected to {essid}",

@@ -23,7 +23,7 @@
     sort = yes
     idle_threshold = 120
 
-    font = Noto Sans 12
+    font = JetBrainsMono Nerd Font 12
     line_height = 0
     markup = full
     format = "<span weight='bold' font='12'>%s</span>\n%b"

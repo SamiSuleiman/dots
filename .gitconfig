@@ -1,3 +1,6 @@
+[include]
+	path = /home/sami/.config/delta/themes.gitconfig
+
 [user]
 	name = sami
 	email = sulsami@protonmail.com 
@@ -78,7 +81,7 @@
 	sort = -committerdate
 
 [delta]
-	features = line-numbers decorations
+	features = gruvmax-fang line-numbers decorations
 
 [delta "decorations"]
 	commit-decoration-style = bold yellow box ul

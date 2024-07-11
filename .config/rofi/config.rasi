@@ -11,7 +11,7 @@
 	pur: #b16286;
 	red: #cc241d;
 
-	font: "Noto Sans 10";
+	font: "JetBrains Mono 10";
 
 	foreground: @fgd;
 	background: @bg;

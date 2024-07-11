@@ -1,13 +1,13 @@
 {
   "editor.cursorStyle": "block",
-  "editor.fontFamily": "'Source Code Pro','JetBrains Mono', 'CascadiaCode'",
+  "editor.fontFamily": "'-Source Code Pro','JetBrains Mono', 'CascadiaCode'",
   "editor.fontSize": 14,
   //"editor.lineHeight": 1.6,
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "editor.suggest.insertMode": "replace",
   "editor.linkedEditing": true,
-  "debug.console.fontFamily": "'Source Code Pro',JetBrains Mono",
+  "debug.console.fontFamily": "'-Source Code Pro',JetBrains Mono",
   "debug.console.fontSize": 16,
   "editor.minimap.enabled": false,
   "editor.renderLineHighlight": "gutter",
@@ -21,7 +21,7 @@
     // "editor.lineHighlightBackground": "#1D2021"
   },
 
-  "terminal.integrated.fontFamily": "'Source Code Pro','JetBrains Mono'",
+  "terminal.integrated.fontFamily": "'-Source Code Pro','JetBrains Mono'",
   "terminal.integrated.fontSize": 15,
   // "terminal.integrated.lineHeight": 1.5,
   "extensions.experimental.affinity": {

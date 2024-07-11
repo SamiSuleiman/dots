@@ -2,6 +2,8 @@ set -q XDG_CACHE_HOME; or set -xg XDG_CACHE_HOME $HOME/.cache
 set -q XDG_CONFIG_HOME; or set -xg XDG_CONFIG_HOME $HOME/.config
 set -q XDG_DATA_HOME; or set -xg XDG_DATA_HOME $HOME/.local/share
 set -q XDG_STATE_HOME; or set -xg XDG_STATE_HOME $HOME/.local/state
+set -q RIPGREP_CONFIG_PATH; or set -xg RIPGREP_CONFIG_PATH $HOME/.ripgreprc
+set -Ux BAT_THEME gruvbox-dark
 
 fish_add_path /opt/homebrew/bin
 fish_add_path $HOME/.cargo/bin
@@ -25,6 +27,8 @@ alias ll="exa -l"
 alias la="exa -la"
 alias lt="exa -T"
 alias l="exa -l"
+
+alias cat="bat --style=numbers --color=always"
 
 alias fv=" command nvim (fzf --preview 'bat --style=numbers --color=always --line-range :500 {}' --preview-window=right:70%:wrap --bind 'ctrl-o:execute(nvim {})+abort')"
 
