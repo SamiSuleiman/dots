@@ -18,6 +18,9 @@
 	boobs = "!git add . && git commit --amend --no-edit --no-verify && git push -f"
 	pr = "pull --rebase"
 	s = "switch"
+
+	# Remove branches that have already been merged with main.
+	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 	ap = "!git add . -p"
 
 # Seach commits by commit message.
@@ -41,8 +44,13 @@
 [core]
 	editor = nvim
 	excludesFile = ~/.gitignore_global
+	pager = delta
+	autocrlf = input
 
 [diff]
+	colorMoved = default
+	navigate = true  # use n and N to move between diff sections
+	renames = copies # Detect copies as well as renames.
 	tool = nvim
 
 [difftool "nvim"]
@@ -60,3 +68,30 @@
     #                     └─ hash (abbreviated)
 [rerere]
 	enabled = true
+
+[branch]
+  # Show most recently changed branches first.
+	sort = -committerdate
+
+[branch]
+  # Show most recently changed branches first.
+	sort = -committerdate
+
+[delta]
+	features = line-numbers decorations
+
+[delta "decorations"]
+	commit-decoration-style = bold yellow box ul
+	file-style = bold yellow ul
+
+[interactive]
+	diffFilter = delta --color-only
+
+[pull]
+	rebase = true
+
+[rebase]
+	autoStash = true
+
+[fetch]
+	prune = true
