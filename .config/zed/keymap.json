@@ -1,0 +1,11 @@
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "cmd-k cmd-s": "zed::OpenKeymap", // matches ⌘-k then ⌘-s
+      "space e": "editor::Complete", // type space then e
+      "ç": "editor::Complete", // matches ⌥-c
+      "shift shift": "file_finder::Toggle" // matches pressing and releasing shift twice
+    }
+  }
+]
