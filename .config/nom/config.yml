@@ -1,0 +1,26 @@
+openers:
+  - regex: "youtube"
+    cmd: "mpv %s"
+  # - regex: ".*"
+  #   cmd: "lynx %s"
+  #   takeover: true
+
+feeds:
+  - url: drewdevault.com/blog/index.xml
+    name: Drew DeVault's Blog
+  - url: www.cozynet.org/feed/feed.xml
+    name: CozyNet
+  - url: bikobatanari.art/feed.xml
+    name: Biko Batanari
+  - url: cheapskatesguide.org/cheapskates-guide-rss-feed.xml
+    name: Cheapskates Guide
+  - url: btxx.org/index.rss
+    name: BTXX
+  - url: ericmurphy.xyz/index.xml
+    name: Eric Murphy
+  - url: blog.angular.io/feed
+    name: Angular Blog
+  - url: thelinuxcast.org/feed/feed.xml
+    name: The Linux Cast
+  - url: https://incels.is/forums/-/index.rss
+    name: Incels.is
