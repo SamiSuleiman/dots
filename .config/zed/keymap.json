@@ -2,10 +2,20 @@
   {
     "context": "Editor",
     "bindings": {
-      "cmd-k cmd-s": "zed::OpenKeymap", // matches ⌘-k then ⌘-s
-      "space e": "editor::Complete", // type space then e
-      "ç": "editor::Complete", // matches ⌥-c
-      "shift shift": "file_finder::Toggle" // matches pressing and releasing shift twice
+      "shift shift": "file_finder::Toggle",
+      "ctrl-shift-tab": "pane::ActivatePrevItem",
+      "ctrl-tab": "pane::ActivateNextItem",
+      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
+      "\"": "",
+      "ctrl-w %": "pane::SplitLeft",
+      "ctrl-w \"": "pane::SplitUp",
+      "space f g": "pane::DeploySearch",
+      "space g b": "editor::ToggleGitBlame",
+      "space g h": "editor::ToggleHunkDiff",
+      "space c r": "editor::Rename"
     }
   }
 ]
