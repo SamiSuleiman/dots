@@ -6,6 +6,7 @@ set -q RIPGREP_CONFIG_PATH; or set -xg RIPGREP_CONFIG_PATH $HOME/.ripgreprc
 set -Ux BAT_THEME gruvbox-dark
 
 fish_add_path /opt/homebrew/bin
+fish_add_path /opt/nvim-linux64/bin
 fish_add_path $HOME/.cargo/bin
 fish_add_path $GOPATH/bin
 fish_add_path $HOME/.local/bin

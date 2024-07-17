@@ -145,7 +145,6 @@
   "window.density.editorTabHeight": "default",
   "workbench.editor.pinnedTabSizing": "compact",
   "explorer.compactFolders": false,
-  "workbench.colorTheme": "Gruvbox Dark Hard",
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -156,5 +155,6 @@
   "search.quickAccess.preserveInput": true,
   "github.copilot.editor.enableAutoCompletions": true,
   "editor.cursorBlinking": "solid",
-  "terminal.integrated.defaultProfile.osx": "tmux"
+  "terminal.integrated.defaultProfile.osx": "tmux",
+  "workbench.colorTheme": "Gruvbox Dark Hard"
 }
