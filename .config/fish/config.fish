@@ -12,6 +12,7 @@ fish_add_path $GOPATH/bin
 fish_add_path $HOME/.local/bin
 fish_add_path $HOME/.local/share/pnpm
 fish_add_path $HOME/Applications
+fish_add_path /usr/local/go/bin
 
 alias y="yazi"
 
