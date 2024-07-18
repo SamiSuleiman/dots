@@ -7,13 +7,26 @@ set $right l
 set $term foot
 set $menu rofi -show drun
 
-
-# Your preferred application launcher
-# Note: pass the final command to swaymsg so that the resulting window can be opened
-# on the original workspace that the command was run on.
-# set $menu dmenu_path | wmenu | xargs swaymsg exec --
-
 include /etc/sway/config-vars.d/*
+
+set $cl_high #458588
+set $cl_indi #504945
+set $cl_back #17191A
+set $cl_fore #f9f5d7
+set $cl_urge #cc241d
+
+# Colors                border   bg       text     indi     childborder
+client.focused          $cl_back $cl_back $cl_fore $cl_indi $cl_back
+client.focused_inactive $cl_back $cl_back $cl_fore $cl_back $cl_back
+client.unfocused        $cl_back $cl_back $cl_fore $cl_back $cl_back
+client.urgent           $cl_urge $cl_urge $cl_fore $cl_urge $cl_urge
+
+font pango:monospace 10
+
+input * {
+        xkb_layout "us,de,sy"
+        xkb_options "grp:lalt_lshift_toggle"
+}
 
 output * bg ./wall.png fill
 
@@ -52,6 +65,9 @@ exec swayidle -w \
     bindsym $mod+S exec rofi -show filebrowser
 
     bindsym $mod+w exec $browser
+
+    bindsym Print exec grimblast --notify save screen
+    bindsym SHIFT+Print exec grimblast --notify save area 
 
     bindsym XF86AudioPrev exec playerctl previous
     bindsym XF86AudioNext exec playerctl next
@@ -160,12 +176,25 @@ bindsym $mod+r mode "resize"
 # Status Bar: Read `man 5 sway-bar` for more information about this section.
 bar {
     position bottom
-    status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+    status_command while ~/.config/sway/status.sh; do sleep 1; done
     colors {
-        statusline #ffffff
-        background #000000
-        inactive_workspace #32323200 #32323200 #5c5c5c
+        statusline $cl_fore
+        background $cl_back
+        inactive_workspace $cl_back $cl_back $cl_indi
+        focused_workspace $cl_high $cl_high $cl_back
+        binding_mode $cl_urge $cl_urge $cl_back
+        separator $cl_fore
     }
 }
+
+default_border pixel
+default_floating_border pixel
+hide_edge_borders smart
+
+# smart_gaps on
+# gaps inner 10
+# gaps outer 10
+
+
 
 include /etc/sway/config.d/*
