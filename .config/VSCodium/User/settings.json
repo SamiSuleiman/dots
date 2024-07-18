@@ -2,7 +2,7 @@
   "editor.cursorStyle": "block",
   "editor.fontFamily": "'-Source Code Pro','JetBrains Mono', 'CascadiaCode'",
   "editor.fontSize": 14,
-  //"editor.lineHeight": 1.6,
+  "editor.lineHeight": 2,
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "editor.suggest.insertMode": "replace",
