@@ -7,6 +7,7 @@ set $right l
 set $term foot
 set $menu rofi -show drun
 
+
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -20,6 +21,8 @@ output * bg ./wall.png fill
 output HDMI-A-1 resolution 1920x1080 position 1920,0
 output eDP-1 disable
 
+exec wl-paste --type text --watch cliphist store
+exec wl-paste --type image --watch cliphist store
 
 exec dunst -config <(envsubst < ~/.config/dunst/dunstrc)
 
@@ -50,8 +53,23 @@ exec swayidle -w \
 
     bindsym $mod+w exec $browser
 
+    bindsym XF86AudioPrev exec playerctl previous
+    bindsym XF86AudioNext exec playerctl next
+    bindsym XF86AudioPlay exec playerctl play-pause
+
+    bindsym XF86MonBrightnessUp exec brightnessctl set 1%+ 
+    bindsym XF86MonBrightnessDown exec brightnessctl set 1%- 
+
+    bindsym XF86AudioLowerVolume exec pamixer -d 5 
+    bindsym XF86AudioRaiseVolume exec pamixer -i 5 
+    bindsym XF86AudioMute exec pamixer -t 
+
     bindsym $mod+F9 exec wlsunset -T 4001
     bindsym $mod+F10 exec pkill wlsunset 
+
+    bindsym $mod+shift+b exec rofi-bluetooth &
+
+    bindsym $mod+c exec cliphist list | rofi -dmenu -p ""  | cliphist decode | wl-copy
 
     floating_modifier $mod normal
 
