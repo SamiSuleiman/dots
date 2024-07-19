@@ -1,0 +1,43 @@
+#! /usr/bin/env bash
+
+COLOR_RESET='\033[0m'
+GREEN='\033[0;32m'
+BBLUE='\033[1;34m'
+
+ARG1=$1
+DELIM="========================================="
+
+function print_help {
+  echo -e ${GREEN}
+  echo "Usage: $0 <ARG1> - run a REPL for the given command"
+  echo "Example: $0 'ls -l'"
+  echo ${DELIM}
+  echo "exit - exit the program"
+  echo "clear - clear the screen"
+  echo ${DELIM}
+  echo -e ${COLOR_RESET}
+}
+
+if [ -z $ARG1 ]; then
+  echo "No arg given"
+  echo "Usage: $0 <ARG1>"
+  exit 1
+fi
+
+if [ "$ARG1" == "help" ]; then
+  print_help
+  exit 0
+fi
+
+while true; do
+  read -p "$(echo -e $BBLUE"$ARG1"$COLOR_RESET) " CMD
+  if [ "$CMD" == "exit" ]; then
+    break
+  fi
+  if [ "$CMD" == "clear" ]; then
+    clear
+    continue
+  fi
+  eval $ARG1 $CMD
+done
+
