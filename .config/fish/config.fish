@@ -5,6 +5,7 @@ set -q XDG_STATE_HOME; or set -xg XDG_STATE_HOME $HOME/.local/state
 set -q RIPGREP_CONFIG_PATH; or set -xg RIPGREP_CONFIG_PATH $HOME/.ripgreprc
 set -q XDG_PICTURES_DIR; or set -xg XDG_PICTURES_DIR $HOME/Pictures
 set -Ux BAT_THEME gruvbox-dark
+set -q EDITOR; or set -xg EDITOR nvim
 
 fish_add_path /opt/homebrew/bin
 fish_add_path /opt/nvim-linux64/bin
@@ -14,6 +15,8 @@ fish_add_path $HOME/.local/bin
 fish_add_path $HOME/.local/share/pnpm
 fish_add_path $HOME/Applications
 fish_add_path /usr/local/go/bin
+
+alias code="codium"
 
 alias y="yazi"
 
