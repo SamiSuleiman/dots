@@ -169,7 +169,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 bar {
-    position bottom
+    position top
     status_command while ~/.config/sway/status.sh; do sleep 1; done
     colors {
         statusline $cl_fore
