@@ -7,6 +7,7 @@ set $right l
 set $term foot
 set $menu rofi -show drun
 set $bluetoothCtl ~/.local/bin/rofi-bluetooth
+set $networkCtl ~/.local/bin/networkmanager_dmenu
 set $screenshot ~/.local/bin/sway-screenshot
 
 include /etc/sway/config-vars.d/*
@@ -79,6 +80,7 @@ bindsym $mod+F9 exec wlsunset -T 4001
 bindsym $mod+F10 exec pkill wlsunset 
 
 bindsym $mod+Shift+b exec $bluetoothCtl
+bindsym $mod+Shift+n exec $networkCtl
 
 bindsym $mod+c exec cliphist list | rofi -dmenu -p ""  | cliphist decode | wl-copy
 
