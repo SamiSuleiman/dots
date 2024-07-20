@@ -3,6 +3,7 @@ set -q XDG_CONFIG_HOME; or set -xg XDG_CONFIG_HOME $HOME/.config
 set -q XDG_DATA_HOME; or set -xg XDG_DATA_HOME $HOME/.local/share
 set -q XDG_STATE_HOME; or set -xg XDG_STATE_HOME $HOME/.local/state
 set -q RIPGREP_CONFIG_PATH; or set -xg RIPGREP_CONFIG_PATH $HOME/.ripgreprc
+set -q XDG_PICTURES_DIR; or set -xg XDG_PICTURES_DIR $HOME/Pictures
 set -Ux BAT_THEME gruvbox-dark
 
 fish_add_path /opt/homebrew/bin

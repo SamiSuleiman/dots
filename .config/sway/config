@@ -6,6 +6,8 @@ set $up k
 set $right l
 set $term foot
 set $menu rofi -show drun
+set $bluetoothCtl ~/.local/bin/rofi-bluetooth
+set $screenshot ~/.local/bin/sway-screenshot
 
 include /etc/sway/config-vars.d/*
 
@@ -26,11 +28,20 @@ font pango:monospace 10
 input * {
         xkb_layout "us,de,sy"
         xkb_options "grp:lalt_lshift_toggle"
+        xkb_variant ",nodeadkeys,"
+}
+
+input "type:pointer" {
+    accel_profile "flat"
+    pointer_accel -0.50
+}
+
+input "type:keyboard" {
+    # xkb_options "caps:escape"
 }
 
 output * bg ./wall.png fill
 
-# You can get the names of your outputs by running: swaymsg -t get_outputs
 output HDMI-A-1 resolution 1920x1080 position 1920,0
 output eDP-1 disable
 
@@ -41,119 +52,102 @@ exec dunst -config <(envsubst < ~/.config/dunst/dunstrc)
 
 exec ~/.config/swayidle/config
 
-### Input configuration
-#
-# Example configuration:
-#
-#   input "2:14:SynPS/2_Synaptics_TouchPad" {
-#       dwt enabled
-#       tap enabled
-#       natural_scroll enabled
-#       middle_emulation enabled
-#   }
-#
-# You can get the names of your inputs by running: swaymsg -t get_inputs
-# Read `man 5 sway-input` for more information about this section.
+bindsym $mod+Return exec $term
 
-    bindsym $mod+Return exec $term
+bindsym $mod+q kill
 
-    bindsym $mod+q kill
+bindsym $mod+Space exec rofi -show drun
+bindsym $mod+S exec rofi -show filebrowser
 
-    bindsym $mod+Space exec rofi -show drun
-    bindsym $mod+S exec rofi -show filebrowser
+bindsym $mod+w exec $browser
 
-    bindsym $mod+w exec $browser
+bindsym Print exec $screenshot -m window
+bindsym Shift+Print exec $screenshot -m region
 
-    bindsym Print exec grimblast --notify save screen
-    bindsym SHIFT+Print exec grimblast --notify save area 
+bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPlay exec playerctl play-pause
 
-    bindsym XF86AudioPrev exec playerctl previous
-    bindsym XF86AudioNext exec playerctl next
-    bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86MonBrightnessUp exec brightnessctl set 1%+ 
+bindsym XF86MonBrightnessDown exec brightnessctl set 1%- 
 
-    bindsym XF86MonBrightnessUp exec brightnessctl set 1%+ 
-    bindsym XF86MonBrightnessDown exec brightnessctl set 1%- 
+bindsym XF86AudioLowerVolume exec pamixer -d 5 
+bindsym XF86AudioRaiseVolume exec pamixer -i 5 
+bindsym XF86AudioMute exec pamixer -t 
 
-    bindsym XF86AudioLowerVolume exec pamixer -d 5 
-    bindsym XF86AudioRaiseVolume exec pamixer -i 5 
-    bindsym XF86AudioMute exec pamixer -t 
+bindsym $mod+F9 exec wlsunset -T 4001
+bindsym $mod+F10 exec pkill wlsunset 
 
-    bindsym $mod+F9 exec wlsunset -T 4001
-    bindsym $mod+F10 exec pkill wlsunset 
+bindsym $mod+Shift+b exec $bluetoothCtl
 
-    bindsym $mod+shift+b exec rofi-bluetooth &
+bindsym $mod+c exec cliphist list | rofi -dmenu -p ""  | cliphist decode | wl-copy
 
-    bindsym $mod+c exec cliphist list | rofi -dmenu -p ""  | cliphist decode | wl-copy
+floating_modifier $mod normal
 
-    floating_modifier $mod normal
+bindsym $mod+Shift+c reload
 
-    bindsym $mod+Shift+c reload
+bindsym $mod+t exec wlogout
 
-    bindsym $mod+t exec wlogout
+bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
 
-    bindsym $mod+$left focus left
-    bindsym $mod+$down focus down
-    bindsym $mod+$up focus up
-    bindsym $mod+$right focus right
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
 
-    bindsym $mod+Left focus left
-    bindsym $mod+Down focus down
-    bindsym $mod+Up focus up
-    bindsym $mod+Right focus right
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
 
-    bindsym $mod+Shift+$left move left
-    bindsym $mod+Shift+$down move down
-    bindsym $mod+Shift+$up move up
-    bindsym $mod+Shift+$right move right
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
 
-    bindsym $mod+Shift+Left move left
-    bindsym $mod+Shift+Down move down
-    bindsym $mod+Shift+Up move up
-    bindsym $mod+Shift+Right move right
-#
-# Workspaces:
-#
-    # Switch to workspace
-    bindsym $mod+1 workspace number 1
-    bindsym $mod+2 workspace number 2
-    bindsym $mod+3 workspace number 3
-    bindsym $mod+4 workspace number 4
-    bindsym $mod+5 workspace number 5
-    bindsym $mod+6 workspace number 6
-    bindsym $mod+7 workspace number 7
-    bindsym $mod+8 workspace number 8
-    bindsym $mod+9 workspace number 9
-    bindsym $mod+0 workspace number 10
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
+bindsym $mod+0 workspace number 10
 
-    bindsym $mod+Shift+1 move container to workspace number 1
-    bindsym $mod+Shift+2 move container to workspace number 2
-    bindsym $mod+Shift+3 move container to workspace number 3
-    bindsym $mod+Shift+4 move container to workspace number 4
-    bindsym $mod+Shift+5 move container to workspace number 5
-    bindsym $mod+Shift+6 move container to workspace number 6
-    bindsym $mod+Shift+7 move container to workspace number 7
-    bindsym $mod+Shift+8 move container to workspace number 8
-    bindsym $mod+Shift+9 move container to workspace number 9
-    bindsym $mod+Shift+0 move container to workspace number 10
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6
+bindsym $mod+Shift+7 move container to workspace number 7
+bindsym $mod+Shift+8 move container to workspace number 8
+bindsym $mod+Shift+9 move container to workspace number 9
+bindsym $mod+Shift+0 move container to workspace number 10
 
-    bindsym $mod+b splith
-    bindsym $mod+v splitv
+bindsym $mod+b splith
+bindsym $mod+v splitv
 
-    # bindsym $mod+s layout stacking
-    # bindsym $mod+w layout tabbed
-    # bindsym $mod+e layout toggle split
+# bindsym $mod+s layout stacking
+# bindsym $mod+w layout tabbed
+# bindsym $mod+e layout toggle split
 
-    bindsym $mod+f fullscreen
-    bindsym $mod+Shift+t floating toggle
+bindsym $mod+f fullscreen
+bindsym $mod+Shift+t floating toggle
 
-    # bindsym $mod+space focus mode_toggle
-    # bindsym $mod+a focus parent
+# bindsym $mod+space focus mode_toggle
+# bindsym $mod+a focus parent
 
 # Scratchpad:
-    bindsym $mod+Shift+minus move scratchpad
-    bindsym $mod+minus scratchpad show
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
 
 mode "resize" {
     bindsym $left resize shrink width 10px
@@ -169,9 +163,9 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
+
 bindsym $mod+r mode "resize"
 
-# Status Bar: Read `man 5 sway-bar` for more information about this section.
 bar {
     position bottom
     status_command while ~/.config/sway/status.sh; do sleep 1; done
@@ -192,7 +186,5 @@ hide_edge_borders smart
 # smart_gaps on
 # gaps inner 10
 # gaps outer 10
-
-
 
 include /etc/sway/config.d/*

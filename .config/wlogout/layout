@@ -12,7 +12,7 @@
 }
 {
     "label" : "logout",
-    "action" : "systemctl exit",
+    "action" : "sway exit",
     "text" : "Logout",
     "keybind" : "e"
 }
