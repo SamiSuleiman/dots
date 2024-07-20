@@ -1,0 +1,10 @@
+*
+
+
+!.gitignore
+
+!User/keybindings.json
+!User/settings.json
+!product.json
+
+!*/
