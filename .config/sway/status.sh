@@ -51,10 +51,17 @@ function get_date() {
     echo $date
 }
 
+function get_input_lang_status() {
+    # get current language input
+    input_lang=$(swaymsg -t get_inputs | jq 'map(select(has("xkb_active_layout_name")))[0].xkb_active_layout_name | . |= ascii_downcase' | sed 's/\"//g' | awk '{print $1}')
+    echo $input_lang
+}
+
 date_formatted=$(get_date)
 battery_status=$(get_battery_status)
 volume=$(get_volume_status)
 brightness=$(get_brightness_status)
 wlan=$(get_network_status)
+input_lang=$(get_input_lang_status)
 
-echo ""$wlan"  |  "$volume"  |  "$brightness"  |  "$battery_status"  |  "$date_formatted
+echo ""$wlan"  |  "$volume"  |  "$brightness"  |  "$battery_status"  |  "$date_formatted"  |  "$input_lang" |"
