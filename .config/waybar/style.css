@@ -4,8 +4,7 @@
   font-family:
     JetBrainsMono Nerd Font,
     Noto Kufi Arabic,
-    Noto Sans,
-    Noto Emoji;
+    Noto Sans;
   font-weight: bold;
   font-size: 13px;
   border-radius: 0px;
@@ -60,7 +59,7 @@ button {
 
 #workspaces button.active {
   color: @base;
-  background-color: @orange;
+  background-color: @pine;
 }
 
 #workspaces button.urgent {
@@ -95,9 +94,26 @@ button {
 #backlight,
 #tray,
 #mpris {
-  padding: 0 6px;
+  padding: 0 10px;
   color: @highlightHigh;
 }
+
+/* #custom-power { */
+/*     border-bottom: 1px solid @love; */
+/* } */
+/**/
+/* #battery, #disk, #memory { */
+/*     border-bottom: 1px solid @iris; */
+/* } */
+/**/
+/* #bluetooth, #network { */
+/*     border-bottom: 1px solid @orange; */
+/* } */
+/**/
+/**/
+/* #pulseaudio, #backlight { */
+/*     border-bottom: 1px solid @pine; */
+/* } */
 
 #custom-apps {
   padding: 0px 25px 0px 25px;
