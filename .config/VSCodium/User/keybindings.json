@@ -115,7 +115,7 @@
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
   },
   {
-    "key": "tab",
+    "key": "ctrl+n",
     "command": "selectNextSuggestion",
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
   },
@@ -159,7 +159,7 @@
     "command": "workbench.action.experimental.quickTextSearch"
   },
   {
-    "key": "alt+enter",
+    "key": "tab",
     "command": "editor.action.accessibleViewAcceptInlineCompletion",
     "when": "accessibleViewIsShown && accessibleViewCurrentProviderId == 'inlineCompletions'"
   },
