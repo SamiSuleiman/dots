@@ -6,6 +6,7 @@ set $up k
 set $right l
 set $term foot
 set $menu rofi -show drun
+set $lock ~/.config/swaylock/launch
 set $bluetoothCtl ~/.local/bin/rofi-bluetooth
 set $networkCtl ~/.local/bin/networkmanager_dmenu
 set $screenshot ~/.local/bin/sway-screenshot
@@ -23,6 +24,9 @@ client.focused          $cl_back $cl_back $cl_fore $cl_indi $cl_back
 client.focused_inactive $cl_back $cl_back $cl_fore $cl_back $cl_back
 client.unfocused        $cl_back $cl_back $cl_fore $cl_back $cl_back
 client.urgent           $cl_urge $cl_urge $cl_fore $cl_urge $cl_urge
+
+for_window [app_id="imv$"] floating enable
+for_window [app_id="mpv$"] floating enable
 
 font pango:monospace 10
 
@@ -51,7 +55,10 @@ exec wl-paste --type image --watch cliphist store
 
 exec dunst -config <(envsubst < ~/.config/dunst/dunstrc)
 
-exec ~/.config/swayidle/config
+# exec swayidle -w \
+#          timeout 300 '$lock' \
+#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+#          before-sleep '$lock'
 
 bindsym $mod+Return exec $term
 
@@ -171,6 +178,7 @@ bindsym $mod+r mode "resize"
 bar {
     position top
     status_command while ~/.config/sway/status.sh; do sleep 1; done
+    # status_command while ~/.config/sway/sss.mjs; do sleep 1; done
     colors {
         statusline $cl_fore
         background $cl_back
@@ -181,7 +189,7 @@ bar {
     }
 }
 
-default_border pixel
+default_border pixel 0
 default_floating_border pixel
 hide_edge_borders smart
 
