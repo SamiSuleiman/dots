@@ -15,7 +15,7 @@
 
 	foreground: @fgd;
 	background: @bg;
-	active-background: @ora;
+	active-background: @cya;
 	urgent-background: @red;
 
 	selected-background: @active-background;
@@ -157,7 +157,7 @@ configuration {
 
 #prompt {
 	spacing:    0;
-	text-color: @ora;
+	text-color: @cya;
 }
 
 #inputbar {
