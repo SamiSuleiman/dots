@@ -1,12 +1,15 @@
 {
   "layer": "top",
-  "position": "top",
+  "position": "bottom",
   "height": 30,
   // "spacing": 4,
   "modules-left": [
     "clock",
+    "custom/separator",
     "custom/weather",
+    "custom/separator",
     "hyprland/language",
+    "custom/separator",
     "hyprland/workspaces",
     "tray"
     // "custom/apps",
@@ -16,13 +19,32 @@
     "custom/pacman",
     "backlight",
     "pulseaudio",
+    "custom/separator",
     "network",
     "bluetooth",
+    "custom/separator",
     "battery",
     "disk",
+    // "cpu",
+    // "custom/gpu",
     "memory",
+    "custom/separator",
     "custom/power",
   ],
+  
+  "custom/separator": {
+    // "format": "󰨕",
+    // "format":"󰨓",
+    "format":"|",
+    "interval": "once",
+    "tooltip": false
+  },
+
+  "cpu": {
+    "interval": 10,
+    "format": "        {}%",
+    "max-length": 10
+  },
 
   "custom/weather": {
     "format": "{}°",

@@ -176,7 +176,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 bar {
-    position top
+    position bottom
     status_command while ~/.config/sway/status.sh; do sleep 1; done
     # status_command while ~/.config/sway/sss.mjs; do sleep 1; done
     colors {

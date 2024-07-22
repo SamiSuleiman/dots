@@ -4,6 +4,8 @@
 	bg: #282828;
 	cur: #292929;
 	fgd: #f9f5d7;
+  highlightLow: #504945;
+  highlightHigh: #928374;
 
 	cya: #83a598;
 	grn: #98971a;
@@ -15,7 +17,7 @@
 
 	foreground: @fgd;
 	background: @bg;
-	active-background: @cya;
+	active-background: @highlightLow;
 	urgent-background: @red;
 
 	selected-background: @active-background;
@@ -94,7 +96,7 @@ configuration {
 
 #element.selected.normal {
 	background-color: @selected-background;
-	text-color:       @background;
+	text-color:       @cur;
 }
 
 #element.selected.urgent {
@@ -152,12 +154,12 @@ configuration {
 
 #entry {
 	spacing:    0;
-	text-color: @cya;
+	text-color: @fgd;
 }
 
 #prompt {
 	spacing:    0;
-	text-color: @cya;
+	text-color: @fgd;
 }
 
 #inputbar {

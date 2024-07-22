@@ -59,7 +59,7 @@ button {
 
 #workspaces button.active {
   color: @base;
-  background-color: @pine;
+  background-color: @highlightLow;
 }
 
 #workspaces button.urgent {
@@ -94,7 +94,7 @@ button {
 #backlight,
 #tray,
 #mpris {
-  padding: 0 10px;
+  padding: 0 6px;
   color: @highlightHigh;
 }
 
@@ -114,6 +114,12 @@ button {
 /* #pulseaudio, #backlight { */
 /*     border-bottom: 1px solid @pine; */
 /* } */
+
+
+#custom-separator {
+  color: @highlightLow;
+  margin: 0px 8px;
+}
 
 #custom-apps {
   padding: 0px 25px 0px 25px;
