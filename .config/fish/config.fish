@@ -244,7 +244,7 @@ ex=:\
 *.nix=:\
 "
 
-oh-my-posh init fish --config ~/.config/ohmyposh/base.toml | source
+# oh-my-posh init fish --config ~/.config/ohmyposh/base.toml | source
 zoxide init fish | source
 
 # if status is-interactive
