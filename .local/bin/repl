@@ -4,12 +4,12 @@ COLOR_RESET='\033[0m'
 GREEN='\033[0;32m'
 BBLUE='\033[1;34m'
 
-ARG1=$1
+ARGS=$@
 DELIM="========================================="
 
 function print_help {
   echo -e ${GREEN}
-  echo "Usage: $0 <ARG1> - run a REPL for the given command"
+  echo "Usage: $0 <ARGS> - run a REPL for the given command"
   echo "Example: $0 'ls -l'"
   echo ${DELIM}
   echo "exit - exit the program"
@@ -18,19 +18,19 @@ function print_help {
   echo -e ${COLOR_RESET}
 }
 
-if [ -z $ARG1 ]; then
+if [ $# -eq 0 ]; then
   echo "No arg given"
-  echo "Usage: $0 <ARG1>"
+  echo "Usage: $0 <ARGS>"
   exit 1
 fi
 
-if [ "$ARG1" == "help" ]; then
+if [ "$ARGS" == "help" ]; then
   print_help
   exit 0
 fi
 
 while true; do
-  read -p "$(echo -e $BBLUE"$ARG1"$COLOR_RESET) " CMD
+  read -p "$(echo -e $BBLUE"$ARGS"$COLOR_RESET) " CMD
   if [ "$CMD" == "exit" ]; then
     break
   fi
@@ -38,6 +38,6 @@ while true; do
     clear
     continue
   fi
-  eval $ARG1 $CMD
+  eval $ARGS $CMD
 done
 
