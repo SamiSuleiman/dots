@@ -1156,7 +1156,7 @@
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HideTab</key>
-	<false/>
+	<true/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
 	<true/>
 	<key>LeftTabBarWidth</key>
@@ -1790,7 +1790,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>JetBrainsMonoNFM-Regular 16</string>
+			<string>MononokiNF-Regular 18</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Open Toolbelt</key>
@@ -1838,7 +1838,7 @@
 			<key>Shortcut</key>
 			<string>T</string>
 			<key>Show Status Bar</key>
-			<true/>
+			<false/>
 			<key>Silence Bell</key>
 			<false/>
 			<key>Status Bar Layout</key>
@@ -2120,7 +2120,7 @@
 	<key>Print In Black And White</key>
 	<true/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>SmartPlacement</key>
 	<false/>
 	<key>SoundForEsc</key>
@@ -2131,6 +2131,8 @@
 	<integer>1</integer>
 	<key>SuppressRestartAnnouncement</key>
 	<true/>
+	<key>SwitchTabModifier</key>
+	<integer>4</integer>
 	<key>TabStyleWithAutomaticOption</key>
 	<integer>5</integer>
 	<key>TabViewType</key>
