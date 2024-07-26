@@ -13,7 +13,7 @@
 	pur: #b16286;
 	red: #cc241d;
 
-	font: "JetBrains Mono 10";
+	font: "sans-serif 10";
 
 	foreground: @fgd;
 	background: @bg;

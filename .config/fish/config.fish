@@ -67,6 +67,10 @@ end
 alias bookmarks="nb search \"bookmark.md\" --all --list"
 alias todos="nb search \"todo.md\" --all --list"
 
+# Forgot where this came from, its a patched version of gnu's cd & mvt that shows the progress of the commands, maybe its in my github stars, cant bother now 
+# alias cp /usr/local/bin/advcp -g
+# alias mv /usr/local/bin/advmv -g
+
 set -gx EDITOR nvim
 set -gx LSCOLORS ExGxBxDxCxEgEdxbxgxcxd
 
@@ -258,5 +262,3 @@ if not string match -q -- $PNPM_HOME $PATH
 end
 # pnpm end
 
-alias cp /usr/local/bin/advcp -g
-alias mv /usr/local/bin/advmv -g
