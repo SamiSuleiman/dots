@@ -1,0 +1,2 @@
+- The files in this directory should be copied to /etc
+- The structure is 1 to 1
