@@ -1,7 +1,9 @@
 {
   "editor.cursorStyle": "block",
   "editor.fontFamily": "'Source Code Pro'",
-  "editor.fontSize": 16,
+  "editor.lineHeight": 2,
+  "editor.fontSize": 15,
+  "editor.fontWeight": "500",
   // "editor.lineHeight": 2.2,
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
@@ -9,6 +11,7 @@
   "editor.linkedEditing": true,
   "debug.console.fontFamily": "'Source Code Pro'",
   "debug.console.fontSize": 16,
+  "editor.roundedSelection": false,
   "editor.minimap.enabled": false,
   "editor.renderLineHighlight": "gutter",
   "workbench.editor.showIcons": false,
