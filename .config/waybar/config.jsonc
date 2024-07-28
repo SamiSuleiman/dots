@@ -160,7 +160,7 @@
     "format-muted": "󰖁",
     "format-icons": {
       "default": ["", "", "󰕾"],
-      "headphone": [""],
+      "headphone": ["    "],
     },
     "tooltip-format": "{volume}% volume",
     "on-click": "pamixer -t",

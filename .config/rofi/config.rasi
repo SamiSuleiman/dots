@@ -1,7 +1,7 @@
 @import "default"
 
 * {
-	bg: #282828;
+	bg: #1D2021;
 	cur: #292929;
 	fgd: #f9f5d7;
   highlightLow: #504945;

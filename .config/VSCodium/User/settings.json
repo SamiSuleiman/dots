@@ -34,7 +34,7 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "launch": {},
   "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "workbench.statusBar.visible": true,
   "editor.occurrencesHighlight": "off",
