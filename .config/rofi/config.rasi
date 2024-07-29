@@ -17,7 +17,7 @@
 
 	foreground: @fgd;
 	background: @bg;
-	active-background: @highlightLow;
+	active-background: @cya;
 	urgent-background: @red;
 
 	selected-background: @active-background;
