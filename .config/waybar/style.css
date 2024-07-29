@@ -36,6 +36,10 @@ button {
   border-radius: 0;
 }
 
+#custom-notification {
+  font-family: "NotoSansMono Nerd Font";
+}
+
 #workspaces button:hover {
   color: @text;
   box-shadow: inherit;
@@ -63,6 +67,7 @@ button {
   color: @love;
 }
 
+#custom-notification,
 #custom-music,
 #custom-firefox,
 #custom-signal,

@@ -5,7 +5,7 @@ swaylock\
   -e\
   --image ~/.config/swaylock/wall.jpg\
   --show-keyboard-layout\
-  --font "JetBrains Mono"\
+  --font "sans-serif"\
   --font-size 14\
   --indicator-thickness 6\
   --inside-color 28282899\
