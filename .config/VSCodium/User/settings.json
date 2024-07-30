@@ -1,15 +1,16 @@
 {
   "editor.cursorStyle": "block",
-  "editor.fontFamily": "'Source Code Pro', 'Cascadia Code NF'",
+  "editor.fontFamily": "monospace",
+  // الخط الافتراضي للكود
   "editor.lineHeight": 2,
-  "editor.fontSize": 15,
-  "editor.fontWeight": "500",
+  "editor.fontSize": 14,
+  // "editor.fontWeight": "400",
   // "editor.lineHeight": 2.2,
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "editor.suggest.insertMode": "replace",
   "editor.linkedEditing": true,
-  "debug.console.fontFamily": "'Source Code Pro', 'Cascadia Code NF'",
+  "debug.console.fontFamily": "'monospace'",
   "debug.console.fontSize": 16,
   "editor.roundedSelection": false,
   "editor.minimap.enabled": false,
@@ -24,7 +25,7 @@
     // "editor.lineHighlightBackground": "#1D2021"
   },
 
-  "terminal.integrated.fontFamily": "'Source Code Pro', 'Cascadia Code NF'",
+  "terminal.integrated.fontFamily": "'monospace'",
   "terminal.integrated.fontSize": 15,
   // "terminal.integrated.lineHeight": 1.5,
   "extensions.experimental.affinity": {
