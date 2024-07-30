@@ -160,5 +160,8 @@
   "github.copilot.editor.enableAutoCompletions": true,
   "editor.cursorBlinking": "solid",
   "terminal.integrated.defaultProfile.osx": "tmux",
-  "workbench.colorTheme": "Gruvbox Dark Hard"
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "[csharp]": {
+    "editor.defaultFormatter": "csharpier.csharpier-vscode"
+  }
 }

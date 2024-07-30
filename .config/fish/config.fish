@@ -4,8 +4,10 @@ set -q XDG_DATA_HOME; or set -xg XDG_DATA_HOME $HOME/.local/share
 set -q XDG_STATE_HOME; or set -xg XDG_STATE_HOME $HOME/.local/state
 set -q RIPGREP_CONFIG_PATH; or set -xg RIPGREP_CONFIG_PATH $HOME/.ripgreprc
 set -q XDG_PICTURES_DIR; or set -xg XDG_PICTURES_DIR $HOME/Pictures
-set -Ux BAT_THEME gruvbox-dark
 set -q EDITOR; or set -xg EDITOR nvim
+
+set -Ux DOTNET_CLI_TELEMETRY_OPTOUT 1
+set -Ux BAT_THEME gruvbox-dark
 
 fish_add_path /opt/homebrew/bin
 fish_add_path /opt/nvim-linux64/bin

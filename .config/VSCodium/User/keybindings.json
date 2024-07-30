@@ -179,7 +179,7 @@
     "when": "cursorAtInlineEdit && inlineEditVisible && !editorReadonly"
   },
   {
-    "key": "alt+enter",
+    "key": "tab",
     "command": "editor.action.inlineSuggest.commit",
     "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
   },
@@ -189,7 +189,7 @@
     "when": "inlineSuggestionHasIndentationLessThanTabSize && inlineSuggestionVisible && !editorHoverFocused && !editorTabMovesFocus && !suggestWidgetVisible"
   },
   {
-    "key": "shift+k",
+    "key": "ctrl+k",
     "command": "editor.action.showDefinitionPreviewHover"
   },
   {
