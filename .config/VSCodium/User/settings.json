@@ -31,7 +31,7 @@
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "workbench.activityBar.location": "bottom",
+  "workbench.activityBar.location": "top",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "launch": {},
   "[json]": {
@@ -163,5 +163,6 @@
   "workbench.colorTheme": "Gruvbox Dark Hard",
   "[csharp]": {
     "editor.defaultFormatter": "csharpier.csharpier-vscode"
-  }
+  },
+  "window.customTitleBarVisibility": "auto"
 }
