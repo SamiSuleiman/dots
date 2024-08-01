@@ -12,6 +12,7 @@ application/x-extension-xht=brave.desktop
 application/pdf=mupdf.desktop
 x-scheme-handler/about=brave.desktop
 x-scheme-handler/unknown=brave.desktop
+x-scheme-handler/eclipse+command=_usr_lib_dbeaver_.desktop
 
 [Added Associations]
 x-scheme-handler/http=brave.desktop;
