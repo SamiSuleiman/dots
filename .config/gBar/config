@@ -37,8 +37,8 @@ DrmAmdCard: card0
 # Relative path to AMD gpu thermal sensor, appended after /sys/class/drm/<DrmAmdCard>
 AmdGPUThermalZone: /device/hwmon/hwmon1/temp1_input
 
-SuspendCommand: ~/.config/scripts/sys.sh suspend
-LockCommand: ~/.config/scripts/sys.sh lock
+SuspendCommand: systemctl suspend
+LockCommand: hyprlock
 ExitCommand: killall Hyprland
 BatteryFolder: /sys/class/power_supply/BAT0
 BatteryWarnThreshold: 20
@@ -131,7 +131,7 @@ AudioRevealer: false
 AudioScrollSpeed: 5
 
 # Display numbers instead of a slider for the two audio widgets. Doesn't affect the audio flyin
-AudioNumbers: false
+AudioNumbers: true
 
 # Command that is run to check if there are out-of-date packages.
 # The script should return *ONLY* a number. If it doesn't output a number, updates are no longer checked.
@@ -173,7 +173,7 @@ EnableSNI: true
 # The wildcard filter '*' does not work for SNIIconName and SNIDisabled
 
 # Scale everything down to 25 pixels ('*' as filter means everything)
-#SNIIconSize: *, 25
+SNIIconSize: *, 16
 # Explicitly make OBS a bit smaller than default
 #SNIIconSize: OBS, 23
 # Nudges the Discord icon a bit down

@@ -54,23 +54,22 @@ tooltip {
 }
 
 .reboot-button {
-  font-size: 28px;
+  font-size: 16px;
 
   color: $darkblue;
 }
 .sleep-button {
-  font-size: 28px;
+  font-size: 16px;
 
   color: $darkblue;
 }
 .lock-button {
-  font-size: 22px;
+  font-size: 16px;
 
   color: $darkblue;
 }
 .exit-button {
-  font-size: 28px;
-
+  font-size: 16px;
   color: $darkblue;
 }
 
@@ -124,7 +123,7 @@ highlight {
 }
 
 .audio-icon {
-  font-size: 24px;
+  font-size: 16px;
   color: $orange;
 }
 
@@ -141,12 +140,12 @@ highlight {
     background-color: $orange;
   }
 
-  font-size: 16px;
+  font-size: 12px;
   color: $orange;
 }
 
 .mic-icon {
-  font-size: 24px;
+  font-size: 16px;
   color: $purple;
   // margin-right: 0px;
 }
@@ -170,7 +169,7 @@ highlight {
 
 .package-outofdate {
   margin: -5px -5px -5px -5px;
-  font-size: 24px;
+  font-size: 16px;
   color: $red;
 }
 
