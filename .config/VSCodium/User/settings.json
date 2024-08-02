@@ -2,7 +2,7 @@
   "editor.cursorStyle": "block",
   "editor.fontFamily": "monospace",
   // الخط الافتراضي للكود
-  "editor.lineHeight": 1.8,
+  // "editor.lineHeight": 1.8,
   "editor.fontSize": 14,
   "editor.fontWeight": "500",
   // "editor.lineHeight": 2.2,
@@ -116,10 +116,8 @@
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "window.menuBarVisibility": "hidden",
   "terminal.integrated.sendKeybindingsToShell": true,
   "explorer.confirmDelete": false,
-  "workbench.sideBar.location": "right",
   "search.defaultViewMode": "tree",
   "search.mode": "newEditor",
   "search.searchEditor.reusePriorSearchConfiguration": true,
@@ -145,7 +143,6 @@
   },
   "window.enableMenuBarMnemonics": false,
   "window.customMenuBarAltFocus": false,
-  "window.titleBarStyle": "custom",
   "window.density.editorTabHeight": "default",
   "workbench.editor.pinnedTabSizing": "compact",
   "explorer.compactFolders": false,
@@ -164,5 +161,11 @@
   "[csharp]": {
     "editor.defaultFormatter": "csharpier.csharpier-vscode"
   },
-  "window.customTitleBarVisibility": "auto"
+  "window.customTitleBarVisibility": "auto",
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.titleBarStyle": "custom",
+  "window.menuBarVisibility": "compact",
+  "workbench.layoutControl.type": "menu"
 }
