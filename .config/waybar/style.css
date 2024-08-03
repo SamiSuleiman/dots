@@ -1,12 +1,12 @@
-@import "./gruv.css";
+@import "./rose.css";
 
 * {
   font-family: sans-serif;
   font-weight: bold;
   font-size: 13px;
-  border-radius: 0px;
+  border-radius: 2px;
   margin: 0px;
-  padding: 0px;
+  padding: 1px;
 }
 
 window#waybar {
@@ -14,7 +14,7 @@ window#waybar {
   color: @highlightHigh;
   transition-property: background-color;
   transition-duration: 0.5s;
-  border-radius: 0px;
+  border-radius: 2px;
 }
 
 window#waybar.hidden {
@@ -33,7 +33,7 @@ window#waybar.chromium {
 button {
   box-shadow: inset 0 -3px transparent;
   border: none;
-  border-radius: 0;
+  border-radius: 2px;
 }
 
 #custom-notification {
@@ -51,7 +51,7 @@ button {
   color: @highlightHigh;
   /* margin: 4px 0 4px 6px; */
   /* transition: color 200ms ease-in-out; */
-  border-radius: 0px;
+  border-radius: 2px;
 }
 
 #workspaces button.selected {
@@ -164,3 +164,19 @@ button {
 #scratchpad.empty {
   background-color: transparent;
 }
+
+/* #pulseaudio,
+#backlight {
+  color: @foam;
+}
+
+#bluetooth,
+#network {
+  color: @pine;
+}
+
+#battery,
+#disk,
+#memory {
+  color: @iris;
+} */

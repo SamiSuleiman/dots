@@ -31,7 +31,7 @@
     // "custom/gpu",
     "memory",
     "custom/separator",
-    "custom/power",
+    "custom/power"
   ],
 
   "custom/notification": {
@@ -54,11 +54,11 @@
     "on-click-right": "swaync-client -d -sw",
     "escape": true
   },
-  
+
   "custom/separator": {
     // "format": "󰨕",
     // "format":"󰨓",
-    "format":"|",
+    "format": "|",
     "interval": "once",
     "tooltip": false
   },
@@ -80,11 +80,11 @@
   "disk": {
     "interval": 30,
     "format": "        {percentage_used}%",
-    "path": "/home/sami/medina/",
+    "path": "/home/sami/medina/"
   },
 
   "hyprland/language": {
-    "format": "{short} {variant}",
+    "format": "{short} {variant}"
   },
 
   "mpris": {
@@ -92,17 +92,17 @@
     "format": "{player_icon} {title} | {artist} - {length}",
     "format-paused": "{status_icon} <i>{title} | {artist} - {length}</i>",
     "player-icons": {
-      "default": "▶",
+      "default": "▶"
     },
     "status-icons": {
-      "paused": "󰏤",
-    },
+      "paused": "󰏤"
+    }
     // "ignored-players": ["firefox", "chromium", "brave"],
   },
   "backlight": {
     "device": "intel_backlight",
     "format": "{icon}       {percent}%",
-    "format-icons": [""],
+    "format-icons": [""]
   },
 
   "memory": {
@@ -111,10 +111,10 @@
     "max-length": 10,
     "tooltip": true,
     "tooltip-format": "Memory - {used:0.1f}GB used - {}%",
-    "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'",
+    "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
   },
   "hyprland/window": {
-    "separate-outputs": true,
+    "separate-outputs": true
   },
   "bluetooth": {
     "format": "",
@@ -123,7 +123,7 @@
     "tooltip-format": "{device_alias}",
     "tooltip-format-connected": " {device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias} - {device_battery_percentage}% 󱈑",
-    "on-click": "rofi-bluetooth &",
+    "on-click": "rofi-bluetooth &"
   },
 
   "hyprland/workspaces": {
@@ -141,12 +141,12 @@
     // },
     "disable-scroll": true,
     "all-outputs": true,
-    "on-click": "activate",
+    "on-click": "activate"
   },
 
   "tray": {
     // "icon-size": 21,
-    "spacing": 10,
+    "spacing": 10
   },
   "custom/pacman": {
     "interval": 3600,
@@ -154,28 +154,28 @@
     "exec": "pacman-updates",
     "exec-if": "exit 0",
     "on-click": "kitty -e 'paru'; pkill -SIGRTMIN+8 waybar",
-    "signal": 8,
+    "signal": 8
   },
   "clock": {
     "tooltip-format": "{:%A, %B %d, %Y}",
-    "format": "{:%H:%M}",
+    "format": "{:%H:%M}"
   },
   "battery": {
     "states": {
       "good": 76,
-      "warning": 20,
+      "warning": 20
     },
     "format": "{icon}           {capacity}%",
     "format-charging": "       {capacity}%",
     "format-icons": ["", "", "", "", ""],
-    "tooltip-format": "{capacity}% capacity",
+    "tooltip-format": "{capacity}% capacity"
   },
   "network": {
     "format-wifi": "        {essid}",
     "format-disconnected": "󰤭",
     "format-ethernet": " ",
     "tooltip-format": "Connected to {essid}",
-    "on-click": "networkmanager_dmenu",
+    "on-click": "networkmanager_dmenu"
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
@@ -183,40 +183,40 @@
     "format-muted": "󰖁",
     "format-icons": {
       "default": ["", "", "󰕾"],
-      "headphone": ["    "],
+      "headphone": ["    "]
     },
     "tooltip-format": "{volume}% volume",
     "on-click": "pamixer -t",
     "on-click-right": "pavucontrol",
     "on-scroll-up": "pamixer -i 5",
-    "on-scroll-down": "pamixer -d 5",
+    "on-scroll-down": "pamixer -d 5"
   },
   "custom/power": {
     "format": "󰐥",
-    "on-click": "wlogout",
+    "on-click": "wlogout"
   },
   "custom/firefox": {
     "format": " ",
-    "on-click": "firefox",
+    "on-click": "firefox"
   },
   "custom/kitty": {
     "format": " ",
-    "on-click": "kitty",
+    "on-click": "kitty"
   },
   "custom/signal": {
     "format": " ",
-    "on-click": "signal-desktop",
+    "on-click": "signal-desktop"
   },
   "custom/music": {
     "format": " ",
-    "on-click": "tauon",
+    "on-click": "tauon"
   },
   "custom/apps": {
     "format": "󰨀",
-    "on-click": "rofi -show drun",
+    "on-click": "rofi -show drun"
   },
   "custom/files": {
     "format": "󰈔",
-    "on-click": "thunar",
-  },
+    "on-click": "thunar"
+  }
 }

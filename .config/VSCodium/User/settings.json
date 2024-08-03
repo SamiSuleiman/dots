@@ -12,7 +12,7 @@
   "editor.linkedEditing": true,
   "debug.console.fontFamily": "'monospace'",
   "debug.console.fontSize": 16,
-  "editor.roundedSelection": false,
+  "editor.roundedSelection": true,
   "editor.minimap.enabled": false,
   "editor.renderLineHighlight": "gutter",
   "workbench.editor.showIcons": false,
@@ -20,7 +20,7 @@
   "breadcrumbs.enabled": true,
   "explorer.decorations.colors": false,
   "workbench.colorCustomizations": {
-    // "editor.background": "#000000",
+    // "editor.background": "#0e0a0a"
     // "terminal.background": "#000000"
     // "editor.lineHighlightBackground": "#1D2021"
   },
@@ -157,7 +157,6 @@
   "github.copilot.editor.enableAutoCompletions": true,
   "editor.cursorBlinking": "solid",
   "terminal.integrated.defaultProfile.osx": "tmux",
-  "workbench.colorTheme": "Gruvbox Dark Hard",
   "[csharp]": {
     "editor.defaultFormatter": "csharpier.csharpier-vscode"
   },
@@ -167,5 +166,6 @@
   },
   "window.titleBarStyle": "custom",
   "window.menuBarVisibility": "compact",
-  "workbench.layoutControl.type": "menu"
+  "workbench.layoutControl.type": "menu",
+  "workbench.colorTheme": "Rosé Pine"
 }
