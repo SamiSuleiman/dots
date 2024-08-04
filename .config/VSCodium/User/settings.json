@@ -14,7 +14,7 @@
   "debug.console.fontSize": 16,
   "editor.roundedSelection": true,
   "editor.minimap.enabled": false,
-  "editor.renderLineHighlight": "gutter",
+  "editor.renderLineHighlight": "all",
   "workbench.editor.showIcons": false,
   "workbench.editor.tabSizing": "shrink",
   "breadcrumbs.enabled": true,
