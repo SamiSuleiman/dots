@@ -2,7 +2,7 @@
   "editor.cursorStyle": "block",
   "editor.fontFamily": "monospace",
   // الخط الافتراضي للكود
-  // "editor.lineHeight": 1.8,
+  "editor.lineHeight": 2.0,
   "editor.fontSize": 14,
   "editor.fontWeight": "500",
   // "editor.lineHeight": 2.2,
@@ -44,7 +44,7 @@
   "editor.lineNumbers": "relative",
   "vim.leader": "<Space>",
   "vim.hlsearch": true,
-  "vim.cursorStylePerMode.insert": "block",
+  "vim.cursorStylePerMode.insert": "line",
   "vim.highlightedyank.enable": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     { "before": ["escape"], "commands": [":nohl"] },
