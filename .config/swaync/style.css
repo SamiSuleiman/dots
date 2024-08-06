@@ -20,7 +20,7 @@
 
 * {
   all: unset;
-  font-family: FiraCode Nerd Font;
+  font-family: sans-serif;
   transition: 0.3s;
   font-size: 1.2rem;
 }
