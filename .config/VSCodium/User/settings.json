@@ -4,7 +4,7 @@
   // الخط الافتراضي للكود
   "editor.lineHeight": 2.0,
   "editor.fontSize": 14,
-  // "editor.fontWeight": "500",
+  "editor.fontWeight": "500",
   // "editor.lineHeight": 2.2,
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
