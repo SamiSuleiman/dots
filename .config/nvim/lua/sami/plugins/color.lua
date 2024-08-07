@@ -51,7 +51,7 @@ return {
   },
   {
     'rose-pine/neovim',
-    enabled = true,
+    enabled = false,
     name = 'rose-pine',
     opts = {},
     config = function()

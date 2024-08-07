@@ -167,5 +167,5 @@
   "window.titleBarStyle": "custom",
   "window.menuBarVisibility": "compact",
   "workbench.layoutControl.type": "menu",
-  "workbench.colorTheme": "Rosé Pine"
+  "workbench.colorTheme": "Gruvbox Dark Hard"
 }

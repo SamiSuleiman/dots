@@ -4,7 +4,7 @@
     --accent-color: #17191a;
 
     * {
-      /* border-radius: 0px !important; */
+      border-radius: 0px !important;
     }
   }
 }

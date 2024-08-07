@@ -1,22 +1,23 @@
 @import "default"
 
 * {
-	bg: #191724;
-	cur: #1f1d2e;
-	fgd: #e0def4;
-	cmt: #6e6a86;
-	cya: #9ccfd8;
-	grn: #31748f;
-	ora: #ebbcba;
-	pur: #c4a7e7;
-	red: #eb6f92;
-	yel: #f6c177;
+	bg: #1D2021;
+	cur: #292929;
+	fgd: #f9f5d7;
+  highlightLow: #504945;
+  highlightHigh: #928374;
+
+	cya: #83a598;
+	grn: #98971a;
+	ora: #d65d0e;
+	pur: #b16286;
+	red: #cc241d;
 
 	font: "sans-serif 10";
 
 	foreground: @fgd;
 	background: @bg;
-	active-background: @cmt;
+	active-background: @ora;
 	urgent-background: @red;
 
 	selected-background: @active-background;
