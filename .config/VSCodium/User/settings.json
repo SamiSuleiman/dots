@@ -2,10 +2,9 @@
   "editor.cursorStyle": "block",
   "editor.fontFamily": "monospace",
   // الخط الافتراضي للكود
-  "editor.lineHeight": 2.0,
+  //"editor.lineHeight": 2.0,
   "editor.fontSize": 14,
   "editor.fontWeight": "500",
-  // "editor.lineHeight": 2.2,
   "editor.fontLigatures": true,
   "editor.formatOnSave": true,
   "editor.suggest.insertMode": "replace",
@@ -14,7 +13,7 @@
   "debug.console.fontSize": 16,
   "editor.roundedSelection": true,
   "editor.minimap.enabled": false,
-  "editor.renderLineHighlight": "all",
+  "editor.renderLineHighlight": "gutter",
   "workbench.editor.showIcons": false,
   "workbench.editor.tabSizing": "shrink",
   "breadcrumbs.enabled": true,
@@ -167,5 +166,8 @@
   "window.titleBarStyle": "custom",
   "window.menuBarVisibility": "compact",
   "workbench.layoutControl.type": "menu",
-  "workbench.colorTheme": "Gruvbox Dark Hard"
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.productIconTheme": "fluent-icons",
+  "symbols.hidesExplorerArrows": false,
+  "workbench.iconTheme": "file-icons"
 }
