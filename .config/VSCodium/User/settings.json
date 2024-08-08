@@ -6,6 +6,8 @@
   "editor.fontSize": 14,
   "editor.fontWeight": "500",
   "editor.fontLigatures": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
   "editor.formatOnSave": true,
   "editor.suggest.insertMode": "replace",
   "editor.linkedEditing": true,
