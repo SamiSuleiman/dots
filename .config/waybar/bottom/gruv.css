@@ -1,0 +1,15 @@
+/* @define-color base    #282828; */
+@define-color base #1D2021;
+@define-color base #17191A;
+/* @define-color base #000000; */
+@define-color text #f9f5d7;
+
+@define-color love #cc241d;
+@define-color gold #d79921;
+@define-color rose #a89984;
+@define-color pine #458588;
+@define-color iris #d3869b;
+@define-color orange #d65d0e;
+
+@define-color highlightLow #504945;
+@define-color highlightHigh #928374;

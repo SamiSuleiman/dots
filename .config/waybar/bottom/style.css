@@ -36,6 +36,10 @@ button {
   border-radius: 0px;
 }
 
+#custom-notification {
+  font-family: "NotoSansMono Nerd Font";
+}
+
 #workspaces button:hover {
   color: @text;
   box-shadow: inherit;
@@ -43,8 +47,8 @@ button {
 }
 
 #workspaces button {
-  /* padding: 0 5px; */
-  color: @highlightLow;
+  padding: 0 5px;
+  color: @highlightHigh;
   /* margin: 4px 0 4px 6px; */
   /* transition: color 200ms ease-in-out; */
   border-radius: 0px;
@@ -55,10 +59,8 @@ button {
 }
 
 #workspaces button.active {
-  /* color: @base; */
-  /* background-color: @orange; */
-  /* border-left: 3px solid @orange; */
-  color: @orange;
+  color: @base;
+  background-color: @orange;
 }
 
 #workspaces button.urgent {
@@ -94,7 +96,7 @@ button {
 #backlight,
 #tray,
 #mpris {
-  padding: 2px 0px;
+  padding: 0 6px;
   color: @highlightHigh;
 }
 
@@ -117,16 +119,16 @@ button {
 
 #custom-separator {
   color: @highlightLow;
-  margin: 1px 0px;
+  margin: 0px 8px;
 }
 
-/* #custom-apps { */
-/*   padding: 0px 25px 0px 25px; */
-/*   color: @love; */
-/* } */
+#custom-apps {
+  padding: 0px 25px 0px 25px;
+  color: @love;
+}
 
 .modules-left > widget:first-child > #workspaces {
-  /* margin-left: 2px; */
+  margin-left: 2px;
 }
 
 #custom-pacman {
@@ -146,16 +148,9 @@ button {
 }
 
 #custom-power {
-  margin-top: 8px;
   color: @love;
-  /* margin-bottom: 5px; */
+  margin-right: 5px;
   background: @base;
-  margin-right: 4px;
-  transition: all 0.5s;
-}
-
-#custom-power:hover {
-  border-left: 3px solid @love;
 }
 
 #keyboard-state > label.locked {
@@ -170,22 +165,18 @@ button {
   background-color: transparent;
 }
 
-#custom-notification {
-  font-family: "NotoSansMono Nerd Font";
-  margin-right: 4px;
-  transition: all 0.5s;
-  color: @highlightLow;
+/* #pulseaudio,
+#backlight {
+  color: @foam;
 }
 
-#custom-notification:hover {
-  font-family: "NotoSansMono Nerd Font";
-  border-left: 3px solid @orange;
+#bluetooth,
+#network {
+  color: @pine;
 }
 
-#language {
-  color: @highlightLow;
-}
-
-/* #clock { */
-/*   border-bottom: 3px solid @highlightLow; */
-/* } */
+#battery,
+#disk,
+#memory {
+  color: @iris;
+} */
