@@ -1,6 +1,7 @@
 @import "default"
 
 * {
+	bg: #000000;
 	bg: #1D2021;
 	cur: #292929;
 	fgd: #f9f5d7;
