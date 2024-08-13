@@ -3,7 +3,7 @@
 * {
   font-family: sans-serif;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 13px;
   border-radius: 0px;
   margin: 0px;
   padding: 0px;
@@ -11,7 +11,7 @@
 
 window#waybar {
   background-color: @base;
-  color: @text;
+  color: @highlightHigh;
   transition-property: background-color;
   transition-duration: 0.5s;
   border-radius: 0px;
@@ -36,11 +36,6 @@ button {
   border-radius: 0px;
 }
 
-#custom-notification {
-  font-family: "NotoSansMono Nerd Font";
-  margin-right: 12px;
-}
-
 #workspaces button:hover {
   color: @text;
   box-shadow: inherit;
@@ -48,8 +43,8 @@ button {
 }
 
 #workspaces button {
-  padding: 0 5px;
-  color: @highlightHigh;
+  /* padding: 0 5px; */
+  color: @highlightLow;
   /* margin: 4px 0 4px 6px; */
   /* transition: color 200ms ease-in-out; */
   border-radius: 0px;
@@ -60,8 +55,10 @@ button {
 }
 
 #workspaces button.active {
-  color: @orange;
+  /* color: @base; */
   /* background-color: @orange; */
+  /* border-left: 3px solid @orange; */
+  color: @orange;
 }
 
 #workspaces button.urgent {
@@ -97,39 +94,42 @@ button {
 #backlight,
 #tray,
 #mpris {
-  padding: 0 6px;
-  color: @text;
+  padding: 2px 0px;
+  color: @highlightHigh;
 }
 
 /* #custom-power { */
 /*     border-bottom: 1px solid @love; */
 /* } */
 /**/
-/* #battery, #disk, #memory { */
-/*     border-bottom: 1px solid @iris; */
+/* #battery, */
+/* #disk, */
+/* #memory { */
+/*   border-right: 3px solid @iris; */
 /* } */
 /**/
-/* #bluetooth, #network { */
-/*     border-bottom: 1px solid @orange; */
+/* #bluetooth, */
+/* #network { */
+/*   border-right: 3px solid @iris; */
 /* } */
 /**/
-/**/
-/* #pulseaudio, #backlight { */
-/*     border-bottom: 1px solid @pine; */
+/* #pulseaudio, */
+/* #backlight { */
+/*   border-right: 3px solid @orange; */
 /* } */
 
 #custom-separator {
   color: @highlightLow;
-  margin: 0px 8px;
+  /* margin: 1px 0px; */
 }
 
-#custom-apps {
-  padding: 0px 25px 0px 25px;
-  color: @love;
-}
+/* #custom-apps { */
+/*   padding: 0px 25px 0px 25px; */
+/*   color: @love; */
+/* } */
 
 .modules-left > widget:first-child > #workspaces {
-  margin-left: 2px;
+  /* margin-left: 2px; */
 }
 
 #custom-pacman {
@@ -149,9 +149,16 @@ button {
 }
 
 #custom-power {
+  margin-top: 8px;
   color: @love;
-  margin-left: 10px;
+  /* margin-bottom: 5px; */
   background: @base;
+  margin-right: 4px;
+  transition: all 0.5s;
+}
+
+#custom-power:hover {
+  border-left: 3px solid @love;
 }
 
 #keyboard-state > label.locked {
@@ -166,18 +173,34 @@ button {
   background-color: transparent;
 }
 
-/* #pulseaudio,
+#custom-notification {
+  font-family: "NotoSansMono Nerd Font";
+  margin-right: 4px;
+  transition: all 0.5s;
+}
+
+#custom-notification:hover {
+  font-family: "NotoSansMono Nerd Font";
+  border-left: 3px solid @orange;
+}
+
+#pulseaudio {
+  padding-right: 3px;
+}
+
 #backlight {
-  color: @foam;
+  padding-right: 3px;
 }
 
-#bluetooth,
 #network {
-  color: @pine;
+  padding-right: 3px;
 }
 
-#battery,
+#battery {
+  padding-right: 7px;
+}
+
 #disk,
 #memory {
-  color: @iris;
-} */
+  padding-right: 2px;
+}

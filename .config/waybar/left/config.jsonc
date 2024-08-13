@@ -1,51 +1,43 @@
 {
   "layer": "top",
-  "position": "bottom",
-  "height": 20,
+  "position": "left",
+  "width": 25,
+  // "height": 30,
   // "spacing": 4,
-  "modules-left": [
-    "custom/power",
-    "custom/separator",
-    "clock",
-    "custom/separator",
-    // "custom/weather",
-    // "custom/separator",
-    "hyprland/language",
-    "custom/separator",
-    "hyprland/workspaces",
-    "tray"
-    // "custom/apps",
-  ],
+  "modules-left": ["hyprland/workspaces", "tray"],
   "modules-center": ["mpris"],
   "modules-right": [
     "custom/pacman",
-    "backlight",
     "pulseaudio",
+    "backlight",
     "custom/separator",
     "network",
     "bluetooth",
     "custom/separator",
-    "battery",
+    "memory",
     "disk",
+    "battery",
     // "cpu",
     // "custom/gpu",
-    "memory",
     "custom/separator",
-    "custom/notification"
+    "custom/notification",
+    "hyprland/language",
+    "clock",
+    "custom/power"
   ],
 
   "custom/notification": {
     "tooltip": false,
     "format": "{icon}",
     "format-icons": {
-      "notification": "󰂚<span foreground='red'><sup></sup></span>",
-      "none": "󰂚",
-      "dnd-notification": "󰂛<span foreground='red'><sup></sup></span>",
-      "dnd-none": "󰂛",
-      "inhibited-notification": "󰂚<span foreground='red'><sup></sup></span>",
-      "inhibited-none": "󰂚",
-      "dnd-inhibited-notification": "󰂛<span foreground='red'><sup></sup></span>",
-      "dnd-inhibited-none": "󰂛"
+      "notification": "<span foreground='red'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": "",
+      "inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "inhibited-none": "",
+      "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-inhibited-none": ""
     },
     "return-type": "json",
     "exec-if": "which swaync-client",
@@ -58,14 +50,14 @@
   "custom/separator": {
     // "format": "󰨕",
     // "format":"󰨓",
-    "format": "|",
+    "format": " ",
     "interval": "once",
     "tooltip": false
   },
 
   "cpu": {
     "interval": 10,
-    "format": "        {}%",
+    "format": "",
     "max-length": 10
   },
 
@@ -79,8 +71,9 @@
 
   "disk": {
     "interval": 30,
-    "format": "      {percentage_used}%",
-    "path": "/home/sami/medina/"
+    "format": "",
+    "path": "/home/sami/medina/",
+    "tooltip-format": "~/medina is {percentage_used}% used"
   },
 
   "hyprland/language": {
@@ -88,9 +81,10 @@
   },
 
   "mpris": {
-    "max-length": 50,
-    "format": "{player_icon} {title} | {artist}",
+    "max-length": 40,
+    "format": "{player_icon} {title} | {artist} - {length}",
     "format-paused": "{status_icon} {title} | {artist} - {length}",
+    "rotate": 90,
     "player-icons": {
       "default": "󰐊"
     },
@@ -101,13 +95,14 @@
   },
   "backlight": {
     "device": "intel_backlight",
-    "format": "{icon}      {percent}%",
-    "format-icons": ["", "󰃠"]
+    "format": "{icon}",
+    "tooltip-format": "{icon}       {percent}%",
+    "format-icons": ["󰃠"]
   },
 
   "memory": {
     "interval": 30,
-    "format": "        {}%",
+    "format": "",
     "max-length": 10,
     "tooltip": true,
     "tooltip-format": "Memory - {used:0.1f}GB used - {}%",
@@ -117,9 +112,9 @@
     "separate-outputs": true
   },
   "bluetooth": {
-    "format": "",
+    "format": "󰂯",
     "format-disabled": "", // an empty format will hide the module
-    "format-connected": "  {num_connections}",
+    "format-connected": "󰂯",
     "tooltip-format": "{device_alias}",
     "tooltip-format-connected": " {device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias} - {device_battery_percentage}% 󱈑",
@@ -128,6 +123,7 @@
 
   "hyprland/workspaces": {
     "format": "{icon}  {windows}",
+    // "format": "󰨓",
     "format-icons": {
       "1": "١",
       "2": "٢",
@@ -140,10 +136,6 @@
       "9": "٩",
       "10": "١٠"
     },
-    // "format": "{icon}  {windows}",
-    // "format-icons": {
-    //   "9": "󰎞      ",
-    // },
     // "format-window-separator": "          ",
     // "window-rewrite-default": "",
     // "window-rewrite": {
@@ -171,32 +163,33 @@
   },
   "clock": {
     "tooltip-format": "{:%A, %B %d, %Y}",
-    "format": "{:%H:%M - %A, %B %d}"
+    "format": "{:%H\n%M}"
   },
   "battery": {
     "states": {
       "good": 76,
       "warning": 20
     },
-    "format": "{icon}           {capacity}%",
-    "format-charging": "       {capacity}%",
+    "format": "<span>{icon}</span>",
+    "format-charging": "",
     "format-icons": ["", "", "", "", ""],
     "tooltip-format": "{capacity}% capacity"
   },
   "network": {
-    "format-wifi": "󰖩       {essid}",
+    "format-wifi": "󰖩",
     "format-disconnected": "󰖪",
     "format-ethernet": " ",
     "tooltip-format": "Connected to {essid}",
-    "on-click": "networkmanager_dmenu"
+    "on-click": "networkmanager_dmenu",
+    "max-length": 10
   },
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
-    "format": "{icon}    {volume}%",
+    "format": "{icon}",
     "format-muted": "󰖁",
     "format-icons": {
-      "default": ["", "", "󰕾"],
-      "headphone": ["  "]
+      "default": ["    ", "    ", "    󰕾"],
+      "headphone": [""]
     },
     "tooltip-format": "{volume}% volume",
     "on-click": "pamixer -t",

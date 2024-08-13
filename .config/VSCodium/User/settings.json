@@ -32,7 +32,7 @@
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "workbench.activityBar.location": "top",
+  "workbench.activityBar.location": "bottom",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "launch": {},
   "[json]": {
