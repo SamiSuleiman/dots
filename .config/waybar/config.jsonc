@@ -130,16 +130,27 @@
   "hyprland/workspaces": {
     "format": "{icon}  {windows}",
     "format-icons": {
-      "1": "󰈹    <span><sub>1</sub></span>",
-      "2": "        <span><sub>2</sub></span>",
-      "3": "3",
-      "4": "4",
-      "5": "5",
-      "6": "6",
-      "7": "7",
-      "8": "󰝚    <span><sub>8</sub></span>",
-      "9": "󰵅      <span><sub>9</sub></span>",
-      "10": "󰑬    <span><sub>10</sub></span>"
+            // "1": "١",
+            // "2": "٢",
+            // "3": "٣",
+            // "4": "٤",
+            // "5": "٥",
+            // "6": "٦",
+            // "7": "٧",
+            // "8": "٨",
+            // "9": "٩",
+            // "10": "١٠"
+
+      "1": "󰈹    <span><sub>١</sub></span>",
+      "2": "        <span><sub>٢</sub></span>",
+      "3": "٣",
+      "4": "٤",
+      "5": "٥",
+      "6": "٦",
+      "7": "٧",
+      "8": "󰝚    <span><sub>٨</sub></span>",
+      "9": "󰵅      <span><sub>٩</sub></span>",
+      "10": "󰑬    <span><sub>١٠</sub></span>"
     },
     // "format": "{icon}  {windows}",
     // "format-icons": {
