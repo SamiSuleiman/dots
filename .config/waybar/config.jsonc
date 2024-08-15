@@ -38,14 +38,14 @@
     "tooltip": false,
     "format": "{icon}",
     "format-icons": {
-      "notification": "󰂚<span foreground='red'><sup></sup></span>",
-      "none": "󰂚",
-      "dnd-notification": "󰂛<span foreground='red'><sup></sup></span>",
-      "dnd-none": "󰂛",
-      "inhibited-notification": "󰂚<span foreground='red'><sup></sup></span>",
-      "inhibited-none": "󰂚",
-      "dnd-inhibited-notification": "󰂛<span foreground='red'><sup></sup></span>",
-      "dnd-inhibited-none": "󰂛"
+      "notification": "󰂚<span foreground='red'><sup></sup></span>    ",
+      "none": "󰂚      ",
+      "dnd-notification": "󰂛<span foreground='red'><sup></sup></span>      ",
+      "dnd-none": "󰂛    ",
+      "inhibited-notification": "󰂚<span foreground='red'><sup></sup></span>      ",
+      "inhibited-none": "󰂚      ",
+      "dnd-inhibited-notification": "󰂛<span foreground='red'><sup></sup></span>      ",
+      "dnd-inhibited-none": "󰂛      "
     },
     "return-type": "json",
     "exec-if": "which swaync-client",
@@ -80,7 +80,8 @@
   "disk": {
     "interval": 30,
     "format": "      {percentage_used}%",
-    "path": "/home/sami/medina/"
+    "path": "/home/sami/medina/",
+    "on-click": "thunar /home/sami/medina/"
   },
 
   "hyprland/language": {
@@ -129,16 +130,16 @@
   "hyprland/workspaces": {
     "format": "{icon}  {windows}",
     "format-icons": {
-      "1": "١",
-      "2": "٢",
-      "3": "٣",
-      "4": "٤",
-      "5": "٥",
-      "6": "٦",
-      "7": "٧",
-      "8": "٨",
-      "9": "٩",
-      "10": "١٠"
+      "1": "󰈹    <span><sub>1</sub></span>",
+      "2": "        <span><sub>2</sub></span>",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "󰝚    <span><sub>8</sub></span>",
+      "9": "󰵅      <span><sub>9</sub></span>",
+      "10": "󰑬    <span><sub>10</sub></span>"
     },
     // "format": "{icon}  {windows}",
     // "format-icons": {
@@ -153,6 +154,7 @@
     //   "tauonmb": "",
     // },
     "disable-scroll": true,
+    "active-only": false,
     "all-outputs": true,
     "on-click": "activate"
   },
@@ -171,7 +173,7 @@
   },
   "clock": {
     "tooltip-format": "{:%A, %B %d, %Y}",
-    "format": "{:%H:%M - %A, %B %d}"
+    "format": "{:%H:%M %A, %B %d}"
   },
   "battery": {
     "states": {
@@ -206,7 +208,7 @@
   },
   "custom/power": {
     "tooltip": false,
-    "format": "",
+    "format": "  ",
     "on-click": "wlogout"
   },
   "custom/firefox": {

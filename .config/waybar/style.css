@@ -38,7 +38,11 @@ button {
 
 #custom-notification {
   font-family: "NotoSansMono Nerd Font";
-  margin-right: 12px;
+  transition: all 0.1s;
+}
+
+#custom-notification:hover {
+  border-right: 3px solid @orange;
 }
 
 #workspaces button:hover {
@@ -48,7 +52,7 @@ button {
 }
 
 #workspaces button {
-  padding: 0 5px;
+  padding: 0 3px;
   color: @highlightHigh;
   /* margin: 4px 0 4px 6px; */
   /* transition: color 200ms ease-in-out; */
@@ -97,7 +101,7 @@ button {
 #backlight,
 #tray,
 #mpris {
-  padding: 0 6px;
+  padding: 0 4px;
   color: @text;
 }
 
@@ -120,7 +124,7 @@ button {
 
 #custom-separator {
   color: @highlightLow;
-  margin: 0px 8px;
+  margin: 0px 5px;
 }
 
 #custom-apps {
@@ -149,9 +153,14 @@ button {
 }
 
 #custom-power {
-  color: @love;
-  margin-left: 10px;
+  /* color: @love; */
+  /* margin-left: 10px; */
   background: @base;
+  transition: all 0.1s;
+}
+
+#custom-power:hover {
+  border-left: 3px solid @love;
 }
 
 #keyboard-state > label.locked {
