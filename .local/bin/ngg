@@ -1,0 +1,9 @@
+#! /usr/bin/env bash
+
+# ng generate multiple files at once
+#
+
+command=$1
+restArgs=${@:2}
+
+echo $restArgs | sed 's/ /\n/g' | xargs -I{} -P4  ng g c {} --flat

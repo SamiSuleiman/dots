@@ -18,7 +18,7 @@
   "editor.renderLineHighlight": "gutter",
   "workbench.editor.showIcons": false,
   "workbench.editor.tabSizing": "shrink",
-  "breadcrumbs.enabled": true,
+  "breadcrumbs.enabled": false,
   "explorer.decorations.colors": false,
   "workbench.colorCustomizations": {
     // "editor.background": "#0e0a0a"
@@ -38,7 +38,6 @@
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "workbench.statusBar.visible": true,
   "editor.occurrencesHighlight": "off",
   "update.showReleaseNotes": false,
   "zenMode.hideLineNumbers": false,
@@ -144,9 +143,7 @@
   },
   "window.enableMenuBarMnemonics": false,
   "window.customMenuBarAltFocus": false,
-  "window.density.editorTabHeight": "default",
   "workbench.editor.pinnedTabSizing": "compact",
-  "explorer.compactFolders": false,
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -166,10 +163,11 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "window.titleBarStyle": "custom",
-  "window.menuBarVisibility": "compact",
   "workbench.layoutControl.type": "menu",
   "workbench.colorTheme": "Gruvbox Dark Hard",
   "workbench.productIconTheme": "fluent-icons",
   "symbols.hidesExplorerArrows": false,
-  "workbench.iconTheme": "file-icons"
+  "workbench.iconTheme": "file-icons",
+  "window.density.editorTabHeight": "compact",
+  "window.menuBarVisibility": "hidden"
 }
