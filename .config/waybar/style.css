@@ -3,7 +3,7 @@
 * {
   font-family: sans-serif;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 13px;
   border-radius: 0px;
   margin: 0px;
   padding: 0px;
@@ -21,28 +21,10 @@ window#waybar.hidden {
   opacity: 0.2;
 }
 
-window#waybar.termite {
-  background-color: #3f3f3f;
-}
-
-window#waybar.chromium {
-  background-color: #0e0a00;
-  border: none;
-}
-
 button {
   box-shadow: inset 0 -3px transparent;
   border: none;
   border-radius: 0px;
-}
-
-#custom-notification {
-  font-family: "NotoSansMono Nerd Font";
-  transition: all 0.1s;
-}
-
-#custom-notification:hover {
-  border-right: 3px solid @orange;
 }
 
 #workspaces button:hover {
@@ -52,10 +34,6 @@ button {
 }
 
 #workspaces button {
-  padding: 0 3px;
-  color: @highlightHigh;
-  /* margin: 4px 0 4px 6px; */
-  /* transition: color 200ms ease-in-out; */
   border-radius: 0px;
 }
 
@@ -65,7 +43,6 @@ button {
 
 #workspaces button.active {
   color: @orange;
-  /* background-color: @orange; */
 }
 
 #workspaces button.urgent {
@@ -101,39 +78,8 @@ button {
 #backlight,
 #tray,
 #mpris {
-  padding: 0 4px;
+  padding: 2px 0px;
   color: @text;
-}
-
-/* #custom-power { */
-/*     border-bottom: 1px solid @love; */
-/* } */
-/**/
-/* #battery, #disk, #memory { */
-/*     border-bottom: 1px solid @iris; */
-/* } */
-/**/
-/* #bluetooth, #network { */
-/*     border-bottom: 1px solid @orange; */
-/* } */
-/**/
-/**/
-/* #pulseaudio, #backlight { */
-/*     border-bottom: 1px solid @pine; */
-/* } */
-
-#custom-separator {
-  color: @highlightLow;
-  margin: 0px 5px;
-}
-
-#custom-apps {
-  padding: 0px 25px 0px 25px;
-  color: @love;
-}
-
-.modules-left > widget:first-child > #workspaces {
-  margin-left: 2px;
 }
 
 #custom-pacman {
@@ -153,10 +99,10 @@ button {
 }
 
 #custom-power {
-  /* color: @love; */
-  /* margin-left: 10px; */
+  margin-top: 8px;
   background: @base;
   transition: all 0.1s;
+  margin-right: 4px;
 }
 
 #custom-power:hover {
@@ -175,18 +121,38 @@ button {
   background-color: transparent;
 }
 
-/* #pulseaudio,
+#custom-notification {
+  font-family: "NotoSansMono Nerd Font";
+  margin-right: 5px;
+  transition: all 0.1s;
+}
+
+#custom-notification:hover {
+  font-family: "NotoSansMono Nerd Font";
+  border-left: 3px solid @orange;
+}
+
+#pulseaudio {
+  padding-right: 3.5px;
+}
+
 #backlight {
-  color: @foam;
+  padding-right: 3px;
 }
 
-#bluetooth,
 #network {
-  color: @pine;
+  padding-right: 3.5px;
 }
 
-#battery,
+#battery {
+  padding-right: 6px;
+}
+
 #disk,
 #memory {
-  color: @iris;
-} */
+  padding-right: 2px;
+}
+
+#mpris {
+  font-size: 11px;
+}
