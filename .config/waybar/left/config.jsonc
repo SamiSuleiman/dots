@@ -4,7 +4,10 @@
   "width": 25,
   // "height": 30,
   // "spacing": 4,
-  "modules-left": ["hyprland/workspaces", "tray"],
+  "modules-left": [
+    "custom/notification",
+    "hyprland/workspaces", 
+    "tray"],
   "modules-center": ["mpris"],
   "modules-right": [
     "custom/pacman",
@@ -20,7 +23,6 @@
     // "cpu",
     // "custom/gpu",
     "custom/separator",
-    "custom/notification",
     "hyprland/language",
     "clock",
     "custom/power"
@@ -73,6 +75,7 @@
     "interval": 30,
     "format": "",
     "path": "/home/sami/medina/",
+    "on-click": "thunar /home/sami/medina/",
     "tooltip-format": "~/medina is {percentage_used}% used"
   },
 
@@ -97,7 +100,7 @@
     "device": "intel_backlight",
     "format": "{icon}",
     "tooltip-format": "{icon}       {percent}%",
-    "format-icons": ["󰃠"]
+    "format-icons": ["", "󰃠"]
   },
 
   "memory": {

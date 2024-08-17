@@ -34,9 +34,6 @@ button {
 }
 
 #workspaces button {
-  /* padding: 0 5px; */
-  /* margin: 4px 0 4px 6px; */
-  /* transition: color 200ms ease-in-out; */
   border-radius: 0px;
 }
 
@@ -45,9 +42,6 @@ button {
 }
 
 #workspaces button.active {
-  /* color: @base; */
-  /* background-color: @orange; */
-  /* border-left: 3px solid @orange; */
   color: @orange;
 }
 
@@ -86,40 +80,6 @@ button {
 #mpris {
   padding: 2px 0px;
   color: @text;
-}
-
-/* #custom-power { */
-/*     border-bottom: 1px solid @love; */
-/* } */
-/**/
-/* #battery, */
-/* #disk, */
-/* #memory { */
-/*   border-right: 3px solid @iris; */
-/* } */
-/**/
-/* #bluetooth, */
-/* #network { */
-/*   border-right: 3px solid @iris; */
-/* } */
-/**/
-/* #pulseaudio, */
-/* #backlight { */
-/*   border-right: 3px solid @orange; */
-/* } */
-
-#custom-separator {
-  color: @highlightLow;
-  /* margin: 1px 0px; */
-}
-
-/* #custom-apps { */
-/*   padding: 0px 25px 0px 25px; */
-/*   color: @love; */
-/* } */
-
-.modules-left > widget:first-child > #workspaces {
-  /* margin-left: 2px; */
 }
 
 #custom-pacman {
@@ -173,7 +133,7 @@ button {
 }
 
 #pulseaudio {
-  padding-right: 3px;
+  padding-right: 3.5px;
 }
 
 #backlight {
@@ -181,7 +141,7 @@ button {
 }
 
 #network {
-  padding-right: 3px;
+  padding-right: 3.5px;
 }
 
 #battery {
