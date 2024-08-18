@@ -5,39 +5,34 @@
   // "spacing": 4,
   "modules-left": [
     "custom/power",
-    "custom/notification",
+    "custom/separator",
+    "clock",
+    "custom/separator",
     // "custom/weather",
+    // "custom/separator",
     "hyprland/language",
     "custom/separator",
     "hyprland/workspaces",
     "tray"
     // "custom/apps",
   ],
-  "modules-center": ["clock"],
+  "modules-center": ["mpris"],
   "modules-right": [
     "custom/pacman",
-    "mpris",
-    "pulseaudio",
     "backlight",
+    "pulseaudio",
     "custom/separator",
     "network",
     "bluetooth",
     "custom/separator",
-    "temperature",
+    "battery",
     "disk",
     // "cpu",
     // "custom/gpu",
     "memory",
-    "battery"
+    "custom/separator",
+    "custom/notification"
   ],
-
-  "temperature": {
-    // "thermal-zone": 2,
-    // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-    // "critical-threshold": 80,
-    // "format-critical": "{temperatureC}°C ",
-    "format": "{temperatureC}°C "
-  },
 
   "custom/notification": {
     "tooltip": false,
@@ -94,9 +89,9 @@
   },
 
   "mpris": {
-    "max-length": 20,
+    "max-length": 50,
     "format": "{player_icon} {title} | {artist}",
-    "format-paused": "{status_icon} {title}",
+    "format-paused": "{status_icon} {title} | {artist} - {length}",
     "player-icons": {
       "default": "󰐊"
     },
@@ -146,27 +141,16 @@
             // "9": "٩",
             // "10": "١٠"
 
-      // "1": "󰈹    <span><sub>١</sub></span>",
-      // "2": "        <span><sub>٢</sub></span>",
-      // "3": "٣",
-      // "4": "٤",
-      // "5": "٥",
-      // "6": "٦",
-      // "7": "٧",
-      // "8": "󰝚    <span><sub>٨</sub></span>",
-      // "9": "󰵅      <span><sub>٩</sub></span>",
-      // "10": "󰑬    <span><sub>١٠</sub></span>"
-
-      "1": "󰈹",
-      "2": "",
-      "3": "3",
-      "4": "4",
-      "5": "5",
-      "6": "6",
-      "7": "7",
-      "8": "󰝚",
-      "9": "󰵅",
-      "10": "󰑬"
+      "1": "󰈹    <span><sub>١</sub></span>",
+      "2": "        <span><sub>٢</sub></span>",
+      "3": "٣",
+      "4": "٤",
+      "5": "٥",
+      "6": "٦",
+      "7": "٧",
+      "8": "󰝚    <span><sub>٨</sub></span>",
+      "9": "󰵅      <span><sub>٩</sub></span>",
+      "10": "󰑬    <span><sub>١٠</sub></span>"
     },
     // "format": "{icon}  {windows}",
     // "format-icons": {
@@ -198,35 +182,9 @@
     "on-click": "kitty -e 'paru'; pkill -SIGRTMIN+8 waybar",
     "signal": 8
   },
-  // "clock": {
-  //   "tooltip-format": "{:%A, %B %d, %Y}",
-  //   "tooltip":false,
-  //   "format": "   {:%H:%M %A, %B %d}"
-  // },
   "clock": {
-    "format": "  {:%H:%M %A, %B %d}",
-    // "format-alt": "󰃭  {:%A, %B %d, %Y (%R)}",
-    "tooltip-format": "<tt><small>{calendar}</small></tt>",
-    "calendar": {
-      "mode"          : "year",
-      "mode-mon-col"  : 3,
-      "weeks-pos"     : "right",
-      "on-scroll"     : 1,
-      "format": {
-        "months":     "<span color='#ffead3'><b>{}</b></span>",
-        "days":       "<span color='#ecc6d9'><b>{}</b></span>",
-        "weeks":      "<span color='#99ffdd'><b>W{}</b></span>",
-        "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
-        "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
-      }
-    },
-    "actions":  {
-      "on-click-right": "mode",
-      "on-click-forward": "tz_up",
-      "on-click-backward": "tz_down",
-      "on-scroll-up": "shift_up",
-      "on-scroll-down": "shift_down"
-    }
+    "tooltip-format": "{:%A, %B %d, %Y}",
+    "format": "{:%H:%M %A, %B %d}"
   },
   "battery": {
     "states": {
@@ -248,7 +206,7 @@
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
     "format": "{icon}    {volume}%",
-    "format-muted": "󰖁    Muted",
+    "format-muted": "󰖁",
     "format-icons": {
       "default": ["", "", "󰕾"],
       "headphone": ["  "]

@@ -28,3 +28,4 @@ application/x-extension-xht=firefox.desktop;
 image/webp=imv.desktop;
 image/png=imv.desktop
 image/jpeg=imv.desktop
+image/gif=imv.desktop
