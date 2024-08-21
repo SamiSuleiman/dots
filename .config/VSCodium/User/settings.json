@@ -169,5 +169,6 @@
   "symbols.hidesExplorerArrows": false,
   "workbench.iconTheme": "file-icons",
   "window.density.editorTabHeight": "compact",
-  "window.menuBarVisibility": "hidden"
+  "window.menuBarVisibility": "hidden",
+  "workbench.sideBar.location": "right"
 }
