@@ -3,11 +3,11 @@
     "diagnostics": false,
     "metrics": false
   },
-  "ui_font_family": "monospace",
-  "buffer_font_family": "monospace",
+  "ui_font_family": "Noto Sans",
+  "buffer_font_family": "Cascadia Code",
   "ui_font_size": 16,
   "buffer_line_height": "comfortable",
-  "buffer_font_size": 14,
+  "buffer_font_size": 16,
   "theme": {
     "mode": "system",
     "light": "Gruvbox Dark Hard",
@@ -27,6 +27,7 @@
     "default_height": 10000,
     "font_family": "monospace"
   },
+  "relative_line_numbers": true,
   "vim_mode": true,
   "git": {
     "inline_blame": {

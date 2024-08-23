@@ -33,10 +33,11 @@
 
   "temperature": {
     // "thermal-zone": 2,
-    // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
     // "critical-threshold": 80,
     // "format-critical": "{temperatureC}°C ",
-    "format": "{temperatureC}°C "
+    "format": "{temperatureC}°C ",
+    "tooltip": false,
   },
 
   "custom/notification": {
@@ -108,7 +109,8 @@
   "backlight": {
     "device": "intel_backlight",
     "format": "{icon}      {percent}%",
-    "format-icons": ["", "󰃠"]
+    "format-icons": ["", "󰃠"],
+    "tooltip": false
   },
 
   "memory": {
@@ -236,7 +238,8 @@
     "format": "{icon}           {capacity}%",
     "format-charging": "       {capacity}%",
     "format-icons": ["", "", "", "", ""],
-    "tooltip-format": "{capacity}% capacity"
+    "tooltip-format": "{capacity}% capacity",
+    "tooltip": false
   },
   "network": {
     "format-wifi": "󰖩       {essid}",
@@ -257,7 +260,8 @@
     "on-click": "pamixer -t",
     "on-click-right": "pavucontrol",
     "on-scroll-up": "pamixer -i 5",
-    "on-scroll-down": "pamixer -d 5"
+    "on-scroll-down": "pamixer -d 5",
+    "tooltip":false
   },
   "custom/power": {
     "tooltip": false,
