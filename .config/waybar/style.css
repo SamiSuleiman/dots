@@ -41,9 +41,9 @@ button {
   transition: all 0.1s;
 }
 
-#custom-notification:hover {
-  padding: 0 10px;
-}
+/* #custom-notification:hover { */
+/*   padding: 0 10px; */
+/* } */
 
 #workspaces button:hover {
   color: @text;
@@ -66,7 +66,7 @@ button {
 #workspaces button.active {
   color: @orange;
   /* background-color: @highlightMid; */
-  padding: 0 8px;
+  /* padding: 0 8px; */
   /* border-bottom: 1px solid @orange; */
 }
 
