@@ -79,7 +79,7 @@ set -gx LSCOLORS ExGxBxDxCxEgEdxbxgxcxd
 set -g fish_key_bindings fish_vi_key_bindings
 bind -M insert \cc kill-whole-line repaint
 set fish_cursor_default block
-set fish_cursor_insert line
+set fish_cursor_insert block
 set fish_cursor_replace_one block
 set fish_cursor_replace block
 set fish_cursor_external block
