@@ -32,12 +32,19 @@ function tmux_pane_exists() {
   fi
 }
 
+function tmux_display_message() {
+  local message="$1"
+
+  if tmux run 2>/dev/null; then
+    tmux display-message "${message}" &> /dev/null
+  fi
+}
+
 function save() {
   local tmux_state=$(tmux lsp -aF '#{session_name}>#{window_index}>#{window_name}>#{window_layout}>#{pane_index}>#{pane_current_command}>#{pane_current_path}')
-
   mkdir -p $(dirname "${remux_state_file}")
-
   printf "${tmux_state}" > "${remux_state_file}"
+  tmux_display_message "Saved Tmux state."
 }
 
 function restore() {
@@ -52,6 +59,8 @@ function restore() {
     echo "No remux save found"
     exit 1
   fi
+
+  tmux_display_message "Restoring Tmux state..."
 
   while IFS= read -r line; do
     local session_name=$(echo "$line" | cut -d'>' -f1)
@@ -79,16 +88,20 @@ function restore() {
   done <<< "${remux_state}"
 }
 
-while getopts ":sr" opt; do
-  case $opt in
-    s)
-      save
-      ;;
-    r)
-      restore
-      ;;
-    *)
-      echo "Invalid option: -$OPTARG" >&2
-      ;;
-  esac
-done
+COMMAND=$1
+
+case $COMMAND in
+  [sS] | save)
+    save
+    ;;
+  [rR] | restore)
+    restore
+    ;;
+  [dD] | dump)
+    [[ -f "${remux_state_file}" ]] && cat "${remux_state_file}" || echo "No remux save found"
+    ;;
+  *)
+    echo "Usage: remux [save|restore]"
+    exit 1
+    ;;
+esac
