@@ -47,8 +47,8 @@ input "type:keyboard" {
 
 output * bg ./wall.png fill
 
-output HDMI-A-1 resolution 1920x1080 position 1920,0
-output eDP-1 disable
+# output HDMI-A-1 resolution 1920x1080 position 1920,0
+# output eDP-1 disable
 
 exec wl-paste --type text --watch cliphist store
 exec wl-paste --type image --watch cliphist store
@@ -177,7 +177,7 @@ bindsym $mod+r mode "resize"
 
 bar {
     position bottom
-    status_command while ~/.config/sway/status.sh; do sleep 1; done
+    # status_command while ~/.config/sway/status.sh; do sleep 2; done
     # status_command while ~/.config/sway/sss.mjs; do sleep 1; done
     colors {
         statusline $cl_fore
