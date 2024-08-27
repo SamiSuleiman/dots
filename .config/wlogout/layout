@@ -1,12 +1,12 @@
 {
     "label" : "lock",
-    "action" : "swaylock",
+    "action" : "~/.config/swaylock/launch",
     "text" : "Lock",
     "keybind" : "l"
 }
 {
     "label" : "logout",
-    "action" : "swaylock",
+    "action" : "swaymsg exit",
     "text" : "Logout",
     "keybind" : "e"
 }

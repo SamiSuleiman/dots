@@ -63,7 +63,8 @@ button {
   color: @highlightHigh;
 }
 
-#workspaces button.active {
+#workspaces button.active,
+#workspaces button.focused {
   color: @orange;
   /* background-color: @highlightMid; */
   /* padding: 0 8px; */

@@ -7,7 +7,10 @@
     "custom/power",
     "custom/notification",
     // "custom/weather",
-    "hyprland/language",
+    // "hyprland/language",
+    "sway/language",
+    "sway/mode",
+    "sway/workspaces",
     "custom/separator",
     "hyprland/workspaces",
     "tray"
@@ -69,6 +72,11 @@
     "tooltip": false
   },
 
+  "sway/mode": {
+    "format": "{}",
+    "max-length": 50
+  },
+
   "cpu": {
     "interval": 10,
     "format": "        {}%",
@@ -94,6 +102,11 @@
     "format": "{short} {variant}"
   },
 
+  "sway/language": {
+    "format": "{short} {variant}",
+    "on-click": "swaymsg input type:keyboard xkb_switch_layout next",
+  },
+
   "mpris": {
     "max-length": 20,
     "format": "{player_icon} {title} | {artist}",
@@ -110,6 +123,8 @@
     "device": "intel_backlight",
     "format": "{icon}      {percent}%",
     "format-icons": ["", "󰃠"],
+    "on-scroll-up": "brightnessctl s +5%",
+    "on-scroll-down": "brightnessctl s 5%-",
     "tooltip": false
   },
 
@@ -132,6 +147,23 @@
     "tooltip-format-connected": " {device_enumerate}",
     "tooltip-format-enumerate-connected": "{device_alias} - {device_battery_percentage}% 󱈑",
     "on-click": "rofi-bluetooth &"
+  },
+
+  "sway/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    // "format": "{name}: {icon}",
+    // "format-icons": {
+    //   "1": "",
+    //   "2": "",
+    //   "3": "",
+    //   "4": "",
+    //   "5": "",
+    //   "urgent": "",
+    //   "focused": "",
+    //   "default": "",
+    //   "high-priority-named": ["1", "2"]
+    // }
   },
 
   "hyprland/workspaces": {
