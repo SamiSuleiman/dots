@@ -7,6 +7,7 @@ gsettings set org.gnome.desktop.wm.preferences audible-bell false
 gsettings set org.gnome.desktop.interface color-scheme \'prefer-dark\'
 gsettings set org.gnome.desktop.interface show-battery-percentage true
 gsettings set org.gnome.desktop.interface enable-hot-corners false
+gsettings set org.gnome.mutter dynamic-workspaces false
 
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-1 \[\'\<Control\>1\'\]
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-2 \[\'\<Control\>2\'\]
