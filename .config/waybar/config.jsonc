@@ -134,7 +134,7 @@
     "max-length": 10,
     "tooltip": true,
     "tooltip-format": "Memory - {used:0.1f}GB used - {}%",
-    "on-click": "kitty --start-as=fullscreen --title btop sh -c 'btop'"
+    "on-click": "foot --fullscreen --title btop sh -c 'btop'"
   },
   "hyprland/window": {
     "separate-outputs": true
