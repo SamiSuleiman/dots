@@ -65,7 +65,7 @@ button {
 
 #workspaces button.active,
 #workspaces button.focused {
-  color: @orange;
+  color: @fg;
   /* background-color: @highlightMid; */
   /* padding: 0 8px; */
   /* border-bottom: 1px solid @orange; */

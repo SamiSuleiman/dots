@@ -20,9 +20,10 @@ set $cl_back #17191A
 set $cl_fore #f9f5d7
 set $cl_urge #cc241d
 set $cl_oran #d65d0e
+set $cl_white #ffffff
 
 # Colors                border   bg       text     indi
-client.focused          $cl_oran $cl_oran $cl_oran $cl_oran
+client.focused          $cl_white $cl_white $cl_white $cl_white
 # client.focused_inactive $cl_back $cl_back $cl_fore $cl_back
 client.unfocused        $cl_back $cl_back $cl_fore $cl_back
 client.urgent           $cl_urge $cl_urge $cl_fore $cl_urge

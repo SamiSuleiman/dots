@@ -8,16 +8,13 @@ window {
 }
 
 button {
-  /* border-radius: 6px; */
-  border-radius: 0px;
-  color: #ebdbb2;
-  background-color: #1e1e1e;
+  color: #ffffff;
+  background-color: #000000;
   background-repeat: no-repeat;
   background-position: center;
   background-size: 9%;
   border: none;
-  margin: 3px;
-  background-color: rgba(40, 40, 40, 0.3);
+  margin: 4px;
 }
 
 button:focus,
