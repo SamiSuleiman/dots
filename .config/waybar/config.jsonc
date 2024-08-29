@@ -1,7 +1,7 @@
 {
   "layer": "top",
-  "position": "top",
-  "height": 20,
+  "position": "bottom",
+  "height": 25,
   // "spacing": 4,
   "modules-left": [
     "custom/power",

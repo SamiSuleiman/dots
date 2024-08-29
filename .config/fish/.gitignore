@@ -98,3 +98,5 @@ target/
 /.cache
 fish_variables
 *.tmp.*
+functions
+completions
