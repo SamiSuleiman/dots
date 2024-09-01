@@ -79,6 +79,6 @@ hide_edge_borders smart
 # gaps inner 10
 # gaps outer 10
 
-include /etc/sway/config.d/*
 include ./binds.conf
 include ./execs.conf
+include /etc/sway/config.d/*
