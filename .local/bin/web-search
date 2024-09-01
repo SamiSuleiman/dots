@@ -19,6 +19,7 @@ URLS=(
   ["cimaleek"]="https://m.cimaleek.to/?s="
   ["egydead"]="https://egydead.space/?s="
   ["reddit"]="https://www.reddit.com/search/?q="
+  ["debian"]="https://wiki.debian.org/FrontPage?action=fullsearch&context=180&fullsearch=Text&value="
   ["aur"]="https://aur.archlinux.org/packages?K="
 )
 
@@ -30,10 +31,10 @@ gen_list() {
 }
 
 main() {
-  platform=$( (gen_list) | rofi -dmenu -matching fuzzy -no-custom -location 7 -p "󰖟 " )
+  platform=$( (gen_list) | wofi --dmenu -matching fuzzy)
 
   if [[ -n "$platform" ]]; then
-    query=$( (echo ) | rofi  -dmenu -matching fuzzy -location 7 -p "󰜏 " )
+    query=$( (echo ) | wofi  --dmenu -matching fuzzy)
 
     if [[ -n "$query" ]]; then
       url=${URLS[$platform]}$query

@@ -1,7 +1,8 @@
 /* Base color for the theme, dependent on whether it's a light theme or not */
 @media (prefers-color-scheme: dark) {
   :root {
-    --accent-color: #17191a;
+    /* --accent-color: #17191a; */
+    --accent-color: #000000;
 
     * {
       border-radius: 0px !important;

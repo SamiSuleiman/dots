@@ -10,6 +10,7 @@ set $lock ~/.config/swaylock/launch
 set $bluetoothCtl ~/.local/bin/wofi-bluetooth
 set $networkCtl ~/.local/bin/networkmanager_dmenu
 set $screenshot ~/.local/bin/sway-screenshot
+set $webSearch ~/.local/bin/web-search
 set $notifications swaync
 
 include /etc/sway/config-vars.d/*
