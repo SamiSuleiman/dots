@@ -9,3 +9,4 @@ bindkey "^[[1;5B" backward-kill-word
 bindkey "^[[1;3C" end-of-line
 bindkey "^[[1;3D" beginning-of-line
 bindkey "^[[1;3B" backward-kill-line
+bindkey '^[[Z' reverse-menu-complete

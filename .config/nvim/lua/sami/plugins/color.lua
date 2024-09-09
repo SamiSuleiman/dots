@@ -72,6 +72,12 @@ return {
         transparent_mode = true,
       }
       vim.cmd 'colorscheme gruvbox'
+      -- change all background to black
+      vim.api.nvim_set_hl(0, 'Normal', { bg = 'NONE' })
+      vim.api.nvim_set_hl(0, 'SignColumn', { bg = 'NONE' })
+      vim.api.nvim_set_hl(0, 'VertSplit', { bg = 'NONE' })
+      vim.api.nvim_set_hl(0, 'StatusLine', { bg = 'NONE' })
+      vim.api.nvim_set_hl(0, 'StatusLineNC', { bg = 'NONE'})
 
       -- vim.api.nvim_set_hl(0, '@variable', { bg = 'NONE' })
       -- vim.api.nvim_set_hl(0, '@property', { bg = 'NONE' })

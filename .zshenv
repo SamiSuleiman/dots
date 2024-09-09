@@ -7,10 +7,18 @@ export PATH=/opt/homebrew/bin:$PATH
 export NOTES_DIR="$HOME/the/antenna/"
 export DOTNET_ROOT=/usr/local/share/dotnet
 export BAT_THEME="gruvbox-dark"
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
+export EDITOR=nvim
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_CACHE_HOME=$HOME/.cache
+export XDG_DATA_HOME=$HOME/.local/share
+export XDG_STATE_HOME=$HOME/.local/state
+export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc
+export XDG_PICTURES_DIR=$HOME/Pictures
 
 source $ZDOTDIR/.zshrc
-. "$HOME/.cargo/env"
-source $NVM_DIR/nvm.sh
+[ -f $NVM_DIR/nvm.sh ] && source $NVM_DIR/nvm.sh
+[ -f $HOME/.cargo/env ] && source "$HOME/.cargo/env"
 
 export PNPM_HOME="/home/sami/.local/share/pnpm"
 case ":$PATH:" in

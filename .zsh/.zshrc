@@ -1,5 +1,16 @@
-bold=$(tput bold)
-normal=$(tput sgr0)
+git_info() {
+  if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+    branch=$(git symbolic-ref --short HEAD 2>/dev/null || git rev-parse --short HEAD 2>/dev/null)
+    git_status=$(git status --porcelain 2>/dev/null)
+    changes=""
+
+    [[ -n $(echo "$git_status" | grep '^\?\?') ]] && changes+="?"
+    [[ -n $(echo "$git_status" | grep '^ M') ]] && changes+="+"
+    [[ -n $(echo "$git_status" | grep '^A') ]] && changes+="*"
+
+    echo "($branch$changes)"
+  fi
+}
 
 HISTFILE=~/.zsh/.zsh_history
 HISTSIZE=10000
@@ -44,28 +55,23 @@ unsetopt LIST_BEEP
 unsetopt HIST_BEEP
 unsetopt BEEP
 
-source <(ng completion script)
-
 source  ${ZDOTDIR:-$HOME}/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source  ${ZDOTDIR:-$HOME}/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source  ${ZDOTDIR:-$HOME}/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 
 source ${ZDOTDIR:-$HOME}/.binds.zsh
 
-else
-    echo 'Unknown OS!'
-fi
-
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 # disabling highlight on paste 
 zle_bracketed_paste=()
 
-RED='\033[0;31m'
-NC='\033[0m' # No Color
 
-# eval "$(starship init zsh)"
-if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
-    eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/base.toml)"
-fi
+autoload -U colors && colors
+
+
+# PS1='%B%{$fg[white]%}[%{$fg[blue]%}%n%{$fg[white]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[white]%}]%{$fg[cyan]%}$(git_info)%{$reset_color%}$%b '
+PROMPT='%B%{$fg[white]%}[%{$fg[blue]%}%n%{$fg[white]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[white]%}]%{$fg[cyan]%}$(git_info)%{$reset_color%}%b 
+$ '
+
 eval "$(zoxide init zsh)"
