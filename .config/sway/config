@@ -76,9 +76,9 @@ default_border pixel 2
 # default_floating_border 1 pixel
 hide_edge_borders smart
 
-# smart_gaps off
-# gaps inner 10
-# gaps outer 10
+# set $smart_gaps on
+gaps inner 3
+gaps outer 3
 
 include ./binds.conf
 include ./execs.conf
