@@ -2,7 +2,14 @@
 
 set -euo pipefail
 
-remux_state_file=~/.local/share/remux.txt
+REMUX_STATE_FILE=~/.local/share/remux.txt
+[ -z "${REMUX_COMMANDS_TO_IGNORE+x}" ] && REMUX_COMMANDS_TO_IGNORE=("bash" "zsh" "fish" "tmux" "sh" "ssh")
+
+function print_help(){
+  printf "Usage: remux [(s)ave | (r)estore | (d)ump]\n"
+  printf "Configuration environment variables:\n"
+  printf "    - REMUX_COMMANDS_TO_IGNORE: A list of commands to ignore when restoring panes. Default: \"bash zsh fish tmux sh ssh\"\n"
+}
 
 function tmux_session_exists() {
   local session_name=${1}
@@ -42,18 +49,18 @@ function tmux_display_message() {
 
 function save() {
   local tmux_state=$(tmux lsp -aF '#{session_name}>#{window_index}>#{window_name}>#{window_layout}>#{pane_index}>#{pane_current_command}>#{pane_current_path}')
-  mkdir -p $(dirname "${remux_state_file}")
-  printf "${tmux_state}" > "${remux_state_file}"
+  mkdir -p $(dirname "${REMUX_STATE_FILE}")
+  printf "${tmux_state}" > "${REMUX_STATE_FILE}"
   tmux_display_message "Saved Tmux state."
 }
 
 function restore() {
-  if [ ! -f "${remux_state_file}" ]; then
+  if [ ! -f "${REMUX_STATE_FILE}" ]; then
     echo "No remux save found"
     exit 1
   fi
 
-  local remux_state=$(<"${remux_state_file}")
+  local remux_state=$(<"${REMUX_STATE_FILE}")
 
   if [ -z "${remux_state}" ]; then
     echo "No remux save found"
@@ -68,8 +75,10 @@ function restore() {
     local window_name=$(echo "$line" | cut -d'>' -f3)
     local window_layout=$(echo "$line" | cut -d'>' -f4)
     local pane_index=$(echo "$line" | cut -d'>' -f5)
-    local pane_command=$(echo "$line" | cut -d'>' -f6)
+    local pane_command=$(echo "$line" | cut -d'>' -f6 | grep -vE "$(IFS="|"; echo "${REMUX_COMMANDS_TO_IGNORE[*]}")")
     local pane_path=$(echo "$line" | cut -d'>' -f7)
+
+    echo $pane_command
 
     if ! tmux_session_exists ${session_name}; then
       tmux new-session -d -s ${session_name}
@@ -83,14 +92,22 @@ function restore() {
       tmux split-window -d -t ${session_name}:${window_index} -c ${pane_path} -l 1 -v
       tmux select-layout -t ${session_name}:${window_index} ${window_layout}
     else
-      tmux send-keys -t ${session_name}:${window_index}.${pane_index} "cd ${pane_path}" Enter
+      tmux send-keys -t ${session_name}:${window_index}.${pane_index} "cd ${pane_path}" Enter c-l
+    fi
+    if [ -n "${pane_command}" ]; then
+      tmux send-keys -t ${session_name}:${window_index}.${pane_index} "${pane_command}" Enter c-l
     fi
   done <<< "${remux_state}"
 }
 
-COMMAND=$1
+if [ "$#" -eq 0 ]; then
+    print_help
+    exit 1
+fi
 
-case $COMMAND in
+command=$1
+
+case $command in
   [sS] | save)
     save
     ;;
@@ -98,10 +115,10 @@ case $COMMAND in
     restore
     ;;
   [dD] | dump)
-    [[ -f "${remux_state_file}" ]] && cat "${remux_state_file}" || echo "No remux save found"
+    [[ -f "${REMUX_STATE_FILE}" ]] && cat "${REMUX_STATE_FILE}" || echo "No remux save found"
     ;;
   *)
-    echo "Usage: remux [save|restore]"
+    print_help
     exit 1
     ;;
 esac

@@ -32,3 +32,10 @@ alias v='nvim'
 alias myip="curl http://ipecho.net/plain; echo"
 
 alias code='codium'
+
+# fzf
+alias fcd='cd $(find . -type d | fzf)'
+fhist(){
+  local chosen_command=$(cat ~/.zsh/.zsh_history | cut -d';' -f 2 | fzf --tac)
+  eval $chosen_command
+}

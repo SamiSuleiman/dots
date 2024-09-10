@@ -1,10 +1,7 @@
+export PATH=$PATH:$HOME/.dotnet:$HOME/.dotnet/tools:$HOME/.local/bin:/home/$(whoami)/.local/share/pnpm:/usr/local/go/bin:$HOME/.config/lf:/opt/nvim/:/opt/nvim-linux64/bin
+
 export DOTNET_ROOT=$HOME/.dotnet
-export PATH=$PATH:$HOME/.dotnet:$HOME/.dotnet/tools:$HOME/.local/bin:/home/$(whoami)/.local/share/pnpm:/usr/local/go/bin:$HOME/.config/lf
 export ZDOTDIR=$HOME/.zsh
-export NNN_PLUG='f:finder;o:fzopen;p:mocq;d:diffs;t:nmount;v:imgview'
-export PATH="$PATH:/opt/nvim/"
-export PATH=/opt/homebrew/bin:$PATH
-export NOTES_DIR="$HOME/the/antenna/"
 export DOTNET_ROOT=/usr/local/share/dotnet
 export BAT_THEME="gruvbox-dark"
 export DOTNET_CLI_TELEMETRY_OPTOUT=1
