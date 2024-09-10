@@ -21,7 +21,7 @@ alias t='tmux new-session -A -s'
 alias tls='tmux ls'
 alias tk='tmux kill-session -t'
 alias ta='tmux attach-session -d'
-alias tr='function _tmux_rename_session() { tmux rename-session -t $1 $2 }; _tmux_rename_session'
+alias tr='tmux rename-session -t'
 
 # ytdl
 alias ytdl='yt-dlp'
