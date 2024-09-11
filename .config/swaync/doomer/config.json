@@ -1,36 +1,36 @@
 {
   "$schema": "/etc/xdg/swaync/configSchema.json",
+
   "positionX": "left",
-  "positionY": "bottom",
+  "positionY": "top",
+  "control-center-positionX": "none",
+  "control-center-positionY": "none",
+  "control-center-margin-top": 8,
+  "control-center-margin-bottom": 8,
+  "control-center-margin-right": 8,
+  "control-center-margin-left": 8,
+  "control-center-width": 500,
+  "control-center-height": 600,
+  "fit-to-screen": true,
+  "layer-shell": true,
   "layer": "overlay",
-  "control-center-margin-top": 10,
-  "control-center-margin-bottom": 10,
-  "control-center-margin-right": 10,
-  "control-center-margin-left": 10,
+  "control-center-layer": "overlay",
+  "cssPriority": "user",
   "notification-icon-size": 64,
   "notification-body-image-height": 100,
   "notification-body-image-width": 200,
-  "timeout": 3,
-  "timeout-low": 2,
+  "notification-inline-replies": true,
+  "timeout": 10,
+  "timeout-low": 5,
   "timeout-critical": 0,
-  "fit-to-screen": false,
-  "control-center-width": 500,
-  "control-center-height": 1025,
-  "notification-window-width": 440,
+  "notification-window-width": 500,
   "keyboard-shortcuts": true,
-  "image-visibility": "when-available",
-  "transition-time": 0,
+  "image-visibility": "always",
+  "transition-time": 200,
   "hide-on-clear": true,
   "hide-on-action": true,
   "script-fail-notify": true,
-  "widgets": [
-    "title",
-    "dnd",
-    "notifications",
-    "mpris",
-    "volume",
-    "buttons-grid"
-  ],
+  "widgets": ["title", "dnd", "notifications", "mpris", "buttons-grid"],
   "widget-config": {
     "title": {
       "text": "Notification Center",
@@ -47,10 +47,6 @@
     "mpris": {
       "image-size": 96,
       "image-radius": 7
-    },
-    "volume": {
-      "label": "󰕾",
-      "show-per-app": true
     },
     "buttons-grid": {
       "actions": [

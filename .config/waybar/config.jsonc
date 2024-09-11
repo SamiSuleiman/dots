@@ -212,7 +212,6 @@
     // "window-rewrite": {
     //   "title<.*youtube.*>": "",
     //   "class<firefox>": "",
-    //   "kitty": "",
     //   "tauonmb": "",
     // },
     "disable-scroll": true,
@@ -230,7 +229,7 @@
     "return-type": "json",
     "exec": "pacman-updates",
     "exec-if": "exit 0",
-    "on-click": "kitty -e 'paru'; pkill -SIGRTMIN+8 waybar",
+    "on-click": "foot -c 'paru'; pkill -SIGRTMIN+8 waybar",
     "signal": 8
   },
   // "clock": {
@@ -304,10 +303,6 @@
   "custom/firefox": {
     "format": " ",
     "on-click": "firefox"
-  },
-  "custom/kitty": {
-    "format": " ",
-    "on-click": "kitty"
   },
   "custom/signal": {
     "format": " ",

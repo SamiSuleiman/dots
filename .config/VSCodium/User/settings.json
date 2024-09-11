@@ -129,7 +129,7 @@
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.hideOnStartup": "always",
   "workbench.startupEditor": "none",
-  "terminal.external.linuxExec": "kitty",
+  "terminal.external.linuxExec": "foot",
   "workbench.panel.opensMaximized": "always",
   "svelte.enable-ts-plugin": true,
   "editor.bracketPairColorization.enabled": false,

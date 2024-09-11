@@ -26,7 +26,6 @@ alias tr='tmux rename-session -t'
 # ytdl
 alias ytdl='yt-dlp'
 
-alias nvim='TERM=xterm-kitty nvim'
 alias vim='nvim'
 alias v='nvim'
 alias myip="curl http://ipecho.net/plain; echo"

@@ -1,0 +1,16 @@
+* {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 0;
+}
+
+.control-center {
+  background: black;
+}
+
+.control-center .notification-row:focus,
+.control-center .notification-row:hover {
+  opacity: 1;
+  background: black;
+}

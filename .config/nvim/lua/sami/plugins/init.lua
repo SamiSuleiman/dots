@@ -20,7 +20,6 @@ require('lazy').setup({
     require 'sami.plugins.autopairs',
     require 'sami.plugins.whichkey',
     require 'sami.plugins.comment',
-    require 'sami.plugins.tmux',
     require 'sami.plugins.color',
     require 'sami.plugins.statusline',
     require 'sami.plugins.lint',
@@ -42,6 +41,5 @@ require('lazy').setup({
     require 'sami.plugins.md',
     require 'sami.plugins.nx',
     require 'sami.plugins.todo',
-    require 'sami.plugins.flash',
   },
 }, {})

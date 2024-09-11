@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+swaylock\
+  -F\
+  -e\
+  --image ~/.config/swaylock/wall.jpg\
+  --show-keyboard-layout\
+  --font "sans-serif"\
+  --font-size 14\
+  --indicator-thickness 6\
+  --inside-color 00000099\
+  --layout-text-color 00000099\
+  --ring-color 00000099\
+  --ring-clear-color 00000099\
+  --ring-wrong-color 00000099\
+  --separator-color 00000099\
+  --ring-ver-color 00000099\
+  --layout-text-color f9f5d799\
+  --inside-clear-color fabd2f99\
+  --inside-ver-color b1628699\
+  --inside-wrong-color fb493499\
+  --key-hl-color 45858899\
+  --line-color 00000099\
+  --line-caps-lock-color 00000099\
+  --line-clear-color 00000099\
+  --text-clear-color 000000\
+  --text-wrong-color 000000\
+  --text-ver-color 000000\
+  --text-color 000000\
