@@ -72,6 +72,12 @@ return {
         transparent_mode = true,
       }
       vim.cmd 'colorscheme gruvbox'
+      local highlight = vim.api.nvim_set_hl
+
+      --change statlus line background color
+      highlight(0, 'StatusLine', { bg = '#1D2021' })
+      highlight(0, 'StatusLineNC', { bg = '#1D2021' })
+
       -- change all background to black
       -- vim.api.nvim_set_hl(0, 'Normal', { bg = 'NONE' })
       -- vim.api.nvim_set_hl(0, 'SignColumn', { bg = 'NONE' })

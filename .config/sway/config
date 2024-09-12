@@ -21,7 +21,7 @@ set $cl_back #17191A
 set $cl_fore #f9f5d7
 set $cl_urge #cc241d
 set $cl_oran #d65d0e
-set $cl_white #ffffff
+set $cl_white #ebdbb2
 
 # Colors                border   bg       text     indi
 client.focused          $cl_white $cl_white $cl_white $cl_white

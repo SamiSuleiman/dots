@@ -1,24 +1,27 @@
 {
   "layer": "top",
-  "position": "bottom",
-  "height": 25,
+  "position": "top",
+  "height": 30,
   // "spacing": 4,
   "modules-left": [
     "custom/power",
     "custom/notification",
+    "custom/apt",
     // "custom/weather",
     // "hyprland/language",
+    "custom/separator",
     "sway/language",
     "sway/mode",
+    "custom/separator",
     "sway/workspaces",
     "custom/separator",
-    "hyprland/workspaces",
+    // "hyprland/workspaces",
     "tray"
     // "custom/apps",
   ],
   "modules-center": ["clock"],
   "modules-right": [
-    "custom/pacman",
+    // "custom/pacman",
     "mpris",
     "pulseaudio",
     "backlight",
@@ -223,6 +226,20 @@
   "tray": {
     // "icon-size": 21,
     "spacing": 10
+  },
+  "custom/apt": {
+    "exec": "apt-updates",
+    "on-click": "apt-updates",
+    "on-click-right": "foot sudo nala upgrade --update",
+    "interval": 900,
+    "return-type": "json",
+    "format": "{} {icon}",
+    "format-icons": {
+      "has-updates": "󰚰 ",
+      "updated": " "
+    },
+    "tooltip": true,
+    "tooltip-format": "{nala list --upgradable | grep '^[a-zA-Z]'} updates available",
   },
   "custom/pacman": {
     "interval": 3600,
