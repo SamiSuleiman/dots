@@ -1,1 +1,2 @@
 --cookies-from-browser firefox
+-o %(title)s.%(ext)s
