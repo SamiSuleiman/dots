@@ -4,7 +4,7 @@
     "metrics": false
   },
   "ui_font_family": "Noto Sans",
-  "buffer_font_family": "Berkeley Mono",
+  "buffer_font_family": "Cascadia Code NF",
   "ui_font_size": 16,
   "buffer_line_height": "comfortable",
   "buffer_font_size": 16,
