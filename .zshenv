@@ -12,9 +12,9 @@ export XDG_DATA_HOME=$HOME/.local/share
 export XDG_STATE_HOME=$HOME/.local/state
 export RIPGREP_CONFIG_PATH=$HOME/.ripgreprc
 export XDG_PICTURES_DIR=$HOME/Pictures
-
+export NVM_DIR="$HOME/.config/nvm"
 source $ZDOTDIR/.zshrc
-[ -f $NVM_DIR/nvm.sh ] && source $NVM_DIR/nvm.sh
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 [ -f $HOME/.cargo/env ] && source "$HOME/.cargo/env"
 
 export PNPM_HOME="/home/sami/.local/share/pnpm"
@@ -22,9 +22,6 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 export LF_ICONS="\
 tw=:\

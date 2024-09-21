@@ -164,11 +164,11 @@
   },
   "window.titleBarStyle": "custom",
   "workbench.layoutControl.type": "menu",
-  "workbench.colorTheme": "Gruvbox Dark Hard",
   "workbench.productIconTheme": "fluent-icons",
   "symbols.hidesExplorerArrows": false,
   "workbench.iconTheme": "file-icons",
   "window.density.editorTabHeight": "compact",
   "window.menuBarVisibility": "hidden",
-  "workbench.sideBar.location": "right"
+  "workbench.sideBar.location": "right",
+  "workbench.colorTheme": "Gruvbox Dark Hard"
 }
