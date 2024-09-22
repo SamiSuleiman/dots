@@ -18,3 +18,10 @@ desktops=1af9f860-f14c-413f-99ab-f60eb49d71aa
 desktopsrule=3
 wmclass=foot
 wmclassmatch=1
+
+[signal]
+Description=signal
+desktops=7c525ff8-827c-4787-a78c-29f2235e89df
+desktopsrule=3
+wmclass=signal
+wmclassmatch=2
