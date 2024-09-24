@@ -47,9 +47,9 @@ Switch to Desktop 16=
 Switch to Desktop 17=
 Switch to Desktop 18=
 Switch to Desktop 19=
-Switch to Desktop 2=Meta+2; Ctrl+F2
+Switch to Desktop 2=Ctrl+F2; Meta+2
 Switch to Desktop 20=
-Switch to Desktop 3=Ctrl+F3; Meta+3
+Switch to Desktop 3=Meta+3; Ctrl+F3
 Switch to Desktop 4=Ctrl+F4; Meta+4
 Switch to Desktop 5=Meta+5
 Switch to Desktop 6=Meta+6
@@ -160,5 +160,12 @@ Window to Screen 5=
 Window to Screen 6=
 Window to Screen 7=
 view_actual_size=
-view_zoom_in=Meta++; Meta+=
+view_zoom_in=Meta+=; Meta++
 view_zoom_out=Meta+-
+
+[org.kde.dolphin.desktop][Global Shortcuts]
+_launch=Meta+E
+
+[org.kde.krunner.desktop][Global Shortcuts]
+RunClipboard=Alt+Shift+F2
+_launch=Meta+Space
