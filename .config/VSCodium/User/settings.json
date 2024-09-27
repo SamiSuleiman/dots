@@ -5,7 +5,7 @@
   //"editor.lineHeight": 2.0,
   "editor.fontSize": 14,
   // "editor.fontWeight": "350",
-  "editor.fontLigatures": true,
+  "editor.fontLigatures": false,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.smoothScrolling": true,
   "editor.formatOnSave": true,

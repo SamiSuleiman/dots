@@ -3,6 +3,9 @@ _launch=Meta+W
 new-private-window=
 new-window=
 
+[firefox-esr.desktop][Global Shortcuts]
+_launch=Meta+W
+
 [foot.desktop][Global Shortcuts]
 _launch=Meta+Return
 
@@ -11,7 +14,7 @@ Activate Window Demanding Attention=Meta+Ctrl+A
 Decrease Opacity=
 Edit Tiles=Meta+T
 Expose=Ctrl+F9
-ExposeAll=Ctrl+F10; Launch (C)
+ExposeAll=Launch (C); Ctrl+F10
 ExposeClass=Ctrl+F7
 ExposeClassCurrentDesktop=
 Increase Opacity=
@@ -93,7 +96,7 @@ Window Fullscreen=
 Window Grow Horizontal=
 Window Grow Vertical=
 Window Lower=
-Window Maximize=Meta+F; Meta+PgUp
+Window Maximize=Meta+PgUp; Meta+F
 Window Maximize Horizontal=
 Window Maximize Vertical=
 Window Minimize=Meta+PgDown
