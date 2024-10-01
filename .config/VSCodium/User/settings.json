@@ -1,13 +1,12 @@
 {
   "editor.cursorStyle": "block",
   "editor.fontFamily": "monospace",
-  // الخط الافتراضي للكود
   //"editor.lineHeight": 2.0,
   "editor.fontSize": 14,
   // "editor.fontWeight": "350",
   "editor.fontLigatures": false,
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "off",
+  "editor.smoothScrolling": false,
   "editor.formatOnSave": true,
   "editor.suggest.insertMode": "replace",
   "editor.linkedEditing": true,
