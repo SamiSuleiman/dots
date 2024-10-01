@@ -44,7 +44,7 @@
   "editor.lineNumbers": "relative",
   "vim.leader": "<Space>",
   "vim.hlsearch": true,
-  "vim.cursorStylePerMode.insert": "line",
+  "vim.cursorStylePerMode.insert": "block",
   "vim.highlightedyank.enable": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     { "before": ["escape"], "commands": [":nohl"] },
