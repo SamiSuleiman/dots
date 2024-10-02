@@ -130,3 +130,10 @@ done
 # echo -ne '\e[5 q' # Use beam shape cursor on startup.
 # precmd() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
+
+bindkey -s "^h" "history 1\n"
+bindkey -s "^l" "clear\n"
+bindkey '^R' history-incremental-pattern-search-backward
+bindkey -M menuselect '^[[Z' reverse-menu-complete
+# bindkey '^P' history-beginning-search-backward
+# bindkey '^N' history-beginning-search-forward
