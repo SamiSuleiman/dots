@@ -1,6 +1,7 @@
 return {
-  'numToStr/Comment.nvim',
-  enabled = true,
-  opts = {},
-  lazy = false,
+  'echasnovski/mini.comment',
+  version = '*',
+  config = function()
+    require('mini.comment').setup {}
+  end,
 }
