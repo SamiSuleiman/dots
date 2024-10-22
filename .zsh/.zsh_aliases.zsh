@@ -7,11 +7,11 @@ alias bc="bc -ql"
 alias mkd="mkdir -pv"
 alias tp="trash-put"
 alias tpr="trash-restore"
-alias ls="exa"
-alias ll="exa -l"
-alias la="exa -la"
-alias lt="exa -T"
-alias l="exa -l"
+alias ls="exa -F --icons"
+alias ll="exa -lF --icons"
+alias la="exa -laF --icons"
+alias lt="exa -TF --icons"
+alias l="exa -lF --icons"
 alias cat='bat'
 alias grep='grep --color=always'
 
