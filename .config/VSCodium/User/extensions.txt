@@ -1,0 +1,10 @@
+analogjs.vscode-analog
+angular.ng-template
+bradlc.vscode-tailwindcss
+donjayamanne.githistory
+ecmel.vscode-html-css
+github.copilot
+jdinhlife.gruvbox
+svelte.svelte-vscode
+vscodevim.vim
+waderyan.gitblame
