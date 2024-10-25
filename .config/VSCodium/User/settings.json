@@ -118,7 +118,7 @@
   "terminal.integrated.sendKeybindingsToShell": true,
   "explorer.confirmDelete": false,
   "search.defaultViewMode": "tree",
-  "search.mode": "newEditor",
+  "search.mode": "view",
   "search.searchEditor.reusePriorSearchConfiguration": true,
   "search.seedOnFocus": true,
   "search.seedWithNearestWord": true,
