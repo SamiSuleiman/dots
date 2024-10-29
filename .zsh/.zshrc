@@ -73,7 +73,7 @@ bindkey -v
 PROMPT='%B%{$fg[white]%}[%{$fg[blue]%}%n%{$fg[white]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[white]%}]%{$fg[cyan]%}$(git_info)%{$reset_color%}%b 
 $ '
 
-eval "$(zoxide init zsh --cmd cd)"
+eval "$(zoxide init zsh)"
 
 bindkey -v
 
