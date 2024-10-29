@@ -8,3 +8,9 @@ jdinhlife.gruvbox
 svelte.svelte-vscode
 vscodevim.vim
 waderyan.gitblame
+ms-dotnettools.csharp
+ms-dotnettools.csdevkit
+ms-azuretools.vscode-docker
+dbaeumer.vscode-eslint
+pushqrdx.inline-html
+esbenp.prettier-vscode

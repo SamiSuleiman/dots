@@ -168,6 +168,6 @@
   "workbench.iconTheme": "file-icons",
   "window.density.editorTabHeight": "compact",
   "window.menuBarVisibility": "hidden",
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "left",
   "workbench.colorTheme": "Gruvbox Dark Hard"
 }
