@@ -145,7 +145,7 @@
     "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
   },
   {
-    "key": "alt+tab",
+    "key": "ctrl+l",
     "command": "hideSuggestWidget",
     "when": "suggestWidgetVisible && textInputFocus"
   },

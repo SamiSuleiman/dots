@@ -75,8 +75,8 @@ return {
       local highlight = vim.api.nvim_set_hl
 
       --change statlus line background color
-      highlight(0, 'StatusLine', { bg = '#1D2021' })
-      highlight(0, 'StatusLineNC', { bg = '#1D2021' })
+      highlight(0, 'StatusLine', { bg = '#151718' })
+      highlight(0, 'StatusLineNC', { bg = '#151718' })
 
       -- change all background to black
       -- vim.api.nvim_set_hl(0, 'Normal', { bg = 'NONE' })
