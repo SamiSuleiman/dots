@@ -182,10 +182,10 @@
   "window.customTitleBarVisibility": "auto",
   "window.titleBarStyle": "custom",
   "workbench.layoutControl.type": "menu",
-  "workbench.productIconTheme": "fluent-icons",
   "symbols.hidesExplorerArrows": false,
-  "workbench.iconTheme": "file-icons",
   "window.density.editorTabHeight": "compact",
   "window.menuBarVisibility": "hidden",
-  "workbench.sideBar.location": "left"
+  "workbench.sideBar.location": "left",
+  "workbench.productIconTheme": "fluent-icons",
+  "workbench.iconTheme": "file-icons"
 }

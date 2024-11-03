@@ -15,3 +15,5 @@ dbaeumer.vscode-eslint
 pushqrdx.inline-html
 esbenp.prettier-vscode
 csharpier.csharpier-vscode
+file-icons.file-icons
+miguelsolorio.fluent-icons
