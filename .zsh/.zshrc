@@ -73,8 +73,6 @@ bindkey -v
 PROMPT='%B%{$fg[white]%}[%{$fg[blue]%}%n%{$fg[white]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[white]%}]%{$fg[cyan]%}$(git_info)%{$reset_color%}%b 
 $ '
 
-eval "$(zoxide init zsh)"
-
 bindkey -v
 
 KEYTIMEOUT=1
@@ -137,3 +135,6 @@ bindkey '^R' history-incremental-pattern-search-backward
 bindkey -M menuselect '^[[Z' reverse-menu-complete
 # bindkey '^P' history-beginning-search-backward
 # bindkey '^N' history-beginning-search-forward
+
+eval "$(zoxide init zsh --cmd cd)"
+
