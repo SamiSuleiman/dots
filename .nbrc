@@ -13,7 +13,6 @@
 # https://github.com/xwmx/nb
 ###############################################################################
 
-export EDITOR="nvim" # Set by `nb` • Thu Apr  4 11:07:29 CEST 2024
 
 export NB_AUTO_SYNC="${NB_AUTO_SYNC:-0}" # Set by `nb` • Thu Apr  4 11:10:35 CEST 2024
 
@@ -28,3 +27,5 @@ export  NB_INDICATOR_PINNED="󰐃"
 export  NB_INDICATOR_TODO="✔️ "
 export  NB_INDICATOR_TODO_DONE="✅"
 export  NB_INDICATOR_VIDEO="📹"
+
+export EDITOR="codium" # Set by `nb` • Sat Nov 23 11:10:08 CET 2024
