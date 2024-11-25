@@ -106,10 +106,6 @@
   "files.associations": {
     "*.css": "tailwindcss"
   },
-  //
-
-  // colors
-  "workbench.colorTheme": "Gruvbox Dark Hard",
   "workbench.colorCustomizations": {
     "[Gruvbox Dark Hard]": {
       "sideBar.background": "#151718",
@@ -187,5 +183,6 @@
   "window.menuBarVisibility": "hidden",
   "workbench.sideBar.location": "left",
   "workbench.productIconTheme": "fluent-icons",
-  "workbench.iconTheme": "file-icons"
+  "workbench.iconTheme": "file-icons",
+  "workbench.colorTheme": "Gruvbox Dark Hard"
 }
