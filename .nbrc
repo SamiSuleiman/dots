@@ -28,4 +28,4 @@ export  NB_INDICATOR_TODO="✔️ "
 export  NB_INDICATOR_TODO_DONE="✅"
 export  NB_INDICATOR_VIDEO="📹"
 
-export EDITOR="codium" # Set by `nb` • Sat Nov 23 11:10:08 CET 2024
+export EDITOR="nvim" # Set by `nb` • Sun Dec  1 16:14:26 CET 2024
