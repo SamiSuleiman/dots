@@ -2,7 +2,7 @@ return {
   {
     'ellisonleao/gruvbox.nvim',
     priority = 1000,
-    enabled = true,
+    enabled = false,
     config = function()
       require('gruvbox').setup {
         terminal_colors = true, -- add neovim terminal colors
@@ -59,6 +59,19 @@ return {
       -- vim.api.nvim_set_hl(0, 'CopilotSuggestion', { bg = 'NONE' })
       -- vim.api.nvim_set_hl(0, 'String', { bg = 'NONE' })
       -- vim.cmd 'highlight clear SignColumn'
+    end,
+  },
+  {
+    'maxmx03/solarized.nvim',
+    lazy = false,
+    priority = 1000,
+    ---@type solarized.config
+    opts = {},
+    config = function(_, opts)
+      vim.o.termguicolors = true
+      vim.o.background = 'dark'
+      require('solarized').setup(opts)
+      vim.cmd.colorscheme 'solarized'
     end,
   },
 }
