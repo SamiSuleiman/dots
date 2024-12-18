@@ -9,7 +9,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   pattern = '*',
 })
 
-local symbols = { Error = 'خ', Info = 'م', Hint = 'ل', Warn = 'ت' }
+local symbols = { Error = 'e', Info = 'i', Hint = 'h', Warn = 'w' }
 
 for name, icon in pairs(symbols) do
   local hl = 'DiagnosticSign' .. name
