@@ -97,8 +97,8 @@
   "disk": {
     "interval": 30,
     "format": "      {percentage_used}%",
-    "path": "/home/sami/medina/",
-    "on-click": "thunar /home/sami/medina/"
+    "path": "/home/sammy/medina/",
+    "on-click": "thunar /home/sammy/medina/"
   },
 
   "hyprland/language": {

@@ -1,10 +1,10 @@
 [include]
-	path = /home/sami/.config/delta/themes.gitconfig
+	path = /home/sammy/.config/delta/themes.gitconfig
 
 [user]
-	name = Sami Suleiman
+	name = Sammy Suleiman
 	email = sulsami@protonmail.com 
-	projects = /home/sami/medina/projs
+	projects = /home/sammy/medina/projs
 
 [alias]
 	recent = "!f() { count=${1-10}; git for-each-ref --count=$count --sort=-committerdate refs/heads --format='%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)' --color=always|column -ts'|'; }; f"

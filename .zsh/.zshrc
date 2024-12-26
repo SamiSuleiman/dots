@@ -160,7 +160,7 @@ export NVM_DIR="$HOME/.config/nvm"
 
 [ -f $HOME/.cargo/env ] && source "$HOME/.cargo/env"
 
-export PNPM_HOME="/home/sami/.local/share/pnpm"
+export PNPM_HOME="/home/sammy/.local/share/pnpm"
 case ":$PATH:" in
 	  *":$PNPM_HOME:"*) ;;
 	    *) export PATH="$PNPM_HOME:$PATH" ;;

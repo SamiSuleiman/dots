@@ -1,5 +1,5 @@
-require 'sami.settings'
-require 'sami.commands'
+require 'sammy.settings'
+require 'sammy.commands'
 
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not vim.loop.fs_stat(lazypath) then
@@ -15,6 +15,6 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-require('lazy').setup 'sami.plugins'
+require('lazy').setup 'sammy.plugins'
 
-require 'sami.keymaps'
+require 'sammy.keymaps'

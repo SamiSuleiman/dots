@@ -1,1 +1,1 @@
-require 'sami'
+require 'sammy'
