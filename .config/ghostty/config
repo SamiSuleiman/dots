@@ -1,0 +1,24 @@
+font-family = Berkeley Mono
+font-style = Regular
+font-size = 12
+font-thicken = true
+
+adjust-underline-position = 40%
+adjust-underline-thickness = -60%
+
+cursor-style = block
+cursor-style-blink = false
+
+
+window-width = 200
+window-height = 45
+window-padding-x = 0
+
+confirm-close-surface = false
+clipboard-paste-protection = false
+unfocused-split-opacity = 1.0
+
+theme = gruvbox-dark-hard
+background = #1d2021
+# foreground = #f4f4ff
+# cursor-color = #ff0078

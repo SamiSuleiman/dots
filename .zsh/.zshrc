@@ -136,7 +136,8 @@ bindkey -M menuselect '^[[Z' reverse-menu-complete
 # bindkey '^P' history-beginning-search-backward
 # bindkey '^N' history-beginning-search-forward
 
-export PATH=$PATH:$HOME/.dotnet:$HOME/.dotnet/tools:$HOME/.local/bin:/home/$(whoami)/.local/share/pnpm:/usr/local/go/bin:$HOME/.config/lf:/opt/nvim/:/opt/nvim-linux64/bin:$HOME/.config/emacs/bin
+export LC_ALL="en_US.UTF-8"
+export PATH=$PATH:$HOME/.dotnet:$HOME/.dotnet/tools:$HOME/.local/bin:/home/$(whoami)/.local/share/pnpm:/usr/local/go/bin:$HOME/.config/lf:/opt/nvim/:/opt/nvim-linux64/bin:$HOME/.config/emacs/bin:/snap/bin
 
 export DOTNET_ROOT=$HOME/.dotnet
 export ZDOTDIR=$HOME/.zsh
