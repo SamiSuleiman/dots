@@ -2,8 +2,8 @@
   // font stuff
   "editor.cursorStyle": "block",
   "editor.fontFamily": "monospace",
-  "editor.fontSize": 14,
-  "editor.fontLigatures": false,
+  "editor.fontSize": 15,
+  "editor.fontLigatures": true,
   "debug.console.fontFamily": "'monospace'",
   "debug.console.fontSize": 16,
   "terminal.integrated.fontFamily": "'monospace'",
