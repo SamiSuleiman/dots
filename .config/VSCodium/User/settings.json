@@ -182,7 +182,5 @@
   "window.density.editorTabHeight": "default",
   "window.menuBarVisibility": "hidden",
   "workbench.sideBar.location": "left",
-  "workbench.productIconTheme": "fluent-icons",
-  "workbench.iconTheme": "file-icons",
   "workbench.colorTheme": "Gruvbox Dark Hard"
 }
