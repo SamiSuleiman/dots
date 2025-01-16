@@ -15,9 +15,10 @@ return {
     require('telescope').setup {
       defaults = {
         prompt_prefix = ' ',
-        selection_caret = ' ',
+        -- selection_caret = ' ',
+        selection_caret = '❯ ',
         border = true,
-        borderchars = { '─', '│', '─', '│', '┌', '┐', '┘', '└' },
+        -- borderchars = { '─', '│', '─', '│', '┌', '┐', '┘', '└' },
         layout_strategy = 'horizontal',
         layout_config = {
           height = vim.api.nvim_win_get_height(0),
