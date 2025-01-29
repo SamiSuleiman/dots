@@ -13,7 +13,7 @@
   // vim stuff
   "vim.leader": "<Space>",
   "vim.hlsearch": true,
-  "vim.cursorStylePerMode.insert": "line",
+  "vim.cursorStylePerMode.insert": "block",
   "vim.highlightedyank.enable": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     { "before": ["escape"], "commands": [":nohl"] },
@@ -127,8 +127,8 @@
   "editor.linkedEditing": true,
   "editor.renderLineHighlight": "gutter",
   "editor.suggest.insertMode": "replace",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "off",
+  "editor.smoothScrolling": false,
   "editor.roundedSelection": true,
   "editor.minimap.enabled": false,
   "workbench.editor.showIcons": true,
