@@ -21,13 +21,13 @@ return {
         -- borderchars = { '─', '│', '─', '│', '┌', '┐', '┘', '└' },
         layout_strategy = 'horizontal',
         layout_config = {
-          height = vim.api.nvim_win_get_height(0),
-          width = vim.api.nvim_win_get_width(0),
-          prompt_position = 'bottom',
-          preview_width = 0.6,
-          horizontal = {
-            prompt_position = 'bottom',
-          },
+          -- height = vim.api.nvim_win_get_height(0),
+          -- width = vim.api.nvim_win_get_width(0),
+          -- prompt_position = 'bottom',
+          -- preview_width = 0.6,
+          -- horizontal = {
+          --   prompt_position = 'bottom',
+          -- },
         },
         mappings = {
           i = {
