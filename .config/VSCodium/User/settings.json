@@ -180,7 +180,7 @@
   "workbench.layoutControl.type": "menu",
   "symbols.hidesExplorerArrows": false,
   "window.density.editorTabHeight": "default",
-  "window.menuBarVisibility": "hidden",
+  "window.menuBarVisibility": "compact",
   "workbench.sideBar.location": "left",
-  "workbench.colorTheme": "Gruvbox Dark Hard"
+  "workbench.colorTheme": "Gruvbox Dark Medium"
 }

@@ -2,8 +2,8 @@
 # Gruvbox
 
 [colors]
-background=1D2021
-# background=282828
+# background=1D2021
+background=282828
 # background=000000
 foreground=ebdbb2
 regular0=1D2021

@@ -1,4 +1,10 @@
 return {
+  {
+    'supermaven-inc/supermaven-nvim',
+    config = function()
+      require('supermaven-nvim').setup {}
+    end,
+  },
   -- {
   --   'olimorris/codecompanion.nvim',
   --   opts = {
