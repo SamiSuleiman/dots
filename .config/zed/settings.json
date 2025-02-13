@@ -3,18 +3,18 @@
     "diagnostics": false,
     "metrics": false
   },
-  "ui_font_family": "Noto Sans",
-  "buffer_font_family": "Cascadia Code NF",
+  "ui_font_family": "Ubuntu",
+  "buffer_font_family": "Ubuntu Mono",
   "ui_font_size": 16,
-  "buffer_line_height": "comfortable",
-  "buffer_font_size": 16,
+  "buffer_line_height": "standard",
+  "buffer_font_size": 18,
   "theme": {
     "mode": "system",
-    "light": "Gruvbox Dark Hard",
-    "dark": "Gruvbox Dark Hard"
+    "light": "Gruvbox Dark",
+    "dark": "Gruvbox Dark"
   },
   "project_panel": {
-    "dock": "right"
+    "dock": "left"
   },
   "current_line_highlight": "gutter",
   "cursor_blink": false,
@@ -25,7 +25,7 @@
   },
   "terminal": {
     "default_height": 10000,
-    "font_family": "monospace"
+    "font_family": "Ubuntu Mono"
   },
   "relative_line_numbers": true,
   "vim_mode": true,
