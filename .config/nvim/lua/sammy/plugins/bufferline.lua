@@ -4,5 +4,5 @@ return {
   config = function()
     require('mini.tabline').setup {}
   end,
-  enabled = false,
+  enabled = true,
 }

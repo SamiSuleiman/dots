@@ -107,6 +107,36 @@
     "*.css": "tailwindcss"
   },
   "workbench.colorCustomizations": {
+    "[Rosé Pine]": {
+      "activityBar.background": "#161616",
+      "activityBarBadge.foreground": "#161616",
+      "badge.foreground": "#161616",
+      "breadcrumb.background": "#161616",
+      "button.foreground": "#161616",
+      "editor.selectionHighlightBorder": "#161616",
+      "editorGutter.background": "#161616",
+      "editorOverviewRuler.background": "#161616",
+      "extensionBadge.remoteForeground": "#161616",
+      "extensionButton.prominentForeground": "#161616",
+      "sideBar.background": "#161616",
+      "statusBar.background": "#161616",
+      "statusBar.debuggingForeground": "#161616",
+      "statusBar.noFolderBackground": "#161616",
+      "statusBarItem.errorBackground": "#161616",
+      "statusBarItem.remoteBackground": "#161616",
+      "titleBar.activeBackground": "#161616",
+      "walkThrough.embeddedEditorBackground": "#161616",
+      "welcomePage.background": "#161616",
+      "diffEditor.unchangedRegionBackground": "#161616",
+      "extensionButton.foreground": "#161616",
+      "scmGraph.historyItemHoverLabelForeground": "#161616",
+      "sideBarStickyScroll.background": "#161616",
+      "sideBarTitle.background": "#161616",
+      "testing.coverCountBadgeForeground": "#161616",
+      "editor.background": "#161616",
+      "terminal.background": "#161616",
+      "panel.background": "#161616"
+    },
     "[Gruvbox Dark Hard]": {
       "sideBar.background": "#151718",
       "statusBar.background": "#151718",
@@ -182,5 +212,5 @@
   "window.density.editorTabHeight": "default",
   "window.menuBarVisibility": "compact",
   "workbench.sideBar.location": "left",
-  "workbench.colorTheme": "Gruvbox Dark Hard"
+  "workbench.colorTheme": "Rosé Pine"
 }
