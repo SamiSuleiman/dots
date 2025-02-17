@@ -1,8 +1,24 @@
 return {
   {
+    'rose-pine/neovim',
+    name = 'rose-pine',
+    config = function()
+      require('rose-pine').setup {
+        highlight_groups = {
+          Normal = { bg = '#161616' },
+          SignColumn = { bg = '#161616' },
+          VertSplit = { bg = '#161616' },
+          StatusLine = { bg = '#161616' },
+          StatusLineNC = { bg = '#161616' },
+        },
+      }
+      vim.cmd 'colorscheme rose-pine'
+    end,
+  },
+  {
     'ellisonleao/gruvbox.nvim',
     priority = 1000,
-    enabled = true,
+    enabled = false,
     config = function()
       require('gruvbox').setup {
         terminal_colors = true, -- add neovim terminal colors
