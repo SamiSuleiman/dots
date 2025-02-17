@@ -3,7 +3,7 @@ return {
   config = function()
     require('lint').linters_by_ft = {
       markdown = {},
-      typescript = { 'eslint_d' },
+      typescript = { 'eslint' },
     }
     local eslint = require('lint').linters.eslint_d
 
