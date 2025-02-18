@@ -12,12 +12,11 @@ ms-azuretools.vscode-docker
 ms-dotnettools.csdevkit
 ms-dotnettools.csharp
 ms-dotnettools.vscode-dotnet-runtime
+mvllow.rose-pine
 pushqrdx.inline-html
 rapidapi.vscode-rapidapi-client
 rapidapi.vscode-services
 streetsidesoftware.code-spell-checker
-streetsidesoftware.code-spell-checker-arabic
-streetsidesoftware.code-spell-checker-german
 svelte.svelte-vscode
 vscodevim.vim
 waderyan.gitblame
