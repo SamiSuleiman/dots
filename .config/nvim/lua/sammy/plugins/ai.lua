@@ -5,20 +5,6 @@ return {
       require('supermaven-nvim').setup {}
     end,
   },
-  -- {
-  --   'olimorris/codecompanion.nvim',
-  --   opts = {
-  --     sources = {
-  --       per_filetype = {
-  --         codecompanion = { 'codecompanion' },
-  --       },
-  --     },
-  --   },
-  --   dependencies = {
-  --     'nvim-lua/plenary.nvim',
-  --     'nvim-treesitter/nvim-treesitter',
-  --   },
-  -- },
   {
     'github/copilot.vim',
     enabled = false,
