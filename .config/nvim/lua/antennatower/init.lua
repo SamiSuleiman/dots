@@ -1,5 +1,5 @@
-require 'sammy.settings'
-require 'sammy.commands'
+require 'antennatower.settings'
+require 'antennatower.commands'
 
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not vim.loop.fs_stat(lazypath) then
@@ -15,6 +15,6 @@ end
 
 vim.opt.rtp:prepend(lazypath)
 
-require('lazy').setup 'sammy.plugins'
+require('lazy').setup 'antennatower.plugins'
 
-require 'sammy.keymaps'
+require 'antennatower.keymaps'
