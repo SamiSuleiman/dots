@@ -77,7 +77,8 @@ vim.opt.splitright = true
 
 vim.g.netrw_winsize = 20
 vim.g.netrw_banner = 0
-vim.g.netrw_liststyle = 3
+-- vim.g.netrw_liststyle = 3
+vim.g.netrw_winsize = 50
 
 local float = { focusable = true, style = 'minimal', border = 'single' }
 vim.lsp.handlers['textDocument/hover'] = vim.lsp.with(vim.lsp.handlers.hover, float)
