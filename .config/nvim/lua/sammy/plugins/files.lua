@@ -1,5 +1,6 @@
 return {
   'stevearc/oil.nvim',
+  enabled = false,
   dependencies = {
     'yamatsum/nvim-nonicons',
     dependencies = { 'kyazdani42/nvim-web-devicons' },
