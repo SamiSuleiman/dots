@@ -10,6 +10,18 @@ return {
           VertSplit = { bg = '#161616' },
           StatusLine = { bg = '#161616' },
           StatusLineNC = { bg = '#161616' },
+          CurSearch = { fg = 'base', bg = 'leaf', inherit = false },
+          Search = { fg = 'text', bg = 'leaf', blend = 20, inherit = false },
+          TelescopeBorder = { fg = 'surface', bg = '#161616' },
+          TelescopeNormal = { fg = 'subtle', bg = '#161616' },
+          -- TelescopeSelection = { fg = 'text', bg = 'highlight_med' },
+          -- TelescopeSelectionCaret = { fg = 'love', bg = 'highlight_med' },
+          -- TelescopeMultiSelection = { fg = 'text', bg = 'highlight_high' },
+          TelescopeTitle = { fg = 'base', bg = 'love' },
+          TelescopePromptTitle = { fg = 'base', bg = 'pine' },
+          TelescopePreviewTitle = { fg = 'base', bg = 'iris' },
+          TelescopePromptNormal = { fg = 'text', bg = '#161616' },
+          TelescopePromptBorder = { fg = 'surface', bg = '#161616' },
         },
       }
       vim.cmd 'colorscheme rose-pine'

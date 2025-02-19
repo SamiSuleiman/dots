@@ -24,7 +24,7 @@ return {
           height = vim.api.nvim_win_get_height(0),
           width = vim.api.nvim_win_get_width(0),
           -- prompt_position = 'bottom',
-          -- preview_width = 0.6,
+          preview_width = 0.65,
           -- horizontal = {
           --   prompt_position = 'bottom',
           -- },
@@ -74,12 +74,6 @@ return {
         }
       end
     end
-
-    -- vim.api.nvim_set_hl(0, 'TelescopeNormal', { bg = '#1d2021' })
-    -- vim.api.nvim_set_hl(0, 'TelescopeBorder', { bg = '#1d2021' })
-    -- vim.api.nvim_set_hl(0, 'TelescopePromptNormal', { bg = '#1d2021' })
-    -- vim.api.nvim_set_hl(0, 'TelescopePrompt', { bg = '#1d2021' })
-    -- vim.api.nvim_set_hl(0, 'TelescopePromptTitle', { bg = '#1d2021', fg = '#5E81AC' })
 
     vim.api.nvim_create_user_command('LiveGrepGitRoot', live_grep_git_root, {})
     require('telescope').load_extension 'harpoon'
