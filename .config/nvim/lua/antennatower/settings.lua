@@ -75,6 +75,10 @@ vim.g.copilot_assume_mapped = true
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 
+vim.g.netrw_winsize = 20
+vim.g.netrw_banner = 0
+vim.g.netrw_liststyle = 3
+
 local float = { focusable = true, style = 'minimal', border = 'single' }
 vim.lsp.handlers['textDocument/hover'] = vim.lsp.with(vim.lsp.handlers.hover, float)
 vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.with(vim.lsp.handlers.signature_help, float)
