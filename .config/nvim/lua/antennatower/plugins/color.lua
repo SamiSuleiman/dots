@@ -5,23 +5,23 @@ return {
     config = function()
       require('rose-pine').setup {
         highlight_groups = {
-          Normal = { bg = '#161616' },
-          SignColumn = { bg = '#161616' },
-          VertSplit = { bg = '#161616' },
-          StatusLine = { bg = '#161616' },
-          StatusLineNC = { bg = '#161616' },
+          Normal = { bg = '#0d0d0d' },
+          SignColumn = { bg = '#0d0d0d' },
+          VertSplit = { bg = '#0d0d0d' },
+          StatusLine = { bg = '#0d0d0d' },
+          StatusLineNC = { bg = '#0d0d0d' },
           CurSearch = { fg = 'base', bg = 'rose', inherit = false },
           Search = { fg = 'text', bg = 'rose', blend = 20, inherit = false },
-          TelescopeBorder = { fg = 'surface', bg = '#161616' },
-          TelescopeNormal = { fg = 'subtle', bg = '#161616' },
+          TelescopeBorder = { fg = 'surface', bg = '#0d0d0d' },
+          TelescopeNormal = { fg = 'subtle', bg = '#0d0d0d' },
           -- TelescopeSelection = { fg = 'text', bg = 'highlight_med' },
           -- TelescopeSelectionCaret = { fg = 'love', bg = 'highlight_med' },
           -- TelescopeMultiSelection = { fg = 'text', bg = 'highlight_high' },
           TelescopeTitle = { fg = 'base', bg = 'love' },
           TelescopePromptTitle = { fg = 'base', bg = 'pine' },
           TelescopePreviewTitle = { fg = 'base', bg = 'iris' },
-          TelescopePromptNormal = { fg = 'text', bg = '#161616' },
-          TelescopePromptBorder = { fg = 'surface', bg = '#161616' },
+          TelescopePromptNormal = { fg = 'text', bg = '#0d0d0d' },
+          TelescopePromptBorder = { fg = 'surface', bg = '#0d0d0d' },
         },
       }
       vim.cmd 'colorscheme rose-pine'
