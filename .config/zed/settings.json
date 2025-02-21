@@ -1,4 +1,7 @@
 {
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
   "telemetry": {
     "diagnostics": false,
     "metrics": false
@@ -10,8 +13,26 @@
   "buffer_font_size": 16,
   "theme": {
     "mode": "system",
-    "light": "Gruvbox Dark",
-    "dark": "Rosé Pine"
+    "light": "Rosé Pine Dawn",
+    "dark": "Rosé Pine Moon"
+  },
+  "experimental.theme_overrides": {
+    "editor.background": "#0d0d0d",
+    "panel.background": "#0d0d0d",
+    "editor.gutter.background": "#0d0d0d",
+    "tab_bar.background": "#0d0d0d",
+    "title_bar.background": "#0d0d0d",
+    "terminal.background": "#0d0d0d",
+    "toolbar.background": "#0d0d0d",
+    "status_bar.background": "#0d0d0d"
+    // "syntax": {
+    //   "comment": {
+    //     "font_style": "italic"
+    //   },
+    //   "comment.doc": {
+    //     "font_style": "italic"
+    //   }
+    // }
   },
   "project_panel": {
     "dock": "left"
@@ -54,6 +75,12 @@
   },
   "lsp": {},
   "languages": {
+    "TypeScript": {
+      "language_servers": ["angular", "typescript", "html"]
+    },
+    "HTML": {
+      "language_servers": ["angular", "html"]
+    },
     "JavaScript": {
       "code_actions_on_format": {
         "source.fixAll.eslint": false
