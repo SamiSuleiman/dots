@@ -1,11 +1,11 @@
-[shell]
-program = "/bin/zsh"
+# [shell]
+# program = "/bin/zsh"
 
 [window]
 startup_mode = "Windowed"
 title = "Alacritty"
 dynamic_title = true 
-decorations_theme_variant = "None"
+# decorations_theme_variant = "None"
 decorations = "Full"
 #opacity = 0.2
 blur = true
@@ -16,21 +16,21 @@ lines = 100
 
 [font]
 size = 16.0
-
-[font.bold]
-family = "Cascadia Mono NF"
-style = "Bold"
-
-[font.bold_italic]
-family = "Cascadia Mono NF"
-style = "Bold Italic"
-
-[font.italic]
-family = "Cascadia Mono NF"
-style = "Italic"
-
+#
+# [font.bold]
+# family = "Cascadia Mono NF"
+# style = "Bold"
+#
+# [font.bold_italic]
+# family = "Cascadia Mono NF"
+# style = "Bold Italic"
+#
+# [font.italic]
+# family = "Cascadia Mono NF"
+# style = "Italic"
+#
 [font.normal]
-family = "Cascadia Mono NF"
+family = "JetBrains Mono"
 style = "Regular"
 
 [colors]
