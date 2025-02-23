@@ -25,7 +25,7 @@ vim.api.nvim_create_autocmd('LspProgress', {
 vim.api.nvim_create_user_command('Bda', 'bufdo bd', {})
 vim.api.nvim_create_user_command('WW', 'bufdo w ++p', {})
 
-local symbols = { Error = 'e', Info = 'i', Hint = 'h', Warn = 'w' }
+local symbols = { Error = '', Info = '', Hint = '󰋗', Warn = '' }
 
 for name, icon in pairs(symbols) do
   local hl = 'DiagnosticSign' .. name
