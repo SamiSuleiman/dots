@@ -6,6 +6,10 @@ return {
       require('rose-pine').setup {
         palette = {
           -- Override the builtin palette per variant
+          main = {
+            base = '#0d0d0d',
+            surface = '#0d0d0d',
+          },
           moon = {
             base = '#0d0d0d',
             surface = '#0d0d0d',
@@ -13,6 +17,8 @@ return {
         },
         -- this is useless now since we have a custom palette :)))) LETS GOOOOO
         highlight_groups = {
+          SnacksInputPrompt = { bg = 'overlay' },
+          SnacksInputNormal = { bg = 'overlay' },
           -- Normal = { bg = '#0d0d0d' },
           -- SignColumn = { bg = '#0d0d0d' },
           -- VertSplit = { bg = '#0d0d0d' },
