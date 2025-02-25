@@ -1,13 +1,6 @@
 return {
   {
     'williamboman/mason.nvim',
-    opts = {
-      ensure_installed = {
-        'nxls',
-        'stylua',
-        'prettierd',
-      },
-    },
     dependencies = {
       { 'williamboman/mason.nvim', config = true },
       { 'j-hui/fidget.nvim', opts = {} },
@@ -118,12 +111,14 @@ return {
       require('mason-lspconfig').setup()
 
       local servers = {
+        eslint = {},
+        ts_ls = {},
+        omnisharp = {},
         tailwindcss = {},
         angularls = {},
         cssls = {},
         svelte = {},
         clangd = {},
-        -- gopls = {},
         html = { filetypes = { 'html', 'twig', 'hbs' } },
         lua_ls = {
           Lua = {
