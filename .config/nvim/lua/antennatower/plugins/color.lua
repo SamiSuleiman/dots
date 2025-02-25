@@ -11,8 +11,10 @@ return {
             surface = '#0d0d0d',
           },
           moon = {
-            base = '#0d0d0d',
-            surface = '#0d0d0d',
+            -- base = '#0d0d0d',
+            -- surface = '#0d0d0d',
+            base = 'NONE',
+            surface = 'NONE',
           },
         },
         -- this is useless now since we have a custom palette :)))) LETS GOOOOO

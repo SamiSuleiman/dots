@@ -1,89 +1,162 @@
-# [shell]
-# program = "/bin/zsh"
-
 [window]
 startup_mode = "Windowed"
 title = "Alacritty"
 dynamic_title = true 
-# decorations_theme_variant = "None"
-decorations = "Full"
-#opacity = 0.2
-blur = true
-
-[window.dimensions]
-columns = 1000
-lines = 100
+decorations = "none"
 
 [font]
-size = 16.0
-#
-# [font.bold]
-# family = "Cascadia Mono NF"
-# style = "Bold"
-#
-# [font.bold_italic]
-# family = "Cascadia Mono NF"
-# style = "Bold Italic"
-#
-# [font.italic]
-# family = "Cascadia Mono NF"
-# style = "Italic"
-#
+size = 12.0
 [font.normal]
 family = "JetBrains Mono"
 style = "Regular"
 
-[colors]
-  # Default colors
-  # [colors.primary]
-  # background = "0x1d2021"
-  # foreground = "0xebdbb2"
-  #
-  # # Normal colors
-  # [colors.normal]
-  # black   = "0x1d2021"
-  # red     = "0xcc241d"
-  # green   = "0x98971a"
-  # yellow  = "0xd79921"
-  # blue    = "0x458588"
-  # magenta = "0xb16286"
-  # cyan    = "0x689d6a"
-  # white   = "0xa89984"
-  #
-  # # Bright colors
-  # [colors.bright]
-  # black   = "0x928374"
-  # red     = "0xfb4934"
-  # green   = "0xb8bb26"
-  # yellow  = "0xfabd2f"
-  # blue    = "0x83a598"
-  # magenta = "0xd3869b"
-  # cyan    = "0x8ec07c"
-  # white   = "0xebdbb2"
+# COLORS
+## ROSE PINE MOON
+[colors.primary]
+foreground = "#e0def4"
+# background = "#232136"
+background = "#0d0d0d"
+dim_foreground = "#908caa"
+bright_foreground = "#e0def4"
 
-# Solarized Dark
-  [colors.primary]
-  background = '#002b36'
-  foreground = '#839496'
+[colors.cursor]
+text = "#e0def4"
+cursor = "#56526e"
 
-# Normal colors
-  [colors.normal]
-  black   = '#073642'
-  red     = '#dc322f'
-  green   = '#859900'
-  yellow  = '#b58900'
-  blue    = '#268bd2'
-  magenta = '#d33682'
-  cyan    = '#2aa198'
-  white   = '#eee8d5'
+[colors.vi_mode_cursor]
+text = "#e0def4"
+cursor = "#56526e"
 
-# Bright colors
-  [colors.bright]
-  black   = '#002b36'
-  red     = '#cb4b16'
-  green   = '#586e75'
-  yellow  = '#657b83'
-  blue    = '#839496'
-  magenta = '#6c71c4'
-  cyan    = '#93a1a1'
-  white   = '#fdf6e3'
+[colors.search.matches]
+foreground = "#908caa"
+background = "#393552"
+
+[colors.search.focused_match]
+# foreground = "#232136"
+foreground = "#0d0d0d"
+background = "#ea9a97"
+
+[colors.hints.start]
+foreground = "#908caa"
+background = "#2a273f"
+
+[colors.hints.end]
+foreground = "#6e6a86"
+background = "#2a273f"
+
+[colors.line_indicator]
+foreground = "None"
+background = "None"
+
+[colors.footer_bar]
+foreground = "#e0def4"
+background = "#2a273f"
+
+[colors.selection]
+text = "#e0def4"
+background = "#44415a"
+
+[colors.normal]
+black = "#393552"
+red = "#eb6f92"
+green = "#3e8fb0"
+yellow = "#f6c177"
+blue = "#9ccfd8"
+magenta = "#c4a7e7"
+cyan = "#ea9a97"
+white = "#e0def4"
+
+[colors.bright]
+black = "#6e6a86"
+red = "#eb6f92"
+green = "#3e8fb0"
+yellow = "#f6c177"
+blue = "#9ccfd8"
+magenta = "#c4a7e7"
+cyan = "#ea9a97"
+white = "#e0def4"
+
+[colors.dim]
+black = "#6e6a86"
+red = "#eb6f92"
+green = "#3e8fb0"
+yellow = "#f6c177"
+blue = "#9ccfd8"
+magenta = "#c4a7e7"
+cyan = "#ea9a97"
+white = "#e0def4"
+## END ROSE PINE MOON
+
+## ROSE PINE
+# [colors.primary]
+# foreground = "#e0def4"
+# background = "#191724"
+# dim_foreground = "#908caa"
+# bright_foreground = "#e0def4"
+#
+# [colors.cursor]
+# text = "#e0def4"
+# cursor = "#524f67"
+#
+# [colors.vi_mode_cursor]
+# text = "#e0def4"
+# cursor = "#524f67"
+#
+# [colors.search.matches]
+# foreground = "#908caa"
+# background = "#26233a"
+#
+# [colors.search.focused_match]
+# foreground = "#191724"
+# background = "#ebbcba"
+#
+# [colors.hints.start]
+# foreground = "#908caa"
+# background = "#1f1d2e"
+#
+# [colors.hints.end]
+# foreground = "#6e6a86"
+# background = "#1f1d2e"
+#
+# [colors.line_indicator]
+# foreground = "None"
+# background = "None"
+#
+# [colors.footer_bar]
+# foreground = "#e0def4"
+# background = "#1f1d2e"
+#
+# [colors.selection]
+# text = "#e0def4"
+# background = "#403d52"
+#
+# [colors.normal]
+# black = "#26233a"
+# red = "#eb6f92"
+# green = "#31748f"
+# yellow = "#f6c177"
+# blue = "#9ccfd8"
+# magenta = "#c4a7e7"
+# cyan = "#ebbcba"
+# white = "#e0def4"
+#
+# [colors.bright]
+# black = "#6e6a86"
+# red = "#eb6f92"
+# green = "#31748f"
+# yellow = "#f6c177"
+# blue = "#9ccfd8"
+# magenta = "#c4a7e7"
+# cyan = "#ebbcba"
+# white = "#e0def4"
+#
+# [colors.dim]
+# black = "#6e6a86"
+# red = "#eb6f92"
+# green = "#31748f"
+# yellow = "#f6c177"
+# blue = "#9ccfd8"
+# magenta = "#c4a7e7"
+# cyan = "#ebbcba"
+# white = "#e0def4"
+## END ROSE PINE
