@@ -1,3 +1,6 @@
+[terminal]
+shell = "/usr/bin/nu"
+
 [window]
 startup_mode = "Windowed"
 title = "Alacritty"
