@@ -36,7 +36,7 @@ export-env {
         fnm-env | load-env
 
         # Set directory change hook (only set once)
-        if (not ($env | default false __fnm_hooked | get __fnm_hooked)) {
+        if (not ($env | default false __fnm_hooked | get __fnm_hooked | into bool)) {
             # Mark hook as set
             $env.__fnm_hooked = true
             
