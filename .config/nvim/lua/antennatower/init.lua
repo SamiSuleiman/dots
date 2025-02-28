@@ -17,3 +17,4 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup 'antennatower.plugins'
 
 require 'antennatower.keymaps'
+require 'antennatower.autocmds'

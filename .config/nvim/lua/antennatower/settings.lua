@@ -1,26 +1,5 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
-local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
-vim.api.nvim_create_autocmd('TextYankPost', {
-  callback = function()
-    vim.highlight.on_yank()
-  end,
-  group = highlight_group,
-  pattern = '*',
-})
-vim.api.nvim_create_autocmd('LspProgress', {
-  ---@param ev {data: {client_id: integer, params: lsp.ProgressParams}}
-  callback = function(ev)
-    local spinner = { '⠋', '⠙', '⠹', '⠸', '⠼', '⠴', '⠦', '⠧', '⠇', '⠏' }
-    vim.notify(vim.lsp.status(), 'info', {
-      id = 'lsp_progress',
-      title = 'LSP Progress',
-      opts = function(notif)
-        notif.icon = ev.data.params.value.kind == 'end' and ' ' or spinner[math.floor(vim.uv.hrtime() / (1e6 * 80)) % #spinner + 1]
-      end,
-    })
-  end,
-})
 
 vim.api.nvim_create_user_command('Bda', 'bufdo bd', {})
 vim.api.nvim_create_user_command('WW', 'bufdo w ++p', {})
@@ -32,7 +11,7 @@ for name, icon in pairs(symbols) do
   vim.fn.sign_define(hl, { text = icon, numhl = hl, texthl = hl })
 end
 
-vim.opt.guicursor = ''
+-- vim.opt.guicursor = ''
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.linebreak = true

@@ -1,5 +1,5 @@
 [terminal]
-shell = "/usr/bin/nu"
+shell = "/usr/bin/zsh"
 
 [window]
 startup_mode = "Windowed"
