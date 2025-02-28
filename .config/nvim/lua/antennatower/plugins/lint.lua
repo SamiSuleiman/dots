@@ -5,7 +5,7 @@ return {
       markdown = {},
       typescript = { 'eslint' },
     }
-    local eslint = require('lint').linters.eslint_d
+    local eslint = require('lint').linters.eslint
 
     eslint.args = {
       '--no-warn-ignored',
