@@ -41,29 +41,29 @@ return {
             return
           end
 
-          vim.api.nvim_create_autocmd('BufWritePre', {
-            group = get_augroup(client),
-            buffer = bufnr,
-            callback = function()
-              if not format_is_enabled then
-                return
-              end
+          -- vim.api.nvim_create_autocmd('BufWritePre', {
+          -- group = get_augroup(client),
+          -- buffer = bufnr,
+          -- callback = function()
+          --   if not format_is_enabled then
+          --     return
+          --   end
 
-              vim.lsp.buf.format {
-                async = false,
-                bufnr = bufnr,
-                filter = function(c)
-                  return c.name == 'null-ls'
-                end,
-              }
-              -- vim.lsp.buf.format {
-              --     async = false,
-              --     filter = function(c)
-              --         return c.id == client.id
-              --     end,
-              -- }
-            end,
-          })
+          -- vim.lsp.buf.format {
+          --   async = false,
+          --   bufnr = bufnr,
+          --   filter = function(c)
+          --     return c.name == 'null-ls'
+          --   end,
+          -- }
+          -- vim.lsp.buf.format {
+          --     async = false,
+          --     filter = function(c)
+          --         return c.id == client.id
+          --     end,
+          -- }
+          -- end,
+          -- })
         end,
       })
 
