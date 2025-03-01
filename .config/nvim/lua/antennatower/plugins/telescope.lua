@@ -18,7 +18,7 @@ return {
         -- selection_caret = ' ',
         selection_caret = '❯ ',
         border = true,
-        -- borderchars = { '─', '│', '─', '│', '┌', '┐', '┘', '└' },
+        borderchars = { '─', '│', '─', '│', '┌', '┐', '┘', '└' },
 
         layout_strategy = 'horizontal',
         layout_config = {

@@ -13,18 +13,18 @@
   "buffer_font_size": 16,
   "theme": {
     "mode": "system",
-    "light": "Rosé Pine Dawn",
-    "dark": "Rosé Pine Moon"
+    "light": "Gruvbox Light Soft",
+    "dark": "Gruvbox Dark Hard"
   },
   "experimental.theme_overrides": {
-    "editor.background": "#0d0d0d",
-    "panel.background": "#0d0d0d",
-    "editor.gutter.background": "#0d0d0d",
-    "tab_bar.background": "#0d0d0d",
-    "title_bar.background": "#0d0d0d",
-    "terminal.background": "#0d0d0d",
-    "toolbar.background": "#0d0d0d",
-    "status_bar.background": "#0d0d0d"
+    // "editor.background": "#0d0d0d",
+    // "panel.background": "#0d0d0d",
+    // "editor.gutter.background": "#0d0d0d",
+    // "tab_bar.background": "#0d0d0d",
+    // "title_bar.background": "#0d0d0d",
+    // "terminal.background": "#0d0d0d",
+    // "toolbar.background": "#0d0d0d",
+    // "status_bar.background": "#0d0d0d"
     // "syntax": {
     //   "comment": {
     //     "font_style": "italic"
