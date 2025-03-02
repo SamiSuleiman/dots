@@ -97,8 +97,8 @@
   "disk": {
     "interval": 30,
     "format": "      {percentage_used}%",
-    "path": "/home/sammy/medina/",
-    "on-click": "thunar /home/sammy/medina/"
+    "path": "/home/antennatower/medina/",
+    "on-click": "thunar /home/antennatower/medina/"
   },
 
   "hyprland/language": {

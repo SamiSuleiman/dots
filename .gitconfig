@@ -1,10 +1,10 @@
 [include]
-	path = /home/sammy/.config/delta/themes.gitconfig
+	path = /home/antennatower/.config/delta/themes.gitconfig
 
 [user]
 	name = AntennaTower
 	email = antennatower@proton.me
-	projects = /home/sammy/medina/projs
+	projects = /home/antennatower/medina/projs
 
 [alias]
 	recent = "!f() { count=${1-10}; git for-each-ref --count=$count --sort=-committerdate refs/heads --format='%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)' --color=always|column -ts'|'; }; f"
