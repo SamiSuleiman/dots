@@ -1,6 +1,15 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
-vim.g.default_statusline = '%<%f %h%m%r%=%-14.(%l,%c%V%) %P'
+
+function _G.searchcount()
+  local sc = vim.fn.searchcount({ maxcount = 9999 }) -- Get search count
+  if sc.total > 0 then
+    return string.format("[%d/%d]", sc.current, sc.total)
+  end
+  return ""
+end
+
+vim.g.default_statusline = "%<%f %h%m%r%=%-14.(%l,%c%V%) %P %{v:lua.searchcount()}"
 
 vim.api.nvim_create_user_command('Bda', 'bufdo bd', {})
 vim.api.nvim_create_user_command('WW', 'bufdo w ++p', {})
@@ -41,6 +50,7 @@ vim.opt.shell = '/bin/zsh'
 vim.opt.wildmenu = true
 vim.opt.timeoutlen = 250
 vim.opt.showmatch = true
+vim.opt.shortmess:remove 'S'
 vim.opt.synmaxcol = 300 -- stop syntax highlighting for performance
 vim.opt.laststatus = 2 -- always show statusline
 vim.opt.foldenable = false
