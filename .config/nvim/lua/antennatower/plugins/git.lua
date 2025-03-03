@@ -17,11 +17,11 @@ return {
     opts = {
       current_line_blame = true,
       signs = {
-        -- add = { text = '+' },
-        -- change = { text = '~' },
-        -- delete = { text = '_' },
-        -- topdelete = { text = '‾' },
-        -- changedelete = { text = '~' },
+        add = { text = '+' },
+        change = { text = '~' },
+        delete = { text = '_' },
+        topdelete = { text = '‾' },
+        changedelete = { text = '~' },
       },
       on_attach = function(bufnr)
         local gs = package.loaded.gitsigns

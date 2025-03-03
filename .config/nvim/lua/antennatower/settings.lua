@@ -1,5 +1,6 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+vim.g.default_statusline = '%<%f %h%m%r%=%-14.(%l,%c%V%) %P'
 
 vim.api.nvim_create_user_command('Bda', 'bufdo bd', {})
 vim.api.nvim_create_user_command('WW', 'bufdo w ++p', {})
