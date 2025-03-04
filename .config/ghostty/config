@@ -1,3 +1,4 @@
+font-family = monospace
 window-decoration = false
 window-inherit-working-directory = true
 window-save-state = always
@@ -10,3 +11,8 @@ cursor-style-blink = true
 font-size = 13
 gtk-titlebar = false
 copy-on-select = true
+adjust-cell-height = 35%
+window-padding-balance = true
+mouse-scroll-multiplier = 2
+mouse-hide-while-typing = true
+window-padding-y = 0
