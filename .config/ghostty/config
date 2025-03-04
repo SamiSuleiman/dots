@@ -1,0 +1,12 @@
+window-decoration = false
+window-inherit-working-directory = true
+window-save-state = always
+window-width = 1920
+window-height = 1080
+background = 0d0d0d
+theme = rose-pine
+cursor-style = block
+cursor-style-blink = true
+font-size = 13
+gtk-titlebar = false
+copy-on-select = true
