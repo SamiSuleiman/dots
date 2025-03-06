@@ -1,5 +1,0 @@
-vim.keymap.set('n', '<leader>tn', ':tabnew<CR>', { noremap = true, silent = true, desc = 'Open a new tab' })
-vim.keymap.set('n', '<leader>t<leader>', ':tabnext<CR>', { noremap = true, silent = true, desc = 'Go to the next tab' })
-vim.keymap.set('n', '<leader>tm', ':tabmove<CR>', { noremap = true, silent = true, desc = 'Move the current tab' })
-vim.keymap.set('n', '<leader>tc', ':tabclose<CR>', { noremap = true, silent = true, desc = 'Close the current tab' })
-vim.keymap.set('n', '<leader>to', ':tabonly<CR>', { noremap = true, silent = true, desc = 'Close all other tabs' })

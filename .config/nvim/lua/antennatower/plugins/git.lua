@@ -1,5 +1,5 @@
 return {
-  'tpope/vim-fugitive',
+  -- 'tpope/vim-fugitive',
   {
     'NeogitOrg/neogit',
     enabled = true,

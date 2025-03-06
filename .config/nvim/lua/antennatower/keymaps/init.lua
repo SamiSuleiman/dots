@@ -7,7 +7,6 @@ require 'antennatower.keymaps.resize'
 require 'antennatower.keymaps.split'
 require 'antennatower.keymaps.yank'
 require 'antennatower.keymaps.window'
-require 'antennatower.keymaps.tab'
 
 -- plugins
 require 'antennatower.keymaps.telescope'

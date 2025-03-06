@@ -17,13 +17,13 @@ return {
         prompt_prefix = ' ',
         -- selection_caret = ' ',
         selection_caret = '❯ ',
-        border = false,
+        border = true,
         -- borderchars = { '─', '│', '─', '│', '┌', '┐', '┘', '└' },
 
         layout_strategy = 'horizontal',
         layout_config = {
-          height = vim.api.nvim_win_get_height(0),
-          width = vim.api.nvim_win_get_width(0),
+          -- height = vim.api.nvim_win_get_height(0),
+          -- width = vim.api.nvim_win_get_width(0),
           -- prompt_position = 'bottom',
           preview_width = 0.65,
           -- horizontal = {
