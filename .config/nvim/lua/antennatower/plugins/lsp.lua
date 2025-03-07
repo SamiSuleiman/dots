@@ -84,8 +84,8 @@ return {
           vim.keymap.set('i', keys, func, { buffer = bufnr, desc = desc })
         end
 
-        nmap('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
-        nmap('<leader>ca', function()
+        nmap('<F2>', vim.lsp.buf.rename, '[R]e[n]ame')
+        nmap('<C-.>', function()
           vim.lsp.buf.code_action { context = { only = { 'quickfix', 'refactor', 'source' } } }
         end, '[C]ode [A]ction')
 
