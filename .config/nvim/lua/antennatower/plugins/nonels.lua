@@ -11,7 +11,7 @@ return {
         },
         formatting.gofmt,
         formatting.prettierd.with {
-          filetypes = { 'javascript', 'typescript', 'json', 'css', 'scss', 'html', 'markdown', 'svelte', 'yaml' },
+          filetypes = { 'javascript', 'typescript', 'json', 'css', 'scss', 'html', 'markdown', 'svelte', 'yaml', 'vue' },
         },
         formatting.csharpier,
       },
