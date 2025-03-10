@@ -6,10 +6,10 @@ function _G.searchcount()
   if sc.total > 0 then
     return string.format("[%d/%d]", sc.current, sc.total)
   end
-  return ""
+  return "No Search"
 end
 
-vim.g.default_statusline = "%<%f %h%m%r%=%-14.(%l,%c%V%) %P %{v:lua.searchcount()}"
+vim.g.default_statusline = "%<%f %h%m%r%=%-14.(%l/%L,%c%V%) %{v:lua.searchcount()}"
 
 vim.api.nvim_create_user_command('Bda', 'bufdo bd', {})
 vim.api.nvim_create_user_command('WW', 'bufdo w ++p', {})
