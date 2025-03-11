@@ -2,7 +2,20 @@ return {
   'stevearc/oil.nvim',
   ---@module 'oil'
   ---@type oil.SetupOpts
-  opts = {},
+  opts = {
+    default_file_explorer = true,
+    -- Id is automatically added at the beginning, and name at the end
+    -- See :help oil-columns
+    columns = {
+      'icon',
+      -- "permissions",
+      "size",
+      "mtime",
+    },
+    view_options = {
+      show_hidden = true,
+    }
+  },
   -- Optional dependencies
   dependencies = {
     {

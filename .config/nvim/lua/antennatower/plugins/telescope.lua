@@ -17,7 +17,7 @@ return {
         prompt_prefix = ' ',
         -- selection_caret = ' ',
         selection_caret = '❯ ',
-        border = true,
+        border = false,
         -- borderchars = { '─', '│', '─', '│', '┌', '┐', '┘', '└' },
 
         layout_strategy = 'horizontal',
