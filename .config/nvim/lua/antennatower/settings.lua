@@ -1,20 +1,6 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
--- function _G.searchcount()
---   local sc = vim.fn.searchcount({ maxcount = 9999 }) -- Get search count
---   if sc.total > 0 then
---     return string.format("[%d/%d]", sc.current, sc.total)
---   end
---   return "No Search"
--- end
---
--- vim.g.default_statusline = "%<%f %h%m%r%=%-14.(%l/%L,%c%V%) %{v:lua.searchcount()}"
-
-vim.api.nvim_create_user_command('Bda', 'bufdo bd', {})
-vim.api.nvim_create_user_command('WW', 'bufdo w ++p', {})
-vim.api.nvim_create_user_command('', function() end, {})
-
 local symbols = { Error = '', Info = '', Hint = '󰋗', Warn = '' }
 
 for name, icon in pairs(symbols) do
