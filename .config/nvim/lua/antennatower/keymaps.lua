@@ -50,6 +50,13 @@ vim.keymap.set('n', '<leader>nh', function()
 end, { desc = 'show snacks history' })
 ----
 
+-- terminal --
+vim.keymap.set('n', '<C-w>a', function()
+  local curr_buf_path = vim.fn.expand '%:p:h]'
+  vim.cmd('silent !tmux display-popup -d "' .. curr_buf_path .. '"')
+end, { noremap = true, silent = true, desc = 'Open floating terminal in current directory' })
+----
+
 -- window --
 -- vim.keymap.set('n', '<c-k>', ':wincmd k<CR>', { noremap = true })
 -- vim.keymap.set('n', '<c-j>', ':wincmd j<CR>', { noremap = true })
