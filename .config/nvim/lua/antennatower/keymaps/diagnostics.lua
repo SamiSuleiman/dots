@@ -1,4 +1,4 @@
-vim.keymap.set('n', '<space>ed', vim.diagnostic.open_float, { desc = 'show floating diagnostics window' })
+vim.keymap.set('n', '<c-q>', vim.diagnostic.open_float, { desc = 'show floating diagnostics window' })
 vim.keymap.set('n', '<space>ep', vim.diagnostic.goto_prev, { desc = 'previous diagnostic' })
 vim.keymap.set('n', '<space>en', vim.diagnostic.goto_next, { desc = 'next diagnostic' })
 vim.keymap.set('n', '<space>ee', vim.diagnostic.setqflist, { desc = 'next diagnostic' })
