@@ -17,18 +17,25 @@ return {
         prompt_prefix = ' ',
         -- selection_caret = ' ',
         selection_caret = '❯ ',
-        border = false,
+        border = true,
         -- borderchars = { '─', '│', '─', '│', '┌', '┐', '┘', '└' },
 
+        results_title = '',
+
         layout_strategy = 'horizontal',
+        sorting_strategy = 'ascending',
+        path_display = { 'truncate' },
         layout_config = {
-          height = vim.api.nvim_win_get_height(0),
+          -- height = vim.api.nvim_win_get_height(0),
           width = vim.api.nvim_win_get_width(0),
-          -- prompt_position = 'bottom',
-          preview_width = 0.65,
-          -- horizontal = {
-          --   prompt_position = 'bottom',
-          -- },
+          horizontal = {
+            prompt_position = 'top',
+            preview_width = 0.55,
+            -- results_width = 0.8,
+          },
+          vertical = {
+            mirror = false,
+          },
         },
         mappings = {
           i = {
