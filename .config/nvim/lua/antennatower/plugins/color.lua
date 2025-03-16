@@ -2,7 +2,7 @@ return {
   {
     'rose-pine/neovim',
     name = 'rose-pine',
-    enabled = false,
+    enabled = true,
     config = function()
       require('rose-pine').setup {
         palette = {
@@ -20,14 +20,12 @@ return {
         },
         -- this is useless now since we have a custom palette :)))) LETS GOOOOO
         highlight_groups = {
-          SnacksInputPrompt = { bg = 'overlay' },
-          SnacksInputNormal = { bg = 'overlay' },
           -- Normal = { bg = '#0d0d0d' },
           -- SignColumn = { bg = '#0d0d0d' },
           -- VertSplit = { bg = '#0d0d0d' },
           -- StatusLine = { bg = '#0d0d0d' },
           -- StatusLineNC = { bg = '#0d0d0d' },
-          -- CurSearch = { fg = 'base', bg = 'rose', inherit = false },
+          CurSearch = { fg = 'base', bg = 'love', inherit = false },
           -- Search = { fg = 'text', bg = 'rose', blend = 20, inherit = false },
           -- TelescopeBorder = { fg = 'surface', bg = '#0d0d0d' },
           -- TelescopeNormal = { fg = 'subtle', bg = '#0d0d0d' },
@@ -47,7 +45,7 @@ return {
   {
     'ellisonleao/gruvbox.nvim',
     priority = 1000,
-    enabled = true,
+    enabled = false,
     config = function()
       require('gruvbox').setup {
         terminal_colors = true, -- add neovim terminal colors

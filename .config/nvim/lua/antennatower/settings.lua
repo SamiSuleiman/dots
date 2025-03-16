@@ -1,5 +1,47 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
+vim.g.default_statusline = '__MODE__ %<%f __MACRO__ %h%m%r%=%-14.(%l/%L,%c%V%) %{v:lua.searchcount()}'
+
+local function setup_statusline(macro, mode)
+  local statusline = vim.g.default_statusline
+  if macro == nil or macro == '' then
+    statusline = string.gsub(statusline, '__MACRO__', '')
+  else
+    statusline = string.gsub(statusline, '__MACRO__', '[ recording: ' .. macro .. ']')
+  end
+  vim.opt.statusline = string.gsub(statusline, '__MODE__', '[' .. mode .. ']')
+end
+
+vim.api.nvim_create_autocmd('RecordingEnter', {
+  callback = function()
+    local reg_recording = vim.fn.reg_recording()
+    local mode = vim.api.nvim_get_mode().mode
+    setup_statusline(reg_recording, mode)
+  end,
+})
+
+vim.api.nvim_create_autocmd('RecordingLeave', {
+  callback = function()
+    local mode = vim.api.nvim_get_mode().mode
+    setup_statusline(nil, mode)
+  end,
+})
+
+vim.api.nvim_create_autocmd('ModeChanged', {
+  callback = function()
+    local mode = vim.api.nvim_get_mode()
+    local reg_recording = vim.fn.reg_recording()
+    setup_statusline(reg_recording, mode.mode)
+  end,
+})
+
+function _G.searchcount()
+  local sc = vim.fn.searchcount { maxcount = 9999 } -- Get search count
+  if sc.total > 0 then
+    return string.format('[%d/%d]', sc.current, sc.total)
+  end
+  return 'No Search'
+end
 
 local symbols = { Error = '', Info = '', Hint = '󰋗', Warn = '' }
 
