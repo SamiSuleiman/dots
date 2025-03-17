@@ -14,6 +14,6 @@ gtk-titlebar = false
 copy-on-select = true
 adjust-cell-height = 35%
 window-padding-balance = true
-mouse-scroll-multiplier = 2
+mouse-scroll-multiplier = 0
 mouse-hide-while-typing = true
 window-padding-y = 0
