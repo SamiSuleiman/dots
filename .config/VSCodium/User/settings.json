@@ -3,7 +3,7 @@
   "editor.cursorStyle": "block",
   "editor.fontFamily": "monospace",
   "editor.fontSize": 16,
-  "editor.fontLigatures": false,
+  "editor.fontLigatures": true,
   "debug.console.fontFamily": "'monospace'",
   "debug.console.fontSize": 16,
   "terminal.integrated.jfontFamily": "'monospace'",
@@ -257,5 +257,5 @@
   "window.density.editorTabHeight": "default",
   "window.menuBarVisibility": "compact",
   "workbench.sideBar.location": "left",
-  "workbench.colorTheme": "Gruvbox Dark Hard"
+  "workbench.colorTheme": "Rosé Pine"
 }

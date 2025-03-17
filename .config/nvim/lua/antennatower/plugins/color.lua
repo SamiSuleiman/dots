@@ -5,6 +5,12 @@ return {
     enabled = true,
     config = function()
       require('rose-pine').setup {
+        dim_inactive_windows = false,
+        styles = {
+          bold = true,
+          italic = true,
+          transparency = false,
+        },
         palette = {
           -- Override the builtin palette per variant
           main = {
@@ -20,6 +26,10 @@ return {
         },
         -- this is useless now since we have a custom palette :)))) LETS GOOOOO
         highlight_groups = {
+          ['@keyword.import'] = { bold = true },
+          ['@keyword.export'] = { bold = true },
+          ['@keyword.return'] = { bold = true },
+
           -- Normal = { bg = '#0d0d0d' },
           -- SignColumn = { bg = '#0d0d0d' },
           -- VertSplit = { bg = '#0d0d0d' },
