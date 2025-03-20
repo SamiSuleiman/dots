@@ -124,7 +124,7 @@ style = "Regular"
 [colors.primary]
 foreground = "#e0def4"
 # background = "#0d0d0d"
-background = "#1B1B1B"
+background = "#130d0a"
 dim_foreground = "#908caa"
 bright_foreground = "#e0def4"
 
@@ -142,7 +142,7 @@ background = "#26233a"
 
 [colors.search.focused_match]
 # foreground = "#0d0d0d"
-foreground = "#1B1B1B"
+foreground = "#130d0a"
 background = "#ebbcba"
 
 [colors.hints.start]
