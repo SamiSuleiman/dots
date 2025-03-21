@@ -1,27 +1,34 @@
 -- Pull in the wezterm API
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
+local backgrounds = {
+	"yuxo.jpeg",
+	"jisoo-001.jpg"
+}
 
 config.font = wezterm.font({
 	family = "monospace",
 	harfbuzz_features = { "ss19", "ss01" },
 })
+config.font_size = 13
+
 config.window_padding = {
 	left = 2,
 	right = 2,
 	top = 0,
 	bottom = 0,
 }
-config.font_size = 13
-config.color_scheme = "Gruvbox Dark (Gogh)"
-config.colors = {
-	background = "#130d0a",
-}
-config.window_background_image = "/home/antennatower/assets/yuxo.jpeg"
+
+config.window_background_image = "/home/antennatower/assets/" .. backgrounds[math.random(#backgrounds)]
 config.window_background_image_hsb = {
 	brightness = 0.05,
 	hue = 1.0,
 	saturation = 1.0,
+}
+
+config.color_scheme = "Gruvbox Dark (Gogh)"
+config.colors = {
+	background = "#130d0a",
 }
 config.term = "xterm-256color"
 config.enable_tab_bar = false
