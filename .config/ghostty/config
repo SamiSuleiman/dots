@@ -7,7 +7,6 @@ window-height = 1080
 theme = GruvboxDarkHard
 cursor-style = block
 cursor-color = #d65d0e
-background = #130d0a
 cursor-style-blink = true
 font-size = 13
 gtk-titlebar = false
