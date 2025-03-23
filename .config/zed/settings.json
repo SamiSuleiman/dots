@@ -17,14 +17,14 @@
     "dark": "Gruvbox Dark Hard"
   },
   "experimental.theme_overrides": {
-    "editor.background": "#130d0a",
-    "panel.background": "#130d0a",
-    "editor.gutter.background": "#130d0a",
-    "tab_bar.background": "#130d0a",
-    "title_bar.background": "#130d0a",
-    "terminal.background": "#130d0a",
-    "toolbar.background": "#130d0a",
-    "status_bar.background": "#130d0a"
+    "editor.background": "#1b1b1b",
+    "panel.background": "#1b1b1b",
+    "editor.gutter.background": "#1b1b1b",
+    "tab_bar.background": "#1b1b1b",
+    "title_bar.background": "#1b1b1b",
+    "terminal.background": "#1b1b1b",
+    "toolbar.background": "#1b1b1b",
+    "status_bar.background": "#1b1b1b"
     // "syntax": {
     //   "comment": {
     //     "font_style": "italic"
