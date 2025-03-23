@@ -3,7 +3,7 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 local backgrounds = {
 	"yuxo.jpeg",
-	"jisoo-001.jpg"
+	"jisoo-001.jpg",
 }
 
 config.font = wezterm.font({
@@ -18,10 +18,11 @@ config.window_padding = {
 	top = 0,
 	bottom = 0,
 }
+config.line_height = 1.35
 
 config.window_background_image = "/home/antennatower/assets/" .. backgrounds[math.random(#backgrounds)]
 config.window_background_image_hsb = {
-	brightness = 0.05,
+	brightness = 0.025,
 	hue = 1.0,
 	saturation = 1.0,
 }
