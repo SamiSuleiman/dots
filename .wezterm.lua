@@ -12,6 +12,7 @@ config.font = wezterm.font({
 })
 config.font_size = 13
 
+config.window_decorations = "NONE"
 config.window_padding = {
 	left = 2,
 	right = 2,
