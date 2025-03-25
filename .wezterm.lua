@@ -19,14 +19,14 @@ config.window_padding = {
 	top = 0,
 	bottom = 0,
 }
--- config.line_height = 1.35
+config.line_height = 1.35
 
--- config.window_background_image = "/home/antennatower/assets/" .. backgrounds[math.random(#backgrounds)]
--- config.window_background_image_hsb = {
--- 	brightness = 0.025,
--- 	hue = 1.0,
--- 	saturation = 1.0,
--- }
+config.window_background_image = "/home/antennatower/assets/" .. backgrounds[math.random(#backgrounds)]
+config.window_background_image_hsb = {
+	brightness = 0.025,
+	hue = 1.0,
+	saturation = 1.0,
+}
 
 config.color_scheme = "Gruvbox Dark (Gogh)"
 config.colors = {
