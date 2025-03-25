@@ -8,7 +8,24 @@ local backgrounds = {
 
 config.font = wezterm.font({
 	family = "monospace",
-	harfbuzz_features = { "ss19", "ss01" },
+	harfbuzz_features = {
+		-- "ss19", "ss01"
+		"ss01",
+		"ss02",
+		"ss03",
+		"ss04",
+		"ss05",
+		"ss06",
+		"ss07",
+		"ss08",
+		"ss09",
+		"ss10",
+		"cv10",
+		"cv11",
+		"cv30",
+		"cv31",
+		"cv32",
+	},
 })
 config.font_size = 13
 
@@ -19,7 +36,7 @@ config.window_padding = {
 	top = 0,
 	bottom = 0,
 }
-config.line_height = 1.35
+-- config.line_height = 1.35
 
 config.window_background_image = "/home/antennatower/assets/" .. backgrounds[math.random(#backgrounds)]
 config.window_background_image_hsb = {
