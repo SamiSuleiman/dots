@@ -9,22 +9,9 @@ local backgrounds = {
 config.font = wezterm.font({
 	family = "monospace",
 	harfbuzz_features = {
-		-- "ss19", "ss01"
-		"ss01",
-		"ss02",
-		"ss03",
-		"ss04",
-		"ss05",
-		"ss06",
-		"ss07",
-		"ss08",
-		"ss09",
-		"ss10",
-		"cv10",
-		"cv11",
-		"cv30",
-		"cv31",
-		"cv32",
+		-- "cv07",
+		-- "cv08",
+		-- "cv15",
 	},
 })
 config.font_size = 13
