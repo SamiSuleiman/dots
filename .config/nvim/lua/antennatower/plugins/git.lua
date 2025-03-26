@@ -1,18 +1,6 @@
 return {
   -- 'tpope/vim-fugitive',
   {
-    'NeogitOrg/neogit',
-    enabled = true,
-    dependencies = {
-      'nvim-lua/plenary.nvim',
-      'sindrets/diffview.nvim',
-
-      'nvim-telescope/telescope.nvim',
-      'ibhagwan/fzf-lua',
-    },
-    config = true,
-  },
-  {
     'lewis6991/gitsigns.nvim',
     opts = {
       current_line_blame = true,
