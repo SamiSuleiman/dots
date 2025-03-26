@@ -2,11 +2,11 @@
   // font stuff
   "editor.cursorStyle": "block",
   "editor.fontFamily": "monospace",
-  "editor.fontSize": 18,
+  "editor.fontSize": 16,
   "editor.fontLigatures": true,
   "debug.console.fontFamily": "'monospace'",
   "debug.console.fontSize": 16,
-  "terminal.integrated.fontFamily": "'IosevkaTerm Nerd Font'",
+  "terminal.integrated.fontFamily": "'monospace'",
   "terminal.integrated.fontSize": 16,
   //
 
