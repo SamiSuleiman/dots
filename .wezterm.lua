@@ -55,7 +55,7 @@ config.keys = {
 	{ key = "/", mods = "CTRL", action = act.ActivateCommandPalette },
 	{ key = "V", mods = "CTRL", action = act.PasteFrom("Clipboard") },
 	{ key = "C", mods = "NONE", action = act.CopyTo("Clipboard") },
-	{ key = "P", mods = "NONE", action = act.PasteFrom("Clipboard") },
+	-- { key = "P", mods = "NONE", action = act.PasteFrom("Clipboard") },
 	{ key = "F11", mods = "NONE", action = act.ToggleFullScreen },
 }
 
