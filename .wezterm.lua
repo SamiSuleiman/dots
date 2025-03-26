@@ -9,9 +9,7 @@ local backgrounds = {
 config.font = wezterm.font({
 	family = "monospace",
 	harfbuzz_features = {
-		-- "cv07",
-		-- "cv08",
-		-- "cv15",
+		"ss01",
 	},
 })
 config.font_size = 13
@@ -44,19 +42,19 @@ config.cursor_blink_ease_in = "Constant"
 config.cursor_blink_ease_out = "Constant"
 config.cursor_blink_rate = 700
 
-config.disable_default_key_bindings = true
-local act = wezterm.action
+config.disable_default_key_bindings = false
+-- local act = wezterm.action
 
-config.keys = {
-	-- { key = ")", mods = "CTRL", action = act.ResetFontSize },
-	-- { key = "-", mods = "CTRL", action = act.DecreaseFontSize },
-	-- { key = "=", mods = "CTRL", action = act.IncreaseFontSize },
-	-- { key = "N", mods = "CTRL", action = act.SpawnWindow },
-	{ key = "/", mods = "CTRL", action = act.ActivateCommandPalette },
-	{ key = "V", mods = "CTRL", action = act.PasteFrom("Clipboard") },
-	{ key = "C", mods = "NONE", action = act.CopyTo("Clipboard") },
-	-- { key = "P", mods = "NONE", action = act.PasteFrom("Clipboard") },
-	{ key = "F11", mods = "NONE", action = act.ToggleFullScreen },
-}
+-- config.keys = {
+-- 	-- { key = ")", mods = "CTRL", action = act.ResetFontSize },
+-- 	-- { key = "-", mods = "CTRL", action = act.DecreaseFontSize },
+-- 	-- { key = "=", mods = "CTRL", action = act.IncreaseFontSize },
+-- 	-- { key = "N", mods = "CTRL", action = act.SpawnWindow },
+-- 	{ key = "/", mods = "CTRL", action = act.ActivateCommandPalette },
+-- 	{ key = "V", mods = "CTRL", action = act.PasteFrom("Clipboard") },
+-- 	{ key = "C", mods = "NONE", action = act.CopyTo("Clipboard") },
+-- 	-- { key = "P", mods = "NONE", action = act.PasteFrom("Clipboard") },
+-- 	{ key = "F11", mods = "NONE", action = act.ToggleFullScreen },
+-- }
 
 return config
