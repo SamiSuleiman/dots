@@ -48,7 +48,7 @@
     "default_height": 10000,
     "font_family": "JetBrains Mono"
   },
-  "cursor_shape": "block",
+  // "cursor_shape": "block",
   "relative_line_numbers": true,
   "vim_mode": true,
   "git": {

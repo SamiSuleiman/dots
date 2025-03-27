@@ -13,7 +13,7 @@
   // vim stuff
   "vim.leader": "<Space>",
   "vim.hlsearch": true,
-  "vim.cursorStylePerMode.insert": "block",
+  "vim.cursorStylePerMode.insert": "line",
   "vim.highlightedyank.enable": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     { "before": ["escape"], "commands": [":nohl"] },
