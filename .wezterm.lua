@@ -42,7 +42,8 @@ config.background = {
 
 config.color_scheme = "rose-pine"
 config.colors = {
-	background = "#0d0d0d",
+	["selection_bg"] = "#403d52",
+	-- background = "#0d0d0d",
 	-- cursor_bg = "#d65d0e",
 }
 config.term = "xterm-256color"
