@@ -1,4 +1,5 @@
-font-family = monospace
+font-family = Iosevka Term
+font-family = IosevkaTerm Nerd Font
 window-decoration = false
 window-inherit-working-directory = true
 window-save-state = always
@@ -16,6 +17,8 @@ mouse-hide-while-typing = true
 window-padding-y = 0
 selection-background = #403d52
 
-font-size = 13
-#font-feature = ss01
-#font-feature = ss20
+font-size = 14
+font-feature = VDAC 2
+font-feature = VSAG 2
+font-feature = VLAA 2
+font-feature = VLAF 1
