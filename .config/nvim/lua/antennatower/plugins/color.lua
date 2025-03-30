@@ -2,7 +2,7 @@ return {
   {
     'rose-pine/neovim',
     name = 'rose-pine',
-    enabled = true,
+    enabled = false,
     config = function()
       require('rose-pine').setup {
         dim_inactive_windows = false,
@@ -56,7 +56,7 @@ return {
   {
     'ellisonleao/gruvbox.nvim',
     priority = 1000,
-    enabled = false,
+    enabled = true,
     config = function()
       require('gruvbox').setup {
         terminal_colors = true, -- add neovim terminal colors
