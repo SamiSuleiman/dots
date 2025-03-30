@@ -10,7 +10,7 @@ local backgrounds = {
 }
 
 config.font = wezterm.font({
-	family = "Iosevka Term",
+	family = "monospace",
 	harfbuzz_features = {
 		"VDAC 2",
 		"VSAG 2",
@@ -18,7 +18,7 @@ config.font = wezterm.font({
 		"VLAF 1",
 	},
 })
-config.font_size = 15
+config.font_size = 14
 
 config.window_decorations = "NONE"
 config.window_padding = {

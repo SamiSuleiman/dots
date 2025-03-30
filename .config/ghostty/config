@@ -1,5 +1,4 @@
-font-family = Iosevka Term
-font-family = IosevkaTerm Nerd Font
+font-family = monospace
 window-decoration = false
 window-inherit-working-directory = true
 window-save-state = always
@@ -18,38 +17,4 @@ mouse-hide-while-typing = true
 window-padding-y = 0
 selection-background = #403d52
 
-font-size = 15
-
-# square/round punctuation
-font-feature = VDAC 2
-
-# Parenthesis
-font-feature = VSAG 2
-
-# Greater/less than equal
-font-feature = VLAA 2
-
-# Arrow
-font-feature = VLAF 1
-font-feature = VLAG 1
-
-# @
-font-feature = VSAL 5
-
-# &
-font-feature = VSAK 2
-
-# #
-# font-feature = VSAJ 2
-
-# '
-# font-feature = VSAF 2
-
-# `
-# font-feature = VSAE 1
-
-# äöü
-font-feature = VDAB 2
-
-# ji
-font-feature = VDAA 2
+font-size = 14
