@@ -18,7 +18,7 @@ config.font = wezterm.font({
 		"VLAF 1",
 	},
 })
-config.font_size = 14
+config.font_size = 13
 
 config.window_decorations = "NONE"
 config.window_padding = {
