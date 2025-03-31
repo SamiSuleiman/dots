@@ -1,20 +1,23 @@
 font-family = monospace
+font-size = 13
+#adjust-cell-height = 35%
+
 window-decoration = false
 window-inherit-working-directory = true
 window-save-state = always
 window-width = 1920
 window-height = 1080
-theme = GruvboxDarkHard
-#cursor-color = #d65d0e
-cursor-style = block
-cursor-style-blink = true
-gtk-titlebar = false
-copy-on-select = true
-#adjust-cell-height = 35%
 window-padding-balance = true
+window-padding-y = 0
+gtk-titlebar = false
+
 mouse-scroll-multiplier = 0
 mouse-hide-while-typing = true
-window-padding-y = 0
-selection-background = #403d52
 
-font-size = 13
+theme = rose-pine
+#cursor-color = #d65d0e
+selection-background = #403d52
+background = #0d0d0d
+cursor-style = block
+cursor-style-blink = true
+copy-on-select = true

@@ -43,10 +43,10 @@ config.background = {
 	},
 }
 
-config.color_scheme = "Gruvbox Dark (Gogh)"
+config.color_scheme = "rose-pine"
 config.colors = {
 	["selection_bg"] = "#403d52",
-	background = "#1b1b1b",
+	background = "#0b0b0b",
 	-- cursor_bg = "#d65d0e",
 }
 config.term = "xterm-256color"
