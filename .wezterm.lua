@@ -27,7 +27,7 @@ config.window_padding = {
 	top = 0,
 	bottom = 0,
 }
--- config.line_height = 1.35
+config.line_height = 1.35
 
 config.background = {
 	{

@@ -1,6 +1,7 @@
 font-family = monospace
 font-size = 13
-#adjust-cell-height = 35%
+adjust-cell-height = 35%
+adjust-cursor-height = 35%
 
 window-decoration = false
 window-inherit-working-directory = true
