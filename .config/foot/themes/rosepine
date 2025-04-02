@@ -6,7 +6,7 @@ color=191724 e0def4
 
 [colors]
 #background=191724 
-background=000000 
+background=0d0d0d 
 foreground=e0def4 
 
 regular0=26233a     # black (Overlay)

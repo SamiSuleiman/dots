@@ -48,7 +48,7 @@ style = "Regular"
 # [colors.primary]
 # foreground = "#e0def4"
 # # background = "#232136"
-# background = "#000000"
+# background = "#0d0d0d"
 # dim_foreground = "#908caa"
 # bright_foreground = "#e0def4"
 #
@@ -66,7 +66,7 @@ style = "Regular"
 #
 # [colors.search.focused_match]
 # # foreground = "#232136"
-# foreground = "#000000"
+# foreground = "#0d0d0d"
 # background = "#ea9a97"
 #
 # [colors.hints.start]
@@ -123,7 +123,7 @@ style = "Regular"
 ## ROSE PINE
 [colors.primary]
 foreground = "#e0def4"
-# background = "#000000"
+# background = "#0d0d0d"
 background = "#130d0a"
 dim_foreground = "#908caa"
 bright_foreground = "#e0def4"
@@ -141,7 +141,7 @@ foreground = "#908caa"
 background = "#26233a"
 
 [colors.search.focused_match]
-# foreground = "#000000"
+# foreground = "#0d0d0d"
 foreground = "#130d0a"
 background = "#ebbcba"
 
