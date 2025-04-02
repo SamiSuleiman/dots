@@ -2,12 +2,12 @@
   // font stuff
   "editor.cursorStyle": "block",
   "editor.fontFamily": "monospace",
-  "editor.fontSize": 17,
+  "editor.fontSize": 16,
   "editor.lineHeight": 2,
   "editor.fontLigatures": true,
   "debug.console.fontFamily": "'monospace'",
   "debug.console.fontSize": 16,
-  "terminal.integrated.fontFamily": "Iosevka Term",
+  "terminal.integrated.fontFamily": "monospace",
   "terminal.integrated.fontSize": 16,
   //
 
@@ -259,5 +259,5 @@
   "window.density.editorTabHeight": "default",
   "window.menuBarVisibility": "compact",
   "workbench.sideBar.location": "left",
-  "workbench.colorTheme": "Rosé Pine"
+  "workbench.colorTheme": "Gruvbox Dark Hard"
 }
