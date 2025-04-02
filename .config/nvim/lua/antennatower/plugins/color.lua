@@ -18,8 +18,6 @@ return {
             surface = 'NONE',
           },
           moon = {
-            -- base = '#0d0d0d',
-            -- surface = '#0d0d0d',
             base = 'NONE',
             surface = 'NONE',
           },
@@ -50,7 +48,7 @@ return {
           -- TelescopePromptBorder = { fg = 'surface', bg = '#0d0d0d' },
         },
       }
-      vim.cmd 'colorscheme rose-pine'
+      vim.cmd 'colorscheme rose-pine-moon'
     end,
   },
 }

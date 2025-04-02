@@ -43,7 +43,7 @@ config.background = {
 	},
 }
 
-config.color_scheme = "rose-pine"
+config.color_scheme = "rose-pine-moon"
 config.colors = {
 	["selection_bg"] = "#403d52",
 	background = "#0b0b0b",
