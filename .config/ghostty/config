@@ -1,14 +1,14 @@
 font-family = monospace
-font-size = 14
+font-size = 13
 # JetBrainsMono
 #font-feature = zero
 #font-feature = frac
 #gaps between != == === !==
 #font-feature = ss19
 # Cascadia Code
-font-feature = ss01
-adjust-cell-height = 40%
-adjust-cursor-height = 40%
+# font-feature = ss01
+# adjust-cell-height = 40%
+# adjust-cursor-height = 40%
 
 window-decoration = false
 window-inherit-working-directory = true
@@ -22,7 +22,7 @@ gtk-titlebar = false
 mouse-scroll-multiplier = 0
 mouse-hide-while-typing = true
 
-theme = rose-pine
+theme = rose-pine-moon
 #cursor-color = #d65d0e
 selection-background = #403d52
 background = #0d0d0d

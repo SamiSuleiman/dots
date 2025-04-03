@@ -3,7 +3,7 @@
   "editor.cursorStyle": "block",
   "editor.fontFamily": "monospace",
   "editor.fontSize": 16,
-  "editor.lineHeight": 2,
+  // "editor.lineHeight": 2,
   "editor.fontLigatures": true,
   "debug.console.fontFamily": "'monospace'",
   "debug.console.fontSize": 16,
