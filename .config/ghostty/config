@@ -1,11 +1,14 @@
 font-family = monospace
-font-size = 13
+font-size = 14
+# JetBrainsMono
 #font-feature = zero
 #font-feature = frac
 #gaps between != == === !==
 #font-feature = ss19
-adjust-cell-height = 35%
-adjust-cursor-height = 35%
+# Cascadia Code
+font-feature = ss01
+adjust-cell-height = 40%
+adjust-cursor-height = 40%
 
 window-decoration = false
 window-inherit-working-directory = true
