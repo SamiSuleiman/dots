@@ -37,6 +37,9 @@ vim.api.nvim_create_autocmd('ModeChanged', {
 
 function _G.searchcount()
   local sc = vim.fn.searchcount { maxcount = 9999 } -- Get search count
+  if sc == nil then
+    return ''
+  end
   if sc.total > 0 then
     return string.format('[%d/%d]', sc.current, sc.total)
   end

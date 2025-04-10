@@ -258,6 +258,6 @@
   "symbols.hidesExplorerArrows": false,
   "window.density.editorTabHeight": "default",
   "window.menuBarVisibility": "compact",
-  "workbench.sideBar.location": "left",
+  "workbench.sideBar.location": "right",
   "workbench.colorTheme": "Rosé Pine Moon"
 }
