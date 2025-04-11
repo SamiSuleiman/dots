@@ -3,12 +3,12 @@
     "context": "Editor",
     "bindings": {
       "shift shift": "file_finder::Toggle",
-      "shift-tab": "pane::ActivatePreviousItem",
-      "tab": "pane::ActivateNextItem",
-      "ctrl-h": "workspace::ActivatePaneLeft",
-      "ctrl-l": "workspace::ActivatePaneRight",
-      "ctrl-k": "workspace::ActivatePaneUp",
-      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-shift-tab": "pane::ActivatePrevItem",
+      "ctrl-tab": "pane::ActivateNextItem",
+      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
       // "\"": "",
       "ctrl-w %": "pane::SplitLeft",
       "ctrl-w \"": "pane::SplitUp"

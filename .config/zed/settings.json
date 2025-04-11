@@ -1,4 +1,7 @@
 {
+  "auto_update_extensions": {
+    "angular": false
+  },
   "features": {
     "edit_prediction_provider": "zed"
   },
@@ -9,7 +12,7 @@
   "ui_font_family": "Ubuntu",
   "buffer_font_family": "JetBrains Mono",
   "ui_font_size": 16,
-  "buffer_line_height": "standard",
+  "buffer_line_height": "comfortable",
   "buffer_font_size": 16,
   "theme": {
     "mode": "system",
@@ -35,7 +38,7 @@
     // }
   },
   "project_panel": {
-    "dock": "left"
+    "dock": "right"
   },
   "current_line_highlight": "gutter",
   "cursor_blink": false,
@@ -46,7 +49,7 @@
   },
   "terminal": {
     "default_height": 10000,
-    "font_family": "Iosevka Term"
+    "font_family": "JetBrains Mono"
   },
   // "cursor_shape": "block",
   "relative_line_numbers": true,
