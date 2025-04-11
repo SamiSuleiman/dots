@@ -26,46 +26,46 @@ return {
         return _augroups[client.id]
       end
 
-      vim.api.nvim_create_autocmd('LspAttach', {
-        group = vim.api.nvim_create_augroup('lsp-attach-format', { clear = true }),
-        callback = function(args)
-          local client_id = args.data.client_id
-          local client = vim.lsp.get_client_by_id(client_id)
-          local bufnr = args.buf
-
-          if not client.server_capabilities.documentFormattingProvider then
-            return
-          end
-
-          if client.name == 'tsserver' then
-            return
-          end
-
-          -- vim.api.nvim_create_autocmd('BufWritePre', {
-          -- group = get_augroup(client),
-          -- buffer = bufnr,
-          -- callback = function()
-          --   if not format_is_enabled then
-          --     return
-          --   end
-
-          -- vim.lsp.buf.format {
-          --   async = false,
-          --   bufnr = bufnr,
-          --   filter = function(c)
-          --     return c.name == 'null-ls'
-          --   end,
-          -- }
-          -- vim.lsp.buf.format {
-          --     async = false,
-          --     filter = function(c)
-          --         return c.id == client.id
-          --     end,
-          -- }
-          -- end,
-          -- })
-        end,
-      })
+      -- vim.api.nvim_create_autocmd('LspAttach', {
+      --   group = vim.api.nvim_create_augroup('lsp-attach-format', { clear = true }),
+      --   callback = function(args)
+      --     local client_id = args.data.client_id
+      --     local client = vim.lsp.get_client_by_id(client_id)
+      --     local bufnr = args.buf
+      --
+      --     if not client.server_capabilities.documentFormattingProvider then
+      --       return
+      --     end
+      --
+      --     if client.name == 'tsserver' then
+      --       return
+      --     end
+      --
+      --     -- vim.api.nvim_create_autocmd('BufWritePre', {
+      --     -- group = get_augroup(client),
+      --     -- buffer = bufnr,
+      --     -- callback = function()
+      --     --   if not format_is_enabled then
+      --     --     return
+      --     --   end
+      --
+      --     -- vim.lsp.buf.format {
+      --     --   async = false,
+      --     --   bufnr = bufnr,
+      --     --   filter = function(c)
+      --     --     return c.name == 'null-ls'
+      --     --   end,
+      --     -- }
+      --     -- vim.lsp.buf.format {
+      --     --     async = false,
+      --     --     filter = function(c)
+      --     --         return c.id == client.id
+      --     --     end,
+      --     -- }
+      --     -- end,
+      --     -- })
+      --   end,
+      -- })
 
       local on_attach = function(_, bufnr)
         local nmap = function(keys, func, desc)
