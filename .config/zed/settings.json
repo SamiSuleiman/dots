@@ -96,6 +96,9 @@
           "arguments": ["--stdin-filepath", "{buffer_path}"]
         }
       }
+    },
+    "Markdown": {
+      "format_on_save": "on"
     }
   }
 }
