@@ -3,19 +3,19 @@
     "context": "Editor",
     "bindings": {
       "shift shift": "file_finder::Toggle",
-      "shift-tab": "pane::ActivatePreviousItem",
-      "tab": "pane::ActivateNextItem",
-      "ctrl-h": "workspace::ActivatePaneLeft",
-      "ctrl-l": "workspace::ActivatePaneRight",
-      "ctrl-k": "workspace::ActivatePaneUp",
-      "ctrl-j": "workspace::ActivatePaneDown",
-      // "\"": "",
+      "ctrl-shift-tab": "pane::ActivatePreviousItem",
+      "ctrl-tab": "pane::ActivateNextItem",
       "ctrl-w %": "pane::SplitLeft",
-      "ctrl-w \"": "pane::SplitUp"
-      // "space f g": "pane::DeploySearch",
-      // "space g b": "editor::ToggleGitBlame",
-      // "space g h": "editor::ToggleHunkDiff",
-      // "space c r": "editor::Rename"
+      "ctrl-w \"": "pane::SplitUp",
+      "ctrl-h": "workspace::ToggleLeftDock",
+      "ctrl-j": "workspace::ToggleBottomDock",
+      "ctrl-l": "workspace::ToggleRightDock"
+    }
+  },
+  {
+    "context": "vim_mode == insert",
+    "bindings": {
+      "ctrl-k": "editor::Hover"
     }
   }
 ]

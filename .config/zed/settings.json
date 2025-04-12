@@ -1,18 +1,23 @@
 {
+  "edit_predictions_disabled_in": ["comments"],
+  "show_whitespaces": "selection",
   "auto_update_extensions": {
     "angular": false
   },
   "features": {
-    "edit_prediction_provider": "zed"
+    "edit_prediction_provider": "supermaven"
   },
+  "show_edit_predictions": true,
   "telemetry": {
     "diagnostics": false,
     "metrics": false
   },
-  "ui_font_family": "Ubuntu",
+  "ui_font_family": "JetBrains Mono",
   "buffer_font_family": "JetBrains Mono",
   "ui_font_size": 16,
-  "buffer_line_height": "comfortable",
+  "buffer_line_height": {
+    "custom": 2
+  },
   "buffer_font_size": 16,
   "theme": {
     "mode": "system",
@@ -28,27 +33,18 @@
     "terminal.background": "#0d0d0d",
     "toolbar.background": "#0d0d0d",
     "status_bar.background": "#0d0d0d"
-    // "syntax": {
-    //   "comment": {
-    //     "font_style": "italic"
-    //   },
-    //   "comment.doc": {
-    //     "font_style": "italic"
-    //   }
-    // }
   },
   "project_panel": {
     "dock": "right"
   },
   "current_line_highlight": "gutter",
-  "cursor_blink": false,
+  "cursor_blink": true,
   "toolbar": {
     "breadcrumbs": false,
     "quick_actions": false,
     "selections_menu": false
   },
   "terminal": {
-    "default_height": 10000,
     "font_family": "JetBrains Mono"
   },
   // "cursor_shape": "block",
@@ -56,19 +52,22 @@
   "vim_mode": true,
   "git": {
     "inline_blame": {
-      "enabled": false
+      "enabled": true
     }
   },
   "tabs": {
     "git_status": true
   },
   "inlay_hints": {
-    "enabled": true,
-    "show_type_hints": true,
-    "show_parameter_hints": true,
-    "show_other_hints": true,
-    "edit_debounce_ms": 700,
-    "scroll_debounce_ms": 50
+    "toggle_on_modifiers_press": {
+      "alt": true
+    }
+    // "enabled": true,
+    // "show_type_hints": true,
+    // "show_parameter_hints": true,
+    // "show_other_hints": true,
+    // "edit_debounce_ms": 700,
+    // "scroll_debounce_ms": 50
   },
   "confirm_quit": true,
   "preview_tabs": {
@@ -78,11 +77,14 @@
   },
   "lsp": {},
   "languages": {
+    // "TypeScript": {
+    //   "language_servers": ["angular", "typescript", "html"]
+    // },
+    // "HTML": {
+    //   "language_servers": ["angular", "html"]
+    // },
     "TypeScript": {
-      "language_servers": ["angular", "typescript", "html"]
-    },
-    "HTML": {
-      "language_servers": ["angular", "html"]
+      "show_edit_predictions": true
     },
     "JavaScript": {
       "code_actions_on_format": {
