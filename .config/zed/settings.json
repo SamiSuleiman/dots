@@ -15,9 +15,7 @@
   "ui_font_family": "Ubuntu",
   "buffer_font_family": "JetBrains Mono",
   "ui_font_size": 16,
-  "buffer_line_height": {
-    "custom": 2
-  },
+  "buffer_line_height": "standard",
   "buffer_font_size": 16,
   "theme": {
     "mode": "system",
@@ -25,14 +23,14 @@
     "dark": "Rosé Pine"
   },
   "experimental.theme_overrides": {
-    "editor.background": "#0d0d0d",
-    "panel.background": "#0d0d0d",
-    "editor.gutter.background": "#0d0d0d",
-    "tab_bar.background": "#0d0d0d",
-    "title_bar.background": "#0d0d0d",
-    "terminal.background": "#0d0d0d",
-    "toolbar.background": "#0d0d0d",
-    "status_bar.background": "#0d0d0d"
+    "editor.background": "#000000",
+    "panel.background": "#000000",
+    "editor.gutter.background": "#000000",
+    "tab_bar.background": "#000000",
+    "title_bar.background": "#000000",
+    "terminal.background": "#000000",
+    "toolbar.background": "#000000",
+    "status_bar.background": "#000000"
   },
   "project_panel": {
     "dock": "right"

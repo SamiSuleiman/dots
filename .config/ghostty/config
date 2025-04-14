@@ -7,8 +7,8 @@ font-size = 13
 #font-feature = ss19
 # Cascadia Code
 # font-feature = ss01
-adjust-cell-height = 40%
-adjust-cursor-height = 40%
+# adjust-cell-height = 40%
+# adjust-cursor-height = 40%
 
 window-decoration = false
 window-inherit-working-directory = true
@@ -25,7 +25,7 @@ mouse-hide-while-typing = true
 theme = rose-pine
 #cursor-color = #d65d0e
 selection-background = #403d52
-background = #0d0d0d
+background = #000000
 #cursor-style = block
 cursor-style-blink = true
 copy-on-select = true
