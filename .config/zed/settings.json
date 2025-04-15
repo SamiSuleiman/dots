@@ -23,14 +23,14 @@
     "dark": "Rosé Pine"
   },
   "experimental.theme_overrides": {
-    "editor.background": "#000000",
-    "panel.background": "#000000",
-    "editor.gutter.background": "#000000",
-    "tab_bar.background": "#000000",
-    "title_bar.background": "#000000",
-    "terminal.background": "#000000",
-    "toolbar.background": "#000000",
-    "status_bar.background": "#000000"
+    "editor.background": "#0a0a0a",
+    "panel.background": "#0a0a0a",
+    "editor.gutter.background": "#0a0a0a",
+    "tab_bar.background": "#0a0a0a",
+    "title_bar.background": "#0a0a0a",
+    "terminal.background": "#0a0a0a",
+    "toolbar.background": "#0a0a0a",
+    "status_bar.background": "#0a0a0a"
   },
   "project_panel": {
     "dock": "right"
