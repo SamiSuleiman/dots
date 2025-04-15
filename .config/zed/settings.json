@@ -13,9 +13,17 @@
     "metrics": false
   },
   "ui_font_family": "Ubuntu",
-  "buffer_font_family": "JetBrains Mono",
-  "ui_font_size": 16,
-  "buffer_line_height": "standard",
+  "buffer_font_family": "Cascadia Code",
+  "ui_font_size": 15,
+  "buffer_font_weight": 380,
+  "buffer_line_height": {
+    "custom": 2
+  },
+  // what the fuck
+  "buffer_font_features": {
+    "calt": true,
+    "ss01": true
+  },
   "buffer_font_size": 16,
   "theme": {
     "mode": "system",
@@ -43,7 +51,7 @@
     "selections_menu": false
   },
   "terminal": {
-    "font_family": "JetBrains Mono"
+    "font_family": "Cascadia Code"
   },
   // "cursor_shape": "block",
   "relative_line_numbers": true,

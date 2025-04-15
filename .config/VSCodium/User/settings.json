@@ -2,9 +2,9 @@
   // font stuff
   "editor.cursorStyle": "block",
   "editor.fontFamily": "monospace",
-  "editor.fontSize": 17,
-  // "editor.lineHeight": 2,
-  "editor.fontLigatures": true,
+  "editor.fontSize": 16,
+  "editor.lineHeight": 2,
+  "editor.fontLigatures": "'calt', 'ss01'",
   "debug.console.fontFamily": "'monospace'",
   "debug.console.fontSize": 16,
   "terminal.integrated.fontFamily": "monospace",
@@ -259,5 +259,5 @@
   "window.density.editorTabHeight": "default",
   "window.menuBarVisibility": "compact",
   "workbench.sideBar.location": "right",
-  "workbench.colorTheme": "Rosé Pine Moon"
+  "workbench.colorTheme": "Rosé Pine"
 }
