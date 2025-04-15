@@ -45,9 +45,9 @@ vim.api.nvim_set_keymap('n', '<Leader>yp', ':CopyCurrPathToClipboard<CR>', { nor
 ----
 
 -- snacks --
-vim.keymap.set('n', '<leader>nh', function()
-  Snacks.notifier.show_history()
-end, { desc = 'show snacks history' })
+-- vim.keymap.set('n', '<leader>nh', function()
+--   Snacks.notifier.show_history()
+-- end, { desc = 'show snacks history' })
 ----
 
 -- terminal --
@@ -126,7 +126,7 @@ vim.api.nvim_set_keymap('n', '<C-u>', '<C-u>zz', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-d>', '<C-d>zz', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-x>', '<C-6>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>xx', ':w <cr> :source % <cr>', { noremap = true })
-vim.keymap.set('n', '<leader>f', function()
+vim.keymap.set('n', '<c-s>', function()
   local bufnr = vim.api.nvim_get_current_buf()
   vim.lsp.buf.format {
     async = false,
@@ -135,6 +135,7 @@ vim.keymap.set('n', '<leader>f', function()
       return c.name == 'null-ls'
     end,
   }
+  vim.cmd [[:w]]
 end, { desc = 'format' })
 ----
 

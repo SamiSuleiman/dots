@@ -11,10 +11,6 @@ local backgrounds = {
 
 config.font = wezterm.font({
 	family = "monospace",
-	harfbuzz_features = {
-		"ss01",
-		"calt",
-	},
 })
 config.font_size = 13
 

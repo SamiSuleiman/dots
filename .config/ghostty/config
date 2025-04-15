@@ -6,8 +6,8 @@ font-size = 13
 #gaps between != == === !==
 #font-feature = ss19
 # Cascadia Code
-font-feature = ss01
-font-feature = calt
+# font-feature = ss01
+# font-feature = calt
 adjust-cell-height = 40%
 adjust-cursor-height = 40%
 

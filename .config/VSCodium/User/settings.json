@@ -4,7 +4,6 @@
   "editor.fontFamily": "monospace",
   "editor.fontSize": 16,
   "editor.lineHeight": 2,
-  "editor.fontLigatures": "'calt', 'ss01'",
   "debug.console.fontFamily": "'monospace'",
   "debug.console.fontSize": 16,
   "terminal.integrated.fontFamily": "monospace",
