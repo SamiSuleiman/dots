@@ -13,8 +13,8 @@
     "metrics": false
   },
   "ui_font_family": "Ubuntu",
-  "buffer_font_family": "Hack",
-  "buffer_font_fallbacks": ["Hack Nerd Font", "Cascadia Code"],
+  "buffer_font_family": "JetBrains Mono",
+  "buffer_font_fallbacks": ["JetBrainsMono Nerd Font", "Cascadia Code"],
   "ui_font_size": 15,
   "buffer_line_height": {
     "custom": 2

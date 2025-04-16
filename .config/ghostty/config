@@ -1,13 +1,9 @@
 font-family = monospace
 font-size = 13
-# JetBrainsMono
 #font-feature = zero
-#font-feature = frac
 #gaps between != == === !==
-#font-feature = ss19
-# Cascadia Code
-# font-feature = ss01
-# font-feature = calt
+# font-feature = ss19
+# font-feature = cv18
 adjust-cell-height = 40%
 adjust-cursor-height = 40%
 
