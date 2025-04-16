@@ -23,7 +23,7 @@
   "theme": {
     "mode": "system",
     "light": "Rosé Pine Dawn",
-    "dark": "Rosé Pine"
+    "dark": "Rosé Pine Moon"
   },
   "experimental.theme_overrides": {
     "editor.background": "#0a0a0a",
@@ -33,7 +33,8 @@
     "title_bar.background": "#0a0a0a",
     "terminal.background": "#0a0a0a",
     "toolbar.background": "#0a0a0a",
-    "status_bar.background": "#0a0a0a"
+    "status_bar.background": "#0a0a0a",
+    "tab.inactive_background": "#0a0a0a"
   },
   "project_panel": {
     "dock": "right"
@@ -46,7 +47,8 @@
     "selections_menu": false
   },
   "terminal": {
-    "font_family": "Cascadia Code"
+    "font_family": "JetBrains Mono",
+    "font_fallbacks": ["Cascadia Code"]
   },
   // "cursor_shape": "block",
   "relative_line_numbers": true,

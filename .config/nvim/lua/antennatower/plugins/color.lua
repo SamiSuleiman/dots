@@ -50,7 +50,7 @@ return {
           -- TelescopePromptBorder = { fg = 'surface', bg = '#0a0a0a' },
         },
       }
-      vim.cmd 'colorscheme rose-pine'
+      vim.cmd 'colorscheme rose-pine-moon'
     end,
   },
 }
