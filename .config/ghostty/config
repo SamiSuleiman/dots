@@ -4,8 +4,8 @@ font-size = 13
 #gaps between != == === !==
 # font-feature = ss19
 # font-feature = cv18
-adjust-cell-height = 40%
-adjust-cursor-height = 40%
+# adjust-cell-height = 40%
+# adjust-cursor-height = 40%
 
 window-decoration = false
 window-inherit-working-directory = true

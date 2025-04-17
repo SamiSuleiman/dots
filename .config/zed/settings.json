@@ -1,4 +1,9 @@
 {
+  "preferred_line_length": 120,
+  "soft_wrap": "preferred_line_length",
+  "file_finder": {
+    "modal_max_width": "medium"
+  },
   "edit_predictions_disabled_in": ["comments"],
   "show_whitespaces": "selection",
   "auto_update_extensions": {
@@ -16,9 +21,7 @@
   "buffer_font_family": "JetBrains Mono",
   "buffer_font_fallbacks": ["JetBrainsMono Nerd Font", "Cascadia Code"],
   "ui_font_size": 15,
-  "buffer_line_height": {
-    "custom": 2
-  },
+  "buffer_line_height": "standard",
   "buffer_font_size": 16,
   "theme": {
     "mode": "system",
@@ -47,8 +50,10 @@
     "selections_menu": false
   },
   "terminal": {
+    "copy_on_select": true,
     "font_family": "JetBrains Mono",
-    "font_fallbacks": ["Cascadia Code"]
+    "font_fallbacks": ["Cascadia Code"],
+    "line_height": "standard"
   },
   // "cursor_shape": "block",
   "relative_line_numbers": true,

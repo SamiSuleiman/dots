@@ -40,7 +40,7 @@ config.background = {
 config.color_scheme = "rose-pine-moon"
 config.colors = {
 	["selection_bg"] = "#403d52",
-	background = "#0b0b0b",
+	background = "#0a0a0a",
 	-- cursor_bg = "#d65d0e",
 }
 config.term = "xterm-256color"
@@ -53,16 +53,16 @@ config.cursor_blink_rate = 700
 config.disable_default_key_bindings = false
 -- local act = wezterm.action
 
--- config.keys = {
--- 	-- { key = ")", mods = "CTRL", action = act.ResetFontSize },
--- 	-- { key = "-", mods = "CTRL", action = act.DecreaseFontSize },
--- 	-- { key = "=", mods = "CTRL", action = act.IncreaseFontSize },
--- 	-- { key = "N", mods = "CTRL", action = act.SpawnWindow },
--- 	{ key = "/", mods = "CTRL", action = act.ActivateCommandPalette },
--- 	{ key = "V", mods = "CTRL", action = act.PasteFrom("Clipboard") },
--- 	{ key = "C", mods = "NONE", action = act.CopyTo("Clipboard") },
--- 	-- { key = "P", mods = "NONE", action = act.PasteFrom("Clipboard") },
--- 	{ key = "F11", mods = "NONE", action = act.ToggleFullScreen },
--- }
+config.keys = {
+	-- { key = ")", mods = "CTRL", action = act.ResetFontSize },
+	-- { key = "-", mods = "CTRL", action = act.DecreaseFontSize },
+	-- { key = "=", mods = "CTRL", action = act.IncreaseFontSize },
+	-- { key = "N", mods = "CTRL", action = act.SpawnWindow },
+	-- { key = "/", mods = "CTRL", action = act.ActivateCommandPalette },
+	-- { key = "V", mods = "CTRL", action = act.PasteFrom("Clipboard") },
+	-- { key = "C", mods = "NONE", action = act.CopyTo("Clipboard") },
+	-- { key = "P", mods = "NONE", action = act.PasteFrom("Clipboard") },
+	-- { key = "F11", mods = "NONE", action = act.ToggleFullScreen },
+}
 
 return config

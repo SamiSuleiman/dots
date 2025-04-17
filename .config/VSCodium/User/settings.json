@@ -3,7 +3,7 @@
   "editor.cursorStyle": "block",
   "editor.fontFamily": "JetBrains Mono, Cascadia Code",
   "editor.fontSize": 16,
-  "editor.lineHeight": 2,
+  // "editor.lineHeight": 2,
   "debug.console.fontFamily": "JetBrains Mono, Cascadia Code",
   "debug.console.fontSize": 16,
   "terminal.integrated.fontFamily": "JetBrains Mono, Cascadia Code",
