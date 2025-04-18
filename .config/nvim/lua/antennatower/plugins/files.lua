@@ -6,12 +6,12 @@ return {
     default_file_explorer = true,
     -- Id is automatically added at the beginning, and name at the end
     -- See :help oil-columns
-    columns = {
-      'icon',
-      -- "permissions",
-      "size",
-      "mtime",
-    },
+    -- columns = {
+    --   'icon',
+    --   -- "permissions",
+    --   "size",
+    --   "mtime",
+    -- },
     view_options = {
       show_hidden = true,
     }
