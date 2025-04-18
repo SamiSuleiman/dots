@@ -116,6 +116,7 @@ vim.keymap.set('n', '<leader>gf', require('telescope.builtin').git_files, { desc
 vim.keymap.set('n', '<leader>gb', require('telescope.builtin').git_branches, { desc = 'search git branches' })
 vim.keymap.set('n', '<leader>gc', require('telescope.builtin').git_commits, { desc = 'search git commits' })
 vim.keymap.set('n', '<leader>sG', ':LiveGrepGitRoot<cr>', { desc = 'search by grep on git root' })
+vim.keymap.set('n', '<leader>gg', ':Neogit<cr>', { desc = 'search by grep on git root' })
 ----
 
 -- misc --
