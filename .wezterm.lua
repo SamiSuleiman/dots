@@ -40,7 +40,7 @@ config.background = {
 config.color_scheme = "Catppuccin Mocha"
 config.colors = {
 	-- ["selection_bg"] = "#403d52",
-	background = "#0a0a0a",
+	background = "#000000",
 	-- cursor_bg = "#d65d0e",
 }
 config.term = "xterm-256color"
