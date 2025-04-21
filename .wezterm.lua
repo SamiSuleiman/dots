@@ -12,7 +12,7 @@ local backgrounds = {
 config.font = wezterm.font({
 	family = "monospace",
 })
-config.font_size = 13
+config.font_size = 12
 
 config.window_decorations = "NONE"
 config.window_padding = {
@@ -37,9 +37,9 @@ config.background = {
 	},
 }
 
-config.color_scheme = "rose-pine-moon"
+config.color_scheme = "Catppuccin Mocha"
 config.colors = {
-	["selection_bg"] = "#403d52",
+	-- ["selection_bg"] = "#403d52",
 	background = "#0a0a0a",
 	-- cursor_bg = "#d65d0e",
 }

@@ -107,7 +107,7 @@
     "*.css": "tailwindcss"
   },
   "workbench.colorCustomizations": {
-    "[Rosé Pine], [Rosé Pine Moon]": {
+    "[Rosé Pine], [Rosé Pine Moon], [Catppuccin Mocha]": {
       "activityBar.background": "#0a0a0a",
       "activityBarBadge.foreground": "#0a0a0a",
       "badge.foreground": "#0a0a0a",
@@ -258,5 +258,5 @@
   "window.density.editorTabHeight": "default",
   "window.menuBarVisibility": "compact",
   "workbench.sideBar.location": "right",
-  "workbench.colorTheme": "Rosé Pine Moon"
+  "workbench.colorTheme": "Catppuccin Mocha"
 }

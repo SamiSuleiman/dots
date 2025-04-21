@@ -19,7 +19,7 @@ gtk-titlebar = false
 mouse-scroll-multiplier = 0
 mouse-hide-while-typing = true
 
-theme = rose-pine-moon
+theme = catppuccin-mocha
 #cursor-color = #d65d0e
 selection-background = #403d52
 background = #0a0a0a
