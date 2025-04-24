@@ -73,6 +73,18 @@ return {
       completion = {
         completeopt = 'menu,menuone,noinsert',
       },
+      window = {
+        completion = {
+          scrollbar = false,
+          border = 'rounded',
+          winhighlight = 'Normal:CmpNormal',
+        },
+        documentation = {
+          scrollbar = false,
+          border = 'rounded',
+          winhighlight = 'Normal:CmpNormal',
+        }
+      },
       mapping = cmp.mapping.preset.insert {
         ['<C-n>'] = cmp.mapping.select_next_item(),
         ['<C-p>'] = cmp.mapping.select_prev_item(),
