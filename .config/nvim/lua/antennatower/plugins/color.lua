@@ -2,7 +2,7 @@ return {
   {
     'catppuccin/nvim',
     name = 'catppuccin',
-    enabled = true,
+    enabled = false,
     priority = 1000,
     config = function()
       require('catppuccin').setup {
@@ -46,7 +46,7 @@ return {
   {
     'rose-pine/neovim',
     name = 'rose-pine',
-    enabled = false,
+    enabled = true,
     config = function()
       require('rose-pine').setup {
         dim_inactive_windows = false,
