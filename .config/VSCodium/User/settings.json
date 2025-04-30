@@ -2,12 +2,13 @@
   // font stuff
   "editor.cursorStyle": "block",
   "editor.fontFamily": "JetBrains Mono, Cascadia Code",
-  "editor.fontSize": 16,
+  "editor.fontSize": 17,
+  "editor.fontLigatures": true,
   // "editor.lineHeight": 2,
   "debug.console.fontFamily": "JetBrains Mono, Cascadia Code",
   "debug.console.fontSize": 16,
-  "terminal.integrated.fontFamily": "JetBrains Mono, Cascadia Code",
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontFamily": "JetBrains Mono,JetBrainsMono Nerd Font, Cascadia Code",
+  "terminal.integrated.fontSize": 17,
   //
 
   // vim stuff
@@ -258,5 +259,5 @@
   "window.density.editorTabHeight": "default",
   "window.menuBarVisibility": "compact",
   "workbench.sideBar.location": "right",
-  "workbench.colorTheme": "Catppuccin Mocha"
+  "workbench.colorTheme": "Rosé Pine Moon"
 }
