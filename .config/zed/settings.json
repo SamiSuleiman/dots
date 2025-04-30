@@ -26,7 +26,7 @@
   "theme": {
     "mode": "system",
     "light": "Rosé Pine Dawn",
-    "dark": "Catppuccin Mocha"
+    "dark": "Rosé Pine Moon"
   },
   "experimental.theme_overrides": {
     "editor.background": "#000000",
