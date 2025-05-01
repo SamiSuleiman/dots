@@ -77,8 +77,8 @@ return {
           -- Normal = { bg = '#000000' },
           -- SignColumn = { bg = '#000000' },
           -- VertSplit = { bg = '#000000' },
-          StatusLine = { bg = '#000000' },
-          StatusLineNC = { bg = '#000000' },
+          -- StatusLine = { bg = '#000000' },
+          -- StatusLineNC = { bg = '#000000' },
           -- CurSearch = { fg = 'base', bg = 'love', inherit = false },
           Visual = { bg = 'highlight_med', inherit = false },
           -- Search = { fg = 'text', bg = 'rose', blend = 20, inherit = false },
@@ -94,7 +94,7 @@ return {
           -- TelescopePromptBorder = { fg = 'surface', bg = '#000000' },
         },
       }
-      vim.cmd 'colorscheme rose-pine-moon'
+      vim.cmd 'colorscheme rose-pine'
     end,
   },
 }

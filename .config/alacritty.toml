@@ -10,69 +10,41 @@ size = 13.0
 # family = "JetBrains Mono"
 # style = "Regular"
 
-# COLORS
-## Gruvbox
-# [colors]
-#
-# [colors.primary]
-# background = '#1d2021'
-# foreground = '#d4be98'
-#
-# [colors.normal]
-# black = '#32302f'
-# red = '#ea6962'
-# green = '#a9b665'
-# yellow = '#d8a657'
-# blue = '#7daea3'
-# magenta = '#d3869b'
-# cyan = '#89b482'
-# white = '#d4be98'
-#
-# [colors.bright]
-# black = '#32302f'
-# red = '#ea6962'
-# green = '#a9b665'
-# yellow = '#d8a657'
-# blue = '#7daea3'
-# magenta = '#d3869b'
-# cyan = '#89b482'
-# white = '#d4be98'
-#
-# [colors.cursor]
-# cursor = '#ec5d2a'
+## --------------- ##
+## -- ROSE PINE -- ##
+## --------------- ##
+# Colors section of "Alacritty - TOML configuration file format"
+# https://github.com/alacritty/alacritty/blob/master/extra/man/alacritty.5.scd#colors
 
-## ROSE PINE MOON
 [colors.primary]
 foreground = "#e0def4"
-# background = "#232136"
-background = "#000000"
+background = "#191724"
 dim_foreground = "#908caa"
 bright_foreground = "#e0def4"
 
 [colors.cursor]
 text = "#e0def4"
-cursor = "#56526e"
+cursor = "#524f67"
 
 [colors.vi_mode_cursor]
 text = "#e0def4"
-cursor = "#56526e"
+cursor = "#524f67"
 
 [colors.search.matches]
 foreground = "#908caa"
-background = "#393552"
+background = "#26233a"
 
 [colors.search.focused_match]
-# foreground = "#232136"
-foreground = "#000000"
-background = "#ea9a97"
+foreground = "#191724"
+background = "#ebbcba"
 
 [colors.hints.start]
 foreground = "#908caa"
-background = "#2a273f"
+background = "#1f1d2e"
 
 [colors.hints.end]
 foreground = "#6e6a86"
-background = "#2a273f"
+background = "#1f1d2e"
 
 [colors.line_indicator]
 foreground = "None"
@@ -80,117 +52,38 @@ background = "None"
 
 [colors.footer_bar]
 foreground = "#e0def4"
-background = "#2a273f"
+background = "#1f1d2e"
 
 [colors.selection]
 text = "#e0def4"
-background = "#44415a"
+background = "#403d52"
 
 [colors.normal]
-black = "#393552"
+black = "#26233a"
 red = "#eb6f92"
-green = "#3e8fb0"
+green = "#31748f"
 yellow = "#f6c177"
 blue = "#9ccfd8"
 magenta = "#c4a7e7"
-cyan = "#ea9a97"
+cyan = "#ebbcba"
 white = "#e0def4"
 
 [colors.bright]
 black = "#6e6a86"
 red = "#eb6f92"
-green = "#3e8fb0"
+green = "#31748f"
 yellow = "#f6c177"
 blue = "#9ccfd8"
 magenta = "#c4a7e7"
-cyan = "#ea9a97"
+cyan = "#ebbcba"
 white = "#e0def4"
 
 [colors.dim]
 black = "#6e6a86"
 red = "#eb6f92"
-green = "#3e8fb0"
+green = "#31748f"
 yellow = "#f6c177"
 blue = "#9ccfd8"
 magenta = "#c4a7e7"
-cyan = "#ea9a97"
+cyan = "#ebbcba"
 white = "#e0def4"
-## END ROSE PINE MOON
-
-## ROSE PINE
-# [colors.primary]
-# foreground = "#e0def4"
-# # background = "#000000"
-# background = "#130d0a"
-# dim_foreground = "#908caa"
-# bright_foreground = "#e0def4"
-#
-# [colors.cursor]
-# text = "#e0def4"
-# cursor = "#524f67"
-#
-# [colors.vi_mode_cursor]
-# text = "#e0def4"
-# cursor = "#524f67"
-#
-# [colors.search.matches]
-# foreground = "#908caa"
-# background = "#26233a"
-#
-# [colors.search.focused_match]
-# # foreground = "#000000"
-# foreground = "#130d0a"
-# background = "#ebbcba"
-#
-# [colors.hints.start]
-# foreground = "#908caa"
-# background = "#1f1d2e"
-#
-# [colors.hints.end]
-# foreground = "#6e6a86"
-# background = "#1f1d2e"
-#
-# [colors.line_indicator]
-# foreground = "None"
-# background = "None"
-#
-# [colors.footer_bar]
-# foreground = "#e0def4"
-# background = "#1f1d2e"
-#
-# [colors.selection]
-# text = "#e0def4"
-# background = "#403d52"
-#
-# [colors.normal]
-# black = "#26233a"
-# red = "#eb6f92"
-# green = "#31748f"
-# yellow = "#f6c177"
-# blue = "#9ccfd8"
-# magenta = "#c4a7e7"
-# cyan = "#ebbcba"
-# white = "#e0def4"
-#
-# [colors.bright]
-# black = "#6e6a86"
-# red = "#eb6f92"
-# green = "#31748f"
-# yellow = "#f6c177"
-# blue = "#9ccfd8"
-# magenta = "#c4a7e7"
-# cyan = "#ebbcba"
-# white = "#e0def4"
-#
-# [colors.dim]
-# black = "#6e6a86"
-# red = "#eb6f92"
-# green = "#31748f"
-# yellow = "#f6c177"
-# blue = "#9ccfd8"
-# magenta = "#c4a7e7"
-# cyan = "#ebbcba"
-# white = "#e0def4"
-# ## END ROSE PINE
-#
-#
