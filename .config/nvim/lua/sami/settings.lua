@@ -55,10 +55,11 @@ end
 
 -- vim.opt.guicursor = ''
 vim.opt.nu = true
+vim.o.winborder = 'rounded'
 vim.opt.relativenumber = true
 vim.opt.linebreak = true
 vim.opt.breakindent = true
-vim.opt.colorcolumn = '120'
+-- vim.opt.colorcolumn = '120'
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 2
@@ -100,34 +101,13 @@ vim.opt.termguicolors = true
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = 'yes'
 vim.opt.updatetime = 50
-vim.api.nvim_set_hl(0, 'FloatBorder', { fg = '#92C2CB' })
 vim.opt.spelllang = 'en_us'
 vim.opt.spell = true
-vim.treesitter.language.register('markdown', 'mdx')
-vim.treesitter.language.register('vue', 'analog')
-vim.treesitter.language.register('json', '.all-contributorsrc')
 vim.g.copilot_assume_mapped = true
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.cedit = '<Esc>'
 
-vim.g.netrw_winsize = 20
 vim.g.netrw_banner = 0
 -- vim.g.netrw_liststyle = 3
 vim.g.netrw_winsize = 50
-
-local float = { focusable = true, style = 'minimal', border = 'single' }
-vim.lsp.handlers['textDocument/hover'] = vim.lsp.with(vim.lsp.handlers.hover, float)
-vim.lsp.handlers['textDocument/signatureHelp'] = vim.lsp.with(vim.lsp.handlers.signature_help, float)
-
-vim.filetype.add {
-  extension = {
-    mdx = 'mdx',
-    analog = 'analog',
-  },
-}
-vim.filetype.add {
-  extension = {
-    ['.all-contributorsrc'] = '.all-contributorsrc',
-  },
-}

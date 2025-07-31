@@ -21,7 +21,7 @@ mouse-scroll-multiplier = 0
 mouse-hide-while-typing = true
 
 ## THEME
-theme = tokyonight
+theme = Kanagawa Dragon
 cursor-style = block
 cursor-style-blink = true
 copy-on-select = true

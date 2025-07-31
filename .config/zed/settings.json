@@ -11,8 +11,8 @@
     "scss": true,
     "sql": true,
     "svelte": true,
-    "tokyo-night": true,
-    "toml": true
+    "toml": true,
+    "kanagawa-themes": true
   },
   "agent": {
     "default_model": {
@@ -48,7 +48,7 @@
   "theme": {
     "mode": "system",
     "light": "Rosé Pine Dawn",
-    "dark": "Tokyo Night"
+    "dark": "Kanagawa Dragon"
   },
   "experimental.theme_overrides": {
     // "editor.background": "#0d0a01",

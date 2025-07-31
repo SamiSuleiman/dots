@@ -93,21 +93,3 @@ vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = tr
 vim.api.nvim_set_keymap('n', '<C-u>', '<C-u>zz', { noremap = true })
 vim.api.nvim_set_keymap('n', '<C-d>', '<C-d>zz', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>xx', ':w <cr> :source % <cr>', { noremap = true })
--- vim.keymap.set('n', '<c-s>', function()
---   local bufnr = vim.api.nvim_get_current_buf()
---   vim.lsp.buf.format {
---     async = false,
---     bufnr = bufnr,
---     filter = function(c)
---       return c.name == 'null-ls'
---     end,
---   }
---   vim.cmd [[:w]]
--- end, { desc = 'format' })
-----
-
--- ########## --
--- ## rest ## --
--- ########## --
-vim.api.nvim_set_keymap('n', '<leader>rr', ':Rest run<CR>', { desc = 'Rest run' })
-vim.api.nvim_set_keymap('n', '<leader>ro', ':Rest open<CR>', { desc = 'Rest open' })

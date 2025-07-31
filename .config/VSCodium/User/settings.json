@@ -201,10 +201,8 @@
   "symbols.hidesExplorerArrows": false,
   "window.density.editorTabHeight": "default",
   "window.menuBarVisibility": "compact",
-  // "workbench.colorTheme": "Tokyo Night Light",
   "window.autoDetectColorScheme": true,
   "workbench.productIconTheme": "fluent-icons",
   "workbench.iconTheme": "vscode-icons",
-  "workbench.preferredLightColorTheme": "Rosé Pine Dawn",
-  "workbench.preferredDarkColorTheme": "Tokyo Night"
+  "workbench.preferredDarkColorTheme": "Kanagawa Dragon"
 }
