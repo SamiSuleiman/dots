@@ -1,1 +1,1 @@
-require('sami')
+require 'sami'

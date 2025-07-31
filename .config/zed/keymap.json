@@ -1,0 +1,30 @@
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "ctrl-shift-e": "project_panel::ToggleFocus",
+      "shift shift": "file_finder::Toggle",
+      "ctrl-shift-tab": "pane::ActivatePreviousItem",
+      "ctrl-tab": "pane::ActivateNextItem",
+      "ctrl-w %": "pane::SplitLeft",
+      "ctrl-w \"": "pane::SplitUp",
+      "ctrl-h": "workspace::ToggleLeftDock",
+      "ctrl-j": "workspace::ToggleBottomDock",
+      "ctrl-l": "workspace::ToggleRightDock",
+      "shift-space": "editor::AcceptEditPrediction"
+    }
+  },
+  {
+    "context": "vim_mode == insert",
+    "bindings": {
+      "ctrl-k": "editor::Hover"
+    }
+  },
+  {
+    "context": "ProjectPanel && not_editing",
+    "bindings": {
+      "y": "project_panel::Copy",
+      "p": "project_panel::Paste"
+    }
+  }
+]

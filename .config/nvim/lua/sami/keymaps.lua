@@ -1,91 +1,113 @@
-local function telescope_live_grep_open_files()
-  require('telescope.builtin').live_grep {
-    grep_open_files = true,
-    prompt_title = 'Live Grep in Open Files',
-  }
-end
+-- ############## --
+-- ## undotree ## --
+-- ############## --
+vim.keymap.set('n', '<leader>u', vim.cmd.UndotreeToggle, { desc = 'toggle undotree', noremap = true })
 
-vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
+-- ########### --
+-- ## pick ## --
+-- ########## --
+vim.keymap.set('n', '<leader>sf', ':Pick files<CR>', { desc = 'Pick files', noremap = true })
+vim.keymap.set('n', '<leader>sg', ':Pick grep_live<CR>', { desc = 'Grep files', noremap = true })
+vim.keymap.set('n', '<leader>sh', ':Pick help<CR>', { desc = 'Help', noremap = true })
+
+-- ########## --
+-- ## yank ## --
+-- ########## --
+vim.api.nvim_set_keymap('v', 'Y', '"+y', { noremap = true })
+vim.api.nvim_set_keymap('n', 'Y', '"+yy', { noremap = true })
+
+local function copy_curr_path_to_clipboard()
+  local curr_path = vim.fn.expand '%'
+  vim.fn.setreg('+', curr_path)
+end
+vim.api.nvim_create_user_command('CopyCurrPathToClipboard', copy_curr_path_to_clipboard, { nargs = 0 })
+
+vim.api.nvim_set_keymap('n', '<Leader>yp', ':CopyCurrPathToClipboard<CR>', { noremap = true })
+
+-- ############## --
+-- ## terminal ## --
+-- ############## --
+vim.keymap.set('n', '<C-w>a', function()
+  local curr_buf_path = vim.fn.expand '%:p:h]'
+  vim.cmd('silent !tmux display-popup -d "' .. curr_buf_path .. '"')
+end, { noremap = true, silent = true, desc = 'Open floating terminal in current directory' })
+
+-- ############ --
+-- ## window ## --
+-- ############ --
+-- vim.keymap.set('n', '<c-k>', ':wincmd k<CR>', { noremap = true })
+-- vim.keymap.set('n', '<c-j>', ':wincmd j<CR>', { noremap = true })
+-- vim.keymap.set('n', '<c-h>', ':wincmd h<CR>', { noremap = true })
+-- vim.keymap.set('n', '<c-l>', ':wincmd l<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<c-w>%', ':vsplit<cr>', { desc = 'split current window vertically' })
+vim.api.nvim_set_keymap('n', '<c-w>"', ':split<cr>', { desc = 'split current window horizontally' })
+vim.api.nvim_set_keymap('n', '<C-Up>', ':lua vim.api.nvim_win_set_height(0, vim.api.nvim_win_get_height(0) + 1)<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap(
+  'n',
+  '<C-Down>',
+  ':lua vim.api.nvim_win_set_height(0, math.max(vim.api.nvim_win_get_height(0) - 1, 1))<CR>',
+  { noremap = true, silent = true }
+)
+vim.api.nvim_set_keymap(
+  'n',
+  '<C-Left>',
+  ':lua vim.api.nvim_win_set_width(0, math.max(vim.api.nvim_win_get_width(0) - 1, 1))<CR>',
+  { noremap = true, silent = true }
+)
+vim.api.nvim_set_keymap('n', '<C-Right>', ':lua vim.api.nvim_win_set_width(0, vim.api.nvim_win_get_width(0) + 1)<CR>', { noremap = true, silent = true })
+
+-- ################# --
+-- ## diagnostics ## --
+-- ################# --
+vim.keymap.set('n', '<c-q>', vim.diagnostic.open_float, { desc = 'show floating diagnostics window' })
+vim.keymap.set('n', '<space>dp', vim.diagnostic.goto_prev, { desc = 'previous diagnostic' })
+vim.keymap.set('n', '<space>dn', vim.diagnostic.goto_next, { desc = 'next diagnostic' })
+vim.keymap.set('n', '<space>dq', vim.diagnostic.setqflist, { desc = 'next diagnostic' })
+vim.keymap.set('n', '<space>dd', vim.diagnostic.setloclist, { desc = 'set diagnostics window location' })
+
+-- ########### --
+-- ## files ## --
+-- ########### --
+-- vim.keymap.set('n', '-', '<CMD>Explore<CR>', { desc = 'open parent directory' })
+vim.keymap.set('n', '-', '<CMD>Oil<CR>', { desc = 'open parent directory' })
+
+-- ############ --
+-- ## buffer ## --
+-- ############ --
+vim.api.nvim_set_keymap('n', '<Tab>', ':bnext <cr>', { noremap = true }) -- Tab goes to next buffer
+vim.api.nvim_set_keymap('n', '<S-Tab>', ':bprevious <cr>', { noremap = true }) -- Shift+Tab goes to previous buffer
+vim.api.nvim_set_keymap('n', '<leader>q', ':bd <cr>', { noremap = true })
+
+--########## --
+-- ## git ## --
+--########## --
+vim.keymap.set('n', '<leader>gg', ':Neogit<cr>', { desc = 'search by grep on git root' })
+----
+
+-- ########## --
+-- ## misc ## --
+-- ########## --
+vim.keymap.set('n', '<Esc>', ':nohl<CR>:echo<CR>')
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
-vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
-vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
-vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
-vim.keymap.set('n', '<leader>s/', telescope_live_grep_open_files, { desc = '[S]earch [/] in Open Files' })
-vim.keymap.set('n', '<leader>ss', require('telescope.builtin').builtin, { desc = '[S]earch [S]elect Telescope' })
-vim.keymap.set('n', '<leader>gf', require('telescope.builtin').git_files, { desc = 'Search [G]it [F]iles' })
-vim.keymap.set('n', '<leader>sf', require('telescope.builtin').find_files, { desc = '[S]earch [F]iles' })
-vim.keymap.set('n', '<leader>sh', require('telescope.builtin').help_tags, { desc = '[S]earch [H]elp' })
-vim.keymap.set('n', '<leader>sw', require('telescope.builtin').grep_string, { desc = '[S]earch current [W]ord' })
-vim.keymap.set('n', '<leader>sg', require('telescope.builtin').live_grep, { desc = '[S]earch by [G]rep' })
-vim.keymap.set('n', '<leader>sG', ':LiveGrepGitRoot<cr>', { desc = '[S]earch by [G]rep on Git Root' })
-vim.keymap.set('n', '<leader>sd', require('telescope.builtin').diagnostics, { desc = '[S]earch [D]iagnostics' })
-vim.keymap.set('n', '<leader>sr', require('telescope.builtin').resume, { desc = '[S]earch [R]esume' })
-vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle)
--- See `:help telescope.builtin`
-vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] Find recently opened files' })
-vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers, { desc = '[ ] Find existing buffers' })
-vim.keymap.set('n', '<leader>/', function()
-  -- You can pass additional configuration to telescope to change theme, layout, etc.
-  require('telescope.builtin').current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
-    winblend = 10,
-    previewer = false,
-  })
-end, { desc = '[/] Fuzzily search in current buffer' })
+vim.api.nvim_set_keymap('n', '<C-u>', '<C-u>zz', { noremap = true })
+vim.api.nvim_set_keymap('n', '<C-d>', '<C-d>zz', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>xx', ':w <cr> :source % <cr>', { noremap = true })
+-- vim.keymap.set('n', '<c-s>', function()
+--   local bufnr = vim.api.nvim_get_current_buf()
+--   vim.lsp.buf.format {
+--     async = false,
+--     bufnr = bufnr,
+--     filter = function(c)
+--       return c.name == 'null-ls'
+--     end,
+--   }
+--   vim.cmd [[:w]]
+-- end, { desc = 'format' })
+----
 
--- markdown
-vim.keymap.set("v", "<leader>mb", "di****<esc>hhp", { desc = "Auto bold" })
-vim.keymap.set("v", "<leader>mi", "di**<esc>hp", { desc = "Auto italic" })
-vim.keymap.set("v", "<leader>ml", "di[]()<esc>hhhpllli", { desc = "Auto link" })
-vim.keymap.set("v", "<leader>mc", "di``<esc>hp", { desc = "Auto backtick" })
-
-
-
--- LazyGit
-vim.keymap.set('n', "<leader>gg", vim.cmd.LazyGit, { desc = 'Open LazyGit' })
-
--- Diagnostics
-vim.keymap.set('n', '<space>ed', vim.diagnostic.open_float, { desc = "Show Floating Diagnostics Window" })
-vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = "Previous Diagnostic" })
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = "Next Diagnostic" })
-vim.keymap.set('n', '<space>q', vim.diagnostic.setloclist, { desc = "Set Diagnostics Window Location" })
-
--- Resizing
-vim.api.nvim_set_keymap('n', '<C-Up>', ':lua vim.api.nvim_win_set_height(0, vim.api.nvim_win_get_height(0) + 1)<CR>',
-  { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-Down>',
-  ':lua vim.api.nvim_win_set_height(0, math.max(vim.api.nvim_win_get_height(0) - 1, 1))<CR>',
-  { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-Left>',
-  ':lua vim.api.nvim_win_set_width(0, math.max(vim.api.nvim_win_get_width(0) - 1, 1))<CR>',
-  { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<C-Right>', ':lua vim.api.nvim_win_set_width(0, vim.api.nvim_win_get_width(0) + 1)<CR>',
-  { noremap = true, silent = true })
-
--- Splitting
-vim.api.nvim_set_keymap('n', '<leader>kv', ':vsplit<cr>', { desc = 'Split Current Window Vertically' })
-vim.api.nvim_set_keymap('n', '<leader>kh', ':split<cr>', { desc = 'Split Current Window Horizontally' })
-
--- Harpoon
-local mark = require("harpoon.mark")
-local ui = require("harpoon.ui")
-
-vim.keymap.set("n", "<leader>hp", mark.clear_all, { desc = 'Harpoon purge' })
-vim.keymap.set("n", "<leader>hh", ui.toggle_quick_menu, { desc = 'Harpoon' })
-vim.keymap.set("n", "<leader>ht", mark.toggle_file, { desc = 'Toggle Harpoon Curr File' })
-vim.keymap.set("n", "<leader>hk", function()
-  ui.nav_next()
-end, { desc = 'Next Harpoon' })
-vim.keymap.set("n", "<leader>hj", function()
-  ui.nav_prev()
-end, { desc = 'Prev Harpoon' })
-
--- Map <Leader>y to copy to system clipboard in visual mode
-vim.api.nvim_set_keymap('v', '<Leader>y', '"+y', { noremap = true })
-
--- Map <Leader>y to copy current line to system clipboard in normal mode
-vim.api.nvim_set_keymap('n', '<Leader>y', '"+yy', { noremap = true })
--- nx
--- vim.keymap.set("n", "<leader>ng", require("nx.generators").generators, { desc = "[N]x [G]enerators" })
-vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
+-- ########## --
+-- ## rest ## --
+-- ########## --
+vim.api.nvim_set_keymap('n', '<leader>rr', ':Rest run<CR>', { desc = 'Rest run' })
+vim.api.nvim_set_keymap('n', '<leader>ro', ':Rest open<CR>', { desc = 'Rest open' })

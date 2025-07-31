@@ -1,0 +1,12 @@
+# tab through suggestions
+set show-all-if-ambiguous on
+set show-all-if-unmodified on
+set menu-complete-display-prefix on
+"\t": menu-complete
+"\e[Z": menu-complete-backward
+"\e[A": history-search-backward            # arrow up
+"\e[B": history-search-forward             # arrow down
+'\C-h': 'cd ..'
+'\C-l': 'cd -'
+'\C-j': 'cd'
+'\C-k': 'ls'

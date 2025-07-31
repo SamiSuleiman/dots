@@ -1,4 +1,7 @@
 tags
 test.sh
 .luarc.json
-nvim
+.zcompdump
+.zsh_history
+.uuid
+.DS_Store

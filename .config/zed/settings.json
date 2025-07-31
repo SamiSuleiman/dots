@@ -1,0 +1,134 @@
+{
+  "auto_install_extensions": {
+    "html": true,
+    "dockerfile": true,
+    "docker-compose": true,
+    "angular": true,
+    "emmet": true,
+    "env": true,
+    "lua": true,
+    "nginx": true,
+    "scss": true,
+    "sql": true,
+    "svelte": true,
+    "tokyo-night": true,
+    "toml": true
+  },
+  "agent": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4"
+    }
+  },
+  "scroll_beyond_last_line": "off",
+  "preferred_line_length": 120,
+  "soft_wrap": "preferred_line_length",
+  "file_finder": {
+    "modal_max_width": "small"
+  },
+  "edit_predictions_disabled_in": ["comments"],
+  "show_whitespaces": "selection",
+  "auto_update_extensions": {
+    "angular": false
+  },
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "show_edit_predictions": true,
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "ui_font_family": "Ubuntu",
+  "buffer_font_family": "BerkeleyMono Nerd Font",
+  "buffer_font_fallbacks": ["Cascadia Code"],
+  "ui_font_size": 16,
+  "buffer_line_height": "standard",
+  "buffer_font_size": 17,
+  "theme": {
+    "mode": "system",
+    "light": "Rosé Pine Dawn",
+    "dark": "Tokyo Night"
+  },
+  "experimental.theme_overrides": {
+    // "editor.background": "#0d0a01",
+    // "panel.background": "#0d0a01",
+    // "editor.gutter.background": "#0d0a01",
+    // "tab_bar.background": "#0d0a01",
+    // "title_bar.background": "#0d0a01",
+    // "terminal.background": "#0d0a01",
+    // "toolbar.background": "#0d0a01",
+    // "status_bar.background": "#0d0a01",
+    // "tab.inactive_background": "#0d0a01"
+  },
+  "project_panel": {
+    "dock": "left"
+  },
+  "current_line_highlight": "gutter",
+  "cursor_blink": true,
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": true,
+    "selections_menu": true
+  },
+  "terminal": {
+    "copy_on_select": true,
+    "font_family": "BerkeleyMono Nerd Font",
+    "font_fallbacks": ["Cascadia Code"],
+    "line_height": "standard"
+  },
+  // "cursor_shape": "block",
+  "relative_line_numbers": true,
+  "vim_mode": true,
+  "git": {
+    "inline_blame": {
+      "enabled": true
+    }
+  },
+  "tabs": {
+    "git_status": true
+  },
+  "inlay_hints": {
+    "toggle_on_modifiers_press": {
+      "alt": true
+    }
+    // "enabled": true,
+    // "show_type_hints": true,
+    // "show_parameter_hints": true,
+    // "show_other_hints": true,
+    // "edit_debounce_ms": 700,
+    // "scroll_debounce_ms": 50
+  },
+  "confirm_quit": true,
+  "preview_tabs": {
+    "enabled": false,
+    "enable_preview_from_file_finder": false,
+    "enable_preview_from_code_navigation": false
+  },
+  "lsp": {},
+  "languages": {
+    // "TypeScript": {
+    //   "language_servers": ["angular", "typescript", "html"]
+    // },
+    // "HTML": {
+    //   "language_servers": ["angular", "html"]
+    // },
+    "TypeScript": {
+      "show_edit_predictions": true
+    },
+    "JavaScript": {
+      "code_actions_on_format": {
+        "source.fixAll.eslint": false
+      },
+      "format_on_save": {
+        "external": {
+          "command": "prettier",
+          "arguments": ["--stdin-filepath", "{buffer_path}"]
+        }
+      }
+    },
+    "Markdown": {
+      "format_on_save": "on"
+    }
+  }
+}

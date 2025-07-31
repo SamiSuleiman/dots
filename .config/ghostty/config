@@ -1,0 +1,35 @@
+## FONT
+font-family = monospace
+font-size = 14
+# adjust-cell-height = 40%
+# adjust-cursor-height = 40%
+
+## WINDOW
+window-decoration = true
+window-inherit-working-directory = true
+window-save-state = always
+window-width = 1920
+window-height = 1080
+window-padding-balance = true
+window-padding-y = 0
+window-padding-x = 4
+window-save-state = always
+gtk-titlebar = true
+
+## MOUSE
+mouse-scroll-multiplier = 0
+mouse-hide-while-typing = true
+
+## THEME
+theme = tokyonight
+cursor-style = block
+cursor-style-blink = true
+copy-on-select = true
+
+## KEYBINDS
+# keybind = ctrl+a>shift+'=new_split:down
+# keybind = ctrl+a>shift+5=new_split:right
+# keybind = ctrl+a>j=goto_split:down
+# keybind = ctrl+a>k=goto_split:up
+# keybind = ctrl+a>l=goto_split:right
+# keybind = ctrl+a>h=goto_split:left
